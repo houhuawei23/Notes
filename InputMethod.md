@@ -1,5 +1,4 @@
 debian系统对中文输入法的支持少之又少，很多人会选择使用搜狗，但是对于大多数来说，会有各种各样的问题，所以这里将会介绍使用系统自带的fcitx输入法。
-
  
 
 首先软件源更新（选）：
@@ -7,8 +6,7 @@ debian系统对中文输入法的支持少之又少，很多人会选择使用�
 1.在终端中输入： sudo gedit  /etc/apt/sources.list
 
 2.在打开的文本中删除全部内容，粘贴上以下文本：
-
- deb http://mirrors.163.com/debian/ jessie main non-free contrib
+```
 deb http://mirrors.163.com/debian/ jessie-updates main non-free contrib
 deb http://mirrors.163.com/debian/ jessie-backports main non-free contrib
 deb-src http://mirrors.163.com/debian/ jessie main non-free contrib
@@ -17,7 +15,7 @@ deb-src http://mirrors.163.com/debian/ jessie-backports main non-free contrib
 deb http://mirrors.163.com/debian-security/ jessie/updates main non-free contrib
 deb-src http://mirrors.163.com/debian-security/ jessie/updates main non-free contrib
 deb http://ftp.cn.debian.org/debian wheezy main contrib non-free
-
+```
 （此处包含163以及debian官方软件源）
 
 3.点击保存，并关闭，回到终端，进行软件源同步
