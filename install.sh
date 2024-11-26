@@ -34,3 +34,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # https://clash.razord.top/#/proxies
 
 cmake-format
+
+alias setproxy="export http_proxy=http://127.0.0.1:7890;export https_proxy=http://127.0.0.1:7890"
+alias unsetproxy="unset http_proxy;unset https_proxy"
