@@ -34,3 +34,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # https://clash.razord.top/#/proxies
 
 cmake-format
+
+# install build-essential
+# for CUDA
+sudo apt install build-essential gcc dirmngr ca-certificates software-properties-common apt-transport-https dkms curl -y
