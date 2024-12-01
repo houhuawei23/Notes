@@ -38,3 +38,6 @@ cmake-format
 # install build-essential
 # for CUDA
 sudo apt install build-essential gcc dirmngr ca-certificates software-properties-common apt-transport-https dkms curl -y
+
+alias setproxy="export http_proxy=http://127.0.0.1:7890;export https_proxy=http://127.0.0.1:7890"
+alias unsetproxy="unset http_proxy;unset https_proxy"
