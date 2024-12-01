@@ -1,3 +1,34 @@
+# Fcitx
+
+[Setup_Fcitx_5](https://fcitx-im.org/wiki/Setup_Fcitx_5)
+
+由于很多不同地方的过渡阶段，没有适合每个地方的完美解决方案。请根据您的环境选择您自己的解决方案。基本上，您要做的是为桌面会话设置以下环境变量。
+
+```
+XMODIFIERS=@im=fcitx
+GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+```
+
+
+```bash
+export XMODIFIERS=@im=fcitx
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+```
+
+Useful commands:
+
+```bash
+fcitx-diagnose # print diagnostic information
+fcitx-configtool # open the configuration tool
+# fcitx-remote
+```
+
+
+
+# CSDN: Debian Linux Input Method
+
 debian系统对中文输入法的支持少之又少，很多人会选择使用搜狗，但是对于大多数来说，会有各种各样的问题，所以这里将会介绍使用系统自带的fcitx输入法。
  
 

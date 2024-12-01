@@ -1,3 +1,33 @@
+
+
+# Wayland
+[text](https://wayland.freedesktop.org/)
+[text](https://wiki.archlinux.org/title/Wayland)
+
+Wayland is a replacement for the X11 window system protocol and architecture with the aim to be easier to develop, extend, and maintain.
+Wayland 是 X11 窗口系统协议和架构的替代品，旨在更易于开发、扩展和维护。
+
+Wayland is the language (protocol) that applications can use to talk to a display server in order to make themselves visible and get input from the user (a person). A Wayland server is called a "compositor". Applications are Wayland clients.
+Wayland 是应用程序可以用来与显示服务器通信的语言（协议），以使自身可见并从用户（一个人）那里获得输入。Wayland 服务器称为“合成器”。应用程序是 Wayland 客户端。
+
+Wayland also refers to a system architecture. It is not just a server-client relationship between a compositor and applications. There is no single common Wayland server like Xorg is for X11, but every graphical environment brings with it one of many compositor implementations. Window management and the end user experience are often tied to the compositor rather than swappable components.
+Wayland 还指系统架构。它不仅仅是合成器和应用程序之间的服务器-客户端关系。没有像 Xorg 那样用于 X11 的单一通用 Wayland 服务器，但每个图形环境都带来了许多合成器实现之一。窗口管理和最终用户体验通常与合成器而不是可交换组件相关联。
+
+A core part of Wayland architecture is libwayland: an inter-process communication library that translates a protocol definition in XML to a C language API. This library does not implement Wayland, it merely encodes and decodes Wayland messages. The actual implementations are in the various compositor and application toolkit projects.
+Wayland 架构的核心部分是 libwayland：一个进程间通信库，可将 XML 中的协议定义转换为 C 语言 API。该库不实现 Wayland，它只是对 Wayland 消息进行编码和解码。实际实现位于各种合成器和应用程序工具包项目中。
+
+Wayland does not restrict where and how it is used. A Wayland compositor could be a standalone display server running on Linux kernel modesetting and evdev input devices or on many other operating systems, or a nested compositor that itself is an X11 or Wayland application (client). Wayland can even be used in application-internal communication as is done in some web browsers.
+Wayland 不限制它的使用地点和方式。Wayland 合成器可以是在 Linux 内核模式设置和 evdev 输入设备或许多其他操作系统上运行的独立显示服务器，也可以是本身是 X11 或 Wayland 应用程序（客户端）的嵌套合成器。Wayland 甚至可以用于应用程序内部通信，就像在某些 Web 浏览器中所做的那样。
+
+# Xwayland
+[text](https://man.archlinux.org/man/extra/xorg-xwayland/Xwayland.1.en)
+
+Xwayland is an X server and a Wayland client. It plays the role of a proxy between legacy X clients which do not support the Wayland protocols and the Wayland server.
+
+Xwayland 是一个 X 服务器和一个 Wayland 客户端。它在不支持 Wayland 协议的遗留 X 客户端和 Wayland 服务器之间扮演代理的角色。
+
+# configure Debian 12 system to use Wayland for all components that support it
+
 Yes, you can configure your Debian 12 system to use Wayland for all components that support it. This might help resolve compatibility issues by ensuring everything is consistently running on Wayland without falling back to X11. Here’s how to do it:
 
 ### 1. **Ensure GNOME is Running on Wayland**
