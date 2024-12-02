@@ -1,5 +1,16 @@
-[William S. Moses](https://wsmoses.com/academic/)
+# [Polygeist: Raising C to Polyhedral MLIR](https://ieeexplore.ieee.org/document/9563011)
 
+Published in: 2021 30th International Conference on Parallel Architectures and Compilation Techniques (PACT)
+
+发表于：2021 年第 30 届国际并行架构与编译技术会议（PACT）
+
+Abstract: 摘要：
+
+We present Polygeist, a new compilation flow that connects the MLIR compiler infrastructure to cutting edge polyhedral optimization tools. It consists of a C and C++ frontend capable of converting a broad range of existing codes into MLIR suitable for polyhedral transformation and a bi-directional conversion between MLIR and OpenScop exchange format. The Polygeist/MLIR intermediate representation featuring high-level (affine) loop constructs and n-D arrays embedded into a single static assignment (SSA) substrate enables an unprecedented combination of SSA-based and polyhedral optimizations. We illustrate this by proposing and implementing two extra transformations: statement splitting and reduction parallelization. Our evaluation demonstrates that Polygeist outperforms on average both an LLVM IR-level optimizer (Polly) and a source-to-source state-of-the-art polyhedral compiler (Pluto) when exercised on the Polybench/C benchmark suite in sequential (2.53x vs 1.41x, 2.34x) and parallel mode (9.47x vs 3.26x, 7.54x) thanks to the new representation and transformations.
+
+我们介绍 Polygeist，这是一种新的编译流程，它将 MLIR 编译器基础设施与前沿的多面体优化工具连接起来。它包括一个 C 和 C++前端，能够将广泛现有的代码转换为适用于多面体变换的 MLIR，并实现 MLIR 与 OpenScop 交换格式的双向转换。具有高级（仿射）循环构造和嵌入到单个静态赋值（SSA）基底的 Polygeist/MLIR 中间表示，实现了基于 SSA 和多面体优化的前所未有的组合。我们通过提出并实现两个额外的转换来展示这一点：语句拆分和减少并行化。我们的评估表明，在 Polybench/C 基准测试套件上，Polygeist 在顺序（2.53 倍 vs 1.41 倍，2.34 倍）和并行模式（9.47 倍 vs 3.26 倍，7.54 倍）上平均优于 LLVM IR 级别的优化器（Polly）和源到源的前沿多面体编译器（Pluto），这得益于新的表示和转换。
+
+[William S. Moses](https://wsmoses.com/academic/)
 
 [Polygeist: Affine C in MLIR [MLIR Open Design Meeting 02/11/2021]](https://www.youtube.com/watch?v=GF45kitd3nY)
 
@@ -35,52 +46,53 @@ Frontend Performance Differences
 
 ### Poligeist MLIR Compiler Frontend
 
-Polygeist的核心功能
-Polygeist的主要目标是bridging the gap between C/C++ and MLIR。它具有以下核心功能:
+Polygeist 的核心功能
+Polygeist 的主要目标是 bridging the gap between C/C++ and MLIR。它具有以下核心功能:
 
-C/C++前端:能够解析和分析广泛的C和C++代码。
-MLIR生成:将C/C++代码转换为适合多面体变换的MLIR表示。
-多面体优化:利用MLIR的多面体优化能力进行高级循环优化。
+C/C++前端:能够解析和分析广泛的 C 和 C++代码。
+MLIR 生成:将 C/C++代码转换为适合多面体变换的 MLIR 表示。
+多面体优化:利用 MLIR 的多面体优化能力进行高级循环优化。
 并行优化:支持自动并行化和并行构造的优化。
-GPU后端支持:包括CUDA和ROCm后端,实现GPU加速。
-这些功能使Polygeist成为连接传统C/C++代码和现代MLIR编译架构的关键工具。
+GPU 后端支持:包括 CUDA 和 ROCm 后端,实现 GPU 加速。
+这些功能使 Polygeist 成为连接传统 C/C++代码和现代 MLIR 编译架构的关键工具。
 
-Polygeist的工作原理
-Polygeist的工作流程可以简要概括为以下几个步骤:
+Polygeist 的工作原理
+Polygeist 的工作流程可以简要概括为以下几个步骤:
 
-解析C/C++代码:使用Clang的前端能力解析输入的C/C++代码。
-AST分析:对抽象语法树(AST)进行深入分析,提取程序的结构和语义信息。
-MLIR生成:基于AST分析结果,生成对应的MLIR表示。
-多面体建模:将MLIR表示转换为多面体模型,为后续优化铺平道路。
+解析 C/C++代码:使用 Clang 的前端能力解析输入的 C/C++代码。
+AST 分析:对抽象语法树(AST)进行深入分析,提取程序的结构和语义信息。
+MLIR 生成:基于 AST 分析结果,生成对应的 MLIR 表示。
+多面体建模:将 MLIR 表示转换为多面体模型,为后续优化铺平道路。
 优化应用:应用多面体优化、并行优化等高级优化技术。
-代码生成:将优化后的MLIR转换回LLVM IR或直接生成目标代码。
-通过这一系列步骤,Polygeist能够充分利用MLIR的强大功能,同时保持对原始C/C++代码的兼容性。
+代码生成:将优化后的 MLIR 转换回 LLVM IR 或直接生成目标代码。
+通过这一系列步骤,Polygeist 能够充分利用 MLIR 的强大功能,同时保持对原始 C/C++代码的兼容性。
 
-Polygeist的优势与应用
-Polygeist为C/C++程序带来了诸多优势:
+Polygeist 的优势与应用
+Polygeist 为 C/C++程序带来了诸多优势:
 
 高级优化:通过多面体模型,可以进行更复杂和有效的循环优化。
 并行化:自动检测和利用并行机会,提高程序性能。
-可移植性:通过MLIR表示,可以更容易地将程序移植到不同的硬件平台。
-GPU加速:内置的CUDA和ROCm后端支持,简化GPU编程。
-与LLVM生态系统集成:作为LLVM项目的一部分,可以无缝集成到现有的LLVM工具链中。
-这些优势使Polygeist在高性能计算、科学计算、机器学习等领域具有广泛的应用前景。
+可移植性:通过 MLIR 表示,可以更容易地将程序移植到不同的硬件平台。
+GPU 加速:内置的 CUDA 和 ROCm 后端支持,简化 GPU 编程。
+与 LLVM 生态系统集成:作为 LLVM 项目的一部分,可以无缝集成到现有的 LLVM 工具链中。
+这些优势使 Polygeist 在高性能计算、科学计算、机器学习等领域具有广泛的应用前景。
 
 实际应用案例
-以下是Polygeist在实际项目中的应用案例:
+以下是 Polygeist 在实际项目中的应用案例:
 
-科学计算优化:在一个大规模数值模拟项目中,使用Polygeist对核心计算kernel进行优化,通过多面体变换和自动并行化,性能提升了30%。
+科学计算优化:在一个大规模数值模拟项目中,使用 Polygeist 对核心计算 kernel 进行优化,通过多面体变换和自动并行化,性能提升了 30%。
 
-机器学习框架:某开源机器学习框架使用Polygeist优化其C++后端,实现了更高效的张量运算,在某些模型上推理速度提升了20%。
+机器学习框架:某开源机器学习框架使用 Polygeist 优化其 C++后端,实现了更高效的张量运算,在某些模型上推理速度提升了 20%。
 
-图形渲染引擎:一个游戏引擎项目利用Polygeist的GPU后端支持,简化了CUDA代码的生成过程,大大提高了开发效率。
+图形渲染引擎:一个游戏引擎项目利用 Polygeist 的 GPU 后端支持,简化了 CUDA 代码的生成过程,大大提高了开发效率。
 
-这些案例展示了Polygeist在提升程序性能和简化开发流程方面的巨大潜力。
+这些案例展示了 Polygeist 在提升程序性能和简化开发流程方面的巨大潜力。
 
 ```bash
 cgeist input.c -S -emit-mlir | mlir-opt --canonicalize --cse > output.mlir
 
 ```
+
 ### 2022 LLVMHPC William S. Moses, Polygeist: C++ Frontend for MLIR
 
 [text](https://www.youtube.com/watch?v=LIHxtR4Hop4)
@@ -107,7 +119,7 @@ cgeist input.c -S -emit-mlir | mlir-opt --canonicalize --cse > output.mlir
 #### Synchronization via Memory
 
 - Synchronization (sync_threads) ensures all threads within a block finish executing codeA before executing codeB
-- The desired synchronization behavior can be reproduced by defining sync_threads to have the union of the memory semantics of the code before and after the sync. 
+- The desired synchronization behavior can be reproduced by defining sync_threads to have the union of the memory semantics of the code before and after the sync.
 - This prevents code motion of instructions which require the synchronization for correctness, but permits other code motion (e.g. index computation).
 
 - 同步 （sync_threads） 确保块中的所有线程在执行 CodeB 之前完成对 CodeA 的执行
@@ -129,18 +141,18 @@ __global__ void bpnn_layerforward(...) {
     node[ty] = input[index_in] ;
 
   // Unnecessary Barrier #1
-  // None of the read/writes below the sync 
+  // None of the read/writes below the sync
   //  (weights, hidden)
   // intersect with the read/writes above the sync
   //  (node, input)
   __syncthreads();
-   
+
   // Unnecessary Store #1
   weights[ty][tx] = hidden[index];
 
-  __syncthreads(); 
-  // Unnecessary Load #1   
-  weights[ty][tx] = weights[ty][tx] * node[ty];   
+  __syncthreads();
+  // Unnecessary Load #1
+  weights[ty][tx] = weights[ty][tx] * node[ty];
   // …
 }
 
@@ -149,19 +161,19 @@ __global__ void bpnn_layerforward(...) {
 #### GPU Transpilation
 
 - A unified representation of parallelism enables programs in one parallel architecture (e.g. CUDA) to be compiled to another (e.g. CPU/OpenMP)
-- **Most CPU backends do not have an equivalent block synchronization** 
+- **Most CPU backends do not have an equivalent block synchronization**
 - Efficiently lower a top-level synchronization by distributing the parallel for loop around the sync, and interchanging control flow
 
 ```llvm
 parallel_for %i = 0 to N {
-  codeA(%i);   
-  sync_threads;   
+  codeA(%i);
+  sync_threads;
   codeB(%i);
 }
 ; =>
 parallel_for %i = 0 to N {
   codeA(%i);
-} 
+}
 
 parallel_for %i = 0 to N {
   codeB(%i);
@@ -170,31 +182,30 @@ parallel_for %i = 0 to N {
 
 #### GPU Synchronization Lowering: Control Flow
 
-
 Synchronization within control flow (for, if, while, etc) can be lowered by splitting around the control flop and interchanging the parallelism.
 
 ```c++
 parallel_for %i = 0 to N {
-  for %j = … {     
-    codeB1(%i, %j);     
-    sync_threads;      
+  for %j = … {
+    codeB1(%i, %j);
+    sync_threads;
     codeB2(%i, %j);
   }
 }
 ; Interchange =>
-for %j = … {   
+for %j = … {
     parallel_for %i = 0 to N {
-        codeB1(%i, %j);     
-        sync_threads;      
+        codeB1(%i, %j);
+        sync_threads;
         codeB2(%i, %j);
   }
 }
 ; Split =>
-for %j = … {   
+for %j = … {
     parallel_for %i = 0 to N {
         codeB1(%i, %j);
-    }   
-    parallel_for %i = 0 to N { 
+    }
+    parallel_for %i = 0 to N {
         codeB2(%i, %j);
     }
 }
