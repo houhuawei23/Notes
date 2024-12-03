@@ -59,6 +59,12 @@ We define the representation of a GPU kernel launch as follows (illustrated in F
 - A 3D parallel for-loop over all threads in a block.
 - A custom Polygeist barrier operation that provides equivalent semantics to a CUDA/ROCm synchronization.
 
+我们定义GPU内核启动的表示如下(如图3所示):
+
+- 在网格中所有块上的3D并行for循环。
+- 对任何共享内存的堆栈分配,每个块的范围是唯一的。
+- 在一个块中所有线程上的3D并行for循环。
+- 提供与 CUDA / ROCm同步等效语义的自定义 Polygeist 屏障操作。
 
 
 [PolygeistGPU-Docker](https://github.com/wsmoses/PolygeistGPU-Docker)

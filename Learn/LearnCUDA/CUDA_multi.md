@@ -1,9 +1,11 @@
+# CUDA Multi Version
+
 ## Installing multiple CUDA + cuDNN versions in the same machine for Tensorflow and Pytorch
 
 [cuda-compatibility](https://docs.nvidia.com/deploy/cuda-compatibility/)
 
-![NVIDIA driver is the essential requirement for CUDA](../images/NVIDIA_Driver.png)
-![New NVIDIA driver (for ex: R450) supports “old” CUDA version but it is not vice versa](../images/Driver_Compatibility.png)
+![NVIDIA driver is the essential requirement for CUDA](../../images/NVIDIA_Driver.png)
+![New NVIDIA driver (for ex: R450) supports “old” CUDA version but it is not vice versa](../../images/Driver_Compatibility.png)
 
 ```bash
 # add below to your env bash file.
@@ -18,12 +20,10 @@ function _switch_cuda {
 ```
 
 And call this function to switch to a corresponding cuda version on your bash session
+
 ```bash
 _switch_cuda 11.0 # change the version of your like to load bash.
 ```
-
-
-
 
 ## [Multiple Version of CUDA Libraries On The Same Machine](https://blog.kovalevskyi.com/multiple-version-of-cuda-libraries-on-the-same-machine-b9502d50ae77)
 

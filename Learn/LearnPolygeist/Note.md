@@ -102,6 +102,9 @@ cgeist input.c -S -emit-mlir | mlir-opt --canonicalize --cse > output.mlir
 - MLIR is a recent compiler infrastructure designed for reuse and extensibility
 - Rather than providing a predefined set of instructions and types, MLIR operates on collections of dialects that contain sets of interoperable user-defined operations, attributes and types
 - Anyone can define their own optimizable dialect/operation, with a large set of existing dialects (structured control flow, affine, GPU, quantum, fully homomorphic encryption, circuits, LLVM, and more!)
+- MLIR 是一种为重用和可扩展性而设计的最新编译器基础架构
+- MLIR 不是提供一组预定义的指令和类型,而是对包含一组可互操作的用户定义操作、属性和类型的方言集合进行操作
+- 任何人都可以使用大量现有方言(结构化控制流、仿射、GPU、量子、完全同态加密、电路、LLVM 等!)定义自己可优化的方言/操作。
 
 #### The Polyhedral Model
 
@@ -115,6 +118,11 @@ cgeist input.c -S -emit-mlir | mlir-opt --canonicalize --cse > output.mlir
 - Maintain GPU parallelism in a form understandable to the compiler
 - Enables optimization between caller and kernel
 - Enable parallelism-specific optimization
+
+- 将程序表示为多维网格(多面体)上的计算和约束集合
+- 便于分析和指定最佳利用可用硬件的程序转换
+- 用于空间/时间局部性、自动并行化等的循环重构
+- 优化机器学习内核或科学模拟等计算密集型程序以及编程加速器的最佳框架之一。
 
 #### Synchronization via Memory
 
