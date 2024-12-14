@@ -25,7 +25,11 @@
 - Misc
 
   - [gnu home zh](https://www.gnu.org/home.zh-cn.html)
+  - [The best free stock photos, royalty free images & videos shared by creators.](https://www.pexels.com/)
 - ToRead:
 
   - [zhihu - Performance and Compatibility in the HongMeng Production Microkernel](https://zhuanlan.zhihu.com/p/711433679)
   - [zhihu - Programming Books to read](https://www.zhihu.com/question/50408698/answer/2997610936)
+
+- Awesome Lists:
+  - [Awesome-Selfhosted](https://awesome-selfhosted.net/#)
