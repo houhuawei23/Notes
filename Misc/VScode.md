@@ -1,3 +1,17 @@
+# VScode
+
+## Shortcuts
+
+- `Ctrl+p` 快速打开文件
+- `Ctrl+shift+p` 打开命令面板
+- `Ctrl+w` 关闭当前文件
+- `Ctrl+k+w` 关闭所有文件
+- `Ctrl+f` 快速搜索
+- `Ctrl+g` 跳转到指定行
+- `Ctrl+Alt+f` Find in Explorer
+- `Ctrl+R` Run Recent Command
+
+## Others
 
 #### 文件恢复
 
@@ -5,7 +19,7 @@
 
 #### VScode server
 
-确认server commit_id
+确认 server commit_id
 
 ```Bash
 # ~/.vscode-server/bin

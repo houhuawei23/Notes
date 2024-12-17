@@ -92,7 +92,6 @@ More information: https://manned.org/usermod.
 
 ```
 
-
 ```bash
 gpasswd
 
@@ -113,8 +112,8 @@ More information: https://manned.org/gpasswd.
 
  - Remove a user from the named group:
    gpasswd -d user group
-   
-(base) ➜  ~ gpasswd                                 
+
+(base) ➜  ~ gpasswd
 Usage: gpasswd [option] GROUP
 
 Options:
@@ -130,3 +129,71 @@ Options:
 Except for the -A and -M options, the options cannot be combined.
 
 ```
+
+## delete user
+
+In Debian 12, the `deluser` and `userdel` commands are used to delete users. However, if you can't find these commands, it might be due to a missing package or a typo. Here's how you can delete a user in Debian 12:
+
+### 1. Using `deluser` (Recommended)
+
+The `deluser` command is part of the `passwd` package and is the preferred method for removing users in Debian.
+
+#### Steps:
+
+1. Install the `passwd` package (if not already installed):
+
+   ```bash
+   sudo apt update
+   sudo apt install passwd
+   ```
+
+2. Delete the user:
+
+   ```bash
+   sudo deluser username
+   ```
+
+   Replace `username` with the actual username you want to delete.
+
+3. Delete the user's home directory and mail spool (optional):
+   ```bash
+   sudo deluser --remove-home username
+   ```
+
+### 2. Using `userdel`
+
+The `userdel` command is part of the `shadow-utils` package and is a lower-level tool for removing users.
+
+#### Steps:
+
+1. Install the `shadow-utils` package (if not already installed):
+
+   ```bash
+   sudo apt update
+   sudo apt install shadow-utils
+   ```
+
+2. Delete the user:
+
+   ```bash
+   sudo userdel username
+   ```
+
+3. Delete the user's home directory and mail spool (optional):
+   ```bash
+   sudo rm -rf /home/username
+   sudo rm -rf /var/mail/username
+   ```
+
+### Troubleshooting
+
+- Command not found: If you get a "command not found" error, ensure that the `passwd` or `shadow-utils` package is installed.
+- Typo: Double-check the spelling of the commands (`deluser` and `userdel`).
+
+### Summary
+
+- Use `deluser` for a more user-friendly experience.
+- Use `userdel` for a more manual approach.
+- Always ensure the necessary packages are installed.
+
+Let me know if you encounter any issues!
