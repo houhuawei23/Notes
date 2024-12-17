@@ -1,0 +1,20 @@
+
+// Automatically generated file, do not edit!
+
+#pragma once
+#include "../../../CodeGen/Target.hpp"
+#include "../../../CodeGen/MIR.hpp"
+
+#define TARGET_NAMESPACE_BEGIN namespace ::mir::{{target}} {
+#define TARGET_NAMESPACE_END }
+
+TARGET_NAMESPACE_BEGIN
+enum {{target}}Inst {
+    {{target}}InstBegin = ISASpecificBegin,
+    {% for inst in insts %}{{inst.name}},{% endfor %}
+    {{target}}InstEnd
+};
+
+const TargetInstInfo& get{{target}}InstInfo();
+
+TARGET_NAMESPACE_END
