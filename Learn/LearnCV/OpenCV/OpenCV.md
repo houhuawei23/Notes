@@ -1,26 +1,26 @@
 # opencv-python
 
-haarcascade_frontalface_default.xml: Trained XML classifiers describes some features of some object we want to detect a cascade function is trained from a lot of positive(faces) and negative(non-faces) images.
+`haarcascade_frontalface_default.xml`: Trained XML classifiers describes some features of some object we want to detect a cascade function is trained from a lot of positive(faces) and negative(non-faces) images.
 
 ### Image
 
-Read an image from file (using `cv::imread`)
-Display an image in an OpenCV window (using `cv::imshow`)
-Write an image to a file (using `cv::imwrite`)
+- Read an image from file (using `cv::imread`)
+- Display an image in an OpenCV window (using `cv::imshow`)
+- Write an image to a file (using `cv::imwrite`)
 
-`IMREAD_COLOR` loads the image in the BGR 8-bit format. This is the default that is used here.
-`IMREAD_UNCHANGED` loads the image as is (including the alpha channel if present)
-`IMREAD_GRAYSCALE` loads the image as an intensity one
+- `IMREAD_COLOR` loads the image in the BGR 8-bit format. This is the default that is used here.
+- `IMREAD_UNCHANGED` loads the image as is (including the alpha channel if present)
+- `IMREAD_GRAYSCALE` loads the image as an intensity one
 
-`core` section, as here are defined the basic building blocks of the library
-`imgcodecs` module, which provides functions for reading and writing
-`highgui` module, as this contains the functions to show an image in a window
+- `core` section, as here are defined the basic building blocks of the library
+- `imgcodecs` module, which provides functions for reading and writing
+- `highgui` module, as this contains the functions to show an image in a window
 
 ### Video
 
-VideoCapture
+VideoCapture()
 
-VideoWriter
+VideoWriter()
 
 ### Drawing
 
