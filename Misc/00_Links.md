@@ -51,3 +51,8 @@
   - [delete all enters](https://uutool.cn/nl-trim-all/)
 - doc
   - [zealdocs](https://zealdocs.org/)
+- video download
+  - [yt](https://yt5s.biz/enxj101/)
+- pkgs
+  - [pkgs: Packages for Linux and Unix](https://pkgs.org/)
+  - [repology: the packaging hub](https://repology.org/)

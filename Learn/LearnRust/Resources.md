@@ -61,6 +61,8 @@ cargo test # run the tests in the current package
 cargo build --release # build the current package with optimizations
 
 cargo doc --open # build all dependences doc and open in broswer
+
+RUST_BACKTRACE=1 cargo run # checkout backtrace
 ```
 
 ## OwnerShip
