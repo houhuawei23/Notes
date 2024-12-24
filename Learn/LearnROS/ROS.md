@@ -1,9 +1,13 @@
 # ROS: Robot Operating System
+
+- [index.ros.org/](https://index.ros.org/)
 - [wiki.ros: Tutorials](https://wiki.ros.org/ROS/Tutorials)
 - [wiki.ros: cn Introduction](https://wiki.ros.org/cn/ROS/Introduction)
 - [github: ros-infrastructure](https://github.com/ros-infrastructure)
 - [github: ROS core stacks](https://github.com/ros)
 - [github: ros-dpg](https://github.com/ros-gbp)
+- [rep: learn-ros](https://github.com/iConor/learn-ros/)
+- [blog: ros-tutorials](https://songapore.gitbook.io/ros-tutorials)
 
 ROS（机器人操作系统）提供库和工具来帮助软件开发人员创建机器人应用程序。它提供硬件抽象、设备驱动程序、库、可视化工具、消息传递、包管理等。
 
@@ -175,6 +179,8 @@ Low-level build system macros and infrastructure for ROS.
 
 - [wiki.ros: catkin](https://wiki.ros.org/catkin)
 - [wiki.ros: catkin conceptual overview](https://wiki.ros.org/catkin/conceptual_overview)
+- [catkin](https://wiki.ros.org/catkin/commands/catkin_make)
+- [ros: rep-0128](https://ros.org/reps/rep-0128.html)
 
 [catkin](https://wiki.ros.org/catkin) is the official build system of ROS and the successor to the original ROS build system, [rosbuild](https://wiki.ros.org/rosbuild). [catkin](https://wiki.ros.org/catkin) combines [CMake](http://www.cmake.org/) macros and Python scripts to provide some functionality on top of CMake's normal workflow. [catkin](https://wiki.ros.org/catkin) was designed to be more conventional than [rosbuild](https://wiki.ros.org/rosbuild), allowing for better distribution of packages, better cross-compiling support, and better portability. [catkin](https://wiki.ros.org/catkin)'s workflow is very similar to [CMake](http://www.cmake.org/)'s but adds support for automatic 'find package' infrastructure and building multiple, dependent projects at the same time.
 
@@ -185,6 +191,40 @@ Low-level build system macros and infrastructure for ROS.
 catkin/stable 0.8.10-9 all
 # python3
 python3-catkin/stable,now 0.8.10-9 al
+```
+
+Usage:
+
+```bash
+cd path/to/your/catkin_workspace
+# will build any packages in /catkin_workspace/src
+catkin_make
+
+# equivalent to
+cd path/to/your/catkin_workspace
+cd src
+catkin_init_workspace
+cd ..
+mkdir build
+cd build
+cmake ../src -DCMAKE_INSTALL_PREFIX=../install -DCATKIN_DEVEL_PREFIX=../devel
+make
+
+
+# build specific package
+catkin_make -DCATKIN_WHITELIST_PACKAGES="package1;package2"
+
+# revert back to building all packages:
+catkin_make -DCATKIN_WHITELIST_PACKAGES=""
+
+# generate build and devel dir under workspace root
+
+# install
+catkin_make install
+
+# specific source
+catkin_make --source my_src
+catkin_make install --source my_src
 ```
 
 ### [`rosinstall_generator`](https://wiki.ros.org/rosinstall_generator)

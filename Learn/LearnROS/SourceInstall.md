@@ -42,6 +42,13 @@ liburdfdom-dev
 
 libbz2-dev
 libgpgme-dev
+
+liborocos-kdl-dev/stable 1.5.1-2+b4 amd64
+  Kinematics and Dynamics Library development files
+
+liborocos-kdl1.5/stable,now 1.5.1-2+b4 amd64 [installed,automatic]
+  Kinematics and Dynamics Library runtime
+
 ```
 
 Installation:
