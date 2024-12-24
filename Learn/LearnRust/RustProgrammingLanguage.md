@@ -391,7 +391,162 @@ where
 - Controlling How Tests Are Run
 - Test Orgnizations
 
+### How to write tests
+
+编写测试函数：
+
+- 设置任何所需的数据或状态
+- 运行需要测试的代码
+- 断言其结果是我们所期望的
+
+Rust 提供的测试功能：`test` Attribute, some Macros, and `should_panic` Attribute.
+
+Example:
+
+```rust
+pub fn add(left: usize, right: usize) -> usize {
+    left + right
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn it_works() {
+        let result = add(2, 2);
+        assert_eq!(result, 4);
+    }
+}
+```
+
+- `#[cfg(test)]`: 标记模块为测试模块，只有在运行 `cargo test` 时才会编译和运行测试代码。
+- `use super::*;`: 导入父模块，这样可以直接调用父模块中的函数。
+- `#[test]`: 标记函数为测试函数，只有在运行 `cargo test` 时才会运行测试函数。
+- `assert_eq!(result, 4);`: 断言函数的返回值等于 4。
+- `cargo test`: 运行测试。
+
+- `assert!(expression)`: 断言表达式为 true。
+- `assert_ne!(exp1, exp2)`: 断言表达式 exp1 != exp2。
+- `assert_eq!(exp1, exp2)`: 断言表达式 exp1 == exp2。
+- `assert_approx_eq!(exp1, exp2, epsilon)`: 断言表达式 exp1 与 exp2 差值小于等于 epsilon。
+- `assert_ne_precise!(exp1, exp2)`: 断言表达式 exp1 与 exp2 差值大于 `f32::EPSILON` 或 `f64::EPSILON`。
+- `assert_xx(abc, def, info)`: 断言 abc 与 def xx，info 为附加失败信息。
+
+```rust
+pub struct Guess {
+    value: i32,
+}
+
+impl Guess {
+    pub fn new(value: i32) -> Guess {
+        if value < 1 {
+            panic!(
+                "Guess value must be less than or equal to 100, got {value}."
+            );
+        } else if value > 100 {
+            panic!(
+                "Guess value must be greater than or equal to 1, got {value}."
+            );
+        }
+        Guess { value }
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    #[should_panic]
+    fn greater_than_100() {
+        Guess::new(200);
+    }
+
+    #[test]
+    #[should_panic(expected = "less than or equal to 100")]
+    fn greater_than_100_second() {
+        Guess::new(200);
+    }
+}
+```
+
+- `#[should_panic]`: 标记测试函数期望 panic。
+- `#[should_panic(expected = "less than or equal to 100")]`: 标记测试函数期望 panic 信息包含 "less than or equal to 100"。
+
+#### 将 `Result<T, E>` 用于测试
+
+```rust
+
+pub fn add(left: usize, right: usize) -> usize {
+    left + right
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    // ANCHOR: here
+    #[test]
+    fn it_works() -> Result<(), String> {
+        let result = add(2, 2);
+
+        if result == 4 {
+            Ok(())
+        } else {
+            Err(String::from("two plus two does not equal four"))
+        }
+    }
+    // ANCHOR_END: here
+}
+```
+
+- `it_works` 函数返回 `Result<(), String>` 类型
+- 测试函数体在测试通过时返回 `Ok(())`，测试失败时返回 `Err(String)`
+
+### Controlling How Tests Are Run
+
+- 可以将一部分命令行参数传递给 `cargo test`，而将另外一部分传递给生成的测试二进制文件。
+- 为了分隔这两种参数，需要先列出传递给 `cargo test` 的参数，接着是分隔符 `--`，再之后是传递给测试二进制文件的参数。
+- 运行 `cargo test --help` 会提示 `cargo test` 的有关参数，而运行 `cargo test -- --help` 可以提示在分隔符之后使用的有关参数。
+
+- 并行或连续的运行测试
+  - `cargo test -- --test-threads=1`
+- 显示函数输出
+  - `cargo test -- --show-output`
+- 通过指定名字来运行部分测试
+  - `cargo test one_hundred`: 运行名为 `one_hundred` 的测试函数
+  - `cargo test add`: 指定部分测试的名称，运行所有名称中包含 `add` 的测试函数
+- 除非特别指定否则忽略某些测试
+  - `#[ignore]`：标记测试函数为忽略的测试函数。
+  - `cargo test -- --ignored`：运行所有被标记为忽略的测试函数。
+  - `cargo test -- --include-ignored`：运行所有测试函数，包括被标记为忽略的测试函数。
+
 ## Ch12: An I/O Project
+
+- parse cmd args
+- read the file
+- reconstruct: dispatch
+- tests driver'
+- env variables
+- stderr
+
+二进制项目的关注分离
+
+`main` 函数负责多个任务的组织问题在许多二进制项目中很常见。所以 Rust 社区开发出一类在 `main` 函数开始变得庞大时进行二进制程序的关注分离的指导。这些过程有如下步骤：
+
+- 将程序拆分成 _main.rs_ 和 _lib.rs_ 并将程序的逻辑放入 _lib.rs_ 中。
+- 当命令行解析逻辑比较小时，可以保留在 _main.rs_ 中。
+- 当命令行解析开始变得复杂时，也同样将其从 _main.rs_ 提取到 _lib.rs_ 中。
+
+经过这些过程之后保留在 `main` 函数中的责任应该被限制为：
+
+- 使用参数值调用命令行解析逻辑
+- 设置任何其他的配置
+- 调用 _lib.rs_ 中的 `run` 函数
+- 如果 `run` 返回错误，则处理这个错误
+
+这个模式的一切就是为了关注分离：_main.rs_ 处理程序运行，而 _lib.rs_ 处理所有的真正的任务逻辑。因为不能直接测试 `main` 函数，这个结构通过将所有的程序逻辑移动到 _lib.rs_ 的函数中使得我们可以测试它们。仅仅保留在 _main.rs_ 中的代码将足够小以便阅读就可以验证其正确性。
 
 ## Ch13: Functional Language Features: Iterators and Closures
 
@@ -467,6 +622,10 @@ Rust 在发现类型和 trait 实现满足三种情况时会进行 Deref 强制�
 ## Ch16: Fearless Concurrency
 
 ## Ch17: Object Oriented Programming Features in Rust
+
+- 面向对象语言特点
+- 顾及不同类型值的 trait 对象
+- 面向对象设计模式的实现
 
 ## Ch18: Patterns and Maching
 
