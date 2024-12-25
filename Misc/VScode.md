@@ -34,3 +34,6 @@ tar -zxvf vscode-server-linux-x64.tar.gz --strip=1
 https://update.code.visualstudio.com/commit:e7e037083ff4455cf320e344325dacb480062c3c/server-linux-x64/stable
 
 ```
+#### Debugging Launch Configuration
+
+- [Debugging Launch Configuration](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations)

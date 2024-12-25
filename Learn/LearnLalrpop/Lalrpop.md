@@ -15,6 +15,22 @@ LALRPOP 是一个解析器生成器，原理类似于  YACC、ANTLR、Menhir  
    3. use errors and error recovery
    4. pass param to parser
 
+## Tutorial
+
+- `< ... >`: means extract the value of the expression inside the angle brackets, here is `...`
+
+### Macros
+
+four built-in macros:
+
+- `?`: `Expr?` get `Option<Box<Expr>>`
+- `*`: `Expr*` get `Vec<Expr>>`, minimum 0
+- `+`: `Expr+` get `Vec<Expr>>`, minimum 1
+- `(...)`: short for creating an nonterminal,
+  - `(<Expr> ",")?`, mean an "optionally parse an Expr followed by a comma"
+  - Note the **angle brackets** (`<>`) around `Expr`: these ensures that the value of the `(<Expr> ",")`is the value of the expression, and not a tuple of the expression and the comma.
+  - get type `Option<Box<Expr>>`
+
 ## Grammar Example
 
 ```rust

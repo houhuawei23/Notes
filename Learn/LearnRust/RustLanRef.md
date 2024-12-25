@@ -61,14 +61,20 @@ trait Example {
 
 [Trait](https://doc.rust-lang.org/reference/items/traits.html#trait-bounds) and lifetime bounds provide a way for [generic items](https://doc.rust-lang.org/reference/items/generics.html) to restrict which types and lifetimes are used as their parameters. Bounds can be provided on any type in a [where clause](https://doc.rust-lang.org/reference/items/generics.html#where-clauses). There are also shorter forms for certain common cases:
 
-特征和生命周期界限为通用项提供了一种方法来限制将哪些类型和生命周期用作其参数。可以在 where 子句中为任何类型提供界限。对于某些常见情况，还有更简短的形式：
+特征和生命周期界限为通用项提供了一种方法来限制将哪些类型和生命周期用作其参数。可以在 `where` 子句中为任何类型提供界限。对于某些常见情况，还有更简短的形式：
 
-- Bounds written after declaring a [generic parameter](https://doc.rust-lang.org/reference/items/generics.html): `fn f<A: Copy>() {}` is the same as `fn f<A>() where A: Copy {}`.
-- 声明通用参数后写入的界限： fn f<A: Copy>() {}与 fn f `<A>`() where A: Copy {} 。
-- In trait declarations as [supertraits](https://doc.rust-lang.org/reference/items/traits.html#supertraits): `trait Circle : Shape {}` is equivalent to `trait Circle where Self : Shape {}`.
-- 在作为 supertraits 的特征声明中： trait Circle : Shape {}相当于  trait Circle where Self : Shape {} 。
-- In trait declarations as bounds on [associated types](https://doc.rust-lang.org/reference/items/associated-items.html#associated-types): `trait A { type B: Copy; }` is equivalent to `trait A where Self::B: Copy { type B; }`.
-- 在特征声明中作为关联类型的边界： trait A { type B: Copy; }相当于  trait A where Self::B: Copy { type B; } 。
+- Bounds written after declaring a [generic parameter](https://doc.rust-lang.org/reference/items/generics.html): 
+  - `fn f<A: Copy>() {}` is the same as `fn f<A>() where A: Copy {}`.
+  - 声明通用参数后写入的界限： 
+  - `fn f<A: Copy>() {}` 与 `fn f `<A>`() where A: Copy {}` 。
+- In trait declarations as [supertraits](https://doc.rust-lang.org/reference/items/traits.html#supertraits): 
+  - `trait Circle : Shape {}` is equivalent to `trait Circle where Self : Shape {}`.
+  - 在作为 **supertraits** 的特征声明中： 
+  - `trait Circle : Shape {}` 相当于  `trait Circle where Self : Shape {}` 。
+- In trait declarations as bounds on [associated types](https://doc.rust-lang.org/reference/items/associated-items.html#associated-types): 
+  - `trait A { type B: Copy; }` is equivalent to `trait A where Self::B: Copy { type B; }`.
+  - 在特征声明中作为关联类型的边界： 
+  - `trait A { type B: Copy; }` 相当于  `trait A where Self::B: Copy { type B; }` 。
 
 Bounds on an item must be satisfied when using the item. When type checking and borrow checking a generic item, the bounds can be used to determine that a trait is implemented for a type. For example, given `Ty: Trait`
 

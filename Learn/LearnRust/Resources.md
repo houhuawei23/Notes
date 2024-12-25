@@ -10,6 +10,9 @@ Rust
 - [Rust 程序设计语言 (zh) - 2022](https://rustwiki.org/zh-CN/book/title-page.html)
 - [Rust 程序设计语言 (zh) - 2024-05-02 ](https://kaisery.github.io/trpl-zh-cn/)
 - ~~
+- [effective rust: 35 Specific Ways to Improve Your Rust Code](https://effective-rust.com/)
+- [effective-rust-cn](https://rustx-labs.github.io/effective-rust-cn/)
+- ~~
 - [The Rustonomicon: The Dark Arts of Unsafe Rust](https://doc.rust-lang.org/stable/nomicon/)
 - [Rust 语言圣经(Rust Course)](https://course.rs/about-book.html)
 - [rust-by-example](https://doc.rust-lang.org/rust-by-example/)
@@ -20,6 +23,13 @@ Rust
 - ~~
 - [releases](https://releases.rs/)
 - [github releases](https://github.com/rust-lang/rust/releases)
+- ~~
+- [Rust 语言中文社区](https://rustcc.cn/)
+- [clippy](https://doc.rust-lang.org/clippy/index.html)
+- [Rust Design Patterns](https://rust-unofficial.github.io/patterns/)
+- [Newtype Index Pattern](https://matklad.github.io/2018/06/04/newtype-index-pattern.html)
+- [Embrace the newtype pattern -- Effective Rust](https://www.lurklurk.org/effective-rust/newtype.html)
+- [Idiomatic tree and graph like structures in Rust](https://rust-leipzig.github.io/architecture/2016/12/20/idiomatic-trees-in-rust/)
 
 Rust Compiler
 
@@ -39,6 +49,7 @@ Others
 
 - [一文读懂什么是进程、线程、协程](https://www.cnblogs.com/Survivalist/p/11527949.html)
 - [rust-cli](https://rust-cli.github.io/book/index.html)
+- [Joel on Software](https://www.joelonsoftware.com/)
 
 git submodule update --init --recursive
 
@@ -57,12 +68,14 @@ cargo build # build the current package
 cargo run # build and run the current package
 cargo check # check the current package for errors without building
 cargo test # run the tests in the current package
+cargo fmt # check formatting of the current package
 
 cargo build --release # build the current package with optimizations
 
 cargo doc --open # build all dependences doc and open in broswer
 
 RUST_BACKTRACE=1 cargo run # checkout backtrace
+
 ```
 
 ## OwnerShip
