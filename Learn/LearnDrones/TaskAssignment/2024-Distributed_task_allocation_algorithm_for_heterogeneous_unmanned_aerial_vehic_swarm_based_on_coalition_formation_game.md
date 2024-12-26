@@ -10,6 +10,7 @@ Distributed task allocation algorithm for heterogeneous unmanned aerial vehicle 
   - 考虑任务需求、机载资源以及路径成本等条件建立任务分配模型,将原有任务分配问题转化为联盟划分问题,设计了一种基于联盟形成博弈的分布式任务分配算法进行求解.
   - 最后,将 30 个具有异构需求的任务分配给 100 架携带 3 种异构资源的无人机的仿真结果表明,所提算法能够实现较好的任务分配效果,同时极大提高任务分配的实时性,充分发挥集群效能.
 - 基金资助： 国家自然科学基金(批准号:62273177,62020106003,62233009)； 江苏省自然科学基金(批准号:BK20211566,BK20222012)； 高校学科创新引智基地(批准号:B20007)； 空间智能控制技术全国重点实验室开放基金(批准号:HTKJ2023KL502006)； 中央高校基本科研业务费(批准号:NI2024001)资助项目；
+- [doi-link](https://doi.org/10.1360/ssi-2024-0167)
 
 1. 引言
 2. 问题描述
@@ -40,7 +41,7 @@ Distributed task allocation algorithm for heterogeneous unmanned aerial vehicle 
 - **分布式马尔可夫决策过程方法**：
   - 文献 [10] 针对边缘服务器的分布式任务和资源分配问题, 将其建模为**部分观测的马尔可夫决策过程**,提出一种依赖于多智能体的深度强化两步策略, 所提出的解决方案在训练和收敛方面优于基准.
 - **博弈论方法**：
-  - 目前, 得益于博弈论能够为无人机之间的合作协商提供良好性能, 博弈方法已成为热门研究方向,应用于各种优化问题 [11]. 
+  - 目前, 得益于博弈论能够为无人机之间的合作协商提供良好性能, 博弈方法已成为热门研究方向,应用于各种优化问题 [11].
   - 文献 [5] 设计了智能体之间的组合策略, 将全局效用映射为势函数获得最优分配方案.
   - 文献 [12] 采用了**基于势博弈的分布式多智能体动态任务分配方法**, 该算法在全局搜索能力方面表现良好.
   - 文献 [13] 设计了**基于偏好联盟形成博弈的任务分配算法**, 利用偏好程度定义机器人加入联盟后的效用, 算法保证了多项式时间复杂性和解的纳什稳定性.
@@ -74,3 +75,42 @@ Overall_flowchart_of_the_coalition_formation_game_model
 ![alt text](images/Overall_flowchart_of_the_task_allocation_algorithm_based_on_coalition_formation_game.png)
 
 Overall_flowchart_of_the_task_allocation_algorithm_based_on_coalition_formation_game
+
+## List of references
+
+1. Poudel S, Moh S. Task assignment algorithms for unmanned aerial vehicle networks: A comprehensive survey. IEEE Trans Veh Commun, 2022, 35: 100469.
+   [doi-link](https://doi.org/10.1016/j.vehcom.2022.100469)
+2. 李 鸿一, 陈 锦涛, 任 鸿儒. Random-sampling-based multi-UAV cooperative search planning for high-rise firefighting. Sci Sin-Inf, 2022, 52: 1610-1626.
+   [doi-link](https://doi.org/10.1360/SSI-2022-0038)
+3. Zhou W, Kuang M, Zhu J. An unmanned air combat system based on swarm intelligence. Sci Sin-Inf, 2020, 50: 363-374.
+   [doi-link](https://doi.org/10.1360/SSI-2019-0196)
+4. Lei Y Q, Duan H B. Decision-making of multi-UAV combat game via enhanced competitive learning pigeon-inspired optimization. Sci Sin Tech, 2024, 54: 136-148.
+   [doi-link](https://doi.org/10.1360/SST-2022-0032)
+5. Ju K, Mao Z H, Jiang B, et al. Task allocation and reallocation for heterogeneous multiagent systems based on potential game. Act Autom Sin, 2022, 48: 2416-2428.
+6. Cui W, Li R, Feng Y. Distributed Task Allocation for a Multi-UAV System with Time Window Constraints. Drones, 2022, 6:
+   [doi-link](https://doi.org/10.3390/drones6090226)
+7. Chen X, Wei X M, Xu G Y. Multiple unmanned aerial vehicle decentralized cooperative air combat decision making with fuzzy situation. J Shanghai Jiaotong Univ. 2014, 48: 907-913+921.
+8. Yan F, Zhu X, Zhou Z. Real-time task allocation for a heterogeneous multi-UAV simultaneous attack. Sci Sin-Inf, 2019, 49: 555-569.
+   [doi-link](https://doi.org/10.1360/N112018-00338)
+9. Lyu Y, Zhou R, Li X, et al. Multi-task assignment algorithm based on multi-round distributed auction. J Beijing Univ Aeronaut Astronaut, 2023, 1-14.
+10. Chen Y, Sun Y, Yu H. Joint Task and Computing Resource Allocation in Distributed Edge Computing Systems via Multi-Agent Deep Reinforcement Learning. IEEE Trans Netw Sci Eng, 2024, 11: 3479-3494.
+    [doi-link](https://doi.org/10.1109/TNSE.2024.3375374)
+11. Xu Y, Jiang B, Yang H. Two-Level Game-Based Distributed Optimal Fault-Tolerant Control for Nonlinear Interconnected Systems. IEEE Trans Neural Netw Learn Syst, 2020, 31: 4892-4906.
+    [doi-link](https://doi.org/10.1109/TNNLS.2019.2958948)
+12. Wu H, Shang H. Potential game for dynamic task allocation in multi-agent system. ISA Trans, 2020, 102: 208-220.
+    [doi-link](https://doi.org/10.1016/j.isatra.2020.03.004)
+13. Czarnecki E, Dutta A. Scalable hedonic coalition formation for task allocation with heterogeneous robots. Intel Serv Robotics, 2021, 14: 501-517.
+    [doi-link](https://doi.org/10.1007/s11370-021-00372-9)
+14. Zhang M, Li J, Wu X. Coalition Game Based Distributed Clustering Approach for Group Oriented Unmanned Aerial Vehicle Networks. Drones, 2023, 7:
+    [doi-link](https://doi.org/10.3390/drones7020091)
+15. Zhang T, Wang Y, Ma Z. Task Assignment in UAV-Enabled Front Jammer Swarm: A Coalition Formation Game Approach. IEEE Trans Aerosp Electron Syst, 2023, 59: 9562-9575.
+    [doi-link](https://doi.org/10.1109/TAES.2023.3323441)
+16. Qi N, Huang Z, Zhou F. A Task-Driven Sequential Overlapping Coalition Formation Game for Resource Allocation in Heterogeneous UAV Networks. IEEE Trans Mobile Comput, 2023, 22: 4439-4455.
+    [doi-link](https://doi.org/10.1109/TMC.2022.3165965)
+17. Wang J, Jia G, Lin J. Cooperative task allocation for heterogeneous multi-UAV using multi-objective optimization algorithm. J Cent South Univ, 2020, 27: 432-448.
+    [doi-link](https://doi.org/10.1007/s11771-020-4307-0)
+18. Gao C, Du Y L, Bu Y N, et al. Heterogeneous UAV swarm grouping deployment for complex multiple tasks. J Syst Eng Electron, 2024, 46: 972-981.
+19. Ma Y, Jiang B, Tao G. Uncertainty decomposition-based fault-tolerant adaptive control of flexible spacecraft. IEEE Trans Aerosp Electron Syst, 2015, 51: 1053-1068.
+    [doi-link](https://doi.org/10.1109/TAES.2014.130032)
+20. Mao Z, Jiang B, Shi P. Fault-tolerant control for a class of nonlinear sampled-data systems via a Euler approximate observer. Automatica, 2010, 46: 1852-1859.
+    [doi-link](https://doi.org/10.1016/j.automatica.2010.06.052)
