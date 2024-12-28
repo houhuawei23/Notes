@@ -9,6 +9,8 @@
 
   - [linux.cn](https://linux.cn/)
   - [liaoxuefeng](https://liaoxuefeng.com/)
+  - [Andrej Karpathy blog - 2014](https://karpathy.github.io/)
+  - [Why you (yes, you) should blog - 2017](https://medium.com/@racheltho/why-you-yes-you-should-blog-7d2544ac1045)
 - Tools
 
   - [pdf-to-txt](https://www.freeconvert.com/pdf-to-txt)

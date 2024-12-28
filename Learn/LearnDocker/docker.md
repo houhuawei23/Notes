@@ -39,4 +39,25 @@ systemctl --user stop docker-desktop
 
 https://medium.com/@SrvZ/docker-proxy-and-my-struggles-a4fd6de21861
 
+## Docker Compose Docker 组合
 
+Docker Compose is a tool for defining and running multi-container applications. It is the key to unlocking a streamlined and efficient development and deployment experience.  
+
+Docker Compose 是一个用于定义和运行多容器应用程序的工具。它是解锁精简高效的开发和部署体验的关键。
+
+Compose simplifies the control of your entire application stack, making it easy to manage services, networks, and volumes in a single, comprehensible YAML configuration file. Then, with a single command, you create and start all the services from your configuration file.  
+
+Compose 简化了对整个应用程序堆栈的控制，使您可以在单个易于理解的 YAML 配置文件中轻松管理服务、网络和卷。然后，使用单个命令，您可以从配置文件创建并启动所有服务。
+
+Compose works in all environments; production, staging, development, testing, as well as CI workflows. It also has commands for managing the whole lifecycle of your application:  
+
+Compose 适用于所有环境；生产、登台、开发、测试以及 CI 工作流程。它还具有用于管理应用程序整个生命周期的命令：
+
+- Start, stop, and rebuild services
+  - 启动、停止和重建服务
+- View the status of running services
+  - 查看正在运行的服务的状态
+- Stream the log output of running services
+  - 流式传输正在运行的服务的日志输出
+- Run a one-off command on a service
+  - 在服务上运行一次性命令

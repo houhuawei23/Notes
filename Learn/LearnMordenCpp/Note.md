@@ -7,6 +7,7 @@
 - [hackingcpp](https://hackingcpp.com/index.html)
 - [cppweeklynews](https://github.com/wanghenshui/cppweeklynews)
 - [RVO and NRVO](https://pvs-studio.com/en/blog/terms/6516/)
+- [github: Mq-b/ModernCpp-ConcurrentProgramming-Tutorial](https://github.com/Mq-b/ModernCpp-ConcurrentProgramming-Tutorial)
 
 ## Misc
 

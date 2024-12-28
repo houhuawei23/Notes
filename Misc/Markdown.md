@@ -16,4 +16,9 @@
 
 ## Tips
 
-<p align="center"> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=houhuawei23&layout=compact"/>
+<p align="center"> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=houhuawei23&layout=compact" width=50%/>
+
+
+- [Complete list of github markdown emoji markup](https://gist.github.com/rxaviers/7360908)
+- [developer-icons](https://github.com/xandemon/developer-icons)
+- [devicon](https://devicon.dev/)
