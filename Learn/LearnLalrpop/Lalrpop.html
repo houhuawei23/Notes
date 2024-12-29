@@ -1,0 +1,1333 @@
+
+<!DOCTYPE HTML>
+<html lang="cn" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Learn Lalrpop (Rust) · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-synthwave84.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex-pp/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../LearnPest/pest.html" />
+    
+    
+    <link rel="prev" href="../LearnGameTheory/GameTheory.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Learn.html">
+            
+                <a href="../Learn.html">
+            
+                    
+                    Learn
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../LearnAIMA/">
+            
+                <a href="../LearnAIMA/">
+            
+                    
+                    Learn AIMA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../LearnConda/Conda.html">
+            
+                <a href="../LearnConda/Conda.html">
+            
+                    
+                    Learn Conda
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../LearnCUDA/CUDA.html">
+            
+                <a href="../LearnCUDA/CUDA.html">
+            
+                    
+                    Learn CUDA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../LearnCV/ComputerVisoin.html">
+            
+                <a href="../LearnCV/ComputerVisoin.html">
+            
+                    
+                    Learn Computer Vision
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../LearnDocker/docker.html">
+            
+                <a href="../LearnDocker/docker.html">
+            
+                    
+                    Learn Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../LearnDrones/Note.html">
+            
+                <a href="../LearnDrones/Note.html">
+            
+                    
+                    Learn Drones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../LearnGameDev/Note.html">
+            
+                <a href="../LearnGameDev/Note.html">
+            
+                    
+                    Learn GameDev
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../LearnGameTheory/GameTheory.html">
+            
+                <a href="../LearnGameTheory/GameTheory.html">
+            
+                    
+                    Learn Game Theory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.9" data-path="Lalrpop.html">
+            
+                <a href="Lalrpop.html">
+            
+                    
+                    Learn Lalrpop (Rust)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../LearnPest/pest.html">
+            
+                <a href="../LearnPest/pest.html">
+            
+                    
+                    Learn Pest (Rust)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../LearnMLIR/MLIR-LanRef.html">
+            
+                <a href="../LearnMLIR/MLIR-LanRef.html">
+            
+                    
+                    Learn MLIR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../LearnRust/Resources.html">
+            
+                <a href="../LearnRust/Resources.html">
+            
+                    
+                    Learn Rust
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../LearnROS/ROS.html">
+            
+                <a href="../LearnROS/ROS.html">
+            
+                    
+                    Learn ROS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../PersonalWebsite/Note.html">
+            
+                <a href="../PersonalWebsite/Note.html">
+            
+                    
+                    Learn Personal Website
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../LearnMocCUDA/MocCUDA.html">
+            
+                <a href="../LearnMocCUDA/MocCUDA.html">
+            
+                    
+                    Learn MocCUDA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../LearnPolygeist/Note.html">
+            
+                <a href="../LearnPolygeist/Note.html">
+            
+                    
+                    Learn Polygeist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../LearnPolyhedralModel/Note.html">
+            
+                <a href="../LearnPolyhedralModel/Note.html">
+            
+                    
+                    Learn Polyhedral Compilation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="../LearnROCm/ROCm.html">
+            
+                <a href="../LearnROCm/ROCm.html">
+            
+                    
+                    Learn ROCm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19" data-path="../LearnJinJia2/Jinjia2.html">
+            
+                <a href="../LearnJinJia2/Jinjia2.html">
+            
+                    
+                    Learn JinJia2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../Misc/Misc.html">
+            
+                <a href="../../Misc/Misc.html">
+            
+                    
+                    Misc
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../Misc/00_Links.html">
+            
+                <a href="../../Misc/00_Links.html">
+            
+                    
+                    Useful Links
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../Misc/01_GitHubReps.html">
+            
+                <a href="../../Misc/01_GitHubReps.html">
+            
+                    
+                    Github Reps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../Misc/GitBook.html">
+            
+                <a href="../../Misc/GitBook.html">
+            
+                    
+                    Gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../Misc/Typst.html">
+            
+                <a href="../../Misc/Typst.html">
+            
+                    
+                    Typst
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../Misc/Markdown.html">
+            
+                <a href="../../Misc/Markdown.html">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../Misc/VScode.html">
+            
+                <a href="../../Misc/VScode.html">
+            
+                    
+                    VScode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../Misc/Bochs.html">
+            
+                <a href="../../Misc/Bochs.html">
+            
+                    
+                    Bochs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../../Misc/RegularExp.html">
+            
+                <a href="../../Misc/RegularExp.html">
+            
+                    
+                    Regular Exp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../../Misc/FuzzTesting/FuzzTesting.html">
+            
+                <a href="../../Misc/FuzzTesting/FuzzTesting.html">
+            
+                    
+                    FuzzTesting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../../Misc/PowerShell.html">
+            
+                <a href="../../Misc/PowerShell.html">
+            
+                    
+                    PowerShell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../../Misc/NPM.html">
+            
+                <a href="../../Misc/NPM.html">
+            
+                    
+                    NPM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../../Misc/Fonts.html">
+            
+                <a href="../../Misc/Fonts.html">
+            
+                    
+                    Fonts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../../Misc/Drawing.html">
+            
+                <a href="../../Misc/Drawing.html">
+            
+                    
+                    Drawing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../../Misc/Flatpack">
+            
+                <span>
+            
+                    
+                    Flatpack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../Linux/Linux.html">
+            
+                <a href="../../Linux/Linux.html">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../Linux/Display/Display.html">
+            
+                <a href="../../Linux/Display/Display.html">
+            
+                    
+                    Display
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../Linux/LinuxFamily/LinuxFamily.html">
+            
+                <a href="../../Linux/LinuxFamily/LinuxFamily.html">
+            
+                    
+                    LinuxFamily
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../Linux/UserManagement.html">
+            
+                <a href="../../Linux/UserManagement.html">
+            
+                    
+                    UserManagement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../Linux/InputMethod.html">
+            
+                <a href="../../Linux/InputMethod.html">
+            
+                    
+                    InputMethod
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../Linux/PrintingDrivers.html">
+            
+                <a href="../../Linux/PrintingDrivers.html">
+            
+                    
+                    PrintingDrivers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../PythonLibs/PythonLibs.html">
+            
+                <a href="../../PythonLibs/PythonLibs.html">
+            
+                    
+                    PythonLibs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../PythonLibs/ArgParse.html">
+            
+                <a href="../../PythonLibs/ArgParse.html">
+            
+                    
+                    ArgParse
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../Network/Network.html">
+            
+                <a href="../../Network/Network.html">
+            
+                    
+                    Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../Network/Tailscale.html">
+            
+                <a href="../../Network/Tailscale.html">
+            
+                    
+                    Tailscale
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../Network/Clash.html">
+            
+                <a href="../../Network/Clash.html">
+            
+                    
+                    Cxxxh
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Git
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../Git/git.html">
+            
+                <a href="../../Git/git.html">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../Git/githttps.html">
+            
+                <a href="../../Git/githttps.html">
+            
+                    
+                    githttps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../Git/git-branch.html">
+            
+                <a href="../../Git/git-branch.html">
+            
+                    
+                    git-branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../Git/Github.html">
+            
+                <a href="../../Git/Github.html">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../Papers/Papers.html">
+            
+                <a href="../../Papers/Papers.html">
+            
+                    
+                    Papers
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../Papers/AttentionIsTuringComplete.html">
+            
+                <a href="../../Papers/AttentionIsTuringComplete.html">
+            
+                    
+                    Attention Is Turing Complete
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../Programming/Programming.html">
+            
+                <a href="../../Programming/Programming.html">
+            
+                    
+                    Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../ConfigExamples/ConfigExamples.html">
+            
+                <a href="../../ConfigExamples/ConfigExamples.html">
+            
+                    
+                    ConfigExamples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../ReadingNotes/ReadingNotes.html">
+            
+                <a href="../../ReadingNotes/ReadingNotes.html">
+            
+                    
+                    ReadingNotes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../ReadingNotes/青年在选择职业时的考虑-马克思-1835.html">
+            
+                <a href="../../ReadingNotes/青年在选择职业时的考虑-马克思-1835.html">
+            
+                    
+                    青年在选择职业时的考虑-马克思
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../../ReadingNotes/研究与学风-张申府-1948.html">
+            
+                <a href="../../ReadingNotes/研究与学风-张申府-1948.html">
+            
+                    
+                    研究与学风-张申府-1948
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../../ReadingNotes/论青年修养-张申府-1946.html">
+            
+                <a href="../../ReadingNotes/论青年修养-张申府-1946.html">
+            
+                    
+                    论青年修养-张申府-1946
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../../ReadingNotes/论青年的修养-张闻天-1938.html">
+            
+                <a href="../../ReadingNotes/论青年的修养-张闻天-1938.html">
+            
+                    
+                    论青年的修养-张闻天-1938
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../../ReadingNotes/计算之魂-吴军/">
+            
+                <a href="../../ReadingNotes/计算之魂-吴军/">
+            
+                    
+                    计算之魂
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../../ReadingNotes/语录-毛泽东.html">
+            
+                <a href="../../ReadingNotes/语录-毛泽东.html">
+            
+                    
+                    Mao
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Learn Lalrpop (Rust)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="lalrpop">Lalrpop</h1>
+<p>LR(1) parser generator for Rust.</p>
+<p><a href="https://lalrpop.github.io/lalrpop/#lalrpop" target="_blank">LALRPOP  &#x62C9;&#x5C14;&#x6CE2;&#x666E;</a></p>
+<p>LALRPOP is a parser generator, similar in principle to <a href="http://dinosaur.compilertools.net/yacc/" target="_blank">YACC</a>, <a href="http://www.antlr.org/" target="_blank">ANTLR</a>, <a href="http://gallium.inria.fr/~fpottier/menhir/" target="_blank">Menhir</a>, and other such programs. In general, it has the grand ambition of being the most usable parser generator ever. This ambition is most certainly not fully realized: right now, it&apos;s fairly standard, maybe even a bit subpar in some areas. But hey, it&apos;s young. For the most part, this README is intended to describe the current behavior of LALRPOP, but in some places it includes notes for planned future changes.</p>
+<p>LALRPOP &#x662F;&#x4E00;&#x4E2A;&#x89E3;&#x6790;&#x5668;&#x751F;&#x6210;&#x5668;&#xFF0C;&#x539F;&#x7406;&#x7C7B;&#x4F3C;&#x4E8E;  YACC&#x3001;ANTLR&#x3001;Menhir  &#x548C;&#x5176;&#x4ED6;&#x6B64;&#x7C7B;&#x7A0B;&#x5E8F;&#x3002;&#x603B;&#x7684;&#x6765;&#x8BF4;&#xFF0C;&#x5B83;&#x6709;&#x4E00;&#x4E2A;&#x5B8F;&#x4F1F;&#x7684;&#x96C4;&#x5FC3;&#x58EE;&#x5FD7;&#xFF0C;&#x90A3;&#x5C31;&#x662F;&#x6210;&#x4E3A;&#x6709;&#x53F2;&#x4EE5;&#x6765;&#x6700;&#x6709;&#x7528;&#x7684;&#x89E3;&#x6790;&#x5668;&#x751F;&#x6210;&#x5668;&#x3002;&#x8FD9;&#x4E2A;&#x96C4;&#x5FC3;&#x58EE;&#x5FD7;&#x80AF;&#x5B9A;&#x6CA1;&#x6709;&#x5B8C;&#x5168;&#x5B9E;&#x73B0;&#xFF1A;&#x73B0;&#x5728;&#xFF0C;&#x5B83;&#x76F8;&#x5F53;&#x6807;&#x51C6;&#xFF0C;&#x751A;&#x81F3;&#x5728;&#x67D0;&#x4E9B;&#x9886;&#x57DF;&#x53EF;&#x80FD;&#x6709;&#x70B9;&#x4F4E;&#x4E8E;&#x6807;&#x51C6;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x563F;&#xFF0C;&#x5B83;&#x5F88;&#x5E74;&#x8F7B;&#x3002;&#x5728;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x672C; README &#x65E8;&#x5728;&#x63CF;&#x8FF0; LALRPOP &#x7684;&#x5F53;&#x524D;&#x884C;&#x4E3A;&#xFF0C;&#x4F46;&#x5728;&#x67D0;&#x4E9B;&#x5730;&#x65B9;&#xFF0C;&#x5B83;&#x5305;&#x62EC;&#x8BA1;&#x5212;&#x7684;&#x672A;&#x6765;&#x66F4;&#x6539;&#x7684;&#x8BF4;&#x660E;&#x3002;</p>
+<ol>
+<li>add lalrpop to rust project</li>
+<li>define grammar in lalrpop file<ol>
+<li>define asts, build ast</li>
+<li>use macros</li>
+<li>use errors and error recovery</li>
+<li>pass param to parser</li>
+</ol>
+</li>
+</ol>
+<h2 id="tutorial">Tutorial</h2>
+<ul>
+<li><code>&lt; ... &gt;</code>: means extract the value of the expression inside the angle brackets, here is <code>...</code></li>
+</ul>
+<h3 id="macros">Macros</h3>
+<p>four built-in macros:</p>
+<ul>
+<li><code>?</code>: <code>Expr?</code> get <code>Option&lt;Box<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Expr</span><span class="token punctuation">&gt;</span></span>&gt;</code></li>
+<li><code>*</code>: <code>Expr*</code> get <code>Vec<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Expr</span><span class="token punctuation">&gt;</span></span>&gt;</code>, minimum 0</li>
+<li><code>+</code>: <code>Expr+</code> get <code>Vec<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Expr</span><span class="token punctuation">&gt;</span></span>&gt;</code>, minimum 1</li>
+<li><code>(...)</code>: short for creating an nonterminal,<ul>
+<li><code>(<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Expr</span><span class="token punctuation">&gt;</span></span> &quot;,&quot;)?</code>, mean an &quot;optionally parse an Expr followed by a comma&quot;</li>
+<li>Note the <strong>angle brackets</strong> (<code>&lt;&gt;</code>) around <code>Expr</code>: these ensures that the value of the <code>(<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Expr</span><span class="token punctuation">&gt;</span></span> &quot;,&quot;)</code>is the value of the expression, and not a tuple of the expression and the comma.</li>
+<li>get type <code>Option&lt;Box<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Expr</span><span class="token punctuation">&gt;</span></span>&gt;</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="grammar-example">Grammar Example</h2>
+<pre class="language-"><code class="lang-rust"><span class="token comment">// Term: Num | &apos;(&apos; Term &apos;)&apos;</span>
+<span class="token keyword">pub</span> <span class="token class-name">Term</span><span class="token punctuation">:</span> <span class="token keyword">i32</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token operator">&lt;</span>n<span class="token punctuation">:</span> <span class="token class-name">Num</span><span class="token operator">&gt;</span> <span class="token operator">=&gt;</span> n<span class="token punctuation">,</span>
+    <span class="token string">&quot;(&quot;</span> <span class="token operator">&lt;</span>t<span class="token punctuation">:</span><span class="token class-name">Term</span><span class="token operator">&gt;</span> <span class="token string">&quot;)&quot;</span> <span class="token operator">=&gt;</span> t<span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// Num: r&quot;[0-9]+&quot;</span>
+<span class="token class-name">Num</span><span class="token punctuation">:</span> <span class="token keyword">i32</span> <span class="token operator">=</span> <span class="token operator">&lt;</span>s<span class="token punctuation">:</span><span class="token string">r&quot;[0-9]+&quot;</span><span class="token operator">&gt;</span> <span class="token operator">=&gt;</span> <span class="token keyword">i32</span><span class="token punctuation">::</span><span class="token function">from_str</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>s<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">unwrap</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Precedence and associativity can be specified using attributes:</p>
+<pre class="language-"><code class="lang-rust"><span class="token keyword">pub</span> <span class="token class-name">Expr</span><span class="token punctuation">:</span> <span class="token keyword">i32</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token attribute attr-name">#[precedence(level=<span class="token string">&quot;0&quot;</span>)]</span> <span class="token comment">// Highest precedence</span>
+    <span class="token class-name">Term</span><span class="token punctuation">,</span>
+    <span class="token attribute attr-name">#[precedence(level=<span class="token string">&quot;1&quot;</span>)]</span> <span class="token attribute attr-name">#[assoc(side=<span class="token string">&quot;left&quot;</span>)]</span>
+    <span class="token operator">&lt;</span>l<span class="token punctuation">:</span><span class="token class-name">Expr</span><span class="token operator">&gt;</span> <span class="token string">&quot;*&quot;</span> <span class="token operator">&lt;</span>r<span class="token punctuation">:</span><span class="token class-name">Expr</span><span class="token operator">&gt;</span> <span class="token operator">=&gt;</span> l <span class="token operator">*</span> r<span class="token punctuation">,</span>
+    <span class="token operator">&lt;</span>l<span class="token punctuation">:</span><span class="token class-name">Expr</span><span class="token operator">&gt;</span> <span class="token string">&quot;/&quot;</span> <span class="token operator">&lt;</span>r<span class="token punctuation">:</span><span class="token class-name">Expr</span><span class="token operator">&gt;</span> <span class="token operator">=&gt;</span> l <span class="token operator">/</span> r<span class="token punctuation">,</span>
+    <span class="token attribute attr-name">#[precedence(level=<span class="token string">&quot;2&quot;</span>)]</span> <span class="token attribute attr-name">#[assoc(side=<span class="token string">&quot;left&quot;</span>)]</span>
+    <span class="token operator">&lt;</span>l<span class="token punctuation">:</span><span class="token class-name">Expr</span><span class="token operator">&gt;</span> <span class="token string">&quot;+&quot;</span> <span class="token operator">&lt;</span>r<span class="token punctuation">:</span><span class="token class-name">Expr</span><span class="token operator">&gt;</span> <span class="token operator">=&gt;</span> l <span class="token operator">+</span> r<span class="token punctuation">,</span>
+    <span class="token operator">&lt;</span>l<span class="token punctuation">:</span><span class="token class-name">Expr</span><span class="token operator">&gt;</span> <span class="token string">&quot;-&quot;</span> <span class="token operator">&lt;</span>r<span class="token punctuation">:</span><span class="token class-name">Expr</span><span class="token operator">&gt;</span> <span class="token operator">=&gt;</span> l <span class="token operator">-</span> r<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Use AST to represent the parsed tree:</p>
+<pre class="language-"><code class="lang-rust"><span class="token comment">// ast.rs</span>
+<span class="token keyword">use</span> <span class="token namespace">std<span class="token punctuation">::</span>fmt<span class="token punctuation">::</span></span><span class="token punctuation">{</span><span class="token class-name">Debug</span><span class="token punctuation">,</span> <span class="token class-name">Error</span><span class="token punctuation">,</span> <span class="token class-name">Formatter</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">pub</span> <span class="token keyword">enum</span> <span class="token type-definition class-name">Expr</span> <span class="token punctuation">{</span>
+    <span class="token class-name">Number</span><span class="token punctuation">(</span><span class="token keyword">i32</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token class-name">Op</span><span class="token punctuation">(</span><span class="token class-name">Box</span><span class="token operator">&lt;</span><span class="token class-name">Expr</span><span class="token operator">&gt;</span><span class="token punctuation">,</span> <span class="token class-name">Opcode</span><span class="token punctuation">,</span> <span class="token class-name">Box</span><span class="token operator">&lt;</span><span class="token class-name">Expr</span><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token class-name">Error</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">pub</span> <span class="token keyword">enum</span> <span class="token type-definition class-name">ExprSymbol</span><span class="token operator">&lt;</span><span class="token lifetime-annotation symbol">&apos;input</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token class-name">NumSymbol</span><span class="token punctuation">(</span><span class="token operator">&amp;</span><span class="token lifetime-annotation symbol">&apos;input</span> <span class="token keyword">str</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token class-name">Op</span><span class="token punctuation">(</span><span class="token class-name">Box</span><span class="token operator">&lt;</span><span class="token class-name">ExprSymbol</span><span class="token operator">&lt;</span><span class="token lifetime-annotation symbol">&apos;input</span><span class="token operator">&gt;&gt;</span><span class="token punctuation">,</span> <span class="token class-name">Opcode</span><span class="token punctuation">,</span> <span class="token class-name">Box</span><span class="token operator">&lt;</span><span class="token class-name">ExprSymbol</span><span class="token operator">&lt;</span><span class="token lifetime-annotation symbol">&apos;input</span><span class="token operator">&gt;&gt;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token class-name">Error</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token attribute attr-name">#[derive(Copy, Clone)]</span>
+<span class="token keyword">pub</span> <span class="token keyword">enum</span> <span class="token type-definition class-name">Opcode</span> <span class="token punctuation">{</span>
+    <span class="token class-name">Mul</span><span class="token punctuation">,</span>
+    <span class="token class-name">Div</span><span class="token punctuation">,</span>
+    <span class="token class-name">Add</span><span class="token punctuation">,</span>
+    <span class="token class-name">Sub</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">impl</span> <span class="token class-name">Debug</span> <span class="token keyword">for</span> <span class="token class-name">Expr</span> <span class="token punctuation">{</span>
+    <span class="token keyword">fn</span> <span class="token function-definition function">fmt</span><span class="token punctuation">(</span><span class="token operator">&amp;</span><span class="token keyword">self</span><span class="token punctuation">,</span> fmt<span class="token punctuation">:</span> <span class="token operator">&amp;</span><span class="token keyword">mut</span> <span class="token class-name">Formatter</span><span class="token operator">&lt;</span><span class="token lifetime-annotation symbol">&apos;_</span><span class="token operator">&gt;</span><span class="token punctuation">)</span> <span class="token punctuation">-&gt;</span> <span class="token class-name">Result</span><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token class-name">Error</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">use</span> <span class="token keyword">self</span><span class="token punctuation">::</span><span class="token class-name">Expr</span><span class="token punctuation">::</span><span class="token operator">*</span><span class="token punctuation">;</span>
+        <span class="token keyword">match</span> <span class="token operator">*</span><span class="token keyword">self</span> <span class="token punctuation">{</span>
+            <span class="token class-name">Number</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token macro property">write!</span><span class="token punctuation">(</span>fmt<span class="token punctuation">,</span> <span class="token string">&quot;{:?}&quot;</span><span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token class-name">Op</span><span class="token punctuation">(</span><span class="token keyword">ref</span> l<span class="token punctuation">,</span> op<span class="token punctuation">,</span> <span class="token keyword">ref</span> r<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token macro property">write!</span><span class="token punctuation">(</span>fmt<span class="token punctuation">,</span> <span class="token string">&quot;({:?} {:?} {:?})&quot;</span><span class="token punctuation">,</span> l<span class="token punctuation">,</span> op<span class="token punctuation">,</span> r<span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token class-name">Error</span> <span class="token operator">=&gt;</span> <span class="token macro property">write!</span><span class="token punctuation">(</span>fmt<span class="token punctuation">,</span> <span class="token string">&quot;error&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">impl</span> <span class="token class-name">Debug</span> <span class="token keyword">for</span> <span class="token class-name">ExprSymbol</span><span class="token operator">&lt;</span><span class="token lifetime-annotation symbol">&apos;_</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">fn</span> <span class="token function-definition function">fmt</span><span class="token punctuation">(</span><span class="token operator">&amp;</span><span class="token keyword">self</span><span class="token punctuation">,</span> fmt<span class="token punctuation">:</span> <span class="token operator">&amp;</span><span class="token keyword">mut</span> <span class="token class-name">Formatter</span><span class="token operator">&lt;</span><span class="token lifetime-annotation symbol">&apos;_</span><span class="token operator">&gt;</span><span class="token punctuation">)</span> <span class="token punctuation">-&gt;</span> <span class="token class-name">Result</span><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token class-name">Error</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">use</span> <span class="token keyword">self</span><span class="token punctuation">::</span><span class="token class-name">ExprSymbol</span><span class="token punctuation">::</span><span class="token operator">*</span><span class="token punctuation">;</span>
+        <span class="token keyword">match</span> <span class="token operator">*</span><span class="token keyword">self</span> <span class="token punctuation">{</span>
+            <span class="token class-name">NumSymbol</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token macro property">write!</span><span class="token punctuation">(</span>fmt<span class="token punctuation">,</span> <span class="token string">&quot;{:?}&quot;</span><span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token class-name">Op</span><span class="token punctuation">(</span><span class="token keyword">ref</span> l<span class="token punctuation">,</span> op<span class="token punctuation">,</span> <span class="token keyword">ref</span> r<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token macro property">write!</span><span class="token punctuation">(</span>fmt<span class="token punctuation">,</span> <span class="token string">&quot;({:?} {:?} {:?})&quot;</span><span class="token punctuation">,</span> l<span class="token punctuation">,</span> op<span class="token punctuation">,</span> r<span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token class-name">Error</span> <span class="token operator">=&gt;</span> <span class="token macro property">write!</span><span class="token punctuation">(</span>fmt<span class="token punctuation">,</span> <span class="token string">&quot;error&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">impl</span> <span class="token class-name">Debug</span> <span class="token keyword">for</span> <span class="token class-name">Opcode</span> <span class="token punctuation">{</span>
+    <span class="token keyword">fn</span> <span class="token function-definition function">fmt</span><span class="token punctuation">(</span><span class="token operator">&amp;</span><span class="token keyword">self</span><span class="token punctuation">,</span> fmt<span class="token punctuation">:</span> <span class="token operator">&amp;</span><span class="token keyword">mut</span> <span class="token class-name">Formatter</span><span class="token operator">&lt;</span><span class="token lifetime-annotation symbol">&apos;_</span><span class="token operator">&gt;</span><span class="token punctuation">)</span> <span class="token punctuation">-&gt;</span> <span class="token class-name">Result</span><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token class-name">Error</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">use</span> <span class="token keyword">self</span><span class="token punctuation">::</span><span class="token class-name">Opcode</span><span class="token punctuation">::</span><span class="token operator">*</span><span class="token punctuation">;</span>
+        <span class="token keyword">match</span> <span class="token operator">*</span><span class="token keyword">self</span> <span class="token punctuation">{</span>
+            <span class="token class-name">Mul</span> <span class="token operator">=&gt;</span> <span class="token macro property">write!</span><span class="token punctuation">(</span>fmt<span class="token punctuation">,</span> <span class="token string">&quot;*&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token class-name">Div</span> <span class="token operator">=&gt;</span> <span class="token macro property">write!</span><span class="token punctuation">(</span>fmt<span class="token punctuation">,</span> <span class="token string">&quot;/&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token class-name">Add</span> <span class="token operator">=&gt;</span> <span class="token macro property">write!</span><span class="token punctuation">(</span>fmt<span class="token punctuation">,</span> <span class="token string">&quot;+&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token class-name">Sub</span> <span class="token operator">=&gt;</span> <span class="token macro property">write!</span><span class="token punctuation">(</span>fmt<span class="token punctuation">,</span> <span class="token string">&quot;-&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<pre class="language-"><code class="lang-rust"><span class="token comment">// grammar.lalrpop</span>
+<span class="token keyword">use</span> <span class="token namespace">std<span class="token punctuation">::</span></span><span class="token keyword">str</span><span class="token punctuation">::</span><span class="token class-name">FromStr</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">crate</span><span class="token module-declaration namespace"><span class="token punctuation">::</span>ast<span class="token punctuation">::</span></span><span class="token punctuation">{</span><span class="token class-name">Expr</span><span class="token punctuation">,</span> <span class="token class-name">Opcode</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+grammar<span class="token punctuation">;</span>
+
+<span class="token keyword">pub</span> <span class="token class-name">Expr</span><span class="token punctuation">:</span> <span class="token class-name">Box</span><span class="token operator">&lt;</span><span class="token class-name">Expr</span><span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token comment">// (1)</span>
+    <span class="token class-name">Expr</span> <span class="token class-name">ExprOp</span> <span class="token class-name">Factor</span> <span class="token operator">=&gt;</span> <span class="token class-name">Box</span><span class="token punctuation">::</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token class-name">Expr</span><span class="token punctuation">::</span><span class="token class-name">Op</span><span class="token punctuation">(</span><span class="token operator">&lt;</span><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">// (2)</span>
+    <span class="token class-name">Factor</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token class-name">ExprOp</span><span class="token punctuation">:</span> <span class="token class-name">Opcode</span> <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token comment">// (3)</span>
+    <span class="token string">&quot;+&quot;</span> <span class="token operator">=&gt;</span> <span class="token class-name">Opcode</span><span class="token punctuation">::</span><span class="token class-name">Add</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;-&quot;</span> <span class="token operator">=&gt;</span> <span class="token class-name">Opcode</span><span class="token punctuation">::</span><span class="token class-name">Sub</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token class-name">Factor</span><span class="token punctuation">:</span> <span class="token class-name">Box</span><span class="token operator">&lt;</span><span class="token class-name">Expr</span><span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token class-name">Factor</span> <span class="token class-name">FactorOp</span> <span class="token class-name">Term</span> <span class="token operator">=&gt;</span> <span class="token class-name">Box</span><span class="token punctuation">::</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token class-name">Expr</span><span class="token punctuation">::</span><span class="token class-name">Op</span><span class="token punctuation">(</span><span class="token operator">&lt;</span><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token class-name">Term</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token class-name">FactorOp</span><span class="token punctuation">:</span> <span class="token class-name">Opcode</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;*&quot;</span> <span class="token operator">=&gt;</span> <span class="token class-name">Opcode</span><span class="token punctuation">::</span><span class="token class-name">Mul</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;/&quot;</span> <span class="token operator">=&gt;</span> <span class="token class-name">Opcode</span><span class="token punctuation">::</span><span class="token class-name">Div</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token class-name">Term</span><span class="token punctuation">:</span> <span class="token class-name">Box</span><span class="token operator">&lt;</span><span class="token class-name">Expr</span><span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token class-name">Num</span> <span class="token operator">=&gt;</span> <span class="token class-name">Box</span><span class="token punctuation">::</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token class-name">Expr</span><span class="token punctuation">::</span><span class="token class-name">Number</span><span class="token punctuation">(</span><span class="token operator">&lt;</span><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;(&quot;</span> <span class="token operator">&lt;</span><span class="token class-name">Expr</span><span class="token operator">&gt;</span> <span class="token string">&quot;)&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token class-name">Num</span><span class="token punctuation">:</span> <span class="token keyword">i32</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">r&quot;[0-9]+&quot;</span> <span class="token operator">=&gt;</span> <span class="token keyword">i32</span><span class="token punctuation">::</span><span class="token function">from_str</span><span class="token punctuation">(</span><span class="token operator">&lt;</span><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">unwrap</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="lexer">Lexer</h2>
+<pre class="language-"><code class="lang-txt">   Num: i32 = r&quot;[0-9]+&quot; =&gt; i32::from_str(&lt;&gt;).unwrap();
+// ~~~  ~~~   ~~~~~~~~~    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+// |    |     |                Action code
+// |    |     Symbol(s) that should match
+// |    Return type
+// Name of nonterminal
+</code></pre>
+<pre class="language-"><code class="lang-txt">        +-------------------+    +---------------------+
+Text -&gt; | Lexer             | -&gt; | Parser              |
+        |                   |    |                     |
+        | Applies regex to  |    | Consumes terminals, |
+        | produce terminals |    | executes your code  |
+        +-------------------+    | as it recognizes    |
+                                 | nonterminals        |
+                                 +---------------------+
+</code></pre>
+<p>&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x4F18;&#x5148;&#x7EA7;&#x95EE;&#x9898;&#xFF1A;&#x4F7F;&#x7528; match &#x663E;&#x5F0F;&#x6307;&#x5B9A;&#x4F18;&#x5148;&#x7EA7;&#x3002;</p>
+<p>Simple match declarations
+&#x7B80;&#x5355; match &#x58F0;&#x660E;</p>
+<p>A match declaration lets you explicitly give the precedence between terminals. In its simplest form, it consists of just ordering regular expressions and string literals into groups, with the higher precedence items coming first. So, for example, we could resolve our conflict above by giving r&quot;[0-9]+&quot; precedence over r&quot;\w+&quot;, thus saying that if something can be lexed as a number, we&apos;ll do that, and otherwise consider it to be an identifier.</p>
+<p>match &#x58F0;&#x660E;&#x5141;&#x8BB8;&#x60A8;&#x663E;&#x5F0F;&#x6307;&#x5B9A;&#x7EC8;&#x7AEF;&#x4E4B;&#x95F4;&#x7684;&#x4F18;&#x5148;&#x7EA7;&#x3002;&#x5728;&#x6700;&#x7B80;&#x5355;&#x7684;&#x5F62;&#x5F0F;&#x4E2D;&#xFF0C;&#x5B83;&#x53EA;&#x5305;&#x62EC;&#x5C06;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x548C;&#x5B57;&#x7B26;&#x4E32;&#x6587;&#x672C;&#x6392;&#x5E8F;&#x5230;&#x7EC4;&#x4E2D;&#xFF0C;&#x4F18;&#x5148;&#x7EA7;&#x8F83;&#x9AD8;&#x7684;&#x9879;&#x6392;&#x5728;&#x6700;&#x524D;&#x9762;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8D4B;&#x4E88; r&#x201C;[0-9]+&#x201C;&#x4F18;&#x5148;&#x4E8E; r&#x201D;\w+&#x201C; &#x6765;&#x89E3;&#x51B3;&#x4E0A;&#x9762;&#x7684;&#x51B2;&#x7A81;&#xFF0C;&#x4ECE;&#x800C;&#x8868;&#x793A;&#x5982;&#x679C;&#x67D0;&#x4E2A;&#x4E1C;&#x897F;&#x53EF;&#x4EE5;&#x88AB;&#x89E3;&#x91CA;&#x4E3A;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x4F1A;&#x8FD9;&#x6837;&#x505A;&#xFF0C;&#x5426;&#x5219;&#x5C31;&#x5C06;&#x5176;&#x89C6;&#x4E3A;&#x6807;&#x8BC6;&#x7B26;&#x3002;</p>
+<pre class="language-"><code class="lang-rust"><span class="token keyword">match</span> <span class="token punctuation">{</span>
+    <span class="token string">r&quot;[0-9]+&quot;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token string">r&quot;\w+&quot;</span><span class="token punctuation">,</span>
+    _
+<span class="token punctuation">}</span>
+</code></pre>
+<p>The final <code>_</code> indicates that other string literals and regular expressions that appear elsewhere in the grammar (e.g., &quot;(&quot; or &quot;22&quot;) should be added into that final level of precedence (without an <code>_</code>, it is illegal to use a terminal that does not appear in the match declaration).</p>
+<p>&#x7ED3;&#x5C3E;&#x7684; <code>_</code> &#x8868;&#x793A;&#x51FA;&#x73B0;&#x5728;&#x8BED;&#x6CD5;&#x4E2D;&#x5176;&#x4ED6;&#x4F4D;&#x7F6E;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6587;&#x5B57;&#x548C;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x201C;&#xFF08;&#x201D; &#x6216; &#x201C;22&#x201D;&#xFF09;&#x5E94;&#x8BE5;&#x6DFB;&#x52A0;&#x5230;&#x6700;&#x7EC8;&#x7684;&#x4F18;&#x5148;&#x7EA7;&#x4E2D;&#xFF08;&#x5982;&#x679C;&#x6CA1;&#x6709; <code>_</code>&#xFF0C;&#x4F7F;&#x7528;&#x672A;&#x51FA;&#x73B0;&#x5728; match &#x58F0;&#x660E;&#x4E2D;&#x7684;&#x7EC8;&#x7ED3;&#x7B26;&#x662F;&#x975E;&#x6CD5;&#x7684;&#xFF09;&#x3002;</p>
+<pre class="language-"><code class="lang-rust"><span class="token comment">// fixed literals get precedence over regular expressions</span>
+<span class="token keyword">match</span> <span class="token punctuation">{</span>
+    <span class="token string">r&quot;[0-9]+&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;22&quot;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token string">r&quot;\w+&quot;</span><span class="token punctuation">,</span>
+    _
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4F7F;&#x7528; match &#x58F0;&#x660E;&#x4E3A;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x547D;&#x540D;&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5C31;&#x4E0D;&#x5FC5;&#x76F4;&#x63A5;&#x5728;&#x8BED;&#x6CD5;&#x4E2D;&#x8F93;&#x5165;&#x5B83;&#x4EEC;&#x3002;</p>
+<pre class="language-"><code class="lang-rust"><span class="token keyword">match</span> <span class="token punctuation">{</span>
+    <span class="token string">r&quot;[0-9]+&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;22&quot;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token string">r&quot;\w+&quot;</span> <span class="token operator">=&gt;</span> <span class="token constant">ID</span><span class="token punctuation">,</span> <span class="token comment">// &lt;-- give a name here</span>
+    _
+<span class="token punctuation">}</span>
+</code></pre>
+<pre class="language-"><code class="lang-rust"><span class="token keyword">pub</span> <span class="token class-name">Term</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token class-name">Num</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;(&quot;</span> <span class="token operator">&lt;</span><span class="token class-name">Term</span><span class="token operator">&gt;</span> <span class="token string">&quot;)&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;22&quot;</span> <span class="token operator">=&gt;</span> <span class="token string">&quot;Twenty-two!&quot;</span><span class="token punctuation">.</span><span class="token function">to_string</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token constant">ID</span> <span class="token operator">=&gt;</span> <span class="token macro property">format!</span><span class="token punctuation">(</span><span class="token string">&quot;Id({})&quot;</span><span class="token punctuation">,</span> <span class="token operator">&lt;</span><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">// &lt;-- changed this</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Customizing skipping between tokens
+&#x81EA;&#x5B9A;&#x4E49;&#x5728;&#x6807;&#x8BB0;&#x4E4B;&#x95F4;&#x8DF3;&#x8FC7;&#xFF08;&#x7528;&#x4E8E;&#x8DF3;&#x8FC7;&#x6CE8;&#x91CA;&#x5185;&#x5BB9;&#xFF09;</p>
+<pre class="language-"><code class="lang-rust"><span class="token keyword">match</span> <span class="token punctuation">{</span>
+    <span class="token string">r&quot;\s*&quot;</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// The default whitespace skipping is disabled if an `ignore pattern` is specified</span>
+    <span class="token string">r&quot;//[^\n\r]*[\n\r]*&quot;</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// Skip `// comments`</span>
+    <span class="token string">r&quot;/\*[^*]*\*+(?:[^/*][^*]*\*+)*/&quot;</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>  <span class="token comment">// Skip `/* comments */`</span>
+<span class="token punctuation">}</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../LearnGameTheory/GameTheory.html" class="navigation navigation-prev " aria-label="Previous page: Learn Game Theory">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../LearnPest/pest.html" class="navigation navigation-next " aria-label="Next page: Learn Pest (Rust)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Learn Lalrpop (Rust)","level":"1.2.9","depth":2,"next":{"title":"Learn Pest (Rust)","level":"1.2.10","depth":2,"path":"Learn/LearnPest/pest.md","ref":"Learn/LearnPest/pest.md","articles":[]},"previous":{"title":"Learn Game Theory","level":"1.2.8","depth":2,"path":"Learn/LearnGameTheory/GameTheory.md","ref":"Learn/LearnGameTheory/GameTheory.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include-codeblock","-lunr","-search","search-pro","expandable-chapters","code","chapter-fold","splitter","github","-highlight","prism","prism-themes","theme-comscore","katex-pp"],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"lang":{"shell":"bash"},"css":["prism-themes/themes/prism-synthwave84.css"]},"github":{"url":"https://github.com/houhuawei23/Notes"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-comscore":{},"prism-themes":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"katex-pp":{},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"Introduction.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"cn","gitbook":"*","description":"This is such a great book!"},"file":{"path":"Learn/LearnLalrpop/Lalrpop.md","mtime":"2024-12-29T11:42:16.441Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-12-29T11:43:04.527Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

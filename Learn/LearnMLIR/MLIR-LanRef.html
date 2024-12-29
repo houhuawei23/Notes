@@ -1,0 +1,1196 @@
+
+<!DOCTYPE HTML>
+<html lang="cn" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Learn MLIR · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-synthwave84.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex-pp/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../LearnRust/Resources.html" />
+    
+    
+    <link rel="prev" href="../LearnPest/pest.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Learn.html">
+            
+                <a href="../Learn.html">
+            
+                    
+                    Learn
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../LearnAIMA/">
+            
+                <a href="../LearnAIMA/">
+            
+                    
+                    Learn AIMA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../LearnConda/Conda.html">
+            
+                <a href="../LearnConda/Conda.html">
+            
+                    
+                    Learn Conda
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../LearnCUDA/CUDA.html">
+            
+                <a href="../LearnCUDA/CUDA.html">
+            
+                    
+                    Learn CUDA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../LearnCV/ComputerVisoin.html">
+            
+                <a href="../LearnCV/ComputerVisoin.html">
+            
+                    
+                    Learn Computer Vision
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../LearnDocker/docker.html">
+            
+                <a href="../LearnDocker/docker.html">
+            
+                    
+                    Learn Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../LearnDrones/Note.html">
+            
+                <a href="../LearnDrones/Note.html">
+            
+                    
+                    Learn Drones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../LearnGameDev/Note.html">
+            
+                <a href="../LearnGameDev/Note.html">
+            
+                    
+                    Learn GameDev
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../LearnGameTheory/GameTheory.html">
+            
+                <a href="../LearnGameTheory/GameTheory.html">
+            
+                    
+                    Learn Game Theory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../LearnLalrpop/Lalrpop.html">
+            
+                <a href="../LearnLalrpop/Lalrpop.html">
+            
+                    
+                    Learn Lalrpop (Rust)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../LearnPest/pest.html">
+            
+                <a href="../LearnPest/pest.html">
+            
+                    
+                    Learn Pest (Rust)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.11" data-path="MLIR-LanRef.html">
+            
+                <a href="MLIR-LanRef.html">
+            
+                    
+                    Learn MLIR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../LearnRust/Resources.html">
+            
+                <a href="../LearnRust/Resources.html">
+            
+                    
+                    Learn Rust
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../LearnROS/ROS.html">
+            
+                <a href="../LearnROS/ROS.html">
+            
+                    
+                    Learn ROS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../PersonalWebsite/Note.html">
+            
+                <a href="../PersonalWebsite/Note.html">
+            
+                    
+                    Learn Personal Website
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../LearnMocCUDA/MocCUDA.html">
+            
+                <a href="../LearnMocCUDA/MocCUDA.html">
+            
+                    
+                    Learn MocCUDA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../LearnPolygeist/Note.html">
+            
+                <a href="../LearnPolygeist/Note.html">
+            
+                    
+                    Learn Polygeist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../LearnPolyhedralModel/Note.html">
+            
+                <a href="../LearnPolyhedralModel/Note.html">
+            
+                    
+                    Learn Polyhedral Compilation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="../LearnROCm/ROCm.html">
+            
+                <a href="../LearnROCm/ROCm.html">
+            
+                    
+                    Learn ROCm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19" data-path="../LearnJinJia2/Jinjia2.html">
+            
+                <a href="../LearnJinJia2/Jinjia2.html">
+            
+                    
+                    Learn JinJia2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../Misc/Misc.html">
+            
+                <a href="../../Misc/Misc.html">
+            
+                    
+                    Misc
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../Misc/00_Links.html">
+            
+                <a href="../../Misc/00_Links.html">
+            
+                    
+                    Useful Links
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../Misc/01_GitHubReps.html">
+            
+                <a href="../../Misc/01_GitHubReps.html">
+            
+                    
+                    Github Reps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../Misc/GitBook.html">
+            
+                <a href="../../Misc/GitBook.html">
+            
+                    
+                    Gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../Misc/Typst.html">
+            
+                <a href="../../Misc/Typst.html">
+            
+                    
+                    Typst
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../Misc/Markdown.html">
+            
+                <a href="../../Misc/Markdown.html">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../Misc/VScode.html">
+            
+                <a href="../../Misc/VScode.html">
+            
+                    
+                    VScode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../Misc/Bochs.html">
+            
+                <a href="../../Misc/Bochs.html">
+            
+                    
+                    Bochs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../../Misc/RegularExp.html">
+            
+                <a href="../../Misc/RegularExp.html">
+            
+                    
+                    Regular Exp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../../Misc/FuzzTesting/FuzzTesting.html">
+            
+                <a href="../../Misc/FuzzTesting/FuzzTesting.html">
+            
+                    
+                    FuzzTesting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../../Misc/PowerShell.html">
+            
+                <a href="../../Misc/PowerShell.html">
+            
+                    
+                    PowerShell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../../Misc/NPM.html">
+            
+                <a href="../../Misc/NPM.html">
+            
+                    
+                    NPM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../../Misc/Fonts.html">
+            
+                <a href="../../Misc/Fonts.html">
+            
+                    
+                    Fonts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../../Misc/Drawing.html">
+            
+                <a href="../../Misc/Drawing.html">
+            
+                    
+                    Drawing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../../Misc/Flatpack">
+            
+                <span>
+            
+                    
+                    Flatpack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../Linux/Linux.html">
+            
+                <a href="../../Linux/Linux.html">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../Linux/Display/Display.html">
+            
+                <a href="../../Linux/Display/Display.html">
+            
+                    
+                    Display
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../Linux/LinuxFamily/LinuxFamily.html">
+            
+                <a href="../../Linux/LinuxFamily/LinuxFamily.html">
+            
+                    
+                    LinuxFamily
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../Linux/UserManagement.html">
+            
+                <a href="../../Linux/UserManagement.html">
+            
+                    
+                    UserManagement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../Linux/InputMethod.html">
+            
+                <a href="../../Linux/InputMethod.html">
+            
+                    
+                    InputMethod
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../Linux/PrintingDrivers.html">
+            
+                <a href="../../Linux/PrintingDrivers.html">
+            
+                    
+                    PrintingDrivers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../PythonLibs/PythonLibs.html">
+            
+                <a href="../../PythonLibs/PythonLibs.html">
+            
+                    
+                    PythonLibs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../PythonLibs/ArgParse.html">
+            
+                <a href="../../PythonLibs/ArgParse.html">
+            
+                    
+                    ArgParse
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../Network/Network.html">
+            
+                <a href="../../Network/Network.html">
+            
+                    
+                    Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../Network/Tailscale.html">
+            
+                <a href="../../Network/Tailscale.html">
+            
+                    
+                    Tailscale
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../Network/Clash.html">
+            
+                <a href="../../Network/Clash.html">
+            
+                    
+                    Cxxxh
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Git
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../Git/git.html">
+            
+                <a href="../../Git/git.html">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../Git/githttps.html">
+            
+                <a href="../../Git/githttps.html">
+            
+                    
+                    githttps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../Git/git-branch.html">
+            
+                <a href="../../Git/git-branch.html">
+            
+                    
+                    git-branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../Git/Github.html">
+            
+                <a href="../../Git/Github.html">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../Papers/Papers.html">
+            
+                <a href="../../Papers/Papers.html">
+            
+                    
+                    Papers
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../Papers/AttentionIsTuringComplete.html">
+            
+                <a href="../../Papers/AttentionIsTuringComplete.html">
+            
+                    
+                    Attention Is Turing Complete
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../Programming/Programming.html">
+            
+                <a href="../../Programming/Programming.html">
+            
+                    
+                    Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../ConfigExamples/ConfigExamples.html">
+            
+                <a href="../../ConfigExamples/ConfigExamples.html">
+            
+                    
+                    ConfigExamples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../ReadingNotes/ReadingNotes.html">
+            
+                <a href="../../ReadingNotes/ReadingNotes.html">
+            
+                    
+                    ReadingNotes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../ReadingNotes/青年在选择职业时的考虑-马克思-1835.html">
+            
+                <a href="../../ReadingNotes/青年在选择职业时的考虑-马克思-1835.html">
+            
+                    
+                    青年在选择职业时的考虑-马克思
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../../ReadingNotes/研究与学风-张申府-1948.html">
+            
+                <a href="../../ReadingNotes/研究与学风-张申府-1948.html">
+            
+                    
+                    研究与学风-张申府-1948
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../../ReadingNotes/论青年修养-张申府-1946.html">
+            
+                <a href="../../ReadingNotes/论青年修养-张申府-1946.html">
+            
+                    
+                    论青年修养-张申府-1946
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../../ReadingNotes/论青年的修养-张闻天-1938.html">
+            
+                <a href="../../ReadingNotes/论青年的修养-张闻天-1938.html">
+            
+                    
+                    论青年的修养-张闻天-1938
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../../ReadingNotes/计算之魂-吴军/">
+            
+                <a href="../../ReadingNotes/计算之魂-吴军/">
+            
+                    
+                    计算之魂
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../../ReadingNotes/语录-毛泽东.html">
+            
+                <a href="../../ReadingNotes/语录-毛泽东.html">
+            
+                    
+                    Mao
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Learn MLIR</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="mlir-language-reference">MLIR Language Reference</h1>
+<p><a href="https://mlir.llvm.org/talks/" target="_blank">text</a>
+<a href="https://www.lei.chat/zh/posts/mlir-codegen-dialects-for-machine-learning-compilers/" target="_blank">text</a>
+<a href="https://www.cnblogs.com/CocoML/p/17632342.html" target="_blank">text</a></p>
+<p>MLIR &#x57FA;&#x672C;&#x4E0A;&#x662F;&#x57FA;&#x4E8E;&#x4E00;&#x79CD;&#x7C7B;&#x56FE;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x8FD9;&#x79CD;&#x7ED3;&#x6784;&#x7531;&#x79F0;&#x4E3A;&#x64CD;&#x4F5C; (Operations) &#x7684;&#x8282;&#x70B9;&#x548C;&#x79F0;&#x4E3A;&#x503C; (Values) &#x7684;&#x8FB9;&#x7EC4;&#x6210;&#x3002;&#x6BCF;&#x4E2A;&#x503C;&#x90FD;&#x662F;&#x7531;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#x6216;&#x5757;&#x53C2;&#x6570; (Block Argument) &#x4EA7;&#x751F;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x5177;&#x6709;&#x7531;&#x7C7B;&#x578B;&#x7CFB;&#x7EDF;&#x5B9A;&#x4E49;&#x7684;&#x503C;&#x7C7B;&#x578B;&#x3002;&#x64CD;&#x4F5C;&#x5305;&#x542B;&#x5728;&#x5757; (Blocks) &#x4E2D;&#xFF0C;&#x5757;&#x5305;&#x542B;&#x5728;&#x533A;&#x57DF; (Regions) &#x4E2D;&#x3002;&#x64CD;&#x4F5C;&#x5728;&#x5176;&#x6240;&#x5C5E;&#x7684;&#x5757;&#x4E2D;&#x662F;&#x6709;&#x987A;&#x5E8F;&#x7684;&#xFF0C;&#x5757;&#x5728;&#x5176;&#x6240;&#x5C5E;&#x7684;&#x533A;&#x57DF;&#x4E2D;&#x4E5F;&#x662F;&#x6709;&#x987A;&#x5E8F;&#x7684;&#xFF0C;&#x5C3D;&#x7BA1;&#x8FD9;&#x79CD;&#x987A;&#x5E8F;&#x5728;&#x67D0;&#x4E9B;&#x7C7B;&#x578B;&#x7684;&#x533A;&#x57DF;&#x4E2D;&#x53EF;&#x80FD;&#x5177;&#x6709;&#x6216;&#x4E0D;&#x5177;&#x6709;&#x8BED;&#x4E49;&#x610F;&#x4E49;&#x3002;&#x64CD;&#x4F5C;&#x8FD8;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x533A;&#x57DF;&#xFF0C;&#x4ECE;&#x800C;&#x80FD;&#x591F;&#x8868;&#x793A;&#x5C42;&#x6B21;&#x7ED3;&#x6784;&#x3002;</p>
+<p>&#x64CD;&#x4F5C;&#x53EF;&#x4EE5;&#x8868;&#x793A;&#x8BB8;&#x591A;&#x4E0D;&#x540C;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x4ECE;&#x9AD8;&#x5C42;&#x6982;&#x5FF5;&#xFF08;&#x5982;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x3001;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x3001;&#x7F13;&#x51B2;&#x533A;&#x5206;&#x914D;&#x3001;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x89C6;&#x56FE;&#x6216;&#x5207;&#x7247;&#x4EE5;&#x53CA;&#x8FDB;&#x7A0B;&#x521B;&#x5EFA;&#xFF09;&#x5230;&#x4F4E;&#x5C42;&#x6982;&#x5FF5;&#xFF08;&#x5982;&#x4E0E;&#x76EE;&#x6807;&#x65E0;&#x5173;&#x7684;&#x7B97;&#x672F;&#x3001;&#x4E0E;&#x76EE;&#x6807;&#x76F8;&#x5173;&#x7684;&#x6307;&#x4EE4;&#x3001;&#x914D;&#x7F6E;&#x5BC4;&#x5B58;&#x5668;&#x548C;&#x903B;&#x8F91;&#x95E8;&#xFF09;&#x3002;&#x8FD9;&#x4E9B;&#x4E0D;&#x540C;&#x7684;&#x6982;&#x5FF5;&#x7531; MLIR &#x4E2D;&#x7684;&#x4E0D;&#x540C;&#x64CD;&#x4F5C;&#x8868;&#x793A;&#xFF0C;&#x5E76;&#x4E14; MLIR &#x4E2D;&#x53EF;&#x7528;&#x7684;&#x64CD;&#x4F5C;&#x96C6;&#x53EF;&#x4EE5;&#x4EFB;&#x610F;&#x6269;&#x5C55;&#x3002;</p>
+<p>MLIR &#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x53EF;&#x6269;&#x5C55;&#x7684;&#x6846;&#x67B6;&#xFF0C;&#x7528;&#x4E8E;&#x5BF9;&#x64CD;&#x4F5C;&#x8FDB;&#x884C;&#x8F6C;&#x6362;&#xFF0C;&#x4F7F;&#x7528;&#x4E86;&#x7F16;&#x8BD1;&#x5668; Passes &#x7684;&#x5E38;&#x89C1;&#x6982;&#x5FF5;&#x3002;&#x5BF9;&#x4EFB;&#x610F;&#x64CD;&#x4F5C;&#x96C6;&#x542F;&#x7528;&#x4EFB;&#x610F;&#x8F6C;&#x6362;&#x96C6;&#x4F1A;&#x5E26;&#x6765;&#x663E;&#x8457;&#x7684;&#x6269;&#x5C55;&#x6311;&#x6218;&#xFF0C;&#x56E0;&#x4E3A;&#x6BCF;&#x4E2A;&#x8F6C;&#x6362;&#x90FD;&#x5FC5;&#x987B;&#x53EF;&#x80FD;&#x8003;&#x8651;&#x5230;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#x7684;&#x8BED;&#x4E49;&#x3002;MLIR &#x901A;&#x8FC7;&#x5141;&#x8BB8;&#x64CD;&#x4F5C;&#x8BED;&#x4E49;&#x4F7F;&#x7528;&#x7279;&#x6027; (Traits) &#x548C;&#x63A5;&#x53E3; (Interfaces) &#x8FDB;&#x884C;&#x62BD;&#x8C61;&#x63CF;&#x8FF0;&#xFF0C;&#x89E3;&#x51B3;&#x4E86;&#x8FD9;&#x4E00;&#x590D;&#x6742;&#x6027;&#xFF0C;&#x4ECE;&#x800C;&#x4F7F;&#x8F6C;&#x6362;&#x80FD;&#x591F;&#x66F4;&#x901A;&#x7528;&#x5730;&#x64CD;&#x4F5C;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x3002;&#x7279;&#x6027;&#x901A;&#x5E38;&#x63CF;&#x8FF0;&#x4E86;&#x5BF9;&#x6709;&#x6548;&#x4E2D;&#x95F4;&#x8868;&#x793A; (IR) &#x7684;&#x9A8C;&#x8BC1;&#x7EA6;&#x675F;&#xFF0C;&#x4ECE;&#x800C;&#x80FD;&#x591F;&#x6355;&#x83B7;&#x5E76;&#x68C0;&#x67E5;&#x590D;&#x6742;&#x7684;&#x4E0D;&#x53D8;&#x91CF;&#x3002;&#xFF08;&#x53C2;&#x89C1; Op vs Operation&#xFF09;</p>
+<p>MLIR &#x7684;&#x4E00;&#x4E2A;&#x660E;&#x663E;&#x5E94;&#x7528;&#x662F;&#x8868;&#x793A;&#x57FA;&#x4E8E;&#x9759;&#x6001;&#x5355;&#x8D4B;&#x503C;&#x5F62;&#x5F0F; (SSA) &#x7684;&#x4E2D;&#x95F4;&#x8868;&#x793A; (IR)&#xFF0C;&#x5982; LLVM &#x6838;&#x5FC3; IR&#xFF0C;&#x4F7F;&#x7528;&#x9002;&#x5F53;&#x7684;&#x64CD;&#x4F5C;&#x7C7B;&#x578B;&#x6765;&#x5B9A;&#x4E49;&#x6A21;&#x5757;&#x3001;&#x51FD;&#x6570;&#x3001;&#x5206;&#x652F;&#x3001;&#x5185;&#x5B58;&#x5206;&#x914D;&#x548C;&#x9A8C;&#x8BC1;&#x7EA6;&#x675F;&#xFF0C;&#x4EE5;&#x786E;&#x4FDD; SSA &#x4E3B;&#x5BFC;&#x6027; (Dominance) &#x5C5E;&#x6027;&#x3002;MLIR &#x5305;&#x542B;&#x4E86;&#x4E00;&#x7EC4;&#x5B9A;&#x4E49;&#x4E86;&#x8FD9;&#x4E9B;&#x7ED3;&#x6784;&#x7684;&#x65B9;&#x8A00; (Dialects)&#x3002;&#x7136;&#x800C;&#xFF0C;MLIR &#x7684;&#x8BBE;&#x8BA1;&#x8DB3;&#x591F;&#x901A;&#x7528;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x8868;&#x793A;&#x5176;&#x4ED6;&#x7C7B;&#x4F3C;&#x7F16;&#x8BD1;&#x5668;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x4F8B;&#x5982;&#x8BED;&#x8A00;&#x524D;&#x7AEF;&#x4E2D;&#x7684;&#x62BD;&#x8C61;&#x8BED;&#x6CD5;&#x6811;&#x3001;&#x76EE;&#x6807;&#x7279;&#x5B9A;&#x540E;&#x7AEF;&#x4E2D;&#x751F;&#x6210;&#x7684;&#x6307;&#x4EE4;&#x6216;&#x9AD8;&#x7EA7;&#x7EFC;&#x5408;&#x5DE5;&#x5177;&#x4E2D;&#x7684;&#x7535;&#x8DEF;&#x3002;</p>
+<p><img src="MLIR-0.png" alt="alt text"></p>
+<p><a href="https://www.zhihu.com/question/435109274" target="_blank">text</a></p>
+<p><img src="MLIR-1.png" alt="alt text"></p>
+<p><img src="MLIR-2.png" alt="alt text"></p>
+<p>&#x5173;&#x4E8E;MLIR&#x57FA;&#x672C;&#x6A21;&#x5757;&#x5B66;&#x4E60;&#x8FC7;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ol>
+<li>Dialect, Attribute, Type, Operation&#xFF1B;&#x60F3;&#x8C61;&#x5982;&#x679C;&#x81EA;&#x5DF1;&#x53BB;&#x5B9E;&#x73B0;&#xFF0C;&#x8BE5;&#x600E;&#x4E48;&#x8BBE;&#x8BA1;&#x7C7B;&#xFF1B;</li>
+<li>DialectConversion&#xFF1B;&#x60F3;&#x8C61;&#x5728;&#x81EA;&#x5DF1;&#x5B9E;&#x73B0;&#x7684;&#x524D;&#x56DB;&#x4E2A;&#x6A21;&#x5757;&#x4E0A;&#xFF0C;&#x5982;&#x4F55;&#x5B9E;&#x73B0;DialectConversion&#xFF1B;</li>
+<li>Interface, Constraint, Trait&#xFF1B;&#x540C;&#x6837;&#xFF0C;&#x60F3;&#x8C61;&#x81EA;&#x5DF1;&#x4F1A;&#x600E;&#x4E48;&#x589E;&#x52A0;&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#xFF1B;</li>
+<li>Transformation, Concalization&#xFF1B;</li>
+<li>Region, Block&#xFF1A;&#x57FA;&#x4E8E;1. &#x8BBE;&#x8BA1;&#x7684;Operation&#xFF0C;&#x4EE5;&#x53CA;4. &#x589E;&#x52A0;&#x7684;Transformation&#xFF0C;&#x60F3;&#x8C61;&#x5982;&#x4F55;&#x5BF9;Operation&#x8FDB;&#x884C;&#x62BD;&#x8C61;&#xFF0C;&#x63D0;&#x53D6;&#x51FA;Region&#x548C;Block&#x7684;&#x6982;&#x5FF5;&#xFF1B;</li>
+<li>Pass&#xFF1B;</li>
+<li>&#x6700;&#x540E;&#x624D;&#x662F;ODS&#x548C;DRR&#x3002;</li>
+</ol>
+<p><a href="https://zhuanlan.zhihu.com/p/446836964" target="_blank">MLIR&#x4E2D;Dialects&#x5206;&#x7C7B;&#x53CA;&#x5173;&#x8054;</a></p>
+<h2 id="openxla">OpenXLA</h2>
+<p><a href="https://openxla.org/" target="_blank">openxla</a></p>
+<p>An open ecosystem of performant, portable, and extensible machine learning (ML) infrastructure components that simplify ML development by defragmenting the tools between frontend frameworks and hardware backends. Built by industry leaders in AI modeling, software, and hardware.</p>
+<p>&#x4E00;&#x4E2A;&#x7531;&#x9AD8;&#x6027;&#x80FD;&#x3001;&#x53EF;&#x79FB;&#x690D;&#x548C;&#x53EF;&#x6269;&#x5C55;&#x7684;&#x673A;&#x5668;&#x5B66;&#x4E60; (ML) &#x57FA;&#x7840;&#x8BBE;&#x65BD;&#x7EC4;&#x4EF6;&#x7EC4;&#x6210;&#x7684;&#x5F00;&#x653E;&#x751F;&#x6001;&#x7CFB;&#x7EDF;&#xFF0C;&#x53EF;&#x901A;&#x8FC7;&#x5BF9;&#x524D;&#x7AEF;&#x6846;&#x67B6;&#x548C;&#x786C;&#x4EF6;&#x540E;&#x7AEF;&#x4E4B;&#x95F4;&#x7684;&#x5DE5;&#x5177;&#x8FDB;&#x884C;&#x788E;&#x7247;&#x6574;&#x7406;&#x6765;&#x7B80;&#x5316; ML &#x5F00;&#x53D1;&#x3002;&#x7531; AI &#x5EFA;&#x6A21;&#x3001;&#x8F6F;&#x4EF6;&#x548C;&#x786C;&#x4EF6;&#x9886;&#x57DF;&#x7684;&#x884C;&#x4E1A;&#x9886;&#x5BFC;&#x8005;&#x6784;&#x5EFA;&#x3002;</p>
+<p><img src="image/MLIR-LanRef/1733556302123.png" alt="1733556302123"></p>
+<h3 id="xla">XLA</h3>
+<p>XLA (Accelerated Linear Algebra) is an open source compiler for machine learning. The XLA compiler takes models from popular frameworks such as PyTorch, TensorFlow, and JAX, and optimizes the models for high-performance execution across different hardware platforms including GPUs, CPUs, and ML accelerators.</p>
+<p>XLA&#xFF08;&#x52A0;&#x901F;&#x7EBF;&#x6027;&#x4EE3;&#x6570;&#xFF09;&#x662F;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x7684;&#x5F00;&#x6E90;&#x7F16;&#x8BD1;&#x5668;&#x3002; XLA &#x7F16;&#x8BD1;&#x5668;&#x91C7;&#x7528;&#x6765;&#x81EA; PyTorch&#x3001;TensorFlow &#x548C; JAX &#x7B49;&#x6D41;&#x884C;&#x6846;&#x67B6;&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x5E76;&#x4F18;&#x5316;&#x6A21;&#x578B;&#xFF0C;&#x4EE5;&#x4FBF;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x786C;&#x4EF6;&#x5E73;&#x53F0;&#xFF08;&#x5305;&#x62EC; GPU&#x3001;CPU &#x548C; ML &#x52A0;&#x901F;&#x5668;&#xFF09;&#x4E0A;&#x5B9E;&#x73B0;&#x9AD8;&#x6027;&#x80FD;&#x6267;&#x884C;&#x3002;</p>
+<h4 id="key-benefits-&#x4E3B;&#x8981;&#x4F18;&#x70B9;">Key benefits &#x4E3B;&#x8981;&#x4F18;&#x70B9;</h4>
+<ul>
+<li><strong>Build anywhere</strong> : XLA is already integrated into leading ML frameworks such as TensorFlow, PyTorch, and JAX.<ul>
+<li>&#x968F;&#x5904;&#x6784;&#x5EFA;&#xFF1A;XLA &#x5DF2;&#x96C6;&#x6210;&#x5230;&#x9886;&#x5148;&#x7684; ML &#x6846;&#x67B6;&#x4E2D;&#xFF0C;&#x4F8B;&#x5982; TensorFlow&#x3001;PyTorch &#x548C; JAX&#x3002;</li>
+</ul>
+</li>
+<li><strong>Run anywhere</strong> : It supports various backends including GPUs, CPUs, and ML accelerators, and includes a pluggable infrastructure to add support for more.<ul>
+<li>&#x968F;&#x5904;&#x8FD0;&#x884C;&#xFF1A;&#x5B83;&#x652F;&#x6301;&#x5404;&#x79CD;&#x540E;&#x7AEF;&#xFF0C;&#x5305;&#x62EC; GPU&#x3001;CPU &#x548C; ML &#x52A0;&#x901F;&#x5668;&#xFF0C;&#x5E76;&#x5305;&#x542B;&#x53EF;&#x63D2;&#x62D4;&#x57FA;&#x7840;&#x8BBE;&#x65BD;&#x4EE5;&#x589E;&#x52A0;&#x5BF9;&#x66F4;&#x591A;&#x540E;&#x7AEF;&#x7684;&#x652F;&#x6301;&#x3002;</li>
+</ul>
+</li>
+<li><strong>Maximize and scale performance</strong> : It optimizes a model&apos;s performance with production-tested optimization passes and automated partitioning for model parallelism.<ul>
+<li>&#x6700;&#x5927;&#x5316;&#x548C;&#x6269;&#x5C55;&#x6027;&#x80FD;&#xFF1A;&#x5B83;&#x901A;&#x8FC7;&#x7ECF;&#x8FC7;&#x751F;&#x4EA7;&#x6D4B;&#x8BD5;&#x7684;&#x4F18;&#x5316;&#x8FC7;&#x7A0B;&#x548C;&#x6A21;&#x578B;&#x5E76;&#x884C;&#x6027;&#x7684;&#x81EA;&#x52A8;&#x5206;&#x533A;&#x6765;&#x4F18;&#x5316;&#x6A21;&#x578B;&#x7684;&#x6027;&#x80FD;&#x3002;</li>
+</ul>
+</li>
+<li><strong>Eliminate complexity</strong> : It leverages the power of <a href="https://mlir.llvm.org/" target="_blank">MLIR</a> to bring the best capabilities into a single compiler toolchain, so you don&apos;t have to manage a range of domain-specific compilers.<ul>
+<li>&#x6D88;&#x9664;&#x590D;&#x6742;&#x6027;&#xFF1A;&#x5B83;&#x5229;&#x7528;&#x4E86; MLIR&#x5C06;&#x6700;&#x4F73;&#x529F;&#x80FD;&#x5F15;&#x5165;&#x5355;&#x4E2A;&#x7F16;&#x8BD1;&#x5668;&#x5DE5;&#x5177;&#x94FE;&#xFF0C;&#x56E0;&#x6B64;&#x60A8;&#x65E0;&#x9700;&#x7BA1;&#x7406;&#x4E00;&#x7CFB;&#x5217;&#x7279;&#x5B9A;&#x4E8E;&#x57DF;&#x7684;&#x7F16;&#x8BD1;&#x5668;&#x3002;</li>
+</ul>
+</li>
+<li><strong>Future ready</strong> : As an open source project, built through a collaboration of leading ML hardware and software vendors, XLA is designed to operate at the cutting-edge of the ML industry.<ul>
+<li>&#x9762;&#x5411;&#x672A;&#x6765;&#xFF1A;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x9879;&#x76EE;&#xFF0C;&#x901A;&#x8FC7;&#x9886;&#x5148;&#x7684; ML &#x786C;&#x4EF6;&#x548C;&#x8F6F;&#x4EF6;&#x4F9B;&#x5E94;&#x5546;&#x7684;&#x5408;&#x4F5C;&#x6784;&#x5EFA;&#xFF0C;XLA &#x65E8;&#x5728;&#x5728; ML &#x884C;&#x4E1A;&#x7684;&#x524D;&#x6CBF;&#x8FD0;&#x884C;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h3 id="stablehlo">StableHLO</h3>
+<p>StableHLO is an operation set for high-level operations (HLO) in machine learning (ML) models. Essentially, it&apos;s a portability layer between different ML frameworks and ML compilers: ML frameworks that produce StableHLO programs are compatible with ML compilers that consume StableHLO programs.</p>
+<p>StableHLO &#x662F;&#x673A;&#x5668;&#x5B66;&#x4E60; (ML) &#x6A21;&#x578B;&#x4E2D;&#x9AD8;&#x7EA7;&#x64CD;&#x4F5C; (HLO) &#x7684;&#x64CD;&#x4F5C;&#x96C6;&#x3002;&#x672C;&#x8D28;&#x4E0A;&#xFF0C;&#x5B83;&#x662F;&#x4E0D;&#x540C; ML &#x6846;&#x67B6;&#x548C; ML &#x7F16;&#x8BD1;&#x5668;&#x4E4B;&#x95F4;&#x7684;&#x53EF;&#x79FB;&#x690D;&#x5C42;&#xFF1A;&#x751F;&#x6210; StableHLO &#x7A0B;&#x5E8F;&#x7684; ML &#x6846;&#x67B6;&#x4E0E;&#x4F7F;&#x7528; StableHLO &#x7A0B;&#x5E8F;&#x7684; ML &#x7F16;&#x8BD1;&#x5668;&#x517C;&#x5BB9;&#x3002;</p>
+<p><img src="image/MLIR-LanRef/1733557044193.png" alt="1733557044193"></p>
+<h3 id="shardy">Shardy</h3>
+<p>Shardy is an MLIR-based tensor partitioning system for all dialects. Built from the collaboration of both the GSPMD and PartIR teams, it incorporates the best of both systems, and the shared experience of both teams and users.</p>
+<p>Shardy &#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E; MLIR &#x7684;&#x5F20;&#x91CF;&#x5212;&#x5206;&#x7CFB;&#x7EDF;&#xFF0C;&#x9002;&#x7528;&#x4E8E;&#x6240;&#x6709;&#x65B9;&#x8A00;&#x3002;&#x5B83;&#x7531; GSPMD &#x548C; PartIR &#x56E2;&#x961F;&#x5408;&#x4F5C;&#x6784;&#x5EFA;&#xFF0C;&#x878D;&#x5408;&#x4E86;&#x4E24;&#x4E2A;&#x7CFB;&#x7EDF;&#x7684;&#x4F18;&#x70B9;&#x4EE5;&#x53CA;&#x56E2;&#x961F;&#x548C;&#x7528;&#x6237;&#x7684;&#x5171;&#x4EAB;&#x4F53;&#x9A8C;&#x3002;</p>
+<h3 id="pjrt">PJRT</h3>
+<p>PJRT is a hardware and framework independent interface for ML compilers and runtimes. It is currently included with the XLA distribution. See the XLA GitHub and documentation for more information on how to use and integrate PJRT.</p>
+<p>PJRT &#x662F;&#x7528;&#x4E8E; ML &#x7F16;&#x8BD1;&#x5668;&#x548C;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x72EC;&#x7ACB;&#x4E8E;&#x786C;&#x4EF6;&#x548C;&#x6846;&#x67B6;&#x7684;&#x63A5;&#x53E3;&#x3002;&#x76EE;&#x524D;&#x5B83;&#x5305;&#x542B;&#x5728; XLA &#x53D1;&#x884C;&#x7248;&#x4E2D;&#x3002;&#x6709;&#x5173;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x548C;&#x96C6;&#x6210; PJRT &#x7684;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x8BF7;&#x53C2;&#x9605; XLA GitHub &#x548C;&#x6587;&#x6863;&#x3002;</p>
+<h2 id="tftensorflow-dialect">TF(TensorFlow) Dialect</h2>
+<p>This dialect maps to TensorFlow operations. &#x8BE5;&#x65B9;&#x8A00;&#x6620;&#x5C04;&#x5230; TensorFlow &#x64CD;&#x4F5C;&#x3002;</p>
+<p>Invariants: &#x4E0D;&#x53D8;&#x91CF;&#xFF1A;</p>
+<ul>
+<li>All values are of Tensor type (in particular, scalars are represented using zero-dimensional tensors);</li>
+<li>&#x6240;&#x6709;&#x503C;&#x90FD;&#x662F; Tensor &#x7C7B;&#x578B;&#xFF08;&#x7279;&#x522B;&#x662F;&#x6807;&#x91CF;&#x4F7F;&#x7528;&#x96F6;&#x7EF4;&#x5F20;&#x91CF;&#x8868;&#x793A;&#xFF09;&#xFF1B;</li>
+</ul>
+<p>TODO: Make invariants more structured so that we can reference them in ops.TODO&#xFF1A;</p>
+<p>&#x4F7F;&#x4E0D;&#x53D8;&#x91CF;&#x66F4;&#x52A0;&#x7ED3;&#x6784;&#x5316;&#xFF0C;&#x4EE5;&#x4FBF;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x64CD;&#x4F5C;&#x4E2D;&#x5F15;&#x7528;&#x5B83;&#x4EEC;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../LearnPest/pest.html" class="navigation navigation-prev " aria-label="Previous page: Learn Pest (Rust)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../LearnRust/Resources.html" class="navigation navigation-next " aria-label="Next page: Learn Rust">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Learn MLIR","level":"1.2.11","depth":2,"next":{"title":"Learn Rust","level":"1.2.12","depth":2,"path":"Learn/LearnRust/Resources.md","ref":"Learn/LearnRust/Resources.md","articles":[]},"previous":{"title":"Learn Pest (Rust)","level":"1.2.10","depth":2,"path":"Learn/LearnPest/pest.md","ref":"Learn/LearnPest/pest.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include-codeblock","-lunr","-search","search-pro","expandable-chapters","code","chapter-fold","splitter","github","-highlight","prism","prism-themes","theme-comscore","katex-pp"],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"lang":{"shell":"bash"},"css":["prism-themes/themes/prism-synthwave84.css"]},"github":{"url":"https://github.com/houhuawei23/Notes"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-comscore":{},"prism-themes":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"katex-pp":{},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"Introduction.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"cn","gitbook":"*","description":"This is such a great book!"},"file":{"path":"Learn/LearnMLIR/MLIR-LanRef.md","mtime":"2024-12-29T11:42:16.443Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-12-29T11:43:04.527Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

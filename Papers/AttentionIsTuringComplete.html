@@ -1,0 +1,1219 @@
+
+<!DOCTYPE HTML>
+<html lang="cn" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Attention Is Turing Complete · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-synthwave84.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex-pp/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Programming/Programming.html" />
+    
+    
+    <link rel="prev" href="Papers.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Learn/Learn.html">
+            
+                <a href="../Learn/Learn.html">
+            
+                    
+                    Learn
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Learn/LearnAIMA/">
+            
+                <a href="../Learn/LearnAIMA/">
+            
+                    
+                    Learn AIMA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Learn/LearnConda/Conda.html">
+            
+                <a href="../Learn/LearnConda/Conda.html">
+            
+                    
+                    Learn Conda
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Learn/LearnCUDA/CUDA.html">
+            
+                <a href="../Learn/LearnCUDA/CUDA.html">
+            
+                    
+                    Learn CUDA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Learn/LearnCV/ComputerVisoin.html">
+            
+                <a href="../Learn/LearnCV/ComputerVisoin.html">
+            
+                    
+                    Learn Computer Vision
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Learn/LearnDocker/docker.html">
+            
+                <a href="../Learn/LearnDocker/docker.html">
+            
+                    
+                    Learn Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../Learn/LearnDrones/Note.html">
+            
+                <a href="../Learn/LearnDrones/Note.html">
+            
+                    
+                    Learn Drones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../Learn/LearnGameDev/Note.html">
+            
+                <a href="../Learn/LearnGameDev/Note.html">
+            
+                    
+                    Learn GameDev
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Learn/LearnGameTheory/GameTheory.html">
+            
+                <a href="../Learn/LearnGameTheory/GameTheory.html">
+            
+                    
+                    Learn Game Theory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../Learn/LearnLalrpop/Lalrpop.html">
+            
+                <a href="../Learn/LearnLalrpop/Lalrpop.html">
+            
+                    
+                    Learn Lalrpop (Rust)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../Learn/LearnPest/pest.html">
+            
+                <a href="../Learn/LearnPest/pest.html">
+            
+                    
+                    Learn Pest (Rust)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../Learn/LearnMLIR/MLIR-LanRef.html">
+            
+                <a href="../Learn/LearnMLIR/MLIR-LanRef.html">
+            
+                    
+                    Learn MLIR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../Learn/LearnRust/Resources.html">
+            
+                <a href="../Learn/LearnRust/Resources.html">
+            
+                    
+                    Learn Rust
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../Learn/LearnROS/ROS.html">
+            
+                <a href="../Learn/LearnROS/ROS.html">
+            
+                    
+                    Learn ROS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../Learn/PersonalWebsite/Note.html">
+            
+                <a href="../Learn/PersonalWebsite/Note.html">
+            
+                    
+                    Learn Personal Website
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../Learn/LearnMocCUDA/MocCUDA.html">
+            
+                <a href="../Learn/LearnMocCUDA/MocCUDA.html">
+            
+                    
+                    Learn MocCUDA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../Learn/LearnPolygeist/Note.html">
+            
+                <a href="../Learn/LearnPolygeist/Note.html">
+            
+                    
+                    Learn Polygeist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../Learn/LearnPolyhedralModel/Note.html">
+            
+                <a href="../Learn/LearnPolyhedralModel/Note.html">
+            
+                    
+                    Learn Polyhedral Compilation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="../Learn/LearnROCm/ROCm.html">
+            
+                <a href="../Learn/LearnROCm/ROCm.html">
+            
+                    
+                    Learn ROCm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19" data-path="../Learn/LearnJinJia2/Jinjia2.html">
+            
+                <a href="../Learn/LearnJinJia2/Jinjia2.html">
+            
+                    
+                    Learn JinJia2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Misc/Misc.html">
+            
+                <a href="../Misc/Misc.html">
+            
+                    
+                    Misc
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Misc/00_Links.html">
+            
+                <a href="../Misc/00_Links.html">
+            
+                    
+                    Useful Links
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Misc/01_GitHubReps.html">
+            
+                <a href="../Misc/01_GitHubReps.html">
+            
+                    
+                    Github Reps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Misc/GitBook.html">
+            
+                <a href="../Misc/GitBook.html">
+            
+                    
+                    Gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Misc/Typst.html">
+            
+                <a href="../Misc/Typst.html">
+            
+                    
+                    Typst
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../Misc/Markdown.html">
+            
+                <a href="../Misc/Markdown.html">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../Misc/VScode.html">
+            
+                <a href="../Misc/VScode.html">
+            
+                    
+                    VScode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../Misc/Bochs.html">
+            
+                <a href="../Misc/Bochs.html">
+            
+                    
+                    Bochs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../Misc/RegularExp.html">
+            
+                <a href="../Misc/RegularExp.html">
+            
+                    
+                    Regular Exp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../Misc/FuzzTesting/FuzzTesting.html">
+            
+                <a href="../Misc/FuzzTesting/FuzzTesting.html">
+            
+                    
+                    FuzzTesting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../Misc/PowerShell.html">
+            
+                <a href="../Misc/PowerShell.html">
+            
+                    
+                    PowerShell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../Misc/NPM.html">
+            
+                <a href="../Misc/NPM.html">
+            
+                    
+                    NPM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../Misc/Fonts.html">
+            
+                <a href="../Misc/Fonts.html">
+            
+                    
+                    Fonts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../Misc/Drawing.html">
+            
+                <a href="../Misc/Drawing.html">
+            
+                    
+                    Drawing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../Misc/Flatpack">
+            
+                <span>
+            
+                    
+                    Flatpack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Linux/Linux.html">
+            
+                <a href="../Linux/Linux.html">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Linux/Display/Display.html">
+            
+                <a href="../Linux/Display/Display.html">
+            
+                    
+                    Display
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Linux/LinuxFamily/LinuxFamily.html">
+            
+                <a href="../Linux/LinuxFamily/LinuxFamily.html">
+            
+                    
+                    LinuxFamily
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Linux/UserManagement.html">
+            
+                <a href="../Linux/UserManagement.html">
+            
+                    
+                    UserManagement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../Linux/InputMethod.html">
+            
+                <a href="../Linux/InputMethod.html">
+            
+                    
+                    InputMethod
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../Linux/PrintingDrivers.html">
+            
+                <a href="../Linux/PrintingDrivers.html">
+            
+                    
+                    PrintingDrivers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../PythonLibs/PythonLibs.html">
+            
+                <a href="../PythonLibs/PythonLibs.html">
+            
+                    
+                    PythonLibs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../PythonLibs/ArgParse.html">
+            
+                <a href="../PythonLibs/ArgParse.html">
+            
+                    
+                    ArgParse
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Network/Network.html">
+            
+                <a href="../Network/Network.html">
+            
+                    
+                    Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Network/Tailscale.html">
+            
+                <a href="../Network/Tailscale.html">
+            
+                    
+                    Tailscale
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Network/Clash.html">
+            
+                <a href="../Network/Clash.html">
+            
+                    
+                    Cxxxh
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Git
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Git/git.html">
+            
+                <a href="../Git/git.html">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Git/githttps.html">
+            
+                <a href="../Git/githttps.html">
+            
+                    
+                    githttps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Git/git-branch.html">
+            
+                <a href="../Git/git-branch.html">
+            
+                    
+                    git-branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../Git/Github.html">
+            
+                <a href="../Git/Github.html">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Papers.html">
+            
+                <a href="Papers.html">
+            
+                    
+                    Papers
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.8.1" data-path="AttentionIsTuringComplete.html">
+            
+                <a href="AttentionIsTuringComplete.html">
+            
+                    
+                    Attention Is Turing Complete
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Programming/Programming.html">
+            
+                <a href="../Programming/Programming.html">
+            
+                    
+                    Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../ConfigExamples/ConfigExamples.html">
+            
+                <a href="../ConfigExamples/ConfigExamples.html">
+            
+                    
+                    ConfigExamples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../ReadingNotes/ReadingNotes.html">
+            
+                <a href="../ReadingNotes/ReadingNotes.html">
+            
+                    
+                    ReadingNotes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../ReadingNotes/青年在选择职业时的考虑-马克思-1835.html">
+            
+                <a href="../ReadingNotes/青年在选择职业时的考虑-马克思-1835.html">
+            
+                    
+                    青年在选择职业时的考虑-马克思
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../ReadingNotes/研究与学风-张申府-1948.html">
+            
+                <a href="../ReadingNotes/研究与学风-张申府-1948.html">
+            
+                    
+                    研究与学风-张申府-1948
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../ReadingNotes/论青年修养-张申府-1946.html">
+            
+                <a href="../ReadingNotes/论青年修养-张申府-1946.html">
+            
+                    
+                    论青年修养-张申府-1946
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../ReadingNotes/论青年的修养-张闻天-1938.html">
+            
+                <a href="../ReadingNotes/论青年的修养-张闻天-1938.html">
+            
+                    
+                    论青年的修养-张闻天-1938
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../ReadingNotes/计算之魂-吴军/">
+            
+                <a href="../ReadingNotes/计算之魂-吴军/">
+            
+                    
+                    计算之魂
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../ReadingNotes/语录-毛泽东.html">
+            
+                <a href="../ReadingNotes/语录-毛泽东.html">
+            
+                    
+                    Mao
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Attention Is Turing Complete</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="attention-is-turing-complete">Attention Is Turing Complete</h1>
+<p>Not yet complete.</p>
+<p><a href="https://dl.acm.org/doi/abs/10.5555/3546258.3546333" target="_blank">Attention Is Turing Complete</a></p>
+<p>TLDR:</p>
+<p>&#x672C;&#x6587;&#x8BC1;&#x660E;&#x4E86; Attention &#x673A;&#x5236;&#x662F;&#x56FE;&#x7075;&#x5B8C;&#x5907;&#x7684;&#xFF0C;&#x672C;&#x6587;&#x6784;&#x9020;&#x4E86;&#x4E00;&#x4E2A;&#x6709;1&#x5C42;Encoder&#x548C;3&#x5C42;Decoder&#x7684;Transformer&#xFF0C;&#x7528;&#x5176;&#x6A21;&#x62DF;&#x4E86;&#x56FE;&#x7075;&#x673A;&#x7684;&#x8BA1;&#x7B97;&#x8FC7;&#x7A0B;&#xFF08;&#x5373;&#x8BA1;&#x7B97;&#x683C;&#x5C40;&#x7684;&#x53D8;&#x5316;&#xFF09;&#x3002;</p>
+<h2 id="abstract">Abstract</h2>
+<p>Alternatives to recurrent neural networks, in particular, architectures based on self-attention, are gaining momentum for processing input sequences. In spite of their relevance, the computational properties of such networks have not yet been fully explored. We study the computational power of the Transformer, one of the most paradigmatic architectures exemplifying self-attention. We show that the Transformer with hard-attention is Turing complete exclusively based on their capacity to compute and access internal dense representations of the data. Our study also reveals some minimal sets of elements needed to obtain this completeness result.</p>
+<p>&#x5FAA;&#x73AF;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x7684;&#x66FF;&#x4EE3;&#x65B9;&#x6848;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x57FA;&#x4E8E;&#x81EA;&#x6CE8;&#x610F;&#x529B;&#x7684;&#x67B6;&#x6784;&#xFF0C;&#x5728;&#x5904;&#x7406;&#x8F93;&#x5165;&#x5E8F;&#x5217;&#x65B9;&#x9762;&#x6B63;&#x5728;&#x83B7;&#x5F97;&#x52A8;&#x529B;&#x3002;&#x5C3D;&#x7BA1;&#x5B83;&#x4EEC;&#x5177;&#x6709;&#x76F8;&#x5173;&#x6027;&#xFF0C;&#x4F46;&#x6B64;&#x7C7B;&#x7F51;&#x7EDC;&#x7684;&#x8BA1;&#x7B97;&#x7279;&#x6027;&#x5C1A;&#x672A;&#x5F97;&#x5230;&#x5145;&#x5206;&#x63A2;&#x7D22;&#x3002;&#x6211;&#x4EEC;&#x7814;&#x7A76;Transformer&#x7684;&#x8BA1;&#x7B97;&#x80FD;&#x529B;&#xFF0C;&#x5B83;&#x662F;&#x4F53;&#x73B0;&#x81EA;&#x6211;&#x6CE8;&#x610F;&#x529B;&#x7684;&#x6700;&#x5177;&#x8303;&#x5F0F;&#x7684;&#x67B6;&#x6784;&#x4E4B;&#x4E00;&#x3002;&#x6211;&#x4EEC;&#x8BC1;&#x660E;&#xFF0C;&#x5177;&#x6709;&#x786C;&#x6CE8;&#x610F;&#x529B;&#x7684;Transformer &#x5B8C;&#x5168;&#x57FA;&#x4E8E;&#x5176;&#x8BA1;&#x7B97;&#x548C;&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5185;&#x90E8;&#x5BC6;&#x96C6;&#x8868;&#x793A;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x662F;&#x56FE;&#x7075;&#x5B8C;&#x5907;&#x7684;&#x3002;&#x6211;&#x4EEC;&#x7684;&#x7814;&#x7A76;&#x8FD8;&#x63ED;&#x793A;&#x4E86;&#x83B7;&#x5F97;&#x8FD9;&#x79CD;&#x5B8C;&#x6574;&#x6027;&#x7ED3;&#x679C;&#x6240;&#x9700;&#x7684;&#x4E00;&#x4E9B;&#x6700;&#x5C0F;&#x5143;&#x7D20;&#x96C6;&#x3002;</p>
+<h2 id="introduction">Introduction</h2>
+<p>&#x5E8F;&#x5217;&#x5230;&#x5E8F;&#x5217;&#x795E;&#x7ECF;&#x7F51;&#x7EDC; &#x6211;&#x4EEC;&#x5BF9;&#x5E8F;&#x5217;&#x5230;&#x5E8F;&#x5217; (seq-to-seq) &#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x67B6;&#x6784;&#x611F;&#x5174;&#x8DA3;,&#x6211;&#x4EEC;&#x63A5;&#x4E0B;&#x6765;&#x5C06;&#x6B63;&#x5F0F;&#x5316;&#x3002;&#x5BF9;&#x4E8E;&#x67D0;&#x4E9B; d &gt; 0,seq-to-seq &#x7F51;&#x7EDC; N &#x63A5;&#x6536;&#x5411;&#x91CF; x&#x2208; Q &#x7684;&#x5E8F;&#x5217; X = (x, . . . . , x) &#x4F5C;&#x4E3A;&#x8F93;&#x5165;,&#x5E76;&#x751F;&#x6210;&#x5411;&#x91CF; y&#x2208; Q &#x7684;&#x5E8F;&#x5217; Y = (y, . . . . , y) &#x4F5C;&#x4E3A;&#x8F93;&#x51FA;&#x3002;&#x5927;&#x591A;&#x6570;&#x8FD9;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x67B6;&#x6784;&#x90FD;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x79CD;&#x5B50;&#x5411;&#x91CF; s &#x548C;&#x4E00;&#x4E9B;&#x505C;&#x6B62;&#x6807;&#x51C6;&#x6765;&#x786E;&#x5B9A;&#x8F93;&#x51FA;&#x7684;&#x957F;&#x5EA6;&#x3002;&#x540E;&#x8005;&#x901A;&#x5E38;&#x57FA;&#x4E8E;&#x7279;&#x5B9A;&#x8F93;&#x51FA;&#x5411;&#x91CF;&#x7684;&#x751F;&#x6210;,&#x79F0;&#x4E3A;&#x5E8F;&#x5217;&#x7ED3;&#x675F;&#x6807;&#x8BB0;&#x3002;&#x76F8;&#x53CD;,&#x5728;&#x6211;&#x4EEC;&#x7684;&#x5F62;&#x5F0F;&#x5316;&#x4E2D;,&#x6211;&#x4EEC;&#x5141;&#x8BB8;&#x7F51;&#x7EDC;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x56FA;&#x5B9A;&#x6570;&#x91CF;&#x7684; r &#x2265; 0 &#x7684;&#x8F93;&#x51FA;&#x5411;&#x91CF;&#x3002;&#x56E0;&#x6B64;,&#x4E3A;&#x65B9;&#x4FBF;&#x8D77;&#x89C1;,&#x6211;&#x4EEC;&#x5C06;&#x4E00;&#x822C;&#x7684; seq-to-seq &#x7F51;&#x7EDC;&#x89C6;&#x4E3A;&#x51FD;&#x6570; N,&#x4F7F;&#x5F97;&#x503C; N (X, s, r) &#x5BF9;&#x5E94;&#x4E8E; Y = (y, y, . . . . , y) &#x5F62;&#x5F0F;&#x7684;&#x8F93;&#x51FA;&#x5E8F;&#x5217;&#x3002;&#x901A;&#x8FC7;&#x6B64;&#x5B9A;&#x4E49;,&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06; seq-to-seq &#x7F51;&#x7EDC;&#x89E3;&#x91CA;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x8BED;&#x8A00;&#x8BC6;&#x522B;&#x5668;,&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
+<p>&#x5B9A;&#x4E49; 1 seq-to-seq &#x8BED;&#x8A00;&#x8BC6;&#x522B;&#x5668;&#x662F;&#x4E00;&#x4E2A;&#x5143;&#x7EC4; A = (&#x3A3;, f, N, s, F),&#x5176;&#x4E2D; &#x3A3; &#x662F;&#x6709;&#x9650;&#x5B57;&#x6BCD;&#x8868;,f : &#x3A3; &#x2192; Q &#x662F;&#x5D4C;&#x5165;&#x51FD;&#x6570;,N &#x662F; seq-to-seq &#x7F51;&#x7EDC;,s &#x2208; Q &#x662F;&#x79CD;&#x5B50;&#x5411;&#x91CF;,F &#x2286; Q&#x662F;&#x4E00;&#x7EC4;&#x6700;&#x7EC8;&#x5411;&#x91CF;&#x3002;&#x6211;&#x4EEC;&#x8BF4; A &#x63A5;&#x53D7;&#x5B57;&#x7B26;&#x4E32; w &#x2208; &#x3A3;,&#x5982;&#x679C;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x6574;&#x6570; r &#x2208; N,&#x4F7F;&#x5F97; N (f (w), s, r) = (y, . . . , y) &#x548C; y&#x2208; F&#x3002;</p>
+<p>A &#x63A5;&#x53D7;&#x7684;&#x8BED;&#x8A00;(&#x7528; L(A) &#x8868;&#x793A;)&#x662F; A &#x63A5;&#x53D7;&#x7684;&#x6240;&#x6709;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x96C6;&#x5408;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5BF9;&#x8BC6;&#x522B;&#x5668;&#x65BD;&#x52A0;&#x4E86;&#x4E24;&#x4E2A;&#x989D;&#x5916;&#x7684;&#x9650;&#x5236;&#x3002;</p>
+<ul>
+<li>&#x5D4C;&#x5165;&#x51FD;&#x6570; f : &#x3A3; &#x2192; Q&#x5E94;&#x8BE5;&#x7531;&#x56FE;&#x7075;&#x673A;&#x4EE5; &#x3A3; &#x5927;&#x5C0F;&#x7684;&#x591A;&#x9879;&#x5F0F;&#x65F6;&#x95F4;&#x8BA1;&#x7B97;&#x3002;&#x8FD9;&#x6DB5;&#x76D6;&#x4E86;&#x8BA1;&#x7B97;&#x7B26;&#x53F7;&#x7684; input &#x5D4C;&#x5165;&#x7684;&#x4E24;&#x79CD;&#x6700;&#x5178;&#x578B;&#x65B9;&#x6CD5;:one-hot &#x7F16;&#x7801;&#x548C;&#x7531;&#x56FA;&#x5B9A;&#x524D;&#x9988;&#x7F51;&#x7EDC;&#x8BA1;&#x7B97;&#x7684;&#x5D4C;&#x5165;&#x3002;</li>
+<li>&#x6B64;&#x5916;,&#x96C6;&#x5408; F &#x4E5F;&#x5E94;&#x8BE5;&#x5728;&#x591A;&#x9879;&#x5F0F;&#x65F6;&#x95F4;&#x5185;&#x53EF;&#x8BC6;&#x522B;;&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x5411;&#x91CF; f ,&#x96B6;&#x5C5E;&#x5EA6; F &#x2208; F &#x5E94;&#x8BE5;&#x7531;&#x5728;&#x591A;&#x9879;&#x5F0F;&#x65F6;&#x95F4;&#x5185;&#x76F8;&#x5BF9;&#x4E8E; f &#x7684;&#x5927;&#x5C0F;(&#x4EE5;&#x4F4D;&#x4E3A;&#x5355;&#x4F4D;)&#x5DE5;&#x4F5C;&#x7684;&#x56FE;&#x7075;&#x673A;&#x51B3;&#x5B9A;&#x3002;&#x8FD9;&#x6DB5;&#x76D6;&#x4E86;&#x4F7F;&#x7528;&#x56FA;&#x5B9A;&#x5E8F;&#x5217;&#x7ED3;&#x675F;&#x5411;&#x91CF;&#x68C0;&#x67E5;&#x76F8;&#x7B49;&#x6027;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;&#x3002;</li>
+</ul>
+<p>&#x6211;&#x4EEC;&#x65BD;&#x52A0;&#x8FD9;&#x4E9B;&#x9650;&#x5236;&#x662F;&#x4E3A;&#x4E86;&#x9632;&#x6B62;&#x901A;&#x8FC7;&#x5728; input embedding &#x6216; stopping &#x6761;&#x4EF6;&#x4E2D;&#x7F16;&#x7801;&#x4EFB;&#x610F;&#x8BA1;&#x7B97;&#x6765;&#x4F5C;&#x5F0A;&#x7684;&#x53EF;&#x80FD;&#x6027;,&#x540C;&#x65F6;&#x8DB3;&#x591F;&#x5BBD;&#x5BB9;&#x5730;&#x6784;&#x5EFA;&#x6709;&#x610F;&#x4E49;&#x7684; embeddings &#x548C; stopping criterions&#x3002;</p>
+<p>&#x56FE;&#x7075;&#x673A;&#x8BA1;&#x7B97; &#x8BA9;&#x6211;&#x4EEC;&#x56DE;&#x987E;&#x4E00;&#x4E0B;,(&#x786E;&#x5B9A;&#x6027;&#x7684;)&#x56FE;&#x7075;&#x673A;&#x662F; M = (Q, &#x3A3;, &#x3B4;, q, F ) &#x5F62;&#x5F0F;&#x7684;&#x5143;&#x7EC4;,&#x5176;&#x4E2D;:</p>
+<p>seq-to-seq &#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x67B6;&#x6784;&#x7684;&#x56FE;&#x7075;&#x5B8C;&#x5907;&#x6027;</p>
+<p>seq-to-seq &#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x67B6;&#x6784;&#x7684; N &#x7C7B;&#x5B9A;&#x4E49;&#x4E86;&#x7C7B; L,&#x8BE5;&#x7C7B;&#x7531;&#x4F7F;&#x7528; N &#x4E2D;&#x7684;&#x7F51;&#x7EDC;&#x7684;&#x8BED;&#x8A00;&#x8BC6;&#x522B;&#x5668;&#x63A5;&#x53D7;&#x7684;&#x6240;&#x6709;&#x8BED;&#x8A00;&#x7EC4;&#x6210;&#x3002;&#x4ECE;&#x8FD9;&#x4E9B;&#x6982;&#x5FF5;&#x4E2D;,N &#x7C7B;&#x7684;&#x56FE;&#x7075;&#x5B8C;&#x5907;&#x6027;&#x7684;&#x5F62;&#x5F0F;&#x5316;&#x81EA;&#x7136;&#x800C;&#x7136;&#x5730;&#x968F;&#x4E4B;&#x800C;&#x6765;&#x3002;</p>
+<p>&#x5B9A;&#x4E49; 2 </p>
+<p>&#x5982;&#x679C; L &#x5305;&#x542B;&#x6240;&#x6709;&#x53EF;&#x5224;&#x5B9A;&#x8BED;&#x8A00;(&#x5373;&#x56FE;&#x7075;&#x673A;&#x53EF;&#x8BC6;&#x522B;&#x7684;&#x6240;&#x6709;&#x8BED;&#x8A00;),&#x5219; seq-to-seq &#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x67B6;&#x6784;&#x7684; N &#x7C7B;&#x4E3A;&#x56FE;&#x7075;&#x5B8C;&#x5907;&#x3002;</p>
+<ol>
+<li>The Transformer architecture</li>
+</ol>
+<p>&#x5728;&#x672C;&#x8282;&#x4E2D;,&#x6211;&#x4EEC;&#x63D0;&#x51FA;&#x4E86; Transformer &#x67B6;&#x6784;&#x7684;&#x5F62;&#x5F0F;&#x5316;(Vaswani et al., 2017),&#x4ECE;&#x51FD;&#x6570;&#x548C;&#x53C2;&#x6570;&#x7684;&#x4E00;&#x4E9B;&#x5177;&#x4F53;&#x9009;&#x62E9;&#x4E2D;&#x62BD;&#x8C61;&#x51FA;&#x6765;&#x3002;&#x6211;&#x4EEC;&#x7684;&#x5F62;&#x5F0F;&#x5316;&#x5E76;&#x4E0D;&#x662F;&#x4E3A;&#x4E86;&#x4EA7;&#x751F; Transformer &#x7684;&#x6709;&#x6548;&#x5B9E;&#x73B0;,&#x800C;&#x662F;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x8BBE;&#x7F6E;,&#x901A;&#x8FC7;&#x8BE5;&#x8BBE;&#x7F6E;&#x53EF;&#x4EE5;&#x4EE5;&#x6B63;&#x5F0F;&#x7684;&#x65B9;&#x5F0F;&#x5EFA;&#x7ACB;&#x5176;&#x6570;&#x5B66;&#x5C5E;&#x6027;&#x3002;</p>
+<p>Transformer &#x5728;&#x5F88;&#x5927;&#x7A0B;&#x5EA6;&#x4E0A;&#x57FA;&#x4E8E;&#x63A5;&#x4E0B;&#x6765;&#x4ECB;&#x7ECD;&#x7684;&#x6CE8;&#x610F;&#x529B;&#x673A;&#x5236;&#x3002;&#x8003;&#x8651;&#x8BC4;&#x5206;&#x51FD;&#x6570; score : Q&#xD7; Q&#x2192; Q &#x548C;&#x5F52;&#x4E00;&#x5316;&#x51FD;&#x6570; &#x3C1; : Q&#x2192; Q,&#x5BF9;&#x4E8E; d&#x3001;n &gt; 0&#x3002;&#x5047;&#x8BBE; q &#x2208; Q,&#x5E76;&#x4E14; K = (k, . . . , k) &#x548C; V = (v, . . . , v) &#x662F; Q &#x4E2D;&#x5143;&#x7D20;&#x7684;&#x5143;&#x7EC4;&#x3002;&#x7531; Att(q, K, V) &#x8868;&#x793A;&#x7684; q-attention over (K, V) &#x662F; Q &#x2208;&#x5411;&#x91CF; a,&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#x3002;</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo fence="true">(</mo><msub><mi>s</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>&#x2026;</mo><mo separator="true">,</mo><msub><mi>s</mi><mi>n</mi></msub><mo fence="true">)</mo></mrow><mo>=</mo><mi>&#x3C1;</mi><mrow><mo fence="true">(</mo><mi mathvariant="normal">score</mi><mo>&#x2061;</mo><mrow><mo fence="true">(</mo><mi mathvariant="bold-italic">q</mi><mo separator="true">,</mo><msub><mi mathvariant="bold-italic">k</mi><mn>1</mn></msub><mo fence="true">)</mo></mrow><mo separator="true">,</mo><mi mathvariant="normal">score</mi><mo>&#x2061;</mo><mrow><mo fence="true">(</mo><mi mathvariant="bold-italic">q</mi><mo separator="true">,</mo><msub><mi mathvariant="bold-italic">k</mi><mn>2</mn></msub><mo fence="true">)</mo></mrow><mo separator="true">,</mo><mo>&#x2026;</mo><mo separator="true">,</mo><mi mathvariant="normal">score</mi><mo>&#x2061;</mo><mrow><mo fence="true">(</mo><mi mathvariant="bold-italic">q</mi><mo separator="true">,</mo><msub><mi mathvariant="bold-italic">k</mi><mi>n</mi></msub><mo fence="true">)</mo></mrow><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+\left(s_{1}, \ldots, s_{n}\right)  =\rho\left(\operatorname{score}\left(\boldsymbol{q}, \boldsymbol{k}_{1}\right), \operatorname{score}\left(\boldsymbol{q}, \boldsymbol{k}_{2}\right), \ldots, \operatorname{score}\left(\boldsymbol{q}, \boldsymbol{k}_{n}\right)\right)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord"><span class="mord mathdefault">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">&#x2026;</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">&#x3C1;</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mop"><span class="mord mathrm">s</span><span class="mord mathrm">c</span><span class="mord mathrm">o</span><span class="mord mathrm">r</span><span class="mord mathrm">e</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.03704em;">q</span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.01852em;">k</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop"><span class="mord mathrm">s</span><span class="mord mathrm">c</span><span class="mord mathrm">o</span><span class="mord mathrm">r</span><span class="mord mathrm">e</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.03704em;">q</span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.01852em;">k</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">&#x2026;</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop"><span class="mord mathrm">s</span><span class="mord mathrm">c</span><span class="mord mathrm">o</span><span class="mord mathrm">r</span><span class="mord mathrm">e</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.03704em;">q</span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.01852em;">k</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="mclose delimcenter" style="top:0em;">)</span></span></span></span></span></span></p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold-italic">a</mi><mo>=</mo><msub><mi>s</mi><mn>1</mn></msub><msub><mi mathvariant="bold-italic">v</mi><mn>1</mn></msub><mo>+</mo><msub><mi>s</mi><mn>2</mn></msub><msub><mi mathvariant="bold-italic">v</mi><mn>2</mn></msub><mo>+</mo><mo>&#x22EF;</mo><mo>+</mo><msub><mi>s</mi><mi>n</mi></msub><msub><mi mathvariant="bold-italic">v</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">
+\boldsymbol{a} =s_{1} \boldsymbol{v}_{1}+s_{2} \boldsymbol{v}_{2}+\cdots+s_{n} \boldsymbol{v}_{n}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.44444em;vertical-align:0em;"></span><span class="mord"><span class="mord"><span class="mord boldsymbol">a</span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.73333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.03704em;">v</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.73333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.03704em;">v</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="minner">&#x22EF;</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.59444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.03704em;">v</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></p>
+<p>&#x901A;&#x5E38;,q &#x79F0;&#x4E3A;&#x67E5;&#x8BE2;,K &#x79F0;&#x4E3A;&#x952E;,V &#x79F0;&#x4E3A;&#x503C;&#x3002;&#x6211;&#x4EEC;&#x5BF9;&#x8BC4;&#x5206;&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x9650;&#x5236;,&#x4F46;&#x6211;&#x4EEC;&#x786E;&#x5B9E;&#x5BF9;&#x5F52;&#x4E00;&#x5316;&#x51FD;&#x6570;&#x65BD;&#x52A0;&#x4E86;&#x4E00;&#x4E9B;&#x9650;&#x5236;,&#x4EE5;&#x786E;&#x4FDD;&#x5B83;&#x5728;&#x6301;&#x4ED3;&#x4E0A;&#x4EA7;&#x751F;&#x6982;&#x7387;&#x5206;&#x5E03;&#x3002;&#x6211;&#x4EEC;&#x8981;&#x6C42;&#x5F52;&#x4E00;&#x5316;&#x51FD;&#x6570;&#x6EE1;&#x8DB3;&#x4EE5;&#x4E0B;&#x6761;&#x4EF6;:&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A; x = (x, . . . , x) &#x2208; Q,&#x6709;&#x4E00;&#x4E2A;&#x51FD;&#x6570; f&#x4ECE; Q &#x5230; Q,&#x4F7F;&#x5F97; &#x3C1;(x) &#x7684;&#x7B2C; i &#x4E2A;&#x5206;&#x91CF; &#x3C1;(x) &#x76F8;&#x7B49;</p>
+<p>j=1 f(x) &#x7684; f(x) &#x3002;&#x6211;&#x4EEC;&#x6CE8;&#x610F;&#x5230;,&#x4F8B;&#x5982;,&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7B80;&#x5355;&#x5730;&#x9009;&#x62E9; f(x) &#x4F5C;&#x4E3A;&#x6307;&#x6570;&#x51FD;&#x6570; e &#x6765;&#x4EE5;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x5B9A;&#x4E49; softmax &#x51FD;&#x6570;,&#x4F46;&#x6211;&#x4EEC;&#x5141;&#x8BB8;&#x5176;&#x4ED6;&#x53EF;&#x80FD;&#x6027;,&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x5C06;&#x89E3;&#x91CA;&#x3002;</p>
+<p>&#x5728;&#x8BC1;&#x660E;&#x53EF;&#x80FD;&#x6027;&#x7ED3;&#x679C;&#x65F6;,&#x6211;&#x4EEC;&#x9700;&#x8981;&#x9009;&#x62E9;&#x7279;&#x5B9A;&#x7684;&#x8BC4;&#x5206;&#x548C;&#x5F52;&#x4E00;&#x5316;&#x51FD;&#x6570;&#x3002;&#x8BC4;&#x5206;&#x51FD;&#x6570;&#x7684;&#x901A;&#x5E38;&#x9009;&#x62E9;&#x662F;&#x7531;&#x5177;&#x6709;&#x8F93;&#x5165; (q, k) &#x7684;&#x524D;&#x9988;&#x7F51;&#x7EDC;&#x5B9A;&#x4E49;&#x7684;&#x975E;&#x7EBF;&#x6027;&#x51FD;&#x6570;,&#x6709;&#x65F6;&#x79F0;&#x4E3A;&#x52A0;&#x6027;&#x6CE8;&#x610F;&#x529B; (Bahdanau et al., 2014)&#x3002;&#x53E6;&#x4E00;&#x79CD;&#x53EF;&#x80FD;&#x6027;&#x662F;&#x4F7F;&#x7528;&#x70B9;&#x79EF; &#x3008;q, k&#x3009;,&#x79F0;&#x4E3A;&#x4E58;&#x6CD5;&#x6CE8;&#x610F;&#x529B; (Vaswani et al., 2017)&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5B9E;&#x9645;&#x4E0A;&#x4F7F;&#x7528;&#x4E86;&#x4E24;&#x8005;&#x7684;&#x7EC4;&#x5408;:&#x4E58;&#x6CD5;&#x6CE8;&#x610F;&#x529B;&#x52A0;&#x4E0A;&#x5B9A;&#x4E49;&#x4E3A; &#x3C3;(g(&#xB7;)) &#x5F62;&#x5F0F;&#x7684;&#x51FD;&#x6570;&#x7EC4;&#x6210;&#x7684;&#x524D;&#x9988;&#x7F51;&#x7EDC;,&#x5176;&#x4E2D; g &#x662F;&#x4EFF;&#x5C04;&#x53D8;&#x6362;,&#x3C3; &#x662F;&#x65B9;&#x7A0B; (1) &#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x5206;&#x6BB5;&#x7EBF;&#x6027; S &#x5F62;&#x6FC0;&#x6D3B;&#x3002;&#x5BF9;&#x4E8E;&#x5F52;&#x4E00;&#x5316;&#x51FD;&#x6570;,softmax &#x662F;&#x4E00;&#x4E2A;&#x6807;&#x51C6;&#x9009;&#x9879;&#x3002;&#x5C3D;&#x7BA1;&#x5982;&#x6B64;,&#x5728;&#x6211;&#x4EEC;&#x7684;&#x8BC1;&#x660E;&#x4E2D;,&#x6211;&#x4EEC;&#x4F7F;&#x7528; hardmax &#x51FD;&#x6570;,&#x5982;&#x679C; x&#x662F; x &#x4E2D;&#x7684;&#x6700;&#x5927;&#x503C;,&#x5219;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E; f(x) = 1 &#x6765;&#x83B7;&#x5F97;,&#x5426;&#x5219;&#x8BBE;&#x7F6E; f(x) = 0&#x3002;&#x56E0;&#x6B64;,&#x5BF9;&#x4E8E;&#x6700;&#x5927;&#x503C;&#x51FA;&#x73B0; r &#x6B21;&#x7684;&#x5411;&#x91CF; x,&#x5982;&#x679C; x&#x662F; x &#x7684;&#x6700;&#x5927;&#x503C;,&#x5219; hardmax(x) = ,&#x5426;&#x5219;&#x4E3A; hardmax(x) = 0&#x3002;&#x6BCF;&#x5F53; hardmax &#x7528;&#x4F5C;&#x5F52;&#x4E00;&#x5316;&#x51FD;&#x6570;&#x65F6;,&#x6211;&#x4EEC;&#x90FD;&#x79F0;&#x5176;&#x4E3A; hard attention&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x89C2;&#x5BDF;&#x4E00;&#x4E0B;,hardmax &#x7684;&#x9009;&#x62E9;&#x5BF9;&#x4E8E;&#x6211;&#x4EEC;&#x7684;&#x8BC1;&#x660E;&#x4EE5;&#x5F53;&#x524D;&#x5F62;&#x5F0F;&#x5DE5;&#x4F5C;&#x81F3;&#x5173;&#x91CD;&#x8981;,&#x56E0;&#x4E3A;&#x5B83;&#x5141;&#x8BB8;&#x6A21;&#x62DF; &#x201C;&#x8BBF;&#x95EE;&#x201D; &#x5411;&#x91CF;&#x5E8F;&#x5217;&#x4E2D;&#x7279;&#x5B9A;&#x4F4D;&#x7F6E;&#x7684;&#x8FC7;&#x7A0B;&#x3002;Hard attention &#x4EE5;&#x524D;&#x4E13;&#x95E8;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x56FE;&#x50CF;(Xu et al., 2015;Elsayed et al., 2019),&#x4F46;&#x662F;,&#x636E;&#x6211;&#x4EEC;&#x6240;&#x77E5;,&#x5B83;&#x5C1A;&#x672A;&#x5728;&#x81EA;&#x6211;&#x6CE8;&#x610F;&#x67B6;&#x6784;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x5E8F;&#x5217;&#x3002;&#x6709;&#x5173;&#x6211;&#x4EEC;&#x5BF9;&#x6B63;&#x7ED3;&#x679C;&#x51FD;&#x6570;&#x7684;&#x9009;&#x62E9;&#x7684;&#x8FDB;&#x4E00;&#x6B65;&#x8BA8;&#x8BBA;,&#x8BF7;&#x53C2;&#x89C1;&#x7B2C; 5 &#x8282;&#x3002;&#x6309;&#x7167;&#x60EF;&#x4F8B;,&#x5BF9;&#x4E8E;&#x51FD;&#x6570; F : Q&#x2192; Q &#x548C;&#x5E8F;&#x5217; X = (x, x, . . . , x),&#x5176;&#x4E2D; x&#x2208; Q,&#x6211;&#x4EEC;&#x5199; F (X) &#x6765;&#x8868;&#x793A;&#x5E8F;&#x5217; (F (x), . . . , F (x))&#x3002;</p>
+<p>Transformer &#x7F16;&#x7801;&#x5668;&#x548C;&#x89E3;&#x7801;&#x5668; </p>
+<p>Transformer &#x7684;&#x5355;&#x5C42;&#x7F16;&#x7801;&#x5668;&#x662F;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x51FD;&#x6570; Enc(&#x3B8;),&#x5176;&#x4E2D; &#x3B8; &#x662F;&#x53C2;&#x6570;,&#x5B83;&#x63A5;&#x6536; Q &#x4E2D;&#x5411;&#x91CF;&#x7684;&#x5E8F;&#x5217; X = (x, . . . , x) &#x4F5C;&#x4E3A;&#x8F93;&#x5165;,&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5E8F;&#x5217; Enc(X; &#x3B8;) = (z, . . . . , z) Q&#x4E2D;&#x4E0E; X &#x957F;&#x5EA6;&#x76F8;&#x540C;&#x7684;&#x5411;&#x91CF;&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BF4;,&#x6211;&#x4EEC;&#x8BA4;&#x4E3A; &#x3B8; &#x4E2D;&#x7684;&#x53C2;&#x6570;&#x662F;&#x53C2;&#x6570;&#x5316;&#x51FD;&#x6570; Q(&#xB7;)&#x3001;K(&#xB7;)&#x3001;V (&#xB7;) &#x548C; O(&#xB7;),&#x5B83;&#x4EEC;&#x90FD;&#x4ECE; Q&#x5230; Q&#x3002;&#x7136;&#x540E;,&#x5355;&#x5C42;&#x7F16;&#x7801;&#x5668;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;</p>
+<p>a= Att(Q(x), K(X), V (X)) + x (4)
+z= O(a) + a (5)</p>
+<p>&#x8BF7;&#x6CE8;&#x610F;,&#x5728;&#x7B49;&#x5F0F; 4 &#x4E2D;,&#x6211;&#x4EEC;&#x5C06;&#x51FD;&#x6570; Q &#x548C; V &#x5206;&#x522B;&#x5E94;&#x7528;&#x4E8E; X &#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x6761;&#x76EE;&#x3002;&#x5728;&#x5B9E;&#x8DF5;&#x4E2D;,Q(&#xB7;)&#x3001;K(&#xB7;)&#x3001;V (&#xB7;) &#x901A;&#x5E38;&#x662F;&#x6307;&#x5B9A;&#x4E3A;&#x7EF4;&#x5EA6; (d &#xD7; d) &#x77E9;&#x9635;&#x7684;&#x7EBF;&#x6027;&#x53D8;&#x6362;,&#x800C; O(&#xB7;) &#x662F;&#x524D;&#x9988;&#x7F51;&#x7EDC;&#x3002;+ xand + asummands &#x901A;&#x5E38;&#x79F0;&#x4E3A;&#x6B8B;&#x5DEE;&#x8FDE;&#x63A5;(He et al., 2016;&#x4ED6;&#x7B49;&#x4EBA;)&#x3002;&#x5F53;&#x7528;&#x4F5C;&#x53C2;&#x6570;&#x7684;&#x7279;&#x5B9A;&#x51FD;&#x6570;&#x4E0D;&#x91CD;&#x8981;&#x65F6;,&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x7F16;&#x5199; Z = Enc(X)&#x3002;</p>
+<p>Transformer &#x7F16;&#x7801;&#x5668;&#x88AB;&#x7B80;&#x5355;&#x5730;&#x5B9A;&#x4E49;&#x4E3A;&#x5355;&#x5C42;&#x7F16;&#x7801;&#x5668;(&#x5177;&#x6709;&#x72EC;&#x7ACB;&#x53C2;&#x6570;)&#x7684;&#x91CD;&#x590D;&#x5E94;&#x7528;,&#x52A0;&#x4E0A;&#x4E24;&#x4E2A;&#x6700;&#x7EC8;&#x53D8;&#x6362;&#x51FD;&#x6570; K(&#xB7;) &#x548C; V (&#xB7;) &#x5E94;&#x7528;&#x4E8E;&#x6700;&#x7EC8;&#x5C42;&#x8F93;&#x51FA;&#x5E8F;&#x5217;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5411;&#x91CF;&#x3002;&#x56E0;&#x6B64;,L &#x5C42; Transformer &#x7F16;&#x7801;&#x5668;&#x7531;&#x4EE5;&#x4E0B;&#x9012;&#x5F52;&#x5B9A;&#x4E49;(1 &#x2264; &apos; &#x2264; L&#x2212;1 &#x4E14; X= X):</p>
+<p>X= Enc(X; &#x3B8;), K = K(X), V = V (X).(6)</p>
+<p>V = V (X) &#x6211;&#x4EEC;&#x5199; (K, V ) = TEnc(X) &#x6765;&#x8868;&#x793A; (K, V ) &#x662F; L &#x5C42;&#x53D8;&#x538B;&#x5668;&#x7F16;&#x7801;&#x5668;&#x5728;&#x8F93;&#x5165;&#x5E8F;&#x5217; X &#x4E0A;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x89E3;&#x7801;&#x5668;</p>
+<p>&#x5355;&#x5C42;&#x89E3;&#x7801;&#x5668;&#x7C7B;&#x4F3C;&#x4E8E;&#x5355;&#x5C42;&#x7F16;&#x7801;&#x5668;,&#x4F46;&#x9700;&#x8981;&#x989D;&#x5916;&#x6CE8;&#x610F;&#x4E00;&#x5BF9;&#x5916;&#x90E8;&#x952E;&#x503C;&#x5411;&#x91CF; (K, V )&#x3002;&#x5355;&#x5C42;&#x89E3;&#x7801;&#x5668;&#x7684;&#x8F93;&#x5165;&#x662F;&#x5E8F;&#x5217; Y = (y, . . . , y) &#x52A0;&#x4E0A;&#x5916;&#x90E8;&#x5BF9; (K, V ),&#x8F93;&#x51FA;&#x662F;&#x4E0E; Y &#x957F;&#x5EA6;&#x76F8;&#x540C;&#x7684;&#x5E8F;&#x5217; Z = (z, . . . . , z) &#x3002;&#x5728;&#x5B9A;&#x4E49;&#x89E3;&#x7801;&#x5668;&#x5C42;&#x65F6;,&#x6211;&#x4EEC;&#x7528; Y &#x8868;&#x793A;&#x5E8F;&#x5217; (y, . . . , y),&#x4E3A; 1 &#x2264; i &#x2264; k&#x3002;&#x8BE5;&#x5C42;&#x7684;&#x8F93;&#x51FA; Z = (z, . . . . , z) &#x4E5F;&#x88AB;&#x53C2;&#x6570;&#x5316;,&#x8FD9;&#x6B21;&#x7531;&#x56DB;&#x4E2A;&#x51FD;&#x6570; Q(&#xB7;)&#x3001;K(&#xB7;)&#x3001;V (&#xB7;) &#x548C; O(&#xB7;) &#x4ECE; Q to Q &#x7EC4;&#x6210;,&#x5E76;&#x4E14;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A; 1 &#x2264; i &#x2264; k &#x5B9A;&#x4E49;&#x5982;&#x4E0B;:</p>
+<p>p= Att(Q(y), K(Y), V (Y)) + y (7) 
+a= Att(p, K, V ) + p (8) 
+z= O(a) + a (9)</p>
+<p>&#x8BF7;&#x6CE8;&#x610F;,&#x5BF9; (K(Y), V (Y)) &#x7684;&#x7B2C;&#x4E00;&#x4E2A;(&#x81EA;&#x6211;)&#x5173;&#x6CE8;&#x4EC5;&#x5728;&#x7D22;&#x5F15; i &#x4E4B;&#x524D;&#x8003;&#x8651; Y &#x7684;&#x5B50;&#x5E8F;&#x5217;,&#x5E76;&#x7528;&#x4E8E;&#x751F;&#x6210;&#x67E5;&#x8BE2; pto &#x5173;&#x6CE8;&#x5916;&#x90E8;&#x5BF9; (K, V)&#x3002;&#x6211;&#x4EEC;&#x5C06; Y &#x548C; (K, V ) &#x4E0A;&#x7684;&#x5355;&#x89E3;&#x7801;&#x5668;&#x5C42;&#x7684;&#x8F93;&#x51FA;&#x8868;&#x793A;&#x4E3A; Dec((K, V ), Y ; &#x3B8;)&#x3002;
+Transformer &#x89E3;&#x7801;&#x5668;&#x662F;&#x5355;&#x5C42;&#x89E3;&#x7801;&#x5668;&#x7684;&#x91CD;&#x590D;&#x5E94;&#x7528;,&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;&#x8F6C;&#x6362;&#x51FD;&#x6570; F : Q&#x2192; Q&#x5E94;&#x7528;&#x4E8E;&#x89E3;&#x7801;&#x5E8F;&#x5217;&#x7684;&#x6700;&#x7EC8;&#x5411;&#x91CF;&#x3002;&#x56E0;&#x6B64;,&#x89E3;&#x7801;&#x5668;&#x7684;&#x8F93;&#x51FA;&#x662F; Q &#x2208;&#x5355;&#x4E2A;&#x5411;&#x91CF; z&#x3002;&#x6B63;&#x5F0F;&#x5730;,L &#x5C42; Transformer &#x89E3;&#x7801;&#x5668;&#x5B9A;&#x4E49;&#x4E3A;</p>
+<p>Y = Dec((K, V ), Y ; &#x3B8;), z = F (y) (1 &#x2264; &apos; &#x2264; L &#x2212; 1 &#x548C; Y = Y ).(10)</p>
+<p>&#x6211;&#x4EEC;&#x4F7F;&#x7528; z = TDec((K, V ), Y ) &#x6765;&#x8868;&#x793A; z &#x662F;&#x8FD9;&#x4E2A; L &#x5C42;&#x53D8;&#x538B;&#x5668;&#x89E3;&#x7801;&#x5668;&#x5728;&#x8F93;&#x5165; Y &#x548C; (K, V) &#x4E0A;&#x7684;&#x8F93;&#x51FA;&#x3002;</p>
+<p>Transformer &#x7684;&#x4E00;&#x4E2A;&#x91CD;&#x8981;&#x9650;&#x5236;&#x662F; Transformer &#x89E3;&#x7801;&#x5668;&#x7684;&#x8F93;&#x51FA;&#x603B;&#x662F;&#x5BF9;&#x5E94;&#x4E8E;&#x67D0;&#x4E9B;&#x6709;&#x9650;&#x5B57;&#x6BCD;&#x393;&#x4E2D;&#x7684;&#x5B57;&#x6BCD;&#x7F16;&#x7801;&#x3002;&#x4ECE;&#x5F62;&#x5F0F;&#x4E0A;&#x8BB2;,&#x9700;&#x8981;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x6709;&#x9650;&#x5B57;&#x6BCD;&#x393;&#x548C;&#x4E00;&#x4E2A;&#x5D4C;&#x5165;&#x51FD;&#x6570; g : &#x393; &#x2192; Q,&#x4F7F;&#x5F97; Transformer &#x89E3;&#x7801;&#x5668;&#x7684;&#x6700;&#x7EC8;&#x53D8;&#x6362;&#x51FD;&#x6570; F &#x5C06; Q &#x4E2D;&#x7684;&#x4EFB;&#x4F55;&#x5411;&#x91CF;&#x6620;&#x5C04;&#x5230; &#x393; &#x4E2D;&#x5B57;&#x6BCD;&#x5D4C;&#x5165;&#x7684;&#x6709;&#x9650;&#x96C6; g(&#x393;) &#x4E2D;&#x7684;&#x5411;&#x91CF;&#x3002;</p>
+<p>&#x5B8C;&#x6574;&#x7684; Transformer </p>
+<p>Transformer &#x7F51;&#x7EDC;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x8F93;&#x5165;&#x5E8F;&#x5217; X&#x3001;&#x4E00;&#x4E2A;&#x79CD;&#x5B50;&#x5411;&#x91CF; y &#x548C;&#x4E00;&#x4E2A;&#x503C; r &#x2208; N&#x3002;&#x5B83;&#x7684;&#x8F93;&#x51FA;&#x662F;&#x4E00;&#x4E2A;&#x5E8F;&#x5217; Y = (y, . . . , y),&#x5B9A;&#x4E49;&#x4E3A;</p>
+<p>y= TDec(TEnc(X), (y, y, . . . , y)), &#x5BF9;&#x4E8E; 0 &#x2264; t &#x2264; r &#x2212; 1&#x3002;(11)</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="bold-italic">y</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mi mathvariant="normal">TDec</mi><mo>&#x2061;</mo><mrow><mo fence="true">(</mo><mi mathvariant="normal">TEnc</mi><mo>&#x2061;</mo><mo stretchy="false">(</mo><mi mathvariant="bold-italic">X</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mrow><mo fence="true">(</mo><msub><mi mathvariant="bold-italic">y</mi><mn>0</mn></msub><mo separator="true">,</mo><msub><mi mathvariant="bold-italic">y</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>&#x2026;</mo><mo separator="true">,</mo><msub><mi mathvariant="bold-italic">y</mi><mi>t</mi></msub><mo fence="true">)</mo></mrow><mo fence="true">)</mo></mrow><mo separator="true">,</mo><mspace width="1em"><mi>f</mi><mi>o</mi><mi>r</mi><mtext>&#xA0;</mtext><mn>0</mn><mo>&#x2264;</mo><mi>t</mi><mo>&#x2264;</mo><mi>r</mi><mo>&#x2212;</mo><mn>1.</mn></mspace></mrow><annotation encoding="application/x-tex">
+\boldsymbol{y}_{t+1}=\operatorname{TDec}\left(\operatorname{TEnc}(\boldsymbol{X}),\left(\boldsymbol{y}_{0}, \boldsymbol{y}_{1}, \ldots, \boldsymbol{y}_{t}\right)\right), \quad for ~ 0 \leq t \leq r-1.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.746911em;vertical-align:-0.302471em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.03704em;">y</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.20696799999999999em;"><span style="top:-2.45586em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">t</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.302471em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop"><span class="mord mathrm">T</span><span class="mord mathrm">D</span><span class="mord mathrm">e</span><span class="mord mathrm">c</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mop"><span class="mord mathrm">T</span><span class="mord mathrm">E</span><span class="mord mathrm">n</span><span class="mord mathrm">c</span></span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.07778em;">X</span></span></span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord"><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.03704em;">y</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.20696799999999996em;"><span style="top:-2.4558600000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">0</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.24414em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.03704em;">y</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.20696799999999996em;"><span style="top:-2.4558600000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.24414em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">&#x2026;</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.03704em;">y</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.18641599999999994em;"><span style="top:-2.4558600000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.24414em;"><span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:1em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mspace nobreak">&#xA0;</span><span class="mord">0</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&#x2264;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span class="mord mathdefault">t</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&#x2264;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">&#x2212;</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">.</span></span></span></span></span>
+&#x6211;&#x4EEC;&#x5C06;&#x53D8;&#x538B;&#x5668;&#x7684;&#x8F93;&#x51FA;&#x5E8F;&#x5217;&#x8868;&#x793A;&#x4E3A; Y = (y, y, . . . . , y) = Trans(X, y, r)&#x3002;</p>
+<p>3.1 &#x6BD4;&#x4F8B;&#x4E0B;&#x7684;&#x4E0D;&#x53D8;&#x6027;</p>
+<p>&#x5982;&#x4E0A;&#x6240;&#x8FF0;,Transformer &#x7F51;&#x7EDC;&#x5728;&#x6355;&#x83B7;&#x8BED;&#x8A00;&#x7684;&#x80FD;&#x529B;&#x65B9;&#x9762;&#x76F8;&#x5F53;&#x5F31;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A; Transformer &#x662F;&#x987A;&#x5E8F;&#x4E0D;&#x53D8;&#x7684;,&#x5373;&#x5B83;&#x4EEC;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE; input &#x4E2D;&#x5143;&#x7D20;&#x7684;&#x76F8;&#x5BF9;&#x987A;&#x5E8F;&#x3002;&#x66F4;&#x6B63;&#x5F0F;&#x5730;&#x8BF4;,&#x4E24;&#x4E2A;&#x76F8;&#x4E92;&#x6392;&#x5217;&#x7684; Importing &#x5E8F;&#x5217;&#x4F1A;&#x4EA7;&#x751F;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x7684;&#x8F93;&#x51FA;&#x3002;&#x8FD9;&#x662F;&#x6CE8;&#x610F;&#x529B;&#x51FD;&#x6570;&#x7684;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#x7684;&#x7ED3;&#x679C;:&#x5982;&#x679C; K = (k, . . . . , k), V = (v, . . . , v) &#x4E14; &#x3C0; : {1, . . . . , n} &#x2192; {1, . . . , n} &#x662F;&#x6392;&#x5217;,&#x5219;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x67E5;&#x8BE2; q,Att(q, K, V ) = Att(q, &#x3C0;(K), &#x3C0;(V ))&#x3002;</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="bold-italic">a</mi><mi>i</mi></msub><mo>=</mo><mi mathvariant="normal">Att</mi><mo>&#x2061;</mo><mrow><mo fence="true">(</mo><mi>Q</mi><mrow><mo fence="true">(</mo><msub><mi mathvariant="bold-italic">x</mi><mi>i</mi></msub><mo fence="true">)</mo></mrow><mo separator="true">,</mo><mi>K</mi><mo stretchy="false">(</mo><mi mathvariant="bold-italic">X</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mi>V</mi><mo stretchy="false">(</mo><mi mathvariant="bold-italic">X</mi><mo stretchy="false">)</mo><mo fence="true">)</mo></mrow><mo>+</mo><msub><mi mathvariant="bold-italic">x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">
+\boldsymbol{a}_{i} =\operatorname{Att}\left(Q\left(\boldsymbol{x}_{i}\right), K(\boldsymbol{X}), V(\boldsymbol{X})\right)+\boldsymbol{x}_{i} 
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.59444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord boldsymbol">a</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop"><span class="mord mathrm">A</span><span class="mord mathrm">t</span><span class="mord mathrm">t</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord mathdefault">Q</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord"><span class="mord"><span class="mord"><span class="mord boldsymbol">x</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.07778em;">X</span></span></span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.07778em;">X</span></span></span><span class="mclose">)</span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.59444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord boldsymbol">x</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="bold-italic">z</mi><mi>i</mi></msub><mo>=</mo><mi>O</mi><mrow><mo fence="true">(</mo><msub><mi mathvariant="bold-italic">a</mi><mi>i</mi></msub><mo fence="true">)</mo></mrow><mo>+</mo><msub><mi mathvariant="bold-italic">a</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">
+ \boldsymbol{z}_{i} =O\left(\boldsymbol{a}_{i}\right)+\boldsymbol{a}_{i}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.59444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.04213em;">z</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord"><span class="mord"><span class="mord"><span class="mord boldsymbol">a</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.59444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord boldsymbol">a</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></p>
+<h2 id="4-transformer-&#x7684;&#x4F4D;&#x7F6E;&#x7F16;&#x7801;&#x7684;&#x56FE;&#x7075;&#x5B8C;&#x5907;&#x6027;">4. Transformer &#x7684;&#x4F4D;&#x7F6E;&#x7F16;&#x7801;&#x7684;&#x56FE;&#x7075;&#x5B8C;&#x5907;&#x6027;</h2>
+<p>&#x5B9A;&#x7406; 6 </p>
+<p>&#x5177;&#x6709;&#x4F4D;&#x7F6E;&#x7F16;&#x7801;&#x7684; Transformer &#x7F51;&#x7EDC;&#x7C7B;&#x662F;&#x56FE;&#x7075;&#x5B8C;&#x5907;&#x7684;&#x3002;&#x6B64;&#x5916;,&#x56FE;&#x7075;&#x5B8C;&#x5907;&#x6027;&#x5373;&#x4F7F;&#x5728;&#x53D7;&#x9650;&#x8BBE;&#x7F6E;&#x4E2D;&#x4E5F;&#x6210;&#x7ACB;,&#x5176;&#x4E2D; n &#x2208; N &#x7684;&#x4F4D;&#x7F6E;&#x5D4C;&#x5165; pos&#xFF08;n&#xFF09; &#x4E2D;&#x552F;&#x4E00;&#x7684;&#x975E;&#x6052;&#x5B9A;&#x503C;&#x662F; n&#x3001;1/n &#x548C; 1/n,&#x5E76;&#x4E14; Transformer &#x7F51;&#x7EDC;&#x5177;&#x6709;&#x5355;&#x4E2A;&#x7F16;&#x7801;&#x5668;&#x5C42;&#x548C;&#x4E09;&#x4E2A;&#x89E3;&#x7801;&#x5668;&#x5C42;&#x3002;</p>
+<p>&#x5B9E;&#x9645;&#x4E0A;,&#x8FD9;&#x4E2A;&#x7ED3;&#x679C;&#x7684;&#x8BC1;&#x660E;&#x663E;&#x793A;&#x4E86;&#x66F4;&#x6709;&#x529B;&#x7684;&#x4E1C;&#x897F;:&#x4E0D;&#x4EC5; Transformers &#x53EF;&#x4EE5;&#x8BC6;&#x522B;&#x56FE;&#x7075;&#x673A;&#x63A5;&#x53D7;&#x7684;&#x6240;&#x6709;&#x8BED;&#x8A00;,&#x5373;&#x6240;&#x8C13;&#x7684;&#x53EF;&#x8BC6;&#x522B;&#x6216;&#x53EF;&#x5224;&#x5B9A;&#x8BED;&#x8A00;;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x8BC6;&#x522B;&#x6240;&#x6709;&#x9012;&#x5F52;&#x53EF;&#x679A;&#x4E3E;&#x6216;&#x534A;&#x53EF;&#x5224;&#x5B9A;&#x7684;&#x8BED;&#x8A00;,&#x8FD9;&#x4E9B;&#x8BED;&#x8A00; L &#x5B58;&#x5728;&#x679A;&#x4E3E; L &#x4E2D;&#x6240;&#x6709;&#x5B57;&#x7B26;&#x4E32;&#x7684; TM&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x63D0;&#x4F9B;&#x5B9A;&#x7406; 6 &#x7684;&#x5B8C;&#x6574;&#x8BC1;&#x660E;&#x3002;&#x4E3A;&#x4E86;&#x53EF;&#x8BFB;&#x6027;,&#x4E00;&#x4E9B;&#x4E2D;&#x95F4;&#x5F15;&#x7406;&#x7684;&#x8BC1;&#x660E;&#x88AB;&#x5F52;&#x5165;&#x9644;&#x5F55;&#x3002;
+&#x8BBE; M = &#xFF08;Q, &#x3A3;, &#x3B4;, q, F &#xFF09; &#x662F;&#x4E00;&#x4E2A;&#x56FE;&#x7075;&#x673A;,&#x5176;&#x78C1;&#x5E26;&#x5411;&#x53F3;&#x662F;&#x65E0;&#x9650;&#x7684;,&#x5E76;&#x5047;&#x8BBE;&#x7279;&#x6B8A;&#x7B26;&#x53F7; # &#x2208; &#x3A3; &#x7528;&#x4E8E;&#x6807;&#x8BB0;&#x78C1;&#x5E26;&#x4E2D;&#x7684;&#x7A7A;&#x767D;&#x4F4D;&#x7F6E;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5BF9; M &#x5728;&#x5904;&#x7406; Importing &#x5B57;&#x7B26;&#x4E32;&#x65F6;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x505A;&#x51FA;&#x4EE5;&#x4E0B;&#x5047;&#x8BBE;:</p>
+<p>M &#x4ECE;&#x72B6;&#x6001; q &#x5F00;&#x59CB;,&#x6307;&#x5411;&#x78C1;&#x5E26;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x8BFB;&#x53D6;&#x7A7A;&#x767D;&#x7B26;&#x53F7; #&#x7684;&#x5355;&#x5143;&#x683C;&#x3002;&#x8F93;&#x5165;&#x5C06;&#x7ACB;&#x5373;&#x5199;&#x5165;&#x7B2C;&#x4E00;&#x4E2A;&#x5355;&#x5143;&#x683C;&#x7684;&#x53F3;&#x4FA7;&#x3002;</p>
+<p>Q &#x5177;&#x6709;&#x7279;&#x6B8A;&#x72B6;&#x6001; qused &#x6765;&#x8BFB;&#x53D6;&#x5B8C;&#x6574;&#x7684;&#x8F93;&#x5165;&#x3002;</p>
+<p>&#x6700;&#x521D;&#xFF08;&#x6B65;&#x9AA4; 0&#xFF09;,M &#x8FC7;&#x6E21;&#x5230;&#x72B6;&#x6001; q,&#x5E76;&#x5C06;&#x5176;&#x5934;&#x90E8;&#x5411;&#x53F3;&#x79FB;&#x52A8;&#x3002;</p>
+<p>&#x5F53;&#x5904;&#x4E8E;&#x72B6;&#x6001;&#x65F6;,qit &#x5411;&#x53F3;&#x79FB;&#x52A8;,&#x76F4;&#x5230;&#x8BFB;&#x53D6;&#x7B26;&#x53F7; #&#x3002;</p>
+<p>&#x4E0D;&#x63A5;&#x53D7;&#x72B6;&#x6001;&#xFF08;F &#x4E2D;&#x7684;&#x72B6;&#x6001;&#xFF09;&#x6CA1;&#x6709;&#x8F6C;&#x6362;&#x3002;</p>
+<p>&#x5F88;&#x5BB9;&#x6613;&#x8BC1;&#x660E;,&#x6BCF;&#x4E2A;&#x901A;&#x7528;&#x7684;&#x56FE;&#x7075;&#x673A;&#x90FD;&#x7B49;&#x540C;&#x4E8E;&#x6EE1;&#x8DB3;&#x4E0A;&#x8FF0;&#x5047;&#x8BBE;&#x7684;&#x56FE;&#x7075;&#x673A;&#x3002;&#x6211;&#x4EEC;&#x8BC1;&#x660E;&#x4E86;&#x53EF;&#x4EE5;&#x6784;&#x5EFA;&#x4E00;&#x4E2A; transformer &#x7F51;&#x7EDC; Transthat &#x80FD;&#x591F;&#x5728;&#x6BCF;&#x4E2A;&#x53EF;&#x80FD;&#x7684;&#x8F93;&#x5165;&#x5B57;&#x7B26;&#x4E32;&#x4E0A;&#x6A21;&#x62DF; M;&#x6216;&#x8005;,&#x66F4;&#x6B63;&#x5F0F;&#x5730;&#x8BF4;,L&#xFF08;M &#xFF09; = L&#xFF08;Trans&#xFF09;&#x3002;
+&#x6784;&#x9020;&#x4EE5;&#x67D0;&#x79CD;&#x65B9;&#x5F0F;&#x53C2;&#x4E0E;&#x5176;&#x4E2D;,&#x5E76;&#x4F7F;&#x7528;&#x4E86;&#x51E0;&#x4E2A;&#x8F85;&#x52A9;&#x5B9A;&#x4E49;&#x548C;&#x4E2D;&#x95F4;&#x7ED3;&#x679C;&#x3002;&#x4E3A;&#x4E86;&#x4FBF;&#x4E8E;&#x9605;&#x8BFB;,&#x6211;&#x4EEC;&#x5C06;&#x6784;&#x9020;&#x548C;&#x8BC1;&#x660E;&#x5206;&#x4E3A;&#x4E09;&#x4E2A;&#x90E8;&#x5206;&#x3002;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x7ED9;&#x51FA;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x7684;&#x7B56;&#x7565;&#x7684;&#x9AD8;&#x7EA7;&#x89C6;&#x56FE;&#x3002;&#x7136;&#x540E;,&#x6211;&#x4EEC;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#x4E86;&#x5B9E;&#x73B0;&#x6211;&#x4EEC;&#x7684;&#x7B56;&#x7565;&#x6240;&#x9700;&#x7684;&#x7F16;&#x7801;&#x5668;&#x548C;&#x89E3;&#x7801;&#x5668;&#x7684;&#x67B6;&#x6784;,&#x6700;&#x540E;&#x6211;&#x4EEC;&#x6B63;&#x5F0F;&#x8BC1;&#x660E;&#x6211;&#x4EEC;&#x67B6;&#x6784;&#x7684;&#x6BCF;&#x4E2A;&#x90E8;&#x5206;&#x90FD;&#x53EF;&#x4EE5;&#x5B9E;&#x9645;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x5728; Transwe &#x7684;&#x7F16;&#x7801;&#x5668;&#x90E8;&#x5206;&#x63A5;&#x6536;&#x5B57;&#x7B26;&#x4E32; w = ss&#xB7; &#xB7; &#xB7;s.&#x6211;&#x4EEC;&#x9996;&#x5148;&#x4F7F;&#x7528;&#x5D4C;&#x5165;&#x51FD;&#x6570;&#x5C06;&#x6BCF;&#x4E2A; sas &#x8868;&#x793A;&#x4E3A; one-hot &#x5411;&#x91CF;,&#x5E76;&#x4E3A;&#x6BCF;&#x4E2A;&#x7D22;&#x5F15;&#x6DFB;&#x52A0;&#x4F4D;&#x7F6E;&#x7F16;&#x7801;&#x3002;&#x7F16;&#x7801;&#x5668;&#x4EA7;&#x751F;&#x8F93;&#x51FA; &#xFF08;K, V&#xFF09;,&#x5176;&#x4E2D; K= &#xFF08;k, . . . , k&#xFF09; &#x548C; V = &#xFF08;v, . . . , v&#xFF09; &#x662F;&#x952E;&#x548C;&#x503C;&#x7684;&#x5E8F;&#x5217;,&#x4F7F;&#x5F97; v&#x5305;&#x542B;&#x6C99;&#x5B50;&#x7684;&#x4FE1;&#x606F; k&#x5305;&#x542B;&#x7B2C; i &#x4E2A;&#x4F4D;&#x7F6E;&#x7F16;&#x7801;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x6211;&#x4EEC;&#x7A0D;&#x540E;&#x4F1A;&#x8BC1;&#x660E;,&#x8FD9;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x5173;&#x6CE8;&#x6BCF;&#x4E2A;&#x7279;&#x5B9A;&#x4F4D;&#x7F6E;,&#x5E76;&#x5C06;&#x6BCF;&#x4E2A;&#x8F93;&#x5165;&#x7B26;&#x53F7;&#x4ECE;&#x7F16;&#x7801;&#x5668;&#x590D;&#x5236;&#x5230;&#x89E3;&#x7801;&#x5668;&#xFF08;&#x53C2;&#x89C1;&#x5F15;&#x7406; 7&#xFF09;&#x3002;</p>
+<p>&#x5728; Transwe &#x7684;&#x89E3;&#x7801;&#x5668;&#x90E8;&#x5206;&#x6A21;&#x62DF; M &#x5728; w = ss&#xB7; &#xB7; &#xB7; &#xB7;s.&#x4E3A;&#x6B64;,&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x4EE5;&#x4E0B;&#x5E8F;&#x5217;&#xFF08;&#x5BF9;&#x4E8E; i &#x2265; 0&#xFF09;:</p>
+<p>q:&#x8BA1;&#x7B97;&#x6B65;&#x9AA4; i &#x4E2D; M &#x7684;&#x72B6;&#x6001; 
+s:&#x6B65;&#x9AA4; i &#x4E2D; M &#x5934;&#x90E8;&#x8BFB;&#x53D6;&#x7684;&#x7B26;&#x53F7; 
+v:&#x6B65;&#x9AA4; i &#x4E2D; M &#x5199;&#x5165;&#x7684;&#x7B26;&#x53F7; 
+m:&#x6B65;&#x9AA4; i &#x4E2D; M &#x5934;&#x90E8;&#x5728;&#x8FC7;&#x6E21;&#x4E2D;&#x79FB;&#x52A8;&#x7684;&#x65B9;&#x5411;</p>
+<p>v = [   q1, s1, x1,
+        q2, s2, x2, x3, x4, x5,
+        s3, x6, s4, x7
+        x8, x9, x10, x11 ],</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Papers.html" class="navigation navigation-prev " aria-label="Previous page: Papers">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Programming/Programming.html" class="navigation navigation-next " aria-label="Next page: Programming">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Attention Is Turing Complete","level":"1.8.1","depth":2,"next":{"title":"Programming","level":"1.9","depth":1,"path":"Programming/Programming.md","ref":"Programming/Programming.md","articles":[]},"previous":{"title":"Papers","level":"1.8","depth":1,"path":"Papers/Papers.md","ref":"Papers/Papers.md","articles":[{"title":"Attention Is Turing Complete","level":"1.8.1","depth":2,"path":"Papers/AttentionIsTuringComplete.md","ref":"Papers/AttentionIsTuringComplete.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["include-codeblock","-lunr","-search","search-pro","expandable-chapters","code","chapter-fold","splitter","github","-highlight","prism","prism-themes","theme-comscore","katex-pp"],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"lang":{"shell":"bash"},"css":["prism-themes/themes/prism-synthwave84.css"]},"github":{"url":"https://github.com/houhuawei23/Notes"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-comscore":{},"prism-themes":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"katex-pp":{},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"Introduction.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"cn","gitbook":"*","description":"This is such a great book!"},"file":{"path":"Papers/AttentionIsTuringComplete.md","mtime":"2024-12-29T11:42:16.643Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-12-29T11:43:04.527Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
