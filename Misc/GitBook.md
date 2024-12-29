@@ -8,6 +8,10 @@ Forget building your own custom docs platform. With GitBook you get beautiful do
 - [gitbook-documentation zh](https://chrisniael.gitbooks.io/gitbook-documentation/content/index.html)
 - [gitbook-cli](https://github.com/GitbookIO/gitbook-cli)
 
+## Extensions
+
+- [include-codeblock](https://github.com/azu/gitbook-plugin-include-codeblock)
+  - `[include](test.py)`
 ## Install
 
 ```bash
@@ -44,3 +48,4 @@ GitBook 约定了下面这些文件的作用：
 - GLOSSARY：术语描述的清单
 
 至少需要一个 README 和 SUMMARY 文件来构建一本书。
+

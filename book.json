@@ -1,8 +1,34 @@
 {
-  "plugins": ["-search", "katex-pp", "code"],
   "description": "This is such a great book!",
   "language": "cn",
   "structure": {
     "readme": "Introduction.md"
+  },
+  "plugins": [
+    "include-codeblock",
+    "-lunr",
+    "-search",
+    "search-pro",
+    "expandable-chapters",
+    "code",
+    "chapter-fold",
+    "splitter",
+    "github",
+    "-highlight",
+    "prism",
+    "prism-themes",
+    "theme-comscore",
+    "katex-pp"
+  ],
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/houhuawei23/Notes"
+    },
+    "prism": {
+      "lang": {
+        "shell": "bash"
+      },
+      "css": ["prism-themes/themes/prism-synthwave84.css"]
+    }
   }
 }
