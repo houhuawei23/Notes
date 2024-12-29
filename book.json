@@ -1,0 +1,8 @@
+{
+  "plugins": ["-search", "katex-pp", "code"],
+  "description": "This is such a great book!",
+  "language": "cn",
+  "structure": {
+    "readme": "Introduction.md"
+  }
+}

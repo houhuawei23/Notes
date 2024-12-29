@@ -11,6 +11,7 @@
   - [liaoxuefeng](https://liaoxuefeng.com/)
   - [Andrej Karpathy blog - 2014](https://karpathy.github.io/)
   - [Why you (yes, you) should blog - 2017](https://medium.com/@racheltho/why-you-yes-you-should-blog-7d2544ac1045)
+  - [Hacker News Daily](https://www.daemonology.net/hn-daily/)
 - Tools
 
   - [pdf-to-txt](https://www.freeconvert.com/pdf-to-txt)
