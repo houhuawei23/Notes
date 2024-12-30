@@ -30,6 +30,28 @@ GitBook 是基于 Node.js 的开源命令行工具，用于输出漂亮的电子
 - [download-pdf-link](https://github.com/show0k/gitbook-plugin-download-pdf-link)
 - [mermaid-newface](https://github.com/TakuroFukamizu/gitbook-plugin-mermaid-newface)
 
+```yaml
+# open base/Notes.pdf
+"get-pdf": {
+  "base": "https://github.com/houhuawei23/Notes/tree/gh-pages",
+  "prefix": "Notes",
+  "label": "Download PDF"
+},
+# open url
+"my-toolbar": {
+  "buttons": [
+    {
+      "label": "下载PDF",
+      "icon": "fa fa-file-pdf-o",
+      "url": "https://github.com/houhuawei23/Notes/tree/gh-pages/Notes.pdf",
+      "position": "left",
+      "text": "下载PDF",
+      "target": "_blank"
+    }
+  ]
+}
+``
+
 ## Install
 
 ```bash
@@ -71,4 +93,13 @@ GitBook 约定了下面这些文件的作用：
 
 ```bash
 gitbook pdf <gitbook-folder-location> <pdf-location>.pdf
+```
+
+```yaml
+# gitbook-action.yml
+- name: Install Calibre (for ebook-convert)
+  run: |
+    sudo apt-get update
+    sudo apt-get install -y calibre
+
 ```

@@ -22,7 +22,7 @@
     "edit-link",
     "back-to-top-button",
     "intopic-toc",
-    "download-pdf-link"
+    "my-toolbar"
   ],
   "pluginsConfig": {
     "github": {
@@ -30,13 +30,19 @@
     },
     "edit-link": {
       "base": "https://github.com/houhuawei23/Notes/edit/main",
-      "label": "Edit This Page"
+      "label": "Edit"
     },
-    "download-pdf-link": {
-      "base": "https://github.com/houhuawei23/Notes/tree/gh-pages/Notes.pdf",
-      "label": {
-        "en": "Download PDF"
-      }
+    "my-toolbar": {
+      "buttons": [
+        {
+          "label": "Download PDF",
+          "icon": "fa fa-file-pdf-o",
+          "url": "https://github.com/houhuawei23/Notes/tree/gh-pages/Notes.pdf",
+          "position": "left",
+          "text": "Download PDF",
+          "target": "_blank"
+        }
+      ]
     }
   },
   "pdf": {
