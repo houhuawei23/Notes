@@ -7,11 +7,19 @@ Forget building your own custom docs platform. With GitBook you get beautiful do
 - [gitbook.com](https://www.gitbook.com/)
 - [gitbook-documentation zh](https://chrisniael.gitbooks.io/gitbook-documentation/content/index.html)
 - [gitbook-cli](https://github.com/GitbookIO/gitbook-cli)
+- [back-to-top-button](https://github.com/stuebersystems/gitbook-plugin-back-to-top-button)
 
 ## Extensions
 
+- [awesome-gitbook-plugins](https://github.com/swapagarwal/awesome-gitbook-plugins?tab=readme-ov-file)
 - [include-codeblock](https://github.com/azu/gitbook-plugin-include-codeblock)
-  - `[include](test.py)`
+- [edit-link](https://github.com/rtCamp/gitbook-plugin-edit-link)
+- [sharing](https://github.com/GitbookIO/plugin-sharing)
+- [terminull](https://github.com/ridaeh/gitbook-plugin-terminull)
+- [intopic-toc](https://github.com/fzankl/gitbook-plugin-intopic-toc)
+- [disqus](https://github.com/GitbookIO/plugin-disqus)
+- [github](https://github.com/GitbookIO/plugin-github)
+
 ## Install
 
 ```bash
@@ -48,4 +56,3 @@ GitBook 约定了下面这些文件的作用：
 - GLOSSARY：术语描述的清单
 
 至少需要一个 README 和 SUMMARY 文件来构建一本书。
-

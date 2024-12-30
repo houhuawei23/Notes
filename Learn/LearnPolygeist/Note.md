@@ -140,7 +140,7 @@ cgeist input.c -S -emit-mlir | mlir-opt --canonicalize --cse > output.mlir
 - 高级同步表示支持新的优化，例如同步消除。
 - 如果同步前的读/写集与同步后的读/写集不冲突，则不需要 synchronize 指令。
 
-```c++
+```cpp
 __global__ void bpnn_layerforward(...) {
   __shared__ float node[HEIGHT];
   __shared__ float weights[HEIGHT][WIDTH];
@@ -192,7 +192,7 @@ parallel_for %i = 0 to N {
 
 Synchronization within control flow (for, if, while, etc) can be lowered by splitting around the control flop and interchanging the parallelism.
 
-```c++
+```cpp
 parallel_for %i = 0 to N {
   for %j = … {
     codeB1(%i, %j);

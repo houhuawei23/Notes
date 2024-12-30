@@ -9,3 +9,4 @@
 
 - [canva: Visual Suite for Everyone](https://www.canva.com/)
   - can draw simple icons from words, e.g. "NUDT SysY Compiler"
+- [milanote: the tool for organizing creative projects](https://milanote.com/)

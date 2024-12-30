@@ -21,7 +21,7 @@
 
 确认 server commit_id
 
-```Bash
+```bash
 # ~/.vscode-server/bin
 # 下载对应的server程序
 # （注意把:${commit_id}替换成对应的Commit ID）

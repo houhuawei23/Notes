@@ -132,7 +132,7 @@ Blocks are organized into a one-dimensional, two-dimensional, or three-dimension
 
 Extending the previous MatAdd() example to handle multiple blocks, the code becomes as follows.
 
-```c++
+```cpp
 // Kernel definition
 __global__ void MatAdd(float A[N][N], float B[N][N],
 float C[N][N]) {
@@ -266,7 +266,7 @@ Programming Massively Parallel Processors： A Hands-on Approach，第二版，�
 
 ### CUDA Examples
 
-```c++
+```cpp
 #include <cuda_runtime.h>
 #include <iostream>
 

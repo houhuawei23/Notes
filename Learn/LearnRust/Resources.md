@@ -47,6 +47,7 @@ Rust OS
 
 Others
 
+- [rust-for-linux](https://rust-for-linux.com/)
 - [一文读懂什么是进程、线程、协程](https://www.cnblogs.com/Survivalist/p/11527949.html)
 - [rust-cli](https://rust-cli.github.io/book/index.html)
 - [Joel on Software](https://www.joelonsoftware.com/)

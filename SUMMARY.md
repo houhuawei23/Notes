@@ -2,6 +2,12 @@
 
 - [Learn](Learn/Learn.md)
   - [Learn AIMA](Learn/LearnAIMA/index.md)
+    - [Ch12](Learn/LearnAIMA/Ch12.md)
+    - Ch13
+      - [BayesianNetwork](Learn/LearnAIMA/Ch13/BayesianNetwork.md)
+      - [Ch13](Learn/LearnAIMA/Ch13/Ch13.md)
+    - Ch18
+      - [Ch18](Learn/LearnAIMA/Ch18/Ch18.md)
   - [Learn Conda](Learn/LearnConda/Conda.md)
   - [Learn CUDA](Learn/LearnCUDA/CUDA.md)
   - [Learn Computer Vision](Learn/LearnCV/ComputerVisoin.md)

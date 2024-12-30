@@ -5,3 +5,5 @@
 - [contributors-img](https://github.com/lacolaco/contributors-img)
 - [all-contributors](https://github.com/all-contributors/all-contributors)
 - [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+
+- [GitHub Actions for GitHub Pges](https://github.com/peaceiris/actions-gh-pages)

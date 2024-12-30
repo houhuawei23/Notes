@@ -58,14 +58,14 @@ Felzenszwalb 等人 [4] 提出 了一种通过将时间复杂度降低到 $O(n) 
 
 ![1734458691623](image/EGO-Planner-2020/1734458691623.png)
 
-a) 通过障碍物的轨迹$\mathbf{\Phi}$会产生多个$\{\mathbf{p},\mathbf{v}\}$配对用于控制点。其中，$\mathbf{p}$是障碍物表面的点，$\mathbf{v}$是从控制点指向$\mathbf{p}$的单位向量。
+a) 通过障碍物的轨迹 $\mathbf{\Phi}$ 会产生多个 $\{\mathbf{p},\mathbf{v}\}$ 配对用于控制点。其中， $\mathbf{p}$ 是障碍物表面的点， $\mathbf{v}$ 是从控制点指向 $\mathbf{p}$ 的单位向量。
 
-b) 与切向量$\mathbf{R}_i$垂直的平面$\mathbf{\Psi}$与$\mathbf{\Gamma}$相交，形成一条线$l$，从中确定出一个$\{\mathbf{p},\mathbf{v}\}$配对。
+b) 与切向量 $\mathbf{R}_i$垂直的平面 $\mathbf{\Psi}$ 与 $\mathbf{\Gamma}$ 相交，形成一条线$l$，从中确定出一个 $\{\mathbf{p},\mathbf{v}\}$ 配对。
 
-c) 距离场定义的切片可视化表示为$d_{ij}=(\mathbf{Q}_{i}-\mathbf{p}_{ij}) \cdot \mathbf{v}_{ij}$。颜色表示距离，箭头表示相同的梯度，即$\mathbf{v}$。其中，$\mathbf{p}$位于零距离平面上。
+c) 距离场定义的切片可视化表示为$d_{ij}=(\mathbf{Q}_{i}-\mathbf{p}_{ij}) \cdot \mathbf{v}_{ij}$ 。颜色表示距离，箭头表示相同的梯度，即 $\mathbf{v}$ 。其中， $\mathbf{p}$ 位于零距离平面上。
 
 $$
-\begin{align*}
+\begin{aligned}
 \textbf{Algorithm 1:} & \quad \text{CheckAndAddObstacleInfo} \\
 \hline
 \textbf{Notation:} & \\
@@ -87,7 +87,7 @@ $$
 10 & \quad \quad \quad Q_j.\text{push\_back}(\{p, v\}) \\
 11 & \quad \quad \text{end for} \\
 12 & \text{end for}
-\end{align*}
+\end{aligned}
 $$
 
 ```Python
@@ -124,26 +124,31 @@ def CheckAndAddObstacleInfo(E, Q):
 
 ```
 
-在本文中，决策变量是`B 样条曲线`的`控制点`$\mathbf{Q}$。 每个$\mathbf{Q}$都独立地拥有自己的环境信息。
+在本文中，决策变量是`B 样条曲线`的`控制点` $\mathbf{Q}$ 。 每个 $\mathbf{Q}$ 都独立地拥有自己的环境信息。
 
-一开始，给定一个满足终端约束条件的朴素`B 样条曲线`$\mathbf{\Phi}$，不考虑碰撞情况。
+一开始，给定一个满足终端约束条件的朴素`B 样条曲线` $\mathbf{\Phi}$ ，不考虑碰撞情况。
 
-然后，优化过程开始。 在每次迭代中检测到`碰撞段`后，生成一个无碰撞路径$\mathbf{\Gamma}$。
+然后，优化过程开始。 在每次迭代中检测到`碰撞段`后，生成一个无碰撞路径 $\mathbf{\Gamma}$ 。
 
-接着，将每个碰撞段的`控制点`$\mathbf{Q}_i$分配到障碍物表面的`锚点`$\mathbf{p}_{ij}$，并带有相应的`斥力方向向量`$ \mathbf{v}_{ij} =\overrightarrow{Q_{i} p\_{i j}}$，如图 2.a 所示。
+```
 
-其中，$i \in \mathbb{N}_+$为`控制点`的索引，$j \in \mathbb{N}$为$\{\mathbf{p},\mathbf{v}\}$对的索引。
 
-注意，每个$\{\mathbf{p},\mathbf{v}\}$对只属于一个特定的`控制点`。为了简洁起见，我们在不引起歧义的情况下省略下标$ij$。 本文中详细的$\{\mathbf{p},\mathbf{v}\}$对生成过程概述在`算法1`中，并在图 3.b 中进行了说明。
+```
+
+接着，将每个碰撞段的`控制点` $\mathbf{Q}_i$ 分配到障碍物表面的`锚点` $\mathbf{p}_{ij}$ ，并带有相应的斥力方向向量 $\mathbf{v}_{ij} =\overrightarrow{Q_{i} p\_{i j}}$ ，如图 2.a 所示。
+
+其中，$i \in \mathbb{N}_+$为`控制点`的索引，$j \in \mathbb{N}$ 为 $\{\mathbf{p},\mathbf{v}\}$ 对的索引。
+
+注意，每个 $\{\mathbf{p},\mathbf{v}\}$ 对只属于一个特定的`控制点`。为了简洁起见，我们在不引起歧义的情况下省略下标$ij$。 本文中详细的 $\{\mathbf{p},\mathbf{v}\}$ 对生成过程概述在`算法1`中，并在图 3.b 中进行了说明。
 为了防止轨迹被拉出当前障碍物前、迭代过程中反复生成 \{p, v\} 对，判断是否为新障碍物的标准 是: 如果控制点 Q*{i} 处于障碍物中时，并且对于当前得到的所有障碍物 j 满足 d*{i j}>0 ，则该障 碍物为新发现的障碍物。从而只计算影响轨迹的障碍物信息，减少运行时间。
 
-然后，将从$\mathbf{Q}_i$到第$j$个障碍物的障碍物距离定义为
+然后，将从 $\mathbf{Q}_i$到第$j$个障碍物的障碍物距离定义为
 
 $$
 d_{i j}=\left(\mathbf{Q}_{i}-\mathbf{p}_{i j}\right) \cdot \mathbf{v}_{i j}
 $$
 
-为了防止轨迹被拉出当前障碍物前、迭代过程中反复生成 $\{p, v\} $对，判断是否为新障碍物的标准 是: 如果控制点$ Q*{i} $处于障碍物中时，并且对于当前得到的所有障碍物$ j $满足 $d*{i j}>0 $，则该障碍物$\mathbf{Q}\_i$才为新发现的障碍物。从而只计算影响轨迹的障碍物信息，减少运行时间。
+为了防止轨迹被拉出当前障碍物前、迭代过程中反复生成 $\{p, v\} $对，判断是否为新障碍物的标准 是: 如果控制点$ Q*{i} $处于障碍物中时，并且对于当前得到的所有障碍物$ j $满足 $d*{i j}>0 $，则该障碍物 $\mathbf{Q}\_i$才为新发现的障碍物。从而只计算影响轨迹的障碍物信息，减少运行时间。
 
 To incorporate necessary environmental awareness into the local planner, we need to explicitly construct an objective function that keeps the trajectory away from obstacles.
 
@@ -169,28 +174,28 @@ Moreover, the proposed method has no requirement for collision-free initializati
 
 #### A. Problem Formulation
 
-在本文中，轨迹由`均匀 B 样条曲线`$\mathbf{\Phi}$参数化，该曲线由：
+在本文中，轨迹由`均匀 B 样条曲线` $\mathbf{\Phi}$ 参数化，该曲线由：
 
 - 其`次数`$p_b$，
-- $N_c$个`控制点`$\left\lbrace \mathbf{Q}_1, \mathbf{Q}\_2, \cdots, \mathbf{Q}_{N_c} \right\rbrace $和
-- `节点向量`$\left\{ t_1, t_2, \cdots, t_M \right\}$唯一确定，
-- 其中$\mathbf{Q}_i \in \mathbb{R}^3$，$t_m \in \mathbb{R}$，$M=N_c+p_b$。
+- $N_c$ 个`控制点` $\left\lbrace \mathbf{Q}_1, \mathbf{Q}\_2, \cdots, \mathbf{Q}_{N_c} \right\rbrace$ 和
+- `节点向量` $\left\{ t_1, t_2, \cdots, t_M \right\}$ 唯一确定，
+- 其中 $\mathbf{Q}_i \in \mathbb{R}^3$，$t_m \in \mathbb{R}$ ，$M=N_c+p_b$ 。
 
-为了简化和提高轨迹评估的效率，我们方法中使用的`B 样条`是`均匀的`，这意味着每个节点与其前一个节点之间有相同的时间间隔$\triangle t=t_{m+1}-t_m$。 本文的问题形式化基于当前最先进的四旋翼机器人局部规划框架 Fast-Planner-19。
+为了简化和提高轨迹评估的效率，我们方法中使用的`B 样条`是`均匀的`，这意味着每个节点与其前一个节点之间有相同的时间间隔 $\triangle t=t_{m+1}-t_m$ 。 本文的问题形式化基于当前最先进的四旋翼机器人局部规划框架 Fast-Planner-19。
 
 ![1734458862280](image/EGO-Planner-2020/1734458862280.png)
 
-B-样条具有`凸包性质`。 该性质表明 B-样条曲线的单个区间仅由$p_b+1$个连续控制点控制，并位于这些点的凸包内。 例如，在$(t_i, t_{i+1})$区间内的一个区段位于由$\{\mathbf{Q}_{i-p_b}, \mathbf{Q}_{i-p_b+1}, \cdots, \mathbf{Q}_i\}$形成的凸包内。
+B-样条具有`凸包性质`。 该性质表明 B-样条曲线的单个区间仅由$p_b+1$个连续控制点控制，并位于这些点的凸包内。 例如，在 $(t_i, t_{i+1})$ 区间内的一个区段位于由 $\{\mathbf{Q}_{i-p_b}, \mathbf{Q}_{i-p_b+1}, \cdots, \mathbf{Q}_i\}$ 形成的凸包内。
 
-另一个性质是 B-样条的$k$阶导数仍然是一个具有次数$p_{b,k}=p_b-k$的 B-样条。
+另一个性质是 B-样条的 $k$ 阶导数仍然是一个具有次数 $p_{b,k}=p_b-k$ 的 B-样条。
 
-由于$\triangle t$与$\mathbf{\Phi}$独立，速度$\mathbf{V}_i$、加速度$\mathbf{A}_i$和加加速度$\mathbf{J}_i$曲线的控制点可以通过如下公式获得：
+由于 $\triangle t$与 $\mathbf{\Phi}$ 独立，速度 $\mathbf{V}_i$、加速度 $\mathbf{A}_i$和加加速度 $\mathbf{J}_i$ 曲线的控制点可以通过如下公式获得：
 
 $$
 \mathbf{V}_{i}=\frac{\mathbf{Q}_{i+1}-\mathbf{Q}_{i}}{\triangle t}, \mathbf{A}_{i}=\frac{\mathbf{V}_{i+1}-\mathbf{V}_{i}}{\triangle t}, \mathbf{J}_{i}=\frac{\mathbf{A}_{i+1}-\mathbf{A}_{i}}{\triangle t}
 $$
 
-我们遵循 [15] 的工作，在差分平坦输出空间的缩减空间中规划控制点$\mathbf{Q} \in \mathbb{R}^3$（根据无人机的微分平坦特性降低要规划的变量）。 优化问题的表述如下：
+我们遵循 [15] 的工作，在差分平坦输出空间的缩减空间中规划控制点 $\mathbf{Q} \in \mathbb{R}^3$（根据无人机的微分平坦特性降低要规划的变量）。 优化问题的表述如下：
 
 $$
 \min _{\mathbf{Q}} J=\lambda_{s} J_{s}+\lambda_{c} J_{c}+\lambda_{d} J_{d},
@@ -226,13 +231,13 @@ $$
 \begin{array}{rlr}j_{c}(i, j) & =\left\{\begin{array}{lr}0 & \left(c_{i j} \leq 0\right) \\\\ c_{i j}^{3} & \left(0<c_{i j} \leq s_{f}\right) \\\\ 3 s_{f} c_{i j}^{2}-3 s_{f}^{2} c_{i j}+s_{f}^{3} & \left(c_{i j}>s_{f}\right)\end{array}\right.\end{array}
 $$
 
-其中$c_{i j} =s_{f}-d_{i j}$，$j_c(i,j)$ 是由 $\{\mathbf{p},\mathbf{v}\}_j$ 对于 $\mathbf{Q}_i$ 产生的 cost。 每个 $\mathbf{Q}_i$ 的成本是独立评估的，并且从所有对应的 $\{\mathbf{p},\mathbf{v}\}_j$ 对中累积。 因此，如果一个控制点发现了更多的障碍物，它将获得更高的`轨迹变形权重`。 具体来说，第 $i$ 个控制点的成本值为 $j_c(\mathbf{Q}_i)=\sum_{j=1}^{N_p} j_c(i,j)$，其中 $N_p$ 是属于 $\mathbf{Q}_i$ 的 $\{\mathbf{p},\mathbf{v}\}_j$ 对的数量。 将所有 $\mathbf{Q}_i$ 上的成本组合在一起得到总成本 $J_c$，即：
+其中$c_{i j} =s_{f}-d_{i j}$ ，$j_c(i,j)$ 是由 $\{\mathbf{p},\mathbf{v}\}_j$ 对于 $\mathbf{Q}_i$ 产生的 cost。 每个 $\mathbf{Q}_i$ 的成本是独立评估的，并且从所有对应的 $\{\mathbf{p},\mathbf{v}\}_j$ 对中累积。 因此，如果一个控制点发现了更多的障碍物，它将获得更高的`轨迹变形权重`。 具体来说，第 $i$ 个控制点的成本值为 $j_c(\mathbf{Q}_i)=\sum_{j=1}^{N_p} j_c(i,j)$，其中 $N_p$ 是属于 $\mathbf{Q}_i$ 的 $\{\mathbf{p},\mathbf{v}\}_j$ 对的数量。 将所有 $\mathbf{Q}_i$ 上的成本组合在一起得到总成本 $J_c$，即：
 
 $$
 J_{c}=\sum_{i=1}^{N_{c}} j_{c}\left(\mathbf{Q}_{i}\right).
 $$
 
-与传统的基于 ESDF 的方法（Usenko et al., 2017; Zhou et al., 2019）不同，传统方法通过在场上进行三线性插值来计算梯度，而我们通过直接`闭式计算` $J_c$相对于$\mathbf{Q}_i$的导数来获得梯度：
+与传统的基于 ESDF 的方法（Usenko et al., 2017; Zhou et al., 2019）不同，传统方法通过在场上进行三线性插值来计算梯度，而我们通过直接`闭式计算` $J_c$相对于 $\mathbf{Q}_i$的导数来获得梯度：
 
 $$
 \frac{\partial J_{c}}{\partial \mathbf{Q}_{i}}=\sum_{i=1}^{N_{c}} \sum_{j=1}^{N_{p}} \mathbf{v}_{i j}\left\{\begin{array}{lr}0 & \left(c_{i j} \leq 0\right) \\ -3 c_{i j}^{2} & \left(0<c_{i j} \leq s_{f}\right) \\ -6 s_{f} c_{i j}+3 s_{f}^{2} & \left(c_{i j}>s_{f}\right)\end{array}\right.
@@ -248,7 +253,7 @@ $$
 $|\mathbf{\Phi}^{(k)}_r(t)| < \mathbf{\Phi}^{(k)}_{r,max}$
 $$
 
-其中$r \in \{x, y, z\}$表示每个维度。
+其中$r \in \{x, y, z\}$ 表示每个维度。
 
 由于凸包性质，限制控制点的导数就足以限制整个 B 样条曲线。 因此，罚函数可以表示为：
 
@@ -266,7 +271,7 @@ $$
 f\left(c_{r}\right)=\left\{\begin{array}{lr}a_{1} c_{r}^{2}+b_{1} c_{r}+c_{1} & \left(c_{r} \leq-c_{j}\right) \\\\ \left(-\lambda c_{m}-c_{r}\right)^{3} & \left(-c_{j}<c_{r}<-\lambda c_{m}\right) \\\\ 0 & \left(-\lambda c_{m} \leq c_{r} \leq \lambda c_{m}\right) \\\\ \left(c_{r}-\lambda c_{m}\right)^{3} & \left(\lambda c_{m}<c_{r}<c_{j}\right) \\\\ a_{2} c_{r}^{2}+b_{2} c_{r}+c_{2} & \left(c_{r} \geq c_{j}\right)\end{array}\right.
 $$
 
-其中，$c_r \in \mathbf{C} \in \{\mathbf{V}_{i}, \mathbf{A}_{i}, \mathbf{J}_{i}\}$，$a_1,b_1,c_1,a_2,b_2,c_2$用于满足函数二阶连续性的条件，$c_m$ 是导数的限制，$c_j$ 是二次区间和三次区间的分割点。 $\lambda<1-\epsilon$ 是一个弹性系数，其中 $\epsilon\ll1$，以使最终结果满足约束条件，因为成本函数是所有加权项的权衡。
+其中，$c_r \in \mathbf{C} \in \{\mathbf{V}_{i}, \mathbf{A}_{i}, \mathbf{J}_{i}\}$ ，$a_1,b_1,c_1,a_2,b_2,c_2$用于满足函数二阶连续性的条件，$c_m$ 是导数的限制，$c_j$ 是二次区间和三次区间的分割点。 $\lambda<1-\epsilon$ 是一个弹性系数，其中 $\epsilon\ll1$，以使最终结果满足约束条件，因为成本函数是所有加权项的权衡。
 
 #### B. Numerical Optimization 数值优化
 
@@ -306,9 +311,9 @@ $$
 
 在优化之前分配一个准确的时间界限是不合理的，因为规划器对最终轨迹没有任何信息。 因此，额外的时间重新分配程序对于确保动力学可行性至关重要。 先前的研究\cite{gao2020teach, zhou2019robust}将轨迹参数化为非均匀 B 样条，并在一些段超过导数限制时迭代地延长一组节点跨度。
 
-然而，一个节点跨度$\triangle t_n$会影响多个控制点，反之亦然，当调整靠近起始状态的节点跨度时，会导致与之前轨迹的高阶不连续性。
+然而，一个节点跨度 $\triangle t_n$会影响多个控制点，反之亦然，当调整靠近起始状态的节点跨度时，会导致与之前轨迹的高阶不连续性。
 
-在本节中，根据第四节中得到的安全轨迹$\mathbf{\Phi}_{s}$，生成一条时间分配合理的均匀 B 样条轨迹$\mathbf{\Phi}_{f}$。然后，提出了一种`各向异性曲线拟合方法`（an anisotropic curve fifitting method），使$\mathbf{\Phi}_{f}$可以自由地优化其控制点，以满足更高阶导数约束，同时保持与$\mathbf{\Phi}_{s}$几乎相同的形状。
+在本节中，根据第四节中得到的安全轨迹 $\mathbf{\Phi}_{s}$ ，生成一条时间分配合理的均匀 B 样条轨迹 $\mathbf{\Phi}_{f}$ 。然后，提出了一种`各向异性曲线拟合方法`（an anisotropic curve fifitting method），使 $\mathbf{\Phi}_{f}$ 可以自由地优化其控制点，以满足更高阶导数约束，同时保持与 $\mathbf{\Phi}_{s}$ 几乎相同的形状。
 
 首先，与 Fast-Planner 类似，我们计算`超出限制的比率`。
 
@@ -316,23 +321,23 @@ $$
 r_{e}=\max \left\{\left|\mathbf{V}_{i, r} / v_{m}\right|, \sqrt{\left|\mathbf{A}_{j, r} / a_{m}\right|}, \sqrt[3]{\left|\mathbf{J}_{k, r} / j_{m}\right|}, 1\right\}
 $$
 
-其中，$i\in\{1,\cdots, N_c-1\}$，$j\in\{1,\cdots, N_c-2\}$，$k\in\{1,\cdots, N_c-3\}$和$r\in\{x,y,z\}$轴。 下标为$m$的概念表示导数的限制。 $r_e$表示相对于$\mathbf{\Phi}_{s}$，我们应该延长$\mathbf{\Phi}_{f}$的时间分配量。 注意，$\mathbf{V}_i$，$\mathbf{A}_j$和$\mathbf{J}_k$与$\triangle t$的平方和$\triangle t$的立方成反比，参见式（\ref{equ:v_a_j}）。
+其中，$i\in\{1,\cdots, N_c-1\}$ ，$j\in\{1,\cdots, N_c-2\}$ ，$k\in\{1,\cdots, N_c-3\}$ 和$r\in\{x,y,z\}$ 轴。 下标为$m$的概念表示导数的限制。 $r_e$表示相对于 $\mathbf{\Phi}_{s}$ ，我们应该延长 $\mathbf{\Phi}_{f}$ 的时间分配量。 注意， $\mathbf{V}_i$， $\mathbf{A}_j$和 $\mathbf{J}_k$与 $\triangle t$的平方和 $\triangle t$的立方成反比，参见式（\ref{equ:v_a_j}）。
 
-然后我们得到了$\mathbf{\Phi}_{f}$的新时间间隔。
+然后我们得到了 $\mathbf{\Phi}_{f}$ 的新时间间隔。
 
 $$
 \Delta t^{\prime}=r_{e} \Delta t.
 $$
 
-$\mathbf{\Phi}_{f}$在满足边界约束的情况下，通过解一个`闭式最小二乘问题`，初始化生成时间跨度为$\Delta t^{\prime}$的轨迹$\mathbf{\Phi}_{f}$，并保持与$\mathbf{\Phi}_s$相同的`形状`和`控制点数量`。 然后通过优化进一步优化其平滑性和可行性。 由平滑性、可行性和`曲线拟合`（稍后介绍）的线性组合所构造的`惩罚函数`$J'$被用于优化。
+$\mathbf{\Phi}_{f}$ 在满足边界约束的情况下，通过解一个`闭式最小二乘问题`，初始化生成时间跨度为 $\Delta t^{\prime}$ 的轨迹 $\mathbf{\Phi}_{f}$ ，并保持与 $\mathbf{\Phi}_s$相同的`形状`和`控制点数量`。 然后通过优化进一步优化其平滑性和可行性。 由平滑性、可行性和`曲线拟合`（稍后介绍）的线性组合所构造的`惩罚函数`$J'$被用于优化。
 
 $$
 \min _{\mathbf{Q}} J^{\prime}=\lambda_{s} J_{s}+\lambda_{d} J_{d}+\lambda_{f} J_{f}
 $$
 
-其中，$\lambda_f$ 是拟合项的权重。
+其中， $\lambda_f$ 是拟合项的权重。
 
-`拟合惩罚函数` $J_f$ 的形式是从点 $\mathbf{\Phi}_f (\alpha T')$ 到相应点 $\mathbf{\Phi}_s (\alpha T)$ 的`各向异性位移的积分`，其中 $T$ 和 $T'$ 是 $\mathbf{\Phi}_s$ 和 $\mathbf{\Phi}_f$ 的轨迹持续时间，$\alpha \in [0,1]$。
+`拟合惩罚函数` $J_f$ 的形式是从点 $\mathbf{\Phi}_f (\alpha T')$ 到相应点 $\mathbf{\Phi}_s (\alpha T)$ 的`各向异性位移的积分`，其中 $T$ 和 $T'$ 是 $\mathbf{\Phi}_s$ 和 $\mathbf{\Phi}_f$ 的轨迹持续时间， $\alpha \in [0,1]$。
 
 由于拟合的曲线 $\mathbf{\Phi}_{s}$ 已经没有碰撞，对于两条曲线，我们用带有低权重的轴向位移来放宽光滑调整限制，用高权重的径向位移来防止碰撞。 为了实现这一点，我们使用`球度量`，如图\ref{pic:fitting}所示，使得在相同的球面上的位移产生相同的惩罚。
 
@@ -362,16 +367,16 @@ $$
 
 L-BFGS 的复杂性在`相同的相对公差`上也是线性的。
 
-对于无碰撞路径搜索，我们采用 A\* 算法，在路径$\mathbf{\Gamma}$总是自然地靠近障碍物表面的优点。 因此，我们可以直接在$\mathbf{\Gamma}$处选择$\mathbf{p}$，而无需搜索障碍物表面。 对于在 Fig.\ref{pic:3d_p_v_pairs}中定义的向量$\mathbf{R}_i$，可以通过均匀 B 样条参数化的性质推导出，$\mathbf{R}_i$满足
+对于无碰撞路径搜索，我们采用 A\* 算法，在路径 $\mathbf{\Gamma}$ 总是自然地靠近障碍物表面的优点。 因此，我们可以直接在 $\mathbf{\Gamma}$ 处选择 $\mathbf{p}$ ，而无需搜索障碍物表面。 对于在 Fig.\ref{pic:3d_p_v_pairs}中定义的向量 $\mathbf{R}_i$，可以通过均匀 B 样条参数化的性质推导出， $\mathbf{R}_i$满足
 
 $$
 \mathbf{R}_{i}=\frac{\mathbf{Q}_{i+1}-\mathbf{Q}_{i-1}}{2 \Delta t}
 $$
 
-可以高效地计算。 式\ref{equ:fitness}被离散化为有限数量的点$\mathbf{\Phi}_f(k\triangle t')$和$\mathbf{\Phi}_s(k\triangle t)$，其中$k \in \mathbb{N}, 0 \leq k \leq \lfloor{T/\triangle t}\rfloor$。 为了进一步保证安全，在最终轨迹周围执行了一个半径固定的圆管的碰撞检查，以提供足够的障碍物间隙。 只有当没有检测到碰撞时，优化器才停止。 我们在与\cite{gao2020teach}相同的飞行平台上进行了真实世界的实验，该平台使用 Intel RealSense D435 获取深度\footnote{[https://www.intelrealsense.com/depth-camera-d435/](https://www.intelrealsense.com/depth-camera-d435/)}。 此外，我们修改了 Intel RealSense 的 ROS 驱动程序，使其能够让激光发射器以每隔一帧的方式触发。 这样可以在激光发射器的帮助下输出高质量的深度图像，并且不受激光干扰的双目图像。 修改后的驱动程序也已经开源。
+可以高效地计算。 式\ref{equ:fitness}被离散化为有限数量的点 $\mathbf{\Phi}_f(k\triangle t')$ 和 $\mathbf{\Phi}_s(k\triangle t)$，其中$k \in \mathbb{N}, 0 \leq k \leq \lfloor{T/\triangle t}\rfloor$。 为了进一步保证安全，在最终轨迹周围执行了一个半径固定的圆管的碰撞检查，以提供足够的障碍物间隙。 只有当没有检测到碰撞时，优化器才停止。 我们在与\cite{gao2020teach}相同的飞行平台上进行了真实世界的实验，该平台使用 Intel RealSense D435 获取深度\footnote{[https://www.intelrealsense.com/depth-camera-d435/](https://www.intelrealsense.com/depth-camera-d435/)}。 此外，我们修改了 Intel RealSense 的 ROS 驱动程序，使其能够让激光发射器以每隔一帧的方式触发。 这样可以在激光发射器的帮助下输出高质量的深度图像，并且不受激光干扰的双目图像。 修改后的驱动程序也已经开源。
 
 $$
-\begin{align*}
+\begin{aligned}
 \textbf{Algorithm 2:} & \quad \text{Rebound Planning} \\
 \hline
 \textbf{Notation:} & \\
@@ -391,7 +396,7 @@ $$
 8 &\quad \quad Q \leftarrow \text{CurveFittingOptimize}(Q) \\
 9 &\quad \text{end if} \\
 10 &\quad \text{return } Q
-\end{align*}
+\end{aligned}
 $$
 
 ```Python
@@ -425,7 +430,7 @@ def ReboundPlanning(E, Q_last, G):
 
 #### B. Optimization Algorithms Comparison
 
-在本节中我们将讨论三种不同的优化算法，包括 Barzilai-Borwein（BB）方法，有限存储 BFGS（L-BFGS）和截断牛顿（T-NEWTON）方法。具体来说，每种算法在随机地图上独立运行 100 次。所有相关的参数，包括边界约束，时间分配，决策变量初始化和随机种子，都设置为不同算法之间相同。记录了成功率，计算时间和目标函数评估次数的数据。由于失败案例中的数据是无意义的，只有成功的案例被计数。相关结果显示在表\ref{tab:solver_comparison}中，表明 L-BFGS 明显优于另外两种算法。L-BFGS 使用二阶泰勒展开的方式来近似描述类型的逼近，适用于在第\ref{sec::problem_optimization}节中描述的目标函数优化。截断牛顿方法也对二阶优化方向$\mathbf{H}^{-1} \nabla \mathbf{f}_k$进行近似。然而，过多的目标函数评估会增加优化时间。BB 方法通过标量$\lambda$乘以$\mathbf{I}$来估计 Hessian。然而，对 Hessian 的不充分估计仍然导致收敛速度较低。
+在本节中我们将讨论三种不同的优化算法，包括 Barzilai-Borwein（BB）方法，有限存储 BFGS（L-BFGS）和截断牛顿（T-NEWTON）方法。具体来说，每种算法在随机地图上独立运行 100 次。所有相关的参数，包括边界约束，时间分配，决策变量初始化和随机种子，都设置为不同算法之间相同。记录了成功率，计算时间和目标函数评估次数的数据。由于失败案例中的数据是无意义的，只有成功的案例被计数。相关结果显示在表\ref{tab:solver_comparison}中，表明 L-BFGS 明显优于另外两种算法。L-BFGS 使用二阶泰勒展开的方式来近似描述类型的逼近，适用于在第\ref{sec::problem_optimization}节中描述的目标函数优化。截断牛顿方法也对二阶优化方向 $\mathbf{H}^{-1} \nabla \mathbf{f}_k$进行近似。然而，过多的目标函数评估会增加优化时间。BB 方法通过标量 $\lambda$乘以 $\mathbf{I}$ 来估计 Hessian。然而，对 Hessian 的不充分估计仍然导致收敛速度较低。
 
 #### C. Trajectory Generation With & Without ESDF
 

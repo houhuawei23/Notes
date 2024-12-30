@@ -2,7 +2,8 @@
   "description": "This is such a great book!",
   "language": "cn",
   "structure": {
-    "readme": "Introduction.md"
+    "readme": "Introduction.md",
+    "summary": "SUMMARY-GitBook-auto-summary.md"
   },
   "plugins": [
     "include-codeblock",
@@ -14,21 +15,19 @@
     "chapter-fold",
     "splitter",
     "github",
-    "-highlight",
-    "prism",
-    "prism-themes",
     "theme-comscore",
-    "katex-pp"
+    "katex-pp",
+    "edit-link",
+    "back-to-top-button",
+    "intopic-toc"
   ],
   "pluginsConfig": {
     "github": {
       "url": "https://github.com/houhuawei23/Notes"
     },
-    "prism": {
-      "lang": {
-        "shell": "bash"
-      },
-      "css": ["prism-themes/themes/prism-synthwave84.css"]
+    "edit-link": {
+      "base": "https://github.com/houhuawei23/Notes/edit/main",
+      "label": "Edit This Page"
     }
   }
 }
