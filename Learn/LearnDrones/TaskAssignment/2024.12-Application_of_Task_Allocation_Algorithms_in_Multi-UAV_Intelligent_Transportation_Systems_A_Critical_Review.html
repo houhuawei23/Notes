@@ -1,0 +1,3462 @@
+
+<!DOCTYPE HTML>
+<html lang="cn" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2024.12-Application_of_Task_Allocation_Algorithms_in_Multi-UAV_Intelligent_Transportation_Systems_A_Critical_Review · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-katex-pp/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="./" />
+    
+    
+    <link rel="prev" href="2024-Distributed_task_allocation_algorithm_for_heterogeneous_unmanned_aerial_vehic_swarm_based_on_coalition_formation_game.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../ConfigExamples/ConfigExamples.html">
+            
+                <a href="../../../ConfigExamples/ConfigExamples.html">
+            
+                    
+                    ConfigExamples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Git
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../Git/Github.html">
+            
+                <a href="../../../Git/Github.html">
+            
+                    
+                    Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../../Git/git-branch.html">
+            
+                <a href="../../../Git/git-branch.html">
+            
+                    
+                    git-branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../../Git/git.html">
+            
+                <a href="../../../Git/git.html">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../../Git/githttps.html">
+            
+                <a href="../../../Git/githttps.html">
+            
+                    
+                    githttps
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Guides
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../../Guides/Self-Cultivation-of-Programmers.html">
+            
+                <a href="../../../Guides/Self-Cultivation-of-Programmers.html">
+            
+                    
+                    Self-Cultivation-of-Programmers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../Learn.html">
+            
+                <a href="../../Learn.html">
+            
+                    
+                    Learn
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../GPU2CPU.html">
+            
+                <a href="../../GPU2CPU.html">
+            
+                    
+                    GPU2CPU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    LearnAIMA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../../LearnAIMA/Ch12.html">
+            
+                <a href="../../LearnAIMA/Ch12.html">
+            
+                    
+                    Ch12
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../../LearnAIMA/Ch13/Ch13.html">
+            
+                <a href="../../LearnAIMA/Ch13/Ch13.html">
+            
+                    
+                    Ch13
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.2.1" data-path="../../LearnAIMA/Ch13/BayesianNetwork.html">
+            
+                <a href="../../LearnAIMA/Ch13/BayesianNetwork.html">
+            
+                    
+                    BayesianNetwork
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../../LearnAIMA/Ch18/Ch18.html">
+            
+                <a href="../../LearnAIMA/Ch18/Ch18.html">
+            
+                    
+                    Ch18
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="../../LearnAIMA/">
+            
+                <a href="../../LearnAIMA/">
+            
+                    
+                    index
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" >
+            
+                <span>
+            
+                    
+                    LearnCUDA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../../LearnCUDA/APT-CUDA.html">
+            
+                <a href="../../LearnCUDA/APT-CUDA.html">
+            
+                    
+                    APT-CUDA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../../LearnCUDA/CUDA.html">
+            
+                <a href="../../LearnCUDA/CUDA.html">
+            
+                    
+                    CUDA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="../../LearnCUDA/CUDA_multi.html">
+            
+                <a href="../../LearnCUDA/CUDA_multi.html">
+            
+                    
+                    CUDA_multi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.4" data-path="../../LearnCUDA/NCCL.html">
+            
+                <a href="../../LearnCUDA/NCCL.html">
+            
+                    
+                    NCCL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.5" data-path="../../LearnCUDA/TensorCores.html">
+            
+                <a href="../../LearnCUDA/TensorCores.html">
+            
+                    
+                    TensorCores
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" >
+            
+                <span>
+            
+                    
+                    LearnCV
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.4.1" data-path="../../LearnCV/ComputerVisoin.html">
+            
+                <a href="../../LearnCV/ComputerVisoin.html">
+            
+                    
+                    ComputerVisoin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.2" data-path="../../LearnCV/OpenCV/OpenCV.html">
+            
+                <a href="../../LearnCV/OpenCV/OpenCV.html">
+            
+                    
+                    OpenCV
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" >
+            
+                <span>
+            
+                    
+                    LearnConda
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.5.1" data-path="../../LearnConda/ChangeBaseEnv.html">
+            
+                <a href="../../LearnConda/ChangeBaseEnv.html">
+            
+                    
+                    ChangeBaseEnv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.2" data-path="../../LearnConda/Conda.html">
+            
+                <a href="../../LearnConda/Conda.html">
+            
+                    
+                    Conda
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" >
+            
+                <span>
+            
+                    
+                    LearnDocker
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.6.1" data-path="../../LearnDocker/docker.html">
+            
+                <a href="../../LearnDocker/docker.html">
+            
+                    
+                    docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" >
+            
+                <span>
+            
+                    
+                    LearnDrones
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.7.1" data-path="../Ceres-Solver.html">
+            
+                <a href="../Ceres-Solver.html">
+            
+                    
+                    Ceres-Solver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.2" data-path="../Eigen.html">
+            
+                <a href="../Eigen.html">
+            
+                    
+                    Eigen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.3" data-path="../FastDrone-250.html">
+            
+                <a href="../FastDrone-250.html">
+            
+                    
+                    FastDrone-250
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.4" data-path="../Note.html">
+            
+                <a href="../Note.html">
+            
+                    
+                    Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.5" >
+            
+                <span>
+            
+                    
+                    Planner
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.7.5.1" data-path="../Planner/Distributed-Swarm-Trajectory-Opt-for-Formation-Flight-in-Dense-Envs-2022.html">
+            
+                <a href="../Planner/Distributed-Swarm-Trajectory-Opt-for-Formation-Flight-in-Dense-Envs-2022.html">
+            
+                    
+                    Distributed-Swarm-Trajectory-Opt-for-Formation-Flight-in-Dense-Envs-2022
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.5.2" data-path="../Planner/EGO-Swarm-2021.html">
+            
+                <a href="../Planner/EGO-Swarm-2021.html">
+            
+                    
+                    EGO-Swarm-2021
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.5.3" data-path="../Planner/FastPlanner-2019.html">
+            
+                <a href="../Planner/FastPlanner-2019.html">
+            
+                    
+                    FastPlanner-2019
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.5.4" data-path="../Planner/Gradient-Based-Motion-Planning.html">
+            
+                <a href="../Planner/Gradient-Based-Motion-Planning.html">
+            
+                    
+                    Gradient-Based-Motion-Planning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.5.5" data-path="../Planner/MicroFlyingRobots-2021.html">
+            
+                <a href="../Planner/MicroFlyingRobots-2021.html">
+            
+                    
+                    MicroFlyingRobots-2021
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.5.6" data-path="../Planner/Robust-Efficient-Trajectory-Planning-for-Formation-Flight-in-Dense-Environments-2023.html">
+            
+                <a href="../Planner/Robust-Efficient-Trajectory-Planning-for-Formation-Flight-in-Dense-Environments-2023.html">
+            
+                    
+                    Robust-Efficient-Trajectory-Planning-for-Formation-Flight-in-Dense-Environments-2023
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.6" >
+            
+                <span>
+            
+                    
+                    TaskAssignment
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.7.6.1" data-path="2022.06-Task_assignment_algorithms_for_unmanned_aerial_vehicle_networks_A_comprehensive_survey.html">
+            
+                <a href="2022.06-Task_assignment_algorithms_for_unmanned_aerial_vehicle_networks_A_comprehensive_survey.html">
+            
+                    
+                    2022.06-Task_assignment_algorithms_for_unmanned_aerial_vehicle_networks_A_comprehensive_survey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.6.2" data-path="2024-Distributed_task_allocation_algorithm_for_heterogeneous_unmanned_aerial_vehic_swarm_based_on_coalition_formation_game.html">
+            
+                <a href="2024-Distributed_task_allocation_algorithm_for_heterogeneous_unmanned_aerial_vehic_swarm_based_on_coalition_formation_game.html">
+            
+                    
+                    2024-Distributed_task_allocation_algorithm_for_heterogeneous_unmanned_aerial_vehic_swarm_based_on_coalition_formation_game
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.7.6.3" data-path="2024.12-Application_of_Task_Allocation_Algorithms_in_Multi-UAV_Intelligent_Transportation_Systems_A_Critical_Review.html">
+            
+                <a href="2024.12-Application_of_Task_Allocation_Algorithms_in_Multi-UAV_Intelligent_Transportation_Systems_A_Critical_Review.html">
+            
+                    
+                    2024.12-Application_of_Task_Allocation_Algorithms_in_Multi-UAV_Intelligent_Transportation_Systems_A_Critical_Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.6.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    index
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" >
+            
+                <span>
+            
+                    
+                    LearnGPU2CPU-by-GPT
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.8.1" data-path="../../LearnGPU2CPU-by-GPT/Note.html">
+            
+                <a href="../../LearnGPU2CPU-by-GPT/Note.html">
+            
+                    
+                    Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" >
+            
+                <span>
+            
+                    
+                    LearnGameDev
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.9.1" data-path="../../LearnGameDev/Note.html">
+            
+                <a href="../../LearnGameDev/Note.html">
+            
+                    
+                    Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" >
+            
+                <span>
+            
+                    
+                    LearnGameTheory
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.10.1" data-path="../../LearnGameTheory/CoalitionalGames.html">
+            
+                <a href="../../LearnGameTheory/CoalitionalGames.html">
+            
+                    
+                    CoalitionalGames
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10.2" data-path="../../LearnGameTheory/GameTheory.html">
+            
+                <a href="../../LearnGameTheory/GameTheory.html">
+            
+                    
+                    GameTheory
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" >
+            
+                <span>
+            
+                    
+                    LearnJinJia2
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.11.1" data-path="../../LearnJinJia2/Jinjia2.html">
+            
+                <a href="../../LearnJinJia2/Jinjia2.html">
+            
+                    
+                    Jinjia2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" >
+            
+                <span>
+            
+                    
+                    LearnLalrpop
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.12.1" data-path="../../LearnLalrpop/Lalrpop.html">
+            
+                <a href="../../LearnLalrpop/Lalrpop.html">
+            
+                    
+                    Lalrpop
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" >
+            
+                <span>
+            
+                    
+                    LearnMLIR
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.13.1" data-path="../../LearnMLIR/CodegenDialectOverview.html">
+            
+                <a href="../../LearnMLIR/CodegenDialectOverview.html">
+            
+                    
+                    CodegenDialectOverview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13.2" data-path="../../LearnMLIR/Dialects.html">
+            
+                <a href="../../LearnMLIR/Dialects.html">
+            
+                    
+                    Dialects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13.3" data-path="../../LearnMLIR/Linalg.html">
+            
+                <a href="../../LearnMLIR/Linalg.html">
+            
+                    
+                    Linalg
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13.4" data-path="../../LearnMLIR/MLIR-LanRef.html">
+            
+                <a href="../../LearnMLIR/MLIR-LanRef.html">
+            
+                    
+                    MLIR-LanRef
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13.5" data-path="../../LearnMLIR/PIR.html">
+            
+                <a href="../../LearnMLIR/PIR.html">
+            
+                    
+                    PIR
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" >
+            
+                <span>
+            
+                    
+                    LearnMocCUDA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.14.1" data-path="../../LearnMocCUDA/CUDA-Wrap.html">
+            
+                <a href="../../LearnMocCUDA/CUDA-Wrap.html">
+            
+                    
+                    CUDA-Wrap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14.2" data-path="../../LearnMocCUDA/LibBlocksRuntime.html">
+            
+                <a href="../../LearnMocCUDA/LibBlocksRuntime.html">
+            
+                    
+                    LibBlocksRuntime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14.3" data-path="../../LearnMocCUDA/LibDispatch.html">
+            
+                <a href="../../LearnMocCUDA/LibDispatch.html">
+            
+                    
+                    LibDispatch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14.4" data-path="../../LearnMocCUDA/LibUnwind.html">
+            
+                <a href="../../LearnMocCUDA/LibUnwind.html">
+            
+                    
+                    LibUnwind
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14.5" data-path="../../LearnMocCUDA/MakefileNote.html">
+            
+                <a href="../../LearnMocCUDA/MakefileNote.html">
+            
+                    
+                    MakefileNote
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14.6" data-path="../../LearnMocCUDA/MocCUDA.html">
+            
+                <a href="../../LearnMocCUDA/MocCUDA.html">
+            
+                    
+                    MocCUDA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14.7" data-path="../../LearnMocCUDA/OpenBLAS.html">
+            
+                <a href="../../LearnMocCUDA/OpenBLAS.html">
+            
+                    
+                    OpenBLAS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14.8" data-path="../../LearnMocCUDA/OpenMPI.html">
+            
+                <a href="../../LearnMocCUDA/OpenMPI.html">
+            
+                    
+                    OpenMPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14.9" data-path="../../LearnMocCUDA/Spack.html">
+            
+                <a href="../../LearnMocCUDA/Spack.html">
+            
+                    
+                    Spack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14.10" data-path="../../LearnMocCUDA/pytorch.needed.libs.Note.html">
+            
+                <a href="../../LearnMocCUDA/pytorch.needed.libs.Note.html">
+            
+                    
+                    pytorch.needed.libs.Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" >
+            
+                <span>
+            
+                    
+                    LearnMordenCpp
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.15.1" data-path="../../LearnMordenCpp/Note.html">
+            
+                <a href="../../LearnMordenCpp/Note.html">
+            
+                    
+                    Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" >
+            
+                <span>
+            
+                    
+                    LearnPest
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.16.1" data-path="../../LearnPest/ParsingExpressionGrammar.html">
+            
+                <a href="../../LearnPest/ParsingExpressionGrammar.html">
+            
+                    
+                    ParsingExpressionGrammar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16.2" data-path="../../LearnPest/pest.html">
+            
+                <a href="../../LearnPest/pest.html">
+            
+                    
+                    pest
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.17" >
+            
+                <span>
+            
+                    
+                    LearnPolygeist
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.17.1" data-path="../../LearnPolygeist/2021_Polygeist-Raising C to Polyhedral MLIR-translated_only.html">
+            
+                <a href="../../LearnPolygeist/2021_Polygeist-Raising C to Polyhedral MLIR-translated_only.html">
+            
+                    
+                    2021_Polygeist-Raising C to Polyhedral MLIR-translated_only
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.17.2" data-path="../../LearnPolygeist/2021_Polygeist-Raising C to Polyhedral MLIRtranslated_and_original.html">
+            
+                <a href="../../LearnPolygeist/2021_Polygeist-Raising C to Polyhedral MLIRtranslated_and_original.html">
+            
+                    
+                    2021_Polygeist-Raising C to Polyhedral MLIRtranslated_and_original
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.17.3" data-path="../../LearnPolygeist/Note.html">
+            
+                <a href="../../LearnPolygeist/Note.html">
+            
+                    
+                    Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.18" >
+            
+                <span>
+            
+                    
+                    LearnPolyhedralModel
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.18.1" data-path="../../LearnPolyhedralModel/AffineTransformation.html">
+            
+                <a href="../../LearnPolyhedralModel/AffineTransformation.html">
+            
+                    
+                    AffineTransformation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.18.2" data-path="../../LearnPolyhedralModel/Note.html">
+            
+                <a href="../../LearnPolyhedralModel/Note.html">
+            
+                    
+                    Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.19" >
+            
+                <span>
+            
+                    
+                    LearnROCm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.19.1" data-path="../../LearnROCm/ROCm.html">
+            
+                <a href="../../LearnROCm/ROCm.html">
+            
+                    
+                    ROCm
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.20" >
+            
+                <span>
+            
+                    
+                    LearnROS
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.20.1" data-path="../../LearnROS/ROS-Packages.html">
+            
+                <a href="../../LearnROS/ROS-Packages.html">
+            
+                    
+                    ROS-Packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.20.2" data-path="../../LearnROS/ROS.html">
+            
+                <a href="../../LearnROS/ROS.html">
+            
+                    
+                    ROS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.20.3" data-path="../../LearnROS/ROS2.html">
+            
+                <a href="../../LearnROS/ROS2.html">
+            
+                    
+                    ROS2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.20.4" data-path="../../LearnROS/ROS2_debian12.html">
+            
+                <a href="../../LearnROS/ROS2_debian12.html">
+            
+                    
+                    ROS2_debian12
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.20.5" data-path="../../LearnROS/SourceInstall.html">
+            
+                <a href="../../LearnROS/SourceInstall.html">
+            
+                    
+                    SourceInstall
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.21" >
+            
+                <span>
+            
+                    
+                    LearnRust
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.21.1" data-path="../../LearnRust/LifetimeExample.html">
+            
+                <a href="../../LearnRust/LifetimeExample.html">
+            
+                    
+                    LifetimeExample
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.21.2" data-path="../../LearnRust/Problems_Solutions.html">
+            
+                <a href="../../LearnRust/Problems_Solutions.html">
+            
+                    
+                    Problems_Solutions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.21.3" data-path="../../LearnRust/Resources.html">
+            
+                <a href="../../LearnRust/Resources.html">
+            
+                    
+                    Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.21.4" data-path="../../LearnRust/RustBook.html">
+            
+                <a href="../../LearnRust/RustBook.html">
+            
+                    
+                    RustBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.21.5" data-path="../../LearnRust/RustLanRef.html">
+            
+                <a href="../../LearnRust/RustLanRef.html">
+            
+                    
+                    RustLanRef
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.21.6" data-path="../../LearnRust/RustProgrammingLanguage.html">
+            
+                <a href="../../LearnRust/RustProgrammingLanguage.html">
+            
+                    
+                    RustProgrammingLanguage
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.22" >
+            
+                <span>
+            
+                    
+                    PersonalWebsite
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.22.1" data-path="../../PersonalWebsite/Jekyll.html">
+            
+                <a href="../../PersonalWebsite/Jekyll.html">
+            
+                    
+                    Jekyll
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.22.2" data-path="../../PersonalWebsite/Note.html">
+            
+                <a href="../../PersonalWebsite/Note.html">
+            
+                    
+                    Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.22.3" data-path="../../PersonalWebsite/Ruby.html">
+            
+                <a href="../../PersonalWebsite/Ruby.html">
+            
+                    
+                    Ruby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.22.4" data-path="../../PersonalWebsite/al-folio.html">
+            
+                <a href="../../PersonalWebsite/al-folio.html">
+            
+                    
+                    al-folio
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../../Linux/Linux.html">
+            
+                <a href="../../../Linux/Linux.html">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../../Linux/Display/Display.html">
+            
+                <a href="../../../Linux/Display/Display.html">
+            
+                    
+                    Display
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../../../Linux/Display/GNOME-Default.html">
+            
+                <a href="../../../Linux/Display/GNOME-Default.html">
+            
+                    
+                    GNOME-Default
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="../../../Linux/Display/Hyprland.html">
+            
+                <a href="../../../Linux/Display/Hyprland.html">
+            
+                    
+                    Hyprland
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" data-path="../../../Linux/Display/Wayland.html">
+            
+                <a href="../../../Linux/Display/Wayland.html">
+            
+                    
+                    Wayland
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../../Linux/Flashback.html">
+            
+                <a href="../../../Linux/Flashback.html">
+            
+                    
+                    Flashback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../../Linux/InputMethod.html">
+            
+                <a href="../../../Linux/InputMethod.html">
+            
+                    
+                    InputMethod
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../../Linux/LSB.html">
+            
+                <a href="../../../Linux/LSB.html">
+            
+                    
+                    LSB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../../../Linux/LinuxFamily/LinuxFamily.html">
+            
+                <a href="../../../Linux/LinuxFamily/LinuxFamily.html">
+            
+                    
+                    LinuxFamily
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.5.1" data-path="../../../Linux/LinuxFamily/ArchLinux.html">
+            
+                <a href="../../../Linux/LinuxFamily/ArchLinux.html">
+            
+                    
+                    ArchLinux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.2" data-path="../../../Linux/LinuxFamily/DebianFamily.html">
+            
+                <a href="../../../Linux/LinuxFamily/DebianFamily.html">
+            
+                    
+                    DebianFamily
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.3" data-path="../../../Linux/LinuxFamily/GentooLinux.html">
+            
+                <a href="../../../Linux/LinuxFamily/GentooLinux.html">
+            
+                    
+                    GentooLinux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.4" data-path="../../../Linux/LinuxFamily/RedHatFamily.html">
+            
+                <a href="../../../Linux/LinuxFamily/RedHatFamily.html">
+            
+                    
+                    RedHatFamily
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../../../Linux/Nautilus.html">
+            
+                <a href="../../../Linux/Nautilus.html">
+            
+                    
+                    Nautilus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../../../Linux/PrintingDrivers.html">
+            
+                <a href="../../../Linux/PrintingDrivers.html">
+            
+                    
+                    PrintingDrivers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../../../Linux/UserManagement.html">
+            
+                <a href="../../../Linux/UserManagement.html">
+            
+                    
+                    UserManagement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../../../Linux/apt.html">
+            
+                <a href="../../../Linux/apt.html">
+            
+                    
+                    apt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../../../Linux/curl.html">
+            
+                <a href="../../../Linux/curl.html">
+            
+                    
+                    curl
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../../Misc/Misc.html">
+            
+                <a href="../../../Misc/Misc.html">
+            
+                    
+                    Misc
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../../Misc/00_Links.html">
+            
+                <a href="../../../Misc/00_Links.html">
+            
+                    
+                    00_Links
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../../Misc/01_GitHubReps.html">
+            
+                <a href="../../../Misc/01_GitHubReps.html">
+            
+                    
+                    01_GitHubReps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../../Misc/Bochs.html">
+            
+                <a href="../../../Misc/Bochs.html">
+            
+                    
+                    Bochs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../../Misc/Compression.html">
+            
+                <a href="../../../Misc/Compression.html">
+            
+                    
+                    Compression
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../../../Misc/ComputationForcePlatforms.html">
+            
+                <a href="../../../Misc/ComputationForcePlatforms.html">
+            
+                    
+                    ComputationForcePlatforms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../../../Misc/Copy.html">
+            
+                <a href="../../../Misc/Copy.html">
+            
+                    
+                    Copy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../../../Misc/Drawing.html">
+            
+                <a href="../../../Misc/Drawing.html">
+            
+                    
+                    Drawing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../../../Misc/Flatpack.html">
+            
+                <a href="../../../Misc/Flatpack.html">
+            
+                    
+                    Flatpack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../../../Misc/Fonts.html">
+            
+                <a href="../../../Misc/Fonts.html">
+            
+                    
+                    Fonts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../../../Misc/FuzzTesting/FuzzTesting.html">
+            
+                <a href="../../../Misc/FuzzTesting/FuzzTesting.html">
+            
+                    
+                    FuzzTesting
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.10.1" data-path="../../../Misc/FuzzTesting/AFL.RS.html">
+            
+                <a href="../../../Misc/FuzzTesting/AFL.RS.html">
+            
+                    
+                    AFL.RS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10.2" data-path="../../../Misc/FuzzTesting/Issues_Solutions.html">
+            
+                <a href="../../../Misc/FuzzTesting/Issues_Solutions.html">
+            
+                    
+                    Issues_Solutions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="../../../Misc/GIS/GIS.html">
+            
+                <a href="../../../Misc/GIS/GIS.html">
+            
+                    
+                    GIS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.11.1" data-path="../../../Misc/GIS/OpenShp.html">
+            
+                <a href="../../../Misc/GIS/OpenShp.html">
+            
+                    
+                    OpenShp
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="../../../Misc/GRUB.html">
+            
+                <a href="../../../Misc/GRUB.html">
+            
+                    
+                    GRUB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="../../../Misc/GitBook.html">
+            
+                <a href="../../../Misc/GitBook.html">
+            
+                    
+                    GitBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.14" data-path="../../../Misc/Hyper-V.html">
+            
+                <a href="../../../Misc/Hyper-V.html">
+            
+                    
+                    Hyper-V
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.15" data-path="../../../Misc/LLVM.html">
+            
+                <a href="../../../Misc/LLVM.html">
+            
+                    
+                    LLVM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.16" data-path="../../../Misc/Logics.html">
+            
+                <a href="../../../Misc/Logics.html">
+            
+                    
+                    Logics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.17" data-path="../../../Misc/Markdown.html">
+            
+                <a href="../../../Misc/Markdown.html">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.18" data-path="../../../Misc/MemoryOrder.html">
+            
+                <a href="../../../Misc/MemoryOrder.html">
+            
+                    
+                    MemoryOrder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.19" data-path="../../../Misc/NPM.html">
+            
+                <a href="../../../Misc/NPM.html">
+            
+                    
+                    NPM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.20" data-path="../../../Misc/PowerShell.html">
+            
+                <a href="../../../Misc/PowerShell.html">
+            
+                    
+                    PowerShell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.21" data-path="../../../Misc/RegularExp.html">
+            
+                <a href="../../../Misc/RegularExp.html">
+            
+                    
+                    RegularExp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.22" data-path="../../../Misc/StorageTechs.html">
+            
+                <a href="../../../Misc/StorageTechs.html">
+            
+                    
+                    StorageTechs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.23" data-path="../../../Misc/TWRP.html">
+            
+                <a href="../../../Misc/TWRP.html">
+            
+                    
+                    TWRP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.24" >
+            
+                <span>
+            
+                    
+                    TimeSeriesPrediction
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.24.1" data-path="../../../Misc/TimeSeriesPrediction/ACF.html">
+            
+                <a href="../../../Misc/TimeSeriesPrediction/ACF.html">
+            
+                    
+                    ACF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.24.2" data-path="../../../Misc/TimeSeriesPrediction/ACF_vs_PACF.html">
+            
+                <a href="../../../Misc/TimeSeriesPrediction/ACF_vs_PACF.html">
+            
+                    
+                    ACF_vs_PACF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.24.3" data-path="../../../Misc/TimeSeriesPrediction/ARIMA.html">
+            
+                <a href="../../../Misc/TimeSeriesPrediction/ARIMA.html">
+            
+                    
+                    ARIMA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.24.4" data-path="../../../Misc/TimeSeriesPrediction/PACF.html">
+            
+                <a href="../../../Misc/TimeSeriesPrediction/PACF.html">
+            
+                    
+                    PACF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.25" data-path="../../../Misc/Typst.html">
+            
+                <a href="../../../Misc/Typst.html">
+            
+                    
+                    Typst
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.26" data-path="../../../Misc/VScode.html">
+            
+                <a href="../../../Misc/VScode.html">
+            
+                    
+                    VScode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.27" data-path="../../../Misc/Vitural-Card.html">
+            
+                <a href="../../../Misc/Vitural-Card.html">
+            
+                    
+                    Vitural-Card
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.28" data-path="../../../Misc/WSL.html">
+            
+                <a href="../../../Misc/WSL.html">
+            
+                    
+                    WSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../../Network/Network.html">
+            
+                <a href="../../../Network/Network.html">
+            
+                    
+                    Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../../Network/ChangeMac.html">
+            
+                <a href="../../../Network/ChangeMac.html">
+            
+                    
+                    ChangeMac
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../../Network/DNS.html">
+            
+                <a href="../../../Network/DNS.html">
+            
+                    
+                    DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../../Network/RandomMac.html">
+            
+                <a href="../../../Network/RandomMac.html">
+            
+                    
+                    RandomMac
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../../../Network/Tailscale.html">
+            
+                <a href="../../../Network/Tailscale.html">
+            
+                    
+                    Tailscale
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../../../Network/Wifi.html">
+            
+                <a href="../../../Network/Wifi.html">
+            
+                    
+                    Wifi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../../Papers/Papers.html">
+            
+                <a href="../../../Papers/Papers.html">
+            
+                    
+                    Papers
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../../Papers/AttentionIsTuringComplete.html">
+            
+                <a href="../../../Papers/AttentionIsTuringComplete.html">
+            
+                    
+                    AttentionIsTuringComplete
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../../Papers/Spatially varying nanophotonic neural networks.html">
+            
+                <a href="../../../Papers/Spatially varying nanophotonic neural networks.html">
+            
+                    
+                    Spatially varying nanophotonic neural networks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../../Programming/Programming.html">
+            
+                <a href="../../../Programming/Programming.html">
+            
+                    
+                    Programming
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../../Programming/CRTP.html">
+            
+                <a href="../../../Programming/CRTP.html">
+            
+                    
+                    CRTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../../PythonLibs/PythonLibs.html">
+            
+                <a href="../../../PythonLibs/PythonLibs.html">
+            
+                    
+                    PythonLibs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../../PythonLibs/ArgParse.html">
+            
+                <a href="../../../PythonLibs/ArgParse.html">
+            
+                    
+                    ArgParse
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../../../PythonLibs/AsyncSSH.html">
+            
+                <a href="../../../PythonLibs/AsyncSSH.html">
+            
+                    
+                    AsyncSSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../../../PythonLibs/Dask.html">
+            
+                <a href="../../../PythonLibs/Dask.html">
+            
+                    
+                    Dask
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" >
+            
+                <span>
+            
+                    
+                    Dlib
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.4.1" data-path="../../../PythonLibs/Dlib/DlibPythonBindings.html">
+            
+                <a href="../../../PythonLibs/Dlib/DlibPythonBindings.html">
+            
+                    
+                    DlibPythonBindings
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" >
+            
+                <span>
+            
+                    
+                    LearnPyQt5
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.5.1" data-path="../../../PythonLibs/LearnPyQt5/PyQt5.html">
+            
+                <a href="../../../PythonLibs/LearnPyQt5/PyQt5.html">
+            
+                    
+                    PyQt5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5.2" data-path="../../../PythonLibs/LearnPyQt5/QtStyleSheets.html">
+            
+                <a href="../../../PythonLibs/LearnPyQt5/QtStyleSheets.html">
+            
+                    
+                    QtStyleSheets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../../ReadingNotes/ReadingNotes.html">
+            
+                <a href="../../../ReadingNotes/ReadingNotes.html">
+            
+                    
+                    ReadingNotes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../../ReadingNotes/A_Brief_History_of_Humankind.html">
+            
+                <a href="../../../ReadingNotes/A_Brief_History_of_Humankind.html">
+            
+                    
+                    A_Brief_History_of_Humankind
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../../ReadingNotes/Feynman.html">
+            
+                <a href="../../../ReadingNotes/Feynman.html">
+            
+                    
+                    Feynman
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../../../ReadingNotes/math_philosiphy.html">
+            
+                <a href="../../../ReadingNotes/math_philosiphy.html">
+            
+                    
+                    math_philosiphy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../../../ReadingNotes/philosiphy.html">
+            
+                <a href="../../../ReadingNotes/philosiphy.html">
+            
+                    
+                    philosiphy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../../../ReadingNotes/研究与学风-张申府-1948.html">
+            
+                <a href="../../../ReadingNotes/研究与学风-张申府-1948.html">
+            
+                    
+                    研究与学风-张申府-1948
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" >
+            
+                <span>
+            
+                    
+                    计算之魂-吴军
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.6.1" data-path="../../../ReadingNotes/计算之魂-吴军/cp0.html">
+            
+                <a href="../../../ReadingNotes/计算之魂-吴军/cp0.html">
+            
+                    
+                    cp0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6.2" data-path="../../../ReadingNotes/计算之魂-吴军/cp1.html">
+            
+                <a href="../../../ReadingNotes/计算之魂-吴军/cp1.html">
+            
+                    
+                    cp1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6.3" data-path="../../../ReadingNotes/计算之魂-吴军/cp2.html">
+            
+                <a href="../../../ReadingNotes/计算之魂-吴军/cp2.html">
+            
+                    
+                    cp2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6.4" data-path="../../../ReadingNotes/计算之魂-吴军/">
+            
+                <a href="../../../ReadingNotes/计算之魂-吴军/">
+            
+                    
+                    index
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../../../ReadingNotes/论青年修养-张申府-1946.html">
+            
+                <a href="../../../ReadingNotes/论青年修养-张申府-1946.html">
+            
+                    
+                    论青年修养-张申府-1946
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="../../../ReadingNotes/论青年的修养-张闻天-1938.html">
+            
+                <a href="../../../ReadingNotes/论青年的修养-张闻天-1938.html">
+            
+                    
+                    论青年的修养-张闻天-1938
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="../../../ReadingNotes/语录-毛泽东.html">
+            
+                <a href="../../../ReadingNotes/语录-毛泽东.html">
+            
+                    
+                    语录-毛泽东
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="../../../ReadingNotes/青年在选择职业时的考虑-马克思-1835.html">
+            
+                <a href="../../../ReadingNotes/青年在选择职业时的考虑-马克思-1835.html">
+            
+                    
+                    青年在选择职业时的考虑-马克思-1835
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >2024.12-Application_of_Task_Allocation_Algorithms_in_Multi-UAV_Intelligent_Transportation_Systems_A_Critical_Review</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="application-of-task-allocation-algorithms-in-multi-uav-intelligent-transportation-systems-a-critical-review">Application of Task Allocation Algorithms in Multi-UAV Intelligent Transportation Systems: A Critical Review</h1>
+<p>1 Department of Mechanical and Aerospace Engineering, Politecnico di Torino, Corso Duca degli Abruzzi 24, 10129 Torino, Italy
+&#x90FD;&#x7075;&#x7406;&#x5DE5;&#x5B66;&#x9662;&#x673A;&#x68B0;&#x4E0E;&#x822A;&#x7A7A;&#x822A;&#x5929;&#x5DE5;&#x7A0B;&#x7CFB;, Corso Duca degli Abruzzi 24, 10129 &#x90FD;&#x7075;, &#x610F;&#x5927;&#x5229;
+2 School of Language and Literature, Harbin Institute of Technology (Weihai), Weihai, 264200, China
+&#x54C8;&#x5C14;&#x6EE8;&#x5DE5;&#x4E1A;&#x5927;&#x5B66;&#xFF08;&#x5A01;&#x6D77;&#xFF09;&#x8BED;&#x8A00;&#x6587;&#x5B66;&#x5B66;&#x9662;, &#x5A01;&#x6D77;, 264200
+3 Department of Mechanical Engineering, S&#xE3;o Carlos School of Engineering, University of S&#xE3;o Paulo, Av. Trab. S&#xE3;o Carlense, 400, Parque Arnold Schimidt, S&#xE3;o Carlos 13566-590, SP, Brazil
+&#x5723;&#x4FDD;&#x7F57;&#x5927;&#x5B66;&#x5723;&#x5361;&#x6D1B;&#x65AF;&#x5DE5;&#x7A0B;&#x5B66;&#x9662;&#x673A;&#x68B0;&#x5DE5;&#x7A0B;&#x7CFB;&#xFF0C;Av.&#x7279;&#x62C9;&#x5E03;&#x3002; S&#xE3;o Carlense, 400, Parque Arnold Schmidt, S&#xE3;o Carlos 13566-590, SP, &#x5DF4;&#x897F;</p>
+<h2 id="abstract-&#x62BD;&#x8C61;&#x7684;">Abstract &#x62BD;&#x8C61;&#x7684;</h2>
+<p>Unmanned aerial vehicles (UAVs), commonly known as drones, are being seen as the most promising type of autonomous vehicles in the context of intelligent transportation system (ITS) technology. A key enabling factor for the current development of ITS technology based on autonomous vehicles is the task allocation architecture. This approach allows tasks to be efficiently assigned to robots of a multi-agent system, taking into account both the robots&#x2019; capabilities and service requirements. Consequently, this study provides an overview of the application of drones in ITSs, focusing on the applications of task allocation algorithms for UAV networks. Currently, there are different types of algorithms that are employed for task allocation in drone-based intelligent transportation systems, including market-based approaches, game-theory-based algorithms, optimization-based algorithms, machine learning techniques, and other hybrid methodologies. This paper offers a comprehensive literature review of how such approaches are being utilized to optimize the allocation of tasks in UAV-based ITSs. The main characteristics, constraints, and limitations are detailed to highlight their advantages, current achievements, and applicability to different types of UAV-based ITSs. Current research trends in this field as well as gaps in the literature are also thoughtfully discussed.</p>
+<p>Keywords:</p>
+<p><a href="https://www.mdpi.com/search?q=UAS" target="_blank">UAS</a>; <a href="https://www.mdpi.com/search?q=task+allocation" target="_blank">task allocation</a>; <a href="https://www.mdpi.com/search?q=aerial+robotics" target="_blank">aerial robotics</a>; <a href="https://www.mdpi.com/search?q=multi-agent+system" target="_blank">multi-agent system</a>; <a href="https://www.mdpi.com/search?q=UAV+network" target="_blank">UAV network</a>; <a href="https://www.mdpi.com/search?q=intelligent+transportation+system" target="_blank">intelligent transportation system</a>; <a href="https://www.mdpi.com/search?q=MRTA" target="_blank">MRTA</a>; <a href="https://www.mdpi.com/search?q=optimization" target="_blank">optimization</a>; <a href="https://www.mdpi.com/search?q=task+scheduling" target="_blank">task scheduling</a>; <a href="https://www.mdpi.com/search?q=autonomous+vehicles" target="_blank">autonomous vehicles</a>; <a href="https://www.mdpi.com/search?q=auction" target="_blank">auction</a>; <a href="https://www.mdpi.com/search?q=heuristics" target="_blank">heuristics</a>; <a href="https://www.mdpi.com/search?q=dynamic+task" target="_blank">dynamic task</a>; <a href="https://www.mdpi.com/search?q=multi-UAV" target="_blank">multi-UAV</a>; <a href="https://www.mdpi.com/search?q=metaheuristics" target="_blank">metaheuristics</a>; <a href="https://www.mdpi.com/search?q=software+architecture" target="_blank">software architecture</a>; <a href="https://www.mdpi.com/search?q=automation" target="_blank">automation</a>; <a href="https://www.mdpi.com/search?q=drones" target="_blank">drones</a></p>
+<p>&#x5173;&#x952E;&#x8BCD;&#xFF1A;</p>
+<p><a href="https://www.mdpi.com/search?q=UAS" target="_blank">&#x65E0;&#x4EBA;&#x673A;</a>&#xFF1B;<a href="https://www.mdpi.com/search?q=task+allocation" target="_blank">&#x4EFB;&#x52A1;&#x5206;&#x914D;</a>&#xFF1B;<a href="https://www.mdpi.com/search?q=aerial+robotics" target="_blank">&#x7A7A;&#x4E2D;&#x673A;&#x5668;&#x4EBA;&#x6280;&#x672F;</a>&#xFF1B;<a href="https://www.mdpi.com/search?q=multi-agent+system" target="_blank">&#x591A;&#x667A;&#x80FD;&#x4F53;&#x7CFB;&#x7EDF;</a>&#xFF1B;<a href="https://www.mdpi.com/search?q=UAV+network" target="_blank">&#x65E0;&#x4EBA;&#x673A;&#x7F51;&#x7EDC;</a>&#xFF1B;<a href="https://www.mdpi.com/search?q=intelligent+transportation+system" target="_blank">&#x667A;&#x80FD;&#x4EA4;&#x901A;&#x7CFB;&#x7EDF;</a>&#xFF1B; <a href="https://www.mdpi.com/search?q=MRTA" target="_blank">MRTA</a> &#xFF1B;<a href="https://www.mdpi.com/search?q=optimization" target="_blank">&#x4F18;&#x5316;</a>;<a href="https://www.mdpi.com/search?q=task+scheduling" target="_blank">&#x4EFB;&#x52A1;&#x8C03;&#x5EA6;</a>&#xFF1B;<a href="https://www.mdpi.com/search?q=autonomous+vehicles" target="_blank">&#x81EA;&#x52A8;&#x9A7E;&#x9A76;&#x6C7D;&#x8F66;</a>&#xFF1B;<a href="https://www.mdpi.com/search?q=auction" target="_blank">&#x62CD;&#x5356;</a>&#xFF1B;<a href="https://www.mdpi.com/search?q=heuristics" target="_blank">&#x542F;&#x53D1;&#x5F0F;</a>&#xFF1B;<a href="https://www.mdpi.com/search?q=dynamic+task" target="_blank">&#x52A8;&#x6001;&#x4EFB;&#x52A1;</a>&#xFF1B;<a href="https://www.mdpi.com/search?q=multi-UAV" target="_blank">&#x591A;&#x65E0;&#x4EBA;&#x673A;</a>&#xFF1B;<a href="https://www.mdpi.com/search?q=metaheuristics" target="_blank">&#x5143;&#x542F;&#x53D1;&#x6CD5;</a>&#xFF1B;<a href="https://www.mdpi.com/search?q=software+architecture" target="_blank">&#x8F6F;&#x4EF6;&#x67B6;&#x6784;</a>&#xFF1B;<a href="https://www.mdpi.com/search?q=automation" target="_blank">&#x81EA;&#x52A8;&#x5316;</a>&#xFF1B;<a href="https://www.mdpi.com/search?q=drones" target="_blank">&#x65E0;&#x4EBA;&#x673A;</a></p>
+<ul>
+<li>Table of Contents &#x76EE;&#x5F55;</li>
+<li>Abstract &#x62BD;&#x8C61;&#x7684;</li>
+<li>Introduction &#x4ECB;&#x7ECD;</li>
+<li>Game-Theory-Based Algorithms &#x57FA;&#x4E8E;&#x535A;&#x5F08;&#x8BBA;&#x7684;&#x7B97;&#x6CD5;</li>
+<li>Learning-Based Algorithms &#x57FA;&#x4E8E;&#x5B66;&#x4E60;&#x7684;&#x7B97;&#x6CD5;</li>
+<li>Market-Based Algorithms &#x57FA;&#x4E8E;&#x5E02;&#x573A;&#x7684;&#x7B97;&#x6CD5;</li>
+<li>Optimization-Based Algorithms &#x57FA;&#x4E8E;&#x4F18;&#x5316;&#x7684;&#x7B97;&#x6CD5;</li>
+<li>Hybrid Allocation Algorithms &#x6DF7;&#x5408;&#x5206;&#x914D;&#x7B97;&#x6CD5;</li>
+<li>Discussion &#x8BA8;&#x8BBA;</li>
+<li>Conclusions &#x7ED3;&#x8BBA;</li>
+<li>Funding &#x8D44;&#x91D1;</li>
+<li>Acknowledgments &#x81F4;&#x8C22;</li>
+<li>Conflicts of Interest &#x5229;&#x76CA;&#x51B2;&#x7A81;</li>
+<li>References &#x53C2;&#x8003;</li>
+</ul>
+<h2 id="introduction-&#x4ECB;&#x7ECD;">Introduction &#x4ECB;&#x7ECD;</h2>
+<p>The UAV task allocation problem in the context of intelligent transportation systems can be divided into four main categories. First, based on whether UAVs can perform multiple different tasks simultaneously, they are classified as either Single-Task-UAVs (S-T-UAVs) or Multi-Task-UAVs (M-T-UAVs). Second, depending on whether a task requires multi-UAVs to work together, it is categorized as either a Single-UAV-Task (S-UAV-T) or a Multi-UAV-Task (M-UAV-T). Third, depending on whether the drone task allocation is completed in real time, it can be categorized into Online-Task-Allocation (O-T-A) and Offline-Task-Allocation (OF-T-A). Fourth, based on the presence of dependencies between tasks, tasks can be divided into two types: Independent-Tasks (I-T) and Dependent-Tasks (D-T).</p>
+<p>&#x667A;&#x80FD;&#x4EA4;&#x901A;&#x7CFB;&#x7EDF;&#x80CC;&#x666F;&#x4E0B;&#x7684;&#x65E0;&#x4EBA;&#x673A;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x95EE;&#x9898;&#x53EF;&#x5206;&#x4E3A;&#x56DB;&#x5927;&#x7C7B;&#x3002;</p>
+<ul>
+<li>&#x9996;&#x5148;&#xFF0C;&#x6839;&#x636E;&#x65E0;&#x4EBA;&#x673A;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x6267;&#x884C;&#x591A;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x5C06;&#x5176;&#x5206;&#x4E3A;&#x5355;&#x4EFB;&#x52A1;&#x65E0;&#x4EBA;&#x673A;&#xFF08;ST-UAV&#xFF09;&#x6216;&#x591A;&#x4EFB;&#x52A1;&#x65E0;&#x4EBA;&#x673A;&#xFF08;MT-UAV&#xFF09;&#x3002;</li>
+<li>&#x5176;&#x6B21;&#xFF0C;&#x6839;&#x636E;&#x4EFB;&#x52A1;&#x662F;&#x5426;&#x9700;&#x8981;&#x591A;&#x65E0;&#x4EBA;&#x673A;&#x534F;&#x540C;&#x5DE5;&#x4F5C;&#xFF0C;&#x5B83;&#x88AB;&#x5206;&#x7C7B;&#x4E3A;&#x5355;&#x65E0;&#x4EBA;&#x673A;&#x4EFB;&#x52A1;&#xFF08;S-UAV-T&#xFF09;&#x6216;&#x591A;&#x65E0;&#x4EBA;&#x673A;&#x4EFB;&#x52A1;&#xFF08;M-UAV-T&#xFF09;&#x3002;</li>
+<li>&#x7B2C;&#x4E09;&#xFF0C;&#x6839;&#x636E;&#x65E0;&#x4EBA;&#x673A;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x662F;&#x5426;&#x5B9E;&#x65F6;&#x5B8C;&#x6210;&#xFF0C;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x5728;&#x7EBF;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#xFF08;OTA&#xFF09;&#x548C;&#x79BB;&#x7EBF;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#xFF08;OF-TA&#xFF09;&#x3002;</li>
+<li>&#x7B2C;&#x56DB;&#xFF0C;&#x6839;&#x636E;&#x4EFB;&#x52A1;&#x4E4B;&#x95F4;&#x662F;&#x5426;&#x5B58;&#x5728;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#xFF0C;&#x4EFB;&#x52A1;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x4E24;&#x79CD;&#x7C7B;&#x578B;&#xFF1A;&#x72EC;&#x7ACB;&#x4EFB;&#x52A1;&#xFF08;IT&#xFF09;&#x548C;&#x4F9D;&#x8D56;&#x4EFB;&#x52A1;&#xFF08;DT&#xFF09;&#x3002;</li>
+</ul>
+<p>The two most used drones in the six task allocation models (S-UAV-T, M-UAV-T, O-T-A, OF-T-A, I-T, and D-T) mentioned above are S-T-UAV and M-T-UAV, and all six task allocation models involve several common objectives, including maximizing the total revenue of the task set, minimizing the flight distance, and minimizing the total cost of the fleet [<a href="https://www.mdpi.com/2504-2289/8/12/177#B7-BDCC-08-00177" target="_blank">7</a>]. Some UAV task allocation issues in ITS technology are the same as those previously defined. For example, in distribution systems, due to the large-scale characteristics of some distribution problems, a fleet composed of multiple UAVs needs to cooperate to complete the set of tasks. This M-UAV-T allocation problem is defined as the Vehicle Routing Problem (VRP) [<a href="https://www.mdpi.com/2504-2289/8/12/177#B8-BDCC-08-00177" target="_blank">8</a>]. In small-scale delivery systems using a single UAV, the S-UAV-T allocation problem is defined as the Traveling Salesman Problem (TSP). The task allocation problem of a UAV-based ITS is a Non-deterministic Polynomial time (NP-hard) problem. In synthesis, the UAV task allocation problem is the determination of the task sequences for a single UAV or a UAV fleet based on the scope and objectives of the entire task set, thereby ensuring its smooth and efficient completion [<a href="https://www.mdpi.com/2504-2289/8/12/177#B9-BDCC-08-00177" target="_blank">9</a>]. At the same time, for the UAV to successfully complete its mission, various constraints of both the task and the UAV need to be considered, including the payload capacity, operational speed, task due date, and the maximum flight distance of the UAV.</p>
+<p>&#x4E0A;&#x8FF0;&#x516D;&#x79CD;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x6A21;&#x578B;&#xFF08;S-UAV-T&#x3001;M-UAV-T&#x3001;OTA&#x3001;OF-TA&#x3001;IT &#x548C; DT&#xFF09;&#x4E2D;&#x4F7F;&#x7528;&#x6700;&#x591A;&#x7684;&#x4E24;&#x79CD;&#x65E0;&#x4EBA;&#x673A;&#x662F; ST-UAV &#x548C; MT-UAV&#xFF0C;&#x5E76;&#x4E14;&#x6240;&#x6709;&#x516D;&#x79CD;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x6A21;&#x578B;&#x6D89;&#x53CA;&#x51E0;&#x4E2A;&#x5171;&#x540C;&#x76EE;&#x6807;&#xFF0C;&#x5305;&#x62EC;&#x6700;&#x5927;&#x5316;&#x4EFB;&#x52A1;&#x96C6;&#x7684;&#x603B;&#x6536;&#x5165;&#x3001;&#x6700;&#x5C0F;&#x5316;&#x98DE;&#x884C;&#x8DDD;&#x79BB;&#x4EE5;&#x53CA;&#x6700;&#x5C0F;&#x5316;&#x673A;&#x961F;&#x7684;&#x603B;&#x6210;&#x672C;[ <a href="https://www.mdpi.com/2504-2289/8/12/177#B7-BDCC-08-00177" target="_blank">7</a> ]&#x3002; ITS &#x6280;&#x672F;&#x4E2D;&#x7684;&#x4E00;&#x4E9B;&#x65E0;&#x4EBA;&#x673A;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x95EE;&#x9898;&#x4E0E;&#x4E4B;&#x524D;&#x5B9A;&#x4E49;&#x7684;&#x76F8;&#x540C;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5728;&#x914D;&#x9001;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x7531;&#x4E8E;&#x4E00;&#x4E9B;&#x914D;&#x9001;&#x95EE;&#x9898;&#x7684;&#x5927;&#x89C4;&#x6A21;&#x7279;&#x5F81;&#xFF0C;&#x9700;&#x8981;&#x7531;&#x591A;&#x67B6;&#x65E0;&#x4EBA;&#x673A;&#x7EC4;&#x6210;&#x7684;&#x673A;&#x961F;&#x534F;&#x540C;&#x5B8C;&#x6210;&#x4E00;&#x7EC4;&#x4EFB;&#x52A1;&#x3002;&#x8FD9;&#x79CD; M-UAV-T &#x5206;&#x914D;&#x95EE;&#x9898;&#x88AB;&#x5B9A;&#x4E49;&#x4E3A;&#x8F66;&#x8F86;&#x8DEF;&#x5F84;&#x95EE;&#x9898;&#xFF08;VRP&#xFF09;[ <a href="https://www.mdpi.com/2504-2289/8/12/177#B8-BDCC-08-00177" target="_blank">8</a> ]&#x3002;&#x5728;&#x4F7F;&#x7528;&#x5355;&#x4E2A;&#x65E0;&#x4EBA;&#x673A;&#x7684;&#x5C0F;&#x89C4;&#x6A21;&#x914D;&#x9001;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;S-UAV-T &#x5206;&#x914D;&#x95EE;&#x9898;&#x88AB;&#x5B9A;&#x4E49;&#x4E3A;&#x65C5;&#x884C;&#x5546;&#x95EE;&#x9898;&#xFF08;TSP&#xFF09;&#x3002;&#x57FA;&#x4E8E;&#x65E0;&#x4EBA;&#x673A;&#x7684;&#x667A;&#x80FD;&#x4EA4;&#x901A;&#x7CFB;&#x7EDF;&#x7684;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x95EE;&#x9898;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x786E;&#x5B9A;&#x6027;&#x591A;&#x9879;&#x5F0F;&#x65F6;&#x95F4;&#xFF08;NP-hard&#xFF09;&#x95EE;&#x9898;&#x3002;&#x7EFC;&#x4E0A;&#x6240;&#x8FF0;&#xFF0C;&#x65E0;&#x4EBA;&#x673A;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x95EE;&#x9898;&#x662F;&#x6839;&#x636E;&#x6574;&#x4E2A;&#x4EFB;&#x52A1;&#x96C6;&#x7684;&#x8303;&#x56F4;&#x548C;&#x76EE;&#x6807;&#x786E;&#x5B9A;&#x5355;&#x4E2A;&#x65E0;&#x4EBA;&#x673A;&#x6216;&#x65E0;&#x4EBA;&#x673A;&#x673A;&#x961F;&#x7684;&#x4EFB;&#x52A1;&#x5E8F;&#x5217;&#xFF0C;&#x4ECE;&#x800C;&#x786E;&#x4FDD;&#x5176;&#x987A;&#x5229;&#x9AD8;&#x6548;&#x5730;&#x5B8C;&#x6210;[ <a href="https://www.mdpi.com/2504-2289/8/12/177#B9-BDCC-08-00177" target="_blank">9</a> ]&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x4E3A;&#x4E86;&#x4F7F;&#x65E0;&#x4EBA;&#x673A;&#x987A;&#x5229;&#x5B8C;&#x6210;&#x4EFB;&#x52A1;&#xFF0C;&#x9700;&#x8981;&#x8003;&#x8651;&#x4EFB;&#x52A1;&#x548C;&#x65E0;&#x4EBA;&#x673A;&#x7684;&#x5404;&#x79CD;&#x7EA6;&#x675F;&#xFF0C;&#x5305;&#x62EC;&#x6709;&#x6548;&#x8F7D;&#x8377;&#x80FD;&#x529B;&#x3001;&#x4F5C;&#x4E1A;&#x901F;&#x5EA6;&#x3001;&#x4EFB;&#x52A1;&#x5230;&#x671F;&#x65E5;&#x671F;&#x548C;&#x65E0;&#x4EBA;&#x673A;&#x7684;&#x6700;&#x5927;&#x98DE;&#x884C;&#x8DDD;&#x79BB;&#x3002;</p>
+<p>With the rise of robotic systems technology, the concept of multi-robot task allocation has been established as a dynamic research area in the broad context of operations research applications, and some literature reviews have been recently proposed that also consider UAV-based systems [<a href="https://www.mdpi.com/2504-2289/8/12/177#B7-BDCC-08-00177" target="_blank">7</a>,<a href="https://www.mdpi.com/2504-2289/8/12/177#B10-BDCC-08-00177" target="_blank">10</a>,<a href="https://www.mdpi.com/2504-2289/8/12/177#B11-BDCC-08-00177" target="_blank">11</a>,<a href="https://www.mdpi.com/2504-2289/8/12/177#B12-BDCC-08-00177" target="_blank">12</a>]. But, to the best of our knowledge, the literature lacks a critical survey of the application of multi-agent system (MAS)-based task allocation paradigms to a fleet of UAVs conceptualized as an intelligent transportation network. This paper presents a survey of MAS task allocation techniques and their application to drone-based networks for intelligent transportation applications. The main contributions of this work are threefold:</p>
+<p>&#x968F;&#x7740;&#x673A;&#x5668;&#x4EBA;&#x7CFB;&#x7EDF;&#x6280;&#x672F;&#x7684;&#x5174;&#x8D77;&#xFF0C;&#x591A;&#x673A;&#x5668;&#x4EBA;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x7684;&#x6982;&#x5FF5;&#x5DF2;&#x88AB;&#x786E;&#x7ACB;&#x4E3A;&#x8FD0;&#x7B79;&#x5B66;&#x5E94;&#x7528;&#x5E7F;&#x6CDB;&#x80CC;&#x666F;&#x4E0B;&#x7684;&#x52A8;&#x6001;&#x7814;&#x7A76;&#x9886;&#x57DF;&#xFF0C;&#x5E76;&#x4E14;&#x6700;&#x8FD1;&#x63D0;&#x51FA;&#x4E86;&#x4E00;&#x4E9B;&#x6587;&#x732E;&#x7EFC;&#x8FF0;&#xFF0C;&#x5176;&#x4E2D;&#x4E5F;&#x8003;&#x8651;&#x4E86;&#x57FA;&#x4E8E;&#x65E0;&#x4EBA;&#x673A;&#x7684;&#x7CFB;&#x7EDF;[ <a href="https://www.mdpi.com/2504-2289/8/12/177#B7-BDCC-08-00177" target="_blank">7</a> &#x3001; <a href="https://www.mdpi.com/2504-2289/8/12/177#B10-BDCC-08-00177" target="_blank">10</a> &#x3001; <a href="https://www.mdpi.com/2504-2289/8/12/177#B11-BDCC-08-00177" target="_blank">11</a> &#x3001; <a href="https://www.mdpi.com/2504-2289/8/12/177#B12-BDCC-08-00177" target="_blank">12</a> ]&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x636E;&#x6211;&#x4EEC;&#x6240;&#x77E5;&#xFF0C;&#x6587;&#x732E;&#x7F3A;&#x4E4F;&#x5BF9;&#x57FA;&#x4E8E;&#x591A;&#x667A;&#x80FD;&#x4F53;&#x7CFB;&#x7EDF;&#xFF08;MAS&#xFF09;&#x7684;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x8303;&#x4F8B;&#x5728;&#x6982;&#x5FF5;&#x5316;&#x4E3A;&#x667A;&#x80FD;&#x4EA4;&#x901A;&#x7F51;&#x7EDC;&#x7684;&#x65E0;&#x4EBA;&#x673A;&#x673A;&#x961F;&#x4E2D;&#x7684;&#x5E94;&#x7528;&#x7684;&#x6279;&#x5224;&#x6027;&#x8C03;&#x67E5;&#x3002;&#x672C;&#x6587;&#x5BF9; MAS &#x4EFB;&#x52A1;&#x5206;&#x914D;&#x6280;&#x672F;&#x53CA;&#x5176;&#x5728;&#x57FA;&#x4E8E;&#x65E0;&#x4EBA;&#x673A;&#x7684;&#x667A;&#x80FD;&#x4EA4;&#x901A;&#x5E94;&#x7528;&#x7F51;&#x7EDC;&#x4E2D;&#x7684;&#x5E94;&#x7528;&#x8FDB;&#x884C;&#x4E86;&#x8C03;&#x67E5;&#x3002;&#x8FD9;&#x9879;&#x5DE5;&#x4F5C;&#x7684;&#x4E3B;&#x8981;&#x8D21;&#x732E;&#x6709;&#x4E09;&#x4E2A;&#xFF1A;</p>
+<ul>
+<li>The development of a critical review about MAS task allocation methodologies focusing on multi-UAV networks. This review paper is for engineers, researchers, and scholars who need a critical overview of these emerging topics;<ul>
+<li>&#x9488;&#x5BF9;&#x591A;&#x65E0;&#x4EBA;&#x673A;&#x7F51;&#x7EDC;&#x7684; MAS &#x4EFB;&#x52A1;&#x5206;&#x914D;&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x4E25;&#x683C;&#x5BA1;&#x67E5;&#x3002;&#x8FD9;&#x7BC7;&#x7EFC;&#x8FF0;&#x8BBA;&#x6587;&#x9002;&#x7528;&#x4E8E;&#x9700;&#x8981;&#x5BF9;&#x8FD9;&#x4E9B;&#x65B0;&#x5174;&#x4E3B;&#x9898;&#x8FDB;&#x884C;&#x6279;&#x5224;&#x6027;&#x6982;&#x8FF0;&#x7684;&#x5DE5;&#x7A0B;&#x5E08;&#x3001;&#x7814;&#x7A76;&#x4EBA;&#x5458;&#x548C;&#x5B66;&#x8005;&#xFF1B;</li>
+</ul>
+</li>
+<li>The discussion of state-of-the-art allocation strategies for UAV-based ITSs, focusing on their suitability to the most established applications;<ul>
+<li>&#x8BA8;&#x8BBA;&#x57FA;&#x4E8E;&#x65E0;&#x4EBA;&#x673A;&#x7684;&#x667A;&#x80FD;&#x4EA4;&#x901A;&#x7CFB;&#x7EDF;&#x7684;&#x6700;&#x5148;&#x8FDB;&#x5206;&#x914D;&#x7B56;&#x7565;&#xFF0C;&#x91CD;&#x70B9;&#x5173;&#x6CE8;&#x5176;&#x5BF9;&#x6700;&#x6210;&#x719F;&#x5E94;&#x7528;&#x7684;&#x9002;&#x7528;&#x6027;&#xFF1B;</li>
+</ul>
+</li>
+<li>The discussion of the challenges of task allocation algorithms for UAV-based ITSs as well as the gaps in the literature for informing future trends.<ul>
+<li>&#x8BA8;&#x8BBA;&#x57FA;&#x4E8E;&#x65E0;&#x4EBA;&#x673A;&#x7684;&#x667A;&#x80FD;&#x4EA4;&#x901A;&#x7CFB;&#x7EDF;&#x7684;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x7B97;&#x6CD5;&#x7684;&#x6311;&#x6218;&#x4EE5;&#x53CA;&#x4E86;&#x89E3;&#x672A;&#x6765;&#x8D8B;&#x52BF;&#x7684;&#x6587;&#x732E;&#x4E2D;&#x7684;&#x5DEE;&#x8DDD;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<p>This paper is organized as follows. Game-theory-based approaches are presented in <a href="https://www.mdpi.com/2504-2289/8/12/177#sec2-BDCC-08-00177" target="_blank">Section 2</a>. Learning-based algorithms, auction-based algorithms, and optimization-based allocation algorithms are presented in <a href="https://www.mdpi.com/2504-2289/8/12/177#sec3-BDCC-08-00177" target="_blank">Section 3</a>, <a href="https://www.mdpi.com/2504-2289/8/12/177#sec4-BDCC-08-00177" target="_blank">Section 4</a>, and <a href="https://www.mdpi.com/2504-2289/8/12/177#sec5-BDCC-08-00177" target="_blank">Section 5</a>, respectively. Other hybrid approaches are discussed in <a href="https://www.mdpi.com/2504-2289/8/12/177#sec6-BDCC-08-00177" target="_blank">Section 6</a>. Finally, a comprehensive discussion of UAV state-of-the-art allocation techniques as well as their pros and cons, their applicability to multi-UAV ITSs, and the current gaps in this field are presented in <a href="https://www.mdpi.com/2504-2289/8/12/177#sec7-BDCC-08-00177" target="_blank">Section 7</a>. Our conclusions are drawn in <a href="https://www.mdpi.com/2504-2289/8/12/177#sec8-BDCC-08-00177" target="_blank">Section 8</a>.</p>
+<p>&#x672C;&#x6587;&#x7684;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#x3002;</p>
+<ul>
+<li><a href="https://www.mdpi.com/2504-2289/8/12/177#sec2-BDCC-08-00177" target="_blank">&#x7B2C; 2 &#x8282;</a>&#x4ECB;&#x7ECD;&#x4E86;&#x57FA;&#x4E8E;&#x535A;&#x5F08;&#x8BBA;&#x7684;&#x65B9;&#x6CD5;&#x3002;</li>
+<li>&#x57FA;&#x4E8E;&#x5B66;&#x4E60;&#x7684;&#x7B97;&#x6CD5;&#x3001;&#x57FA;&#x4E8E;&#x62CD;&#x5356;&#x7684;&#x7B97;&#x6CD5;&#x548C;&#x57FA;&#x4E8E;&#x4F18;&#x5316;&#x7684;&#x5206;&#x914D;&#x7B97;&#x6CD5;&#x5206;&#x522B;&#x5728;<a href="https://www.mdpi.com/2504-2289/8/12/177#sec3-BDCC-08-00177" target="_blank">&#x7B2C; 3 &#x8282;</a>&#x3001;<a href="https://www.mdpi.com/2504-2289/8/12/177#sec4-BDCC-08-00177" target="_blank">&#x7B2C; 4 &#x8282;</a>&#x548C;<a href="https://www.mdpi.com/2504-2289/8/12/177#sec5-BDCC-08-00177" target="_blank">&#x7B2C; 5 &#x8282;</a>&#x4E2D;&#x4ECB;&#x7ECD;&#x3002;</li>
+<li>&#x5176;&#x4ED6;&#x6DF7;&#x5408;&#x65B9;&#x6CD5;&#x5C06;&#x5728;<a href="https://www.mdpi.com/2504-2289/8/12/177#sec6-BDCC-08-00177" target="_blank">&#x7B2C; 6 &#x8282;</a>&#x4E2D;&#x8BA8;&#x8BBA;&#x3002;</li>
+<li>&#x6700;&#x540E;&#xFF0C;<a href="https://www.mdpi.com/2504-2289/8/12/177#sec7-BDCC-08-00177" target="_blank">&#x7B2C; 7 &#x8282;</a>&#x5168;&#x9762;&#x8BA8;&#x8BBA;&#x4E86;&#x65E0;&#x4EBA;&#x673A;&#x6700;&#x5148;&#x8FDB;&#x7684;&#x5206;&#x914D;&#x6280;&#x672F;&#x53CA;&#x5176;&#x4F18;&#x7F3A;&#x70B9;&#x3001;&#x5B83;&#x4EEC;&#x5BF9;&#x591A;&#x65E0;&#x4EBA;&#x673A; ITS &#x7684;&#x9002;&#x7528;&#x6027;&#x4EE5;&#x53CA;&#x8BE5;&#x9886;&#x57DF;&#x5F53;&#x524D;&#x7684;&#x5DEE;&#x8DDD;&#x3002;</li>
+<li>&#x6211;&#x4EEC;&#x7684;&#x7ED3;&#x8BBA;&#x5728;<a href="https://www.mdpi.com/2504-2289/8/12/177#sec8-BDCC-08-00177" target="_blank">&#x7B2C; 8 &#x8282;</a>&#x4E2D;&#x5F97;&#x51FA;&#x3002;</li>
+</ul>
+<h4 id="challenges-of-task-allocation-algorithms">Challenges of Task Allocation Algorithms</h4>
+<p>&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x7B97;&#x6CD5;&#x7684;&#x6311;&#x6218;</p>
+<p>According to the works of [<a href="https://www.mdpi.com/2504-2289/8/12/177#B13-BDCC-08-00177" target="_blank">13</a>,<a href="https://www.mdpi.com/2504-2289/8/12/177#B14-BDCC-08-00177" target="_blank">14</a>], UAV task allocation for ITSs can mainly be divided into two categories: OF-T-A (also known as static task allocation) and O-T-A (also known as dynamic task allocation). Unlike static task allocation, dynamic task allocation typically requires the use of fewer computing resources to generate real-time solutions. Centralized algorithms and distributed algorithms are the mainstream algorithms applied to static task allocation and dynamic task allocation, respectively. Currently, algorithms used for static task allocation mainly rely on biologically inspired operators, such as genetic algorithms (GAS) [<a href="https://www.mdpi.com/2504-2289/8/12/177#B15-BDCC-08-00177" target="_blank">15</a>], particle swarm optimization (PSO) approaches [<a href="https://www.mdpi.com/2504-2289/8/12/177#B16-BDCC-08-00177" target="_blank">16</a>], and differential evolution (DE) algorithms [<a href="https://www.mdpi.com/2504-2289/8/12/177#B17-BDCC-08-00177" target="_blank">17</a>], aiming to find approximate optimal solutions in a short period of time. After more than two decades of development, although centralized algorithms have become mature, the aspects of computational time and convergence accuracy still remain significant challenges.</p>
+<p>&#x6839;&#x636E;[ <a href="https://www.mdpi.com/2504-2289/8/12/177#B13-BDCC-08-00177" target="_blank">13</a> , <a href="https://www.mdpi.com/2504-2289/8/12/177#B14-BDCC-08-00177" target="_blank">14</a> ]&#x7684;&#x5DE5;&#x4F5C;&#xFF0C;&#x667A;&#x80FD;&#x4EA4;&#x901A;&#x7CFB;&#x7EDF;&#x7684;&#x65E0;&#x4EBA;&#x673A;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x4E3B;&#x8981;&#x5206;&#x4E3A;&#x4E24;&#x7C7B;&#xFF1A;OF-TA&#xFF08;&#x4E5F;&#x79F0;&#x4E3A;&#x9759;&#x6001;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#xFF09;&#x548C; OTA&#xFF08;&#x4E5F;&#x79F0;&#x4E3A;&#x52A8;&#x6001;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#xFF09;&#x3002;&#x4E0E;&#x9759;&#x6001;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x4E0D;&#x540C;&#xFF0C;&#x52A8;&#x6001;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x901A;&#x5E38;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x8F83;&#x5C11;&#x7684;&#x8BA1;&#x7B97;&#x8D44;&#x6E90;&#x6765;&#x751F;&#x6210;&#x5B9E;&#x65F6;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;&#x96C6;&#x4E2D;&#x5F0F;&#x7B97;&#x6CD5;&#x548C;&#x5206;&#x5E03;&#x5F0F;&#x7B97;&#x6CD5;&#x5206;&#x522B;&#x662F;&#x5E94;&#x7528;&#x4E8E;&#x9759;&#x6001;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x548C;&#x52A8;&#x6001;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x7684;&#x4E3B;&#x6D41;&#x7B97;&#x6CD5;&#x3002;&#x76EE;&#x524D;&#xFF0C;&#x7528;&#x4E8E;&#x9759;&#x6001;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x7684;&#x7B97;&#x6CD5;&#x4E3B;&#x8981;&#x4F9D;&#x8D56;&#x4E8E;&#x53D7;&#x751F;&#x7269;&#x5B66;&#x542F;&#x53D1;&#x7684;&#x7B97;&#x5B50;&#xFF0C;&#x4F8B;&#x5982;&#x9057;&#x4F20;&#x7B97;&#x6CD5;&#xFF08;GAS&#xFF09;[ <a href="https://www.mdpi.com/2504-2289/8/12/177#B15-BDCC-08-00177" target="_blank">15</a> ]&#x3001;&#x7C92;&#x5B50;&#x7FA4;&#x4F18;&#x5316;&#xFF08;PSO&#xFF09;&#x65B9;&#x6CD5;[ <a href="https://www.mdpi.com/2504-2289/8/12/177#B16-BDCC-08-00177" target="_blank">16</a> ]&#x548C;&#x5DEE;&#x5206;&#x8FDB;&#x5316;&#xFF08;DE&#xFF09;&#x7B97;&#x6CD5;[ <a href="https://www.mdpi.com/2504-2289/8/12/177#B17-BDCC-08-00177" target="_blank">17</a> ]&#xFF0C;&#x65E8;&#x5728;&#x5728;&#x77ED;&#x65F6;&#x95F4;&#x5185;&#x627E;&#x5230;&#x8FD1;&#x4F3C;&#x6700;&#x4F18;&#x89E3;&#x3002;&#x7ECF;&#x8FC7;&#x4E8C;&#x5341;&#x591A;&#x5E74;&#x7684;&#x53D1;&#x5C55;&#xFF0C;&#x4E2D;&#x5FC3;&#x5316;&#x7B97;&#x6CD5;&#x867D;&#x7136;&#x5DF2;&#x7ECF;&#x6210;&#x719F;&#xFF0C;&#x4F46;&#x8BA1;&#x7B97;&#x65F6;&#x95F4;&#x548C;&#x6536;&#x655B;&#x7CBE;&#x5EA6;&#x65B9;&#x9762;&#x4ECD;&#x7136;&#x5B58;&#x5728;&#x91CD;&#x5927;&#x6311;&#x6218;&#x3002;</p>
+<p>In comparison to OF-T-A algorithms, the development of O-T-A algorithm faces other significant challenges. Firstly, real-time task allocation increases the computational demand of solution algorithms, requiring them to solve NP-hard problems with fewer computational resources. It is well known that real-time algorithms often sacrifice decision quality to ensure their real-time performance; thus, balancing decision quality and algorithmic real-time performance is also a significant challenge. In addition, the generalization capability of the task allocation algorithms poses significant challenges in the task scheduling context of UAV-based ITSs. Determining how algorithms that perform satisfactorily in small-scale networks can adapt to large-scale drone networks has also become an emerging issue for researchers. Finally, the algorithms&#x2019; robustness presents further challenges. In unexpected situations, such as the loss of control of a drone or inadequate communication network coverage, real-time algorithms should be able to make immediate decisions to ensure that the completion of the task set is not compromised. Therefore, task reallocation is also being addressed in the literature. There are different types of algorithms that are employed in state-of-the-art drone-based intelligent transportation systems, including auction (market)-based approaches, game-theory-based algorithms, optimization-based algorithms, and machine learning (ML) techniques. These approaches and their application to UAV-based ITSs are thoughtfully presented and discussed in the next sections.</p>
+<p>&#x4E0E; OF-TA &#x7B97;&#x6CD5;&#x76F8;&#x6BD4;&#xFF0C;OTA &#x7B97;&#x6CD5;&#x7684;&#x53D1;&#x5C55;&#x8FD8;&#x9762;&#x4E34;&#x7740;&#x5176;&#x4ED6;&#x91CD;&#x5927;&#x6311;&#x6218;&#x3002;</p>
+<ul>
+<li>&#x9996;&#x5148;&#xFF0C;&#x5B9E;&#x65F6;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x589E;&#x52A0;&#x4E86;&#x6C42;&#x89E3;&#x7B97;&#x6CD5;&#x7684;&#x8BA1;&#x7B97;&#x9700;&#x6C42;&#xFF0C;&#x8981;&#x6C42;&#x5B83;&#x4EEC;&#x7528;&#x66F4;&#x5C11;&#x7684;&#x8BA1;&#x7B97;&#x8D44;&#x6E90;&#x89E3;&#x51B3; NP &#x96BE;&#x9898;&#x3002;&#x4F17;&#x6240;&#x5468;&#x77E5;&#xFF0C;&#x5B9E;&#x65F6;&#x7B97;&#x6CD5;&#x5F80;&#x5F80;&#x4F1A;&#x727A;&#x7272;&#x51B3;&#x7B56;&#x8D28;&#x91CF;&#x6765;&#x4FDD;&#x8BC1;&#x5176;&#x5B9E;&#x65F6;&#x6027;&#xFF1B;&#x56E0;&#x6B64;&#xFF0C;&#x5E73;&#x8861;&#x51B3;&#x7B56;&#x8D28;&#x91CF;&#x548C;&#x7B97;&#x6CD5;&#x5B9E;&#x65F6;&#x6027;&#x80FD;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x91CD;&#x5927;&#x6311;&#x6218;&#x3002;</li>
+<li>&#x6B64;&#x5916;&#xFF0C;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x7B97;&#x6CD5;&#x7684;&#x6CDB;&#x5316;&#x80FD;&#x529B;&#x5BF9;&#x57FA;&#x4E8E;&#x65E0;&#x4EBA;&#x673A;&#x7684; ITS &#x7684;&#x4EFB;&#x52A1;&#x8C03;&#x5EA6;&#x73AF;&#x5883;&#x63D0;&#x51FA;&#x4E86;&#x91CD;&#x5927;&#x6311;&#x6218;&#x3002;&#x786E;&#x5B9A;&#x5728;&#x5C0F;&#x578B;&#x7F51;&#x7EDC;&#x4E2D;&#x8868;&#x73B0;&#x4EE4;&#x4EBA;&#x6EE1;&#x610F;&#x7684;&#x7B97;&#x6CD5;&#x5982;&#x4F55;&#x9002;&#x5E94;&#x5927;&#x89C4;&#x6A21;&#x65E0;&#x4EBA;&#x673A;&#x7F51;&#x7EDC;&#x4E5F;&#x6210;&#x4E3A;&#x7814;&#x7A76;&#x4EBA;&#x5458;&#x9762;&#x4E34;&#x7684;&#x4E00;&#x4E2A;&#x65B0;&#x95EE;&#x9898;&#x3002;</li>
+<li>&#x6700;&#x540E;&#xFF0C;&#x7B97;&#x6CD5;&#x7684;&#x9C81;&#x68D2;&#x6027;&#x63D0;&#x51FA;&#x4E86;&#x8FDB;&#x4E00;&#x6B65;&#x7684;&#x6311;&#x6218;&#x3002;&#x5728;&#x610F;&#x5916;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F8B;&#x5982;&#x65E0;&#x4EBA;&#x673A;&#x5931;&#x53BB;&#x63A7;&#x5236;&#x6216;&#x901A;&#x4FE1;&#x7F51;&#x7EDC;&#x8986;&#x76D6;&#x8303;&#x56F4;&#x4E0D;&#x8DB3;&#xFF0C;&#x5B9E;&#x65F6;&#x7B97;&#x6CD5;&#x5E94;&#x8BE5;&#x80FD;&#x591F;&#x7ACB;&#x5373;&#x505A;&#x51FA;&#x51B3;&#x7B56;&#xFF0C;&#x4EE5;&#x786E;&#x4FDD;&#x4EFB;&#x52A1;&#x96C6;&#x7684;&#x5B8C;&#x6210;&#x4E0D;&#x53D7;&#x5F71;&#x54CD;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x6587;&#x732E;&#x4E2D;&#x4E5F;&#x8BA8;&#x8BBA;&#x4E86;&#x4EFB;&#x52A1;&#x91CD;&#x65B0;&#x5206;&#x914D;&#x3002;</li>
+<li>&#x6700;&#x5148;&#x8FDB;&#x7684;&#x57FA;&#x4E8E;&#x65E0;&#x4EBA;&#x673A;&#x7684;&#x667A;&#x80FD;&#x4EA4;&#x901A;&#x7CFB;&#x7EDF;&#x91C7;&#x7528;&#x4E86;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x7B97;&#x6CD5;&#xFF0C;&#x5305;&#x62EC;&#x57FA;&#x4E8E;&#x62CD;&#x5356;&#xFF08;&#x5E02;&#x573A;&#xFF09;&#x7684;&#x65B9;&#x6CD5;&#x3001;&#x57FA;&#x4E8E;&#x535A;&#x5F08;&#x8BBA;&#x7684;&#x7B97;&#x6CD5;&#x3001;&#x57FA;&#x4E8E;&#x4F18;&#x5316;&#x7684;&#x7B97;&#x6CD5;&#x548C;&#x673A;&#x5668;&#x5B66;&#x4E60;&#xFF08;ML&#xFF09; &#xFF09;&#x6280;&#x672F;&#x3002;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x53CA;&#x5176;&#x5728;&#x57FA;&#x4E8E;&#x65E0;&#x4EBA;&#x673A;&#x7684; ITS &#x4E2D;&#x7684;&#x5E94;&#x7528;&#x5C06;&#x5728;&#x4E0B;&#x4E00;&#x8282;&#x4E2D;&#x8FDB;&#x884C;&#x6DF1;&#x5165;&#x4ECB;&#x7ECD;&#x548C;&#x8BA8;&#x8BBA;&#x3002;</li>
+</ul>
+<h2 id="game-theory-based-algorithms-&#x57FA;&#x4E8E;&#x535A;&#x5F08;&#x8BBA;&#x7684;&#x7B97;&#x6CD5;">Game-Theory-Based Algorithms &#x57FA;&#x4E8E;&#x535A;&#x5F08;&#x8BBA;&#x7684;&#x7B97;&#x6CD5;</h2>
+<p>&#x5728;[ 18 ]&#x7684;&#x5DE5;&#x4F5C;&#x4E2D;&#xFF0C;&#x57FA;&#x4E8E;&#x535A;&#x5F08;&#x8BBA;&#x7684;&#x81EA;&#x4E3B;&#x63A7;&#x5236;&#x95EE;&#x9898;&#x88AB;&#x5B9A;&#x4E49;&#x5E76;&#x7528;&#x51E0;&#x4E2A;&#x65E0;&#x4EBA;&#x673A;&#x4EFB;&#x52A1;&#x89C4;&#x5212;&#x7684;&#x4F8B;&#x5B50;&#x6765;&#x8BF4;&#x660E;&#x3002;&#x57FA;&#x4E8E;&#x535A;&#x5F08;&#x8BBA;&#x7684;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x95EE;&#x9898;&#x88AB;&#x5B9A;&#x4E49;&#x4E3A;&#x975E;&#x7ED3;&#x6784;&#x5316;&#x73AF;&#x5883;&#xFF08;&#x968F;&#x673A;&#x73AF;&#x5883;&#xFF09;&#x6216;&#x5177;&#x6709;&#x654C;&#x5BF9;&#x4EE3;&#x7406;&#x7684;&#x786E;&#x5B9A;&#x6027;&#x73AF;&#x5883;&#x4E2D;&#x7684;&#x51B3;&#x7B56;&#x95EE;&#x9898;&#x3002;&#x6B64;&#x540E;&#xFF0C;&#x535A;&#x5F08;&#x8BBA;&#x7B97;&#x6CD5;&#x4F5C;&#x4E3A;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x5206;&#x5E03;&#x5F0F; M-UAV-T &#x5206;&#x914D;&#x7B97;&#x6CD5;&#x5F97;&#x5230;&#x4E86;&#x5E7F;&#x6CDB;&#x7684;&#x7814;&#x7A76;[ 19 ]&#x3002;&#x5728;&#x57FA;&#x4E8E;&#x535A;&#x5F08;&#x8BBA;&#x7684;&#x667A;&#x80FD;&#x4EA4;&#x901A;&#x7CFB;&#x7EDF;&#x65E0;&#x4EBA;&#x673A;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x95EE;&#x9898;&#x4E2D;&#xFF0C;&#x6BCF;&#x67B6;&#x65E0;&#x4EBA;&#x673A;&#x88AB;&#x5B9A;&#x4E49;&#x4E3A;&#x80FD;&#x591F;&#x505A;&#x51FA;&#x51B3;&#x7B56;&#x548C;&#x6267;&#x884C;&#x4EFB;&#x52A1;&#x7684;&#x201C;&#x73A9;&#x5BB6;&#x201D;&#x3002;&#x5728;&#x5B9E;&#x9645;&#x4EFB;&#x52A1;&#x4E2D;&#xFF0C;&#x7531;&#x4E8E;&#x901A;&#x4FE1;&#x9650;&#x5236;&#xFF0C;&#x73A9;&#x5BB6;&#x53EF;&#x80FD;&#x5B8C;&#x5168;&#x3001;&#x90E8;&#x5206;&#x6216;&#x4E0D;&#x4E86;&#x89E3;&#x7F51;&#x7EDC;&#x4E2D;&#x7684;&#x5176;&#x4ED6;&#x65E0;&#x4EBA;&#x673A;&#x3002;&#x5728;&#x57FA;&#x4E8E;&#x535A;&#x5F08;&#x8BBA;&#x7684; M-UAV-T &#x5206;&#x914D;&#x95EE;&#x9898;&#x4E2D;&#xFF0C;&#x4E00;&#x7EC4;&#x65E0;&#x4EBA;&#x673A;&#x88AB;&#x5B9A;&#x4E49;&#x4E3A; $A=\left{1,2,3, \ldots, a<em>{M A X}\right}$&#x3002;&#x5BF9;&#x4E8E;&#x4EFB;&#x4F55;&#x65E0;&#x4EBA;&#x673A; $a$&#xFF0C;&#x5BF9;&#x5E94;&#x7684;&#x7B56;&#x7565;&#x96C6;&#x4E3A; $D</em>{a}=\left{d<em>{a, 1}, d</em>{a, 2}, d<em>{a, 3}, \ldots, d</em>{a, n}\right}$ &#x3002;&#x7B97;&#x6CD5;&#x7ED3;&#x675F;&#x65F6;, &#x6BCF;&#x67B6;&#x65E0;&#x4EBA;&#x673A;&#x9009;&#x62E9;&#x7684;&#x7B56;&#x7565;&#x5BF9;&#x5E94;&#x7684;&#x4E00;&#x7EC4;&#x65E0;&#x4EBA;&#x673A;&#x7684;&#x6536;&#x76CA;&#x4E3A; $Z=\left{z<em>{1}, z</em>{2}, z<em>{3}, \ldots, z</em>{a_{M A X}}\right}$ &#x3002;&#x53C2;&#x4E0E;&#x8005;&#x3001;&#x7B56;&#x7565;&#x96C6;&#x548C;&#x6536;&#x76CA;&#x96C6;&#x6784;&#x6210;&#x4E86;&#x667A;&#x80FD;&#x4EA4;&#x901A;&#x7CFB;&#x7EDF;&#x4E2D;&#x591A;&#x65E0;&#x4EBA;&#x673A;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x535A;&#x5F08;&#x7684;&#x4E09;&#x4E2A;&#x7EC4;&#x6210;&#x90E8;&#x5206;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x535A;&#x5CE6;&#x8BBA;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x4E24;&#x7C7B;&#x6A21;&#x578B;&#xFF1A;&#x5408;&#x4F5C;&#x535A;&#x5F08;&#x548C;&#x975E;&#x5408;&#x4F5C;&#x535A;&#x5CE6;&#x3002;</p>
+<p>2.1. Non-Cooperative-Game-Based Task Allocation
+2.1.&#x57FA;&#x4E8E;&#x975E;&#x5408;&#x4F5C;&#x535A;&#x5F08;&#x7684;&#x4EFB;&#x52A1;&#x5206;&#x914D;</p>
+<p>2.2. Cooperative Game-Based Task Allocation
+2.2.&#x57FA;&#x4E8E;&#x5408;&#x4F5C;&#x535A;&#x5F08;&#x7684;&#x4EFB;&#x52A1;&#x5206;&#x914D;</p>
+<h2 id="learning-based-algorithms-&#x57FA;&#x4E8E;&#x5B66;&#x4E60;&#x7684;&#x7B97;&#x6CD5;">Learning-Based Algorithms &#x57FA;&#x4E8E;&#x5B66;&#x4E60;&#x7684;&#x7B97;&#x6CD5;</h2>
+<p>For real-time task allocation (O-T-A), the learning-based algorithm is another good approach. Compared to traditional artificial neural networks and deep neural networks, reinforcement learning can handle complex tasks and continuously optimize strategies from the optimization process, making it widely used by researchers in real-time task allocation problems for multi-UAVs. In order to solve the M-UAV-T allocation problem, a deep reinforcement learning algorithm is proposed in [27] with the aim of improving the computational efficiency and the convergence accuracy of the task allocation algorithm. Unlike game-theory-based methods, reinforcement-learning-based algorithms typically establish a nonlinear model based on the task allocation problem, as shown in Equation (1).</p>
+<p>&#x5BF9;&#x4E8E;&#x5B9E;&#x65F6;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#xFF08;OTA&#xFF09;&#xFF0C;&#x57FA;&#x4E8E;&#x5B66;&#x4E60;&#x7684;&#x7B97;&#x6CD5;&#x662F;&#x53E6;&#x4E00;&#x79CD;&#x597D;&#x65B9;&#x6CD5;&#x3002;&#x4E0E;&#x4F20;&#x7EDF;&#x7684;&#x4EBA;&#x5DE5;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x548C;&#x6DF1;&#x5EA6;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x76F8;&#x6BD4;&#xFF0C;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x590D;&#x6742;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x5E76;&#x4ECE;&#x4F18;&#x5316;&#x8FC7;&#x7A0B;&#x4E2D;&#x4E0D;&#x65AD;&#x4F18;&#x5316;&#x7B56;&#x7565;&#xFF0C;&#x4F7F;&#x5176;&#x88AB;&#x7814;&#x7A76;&#x4EBA;&#x5458;&#x5E7F;&#x6CDB;&#x5E94;&#x7528;&#x4E8E;&#x591A;&#x65E0;&#x4EBA;&#x673A;&#x7684;&#x5B9E;&#x65F6;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x95EE;&#x9898;&#x3002;&#x4E3A;&#x4E86;&#x89E3;&#x51B3; M-UAV-T &#x5206;&#x914D;&#x95EE;&#x9898;&#xFF0C;&#x6587;&#x732E;[ 27 ]&#x63D0;&#x51FA;&#x4E86;&#x4E00;&#x79CD;&#x6DF1;&#x5EA6;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x7B97;&#x6CD5;&#xFF0C;&#x65E8;&#x5728;&#x63D0;&#x9AD8;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x7B97;&#x6CD5;&#x7684;&#x8BA1;&#x7B97;&#x6548;&#x7387;&#x548C;&#x6536;&#x655B;&#x7CBE;&#x5EA6;&#x3002;&#x4E0E;&#x57FA;&#x4E8E;&#x535A;&#x5F08;&#x8BBA;&#x7684;&#x65B9;&#x6CD5;&#x4E0D;&#x540C;&#xFF0C;&#x57FA;&#x4E8E;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x7684;&#x7B97;&#x6CD5;&#x901A;&#x5E38;&#x57FA;&#x4E8E;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x95EE;&#x9898;&#x5EFA;&#x7ACB;&#x975E;&#x7EBF;&#x6027;&#x6A21;&#x578B;&#xFF0C;&#x5982;&#x65B9;&#x7A0B;&#xFF08;1&#xFF09;&#x6240;&#x793A;&#x3002;</p>
+<p>The objective function aims to minimize the cost of the problem, which is the same as the reward function in game-based models. &#x1D44F;&#x2264;&#x1D435;&#x1D45A;&#x1D44E;&#x1D465; denotes a set of constraints considering the boundary conditions.</p>
+<p>&#x76EE;&#x6807;&#x51FD;&#x6570;&#x65E8;&#x5728;&#x6700;&#x5C0F;&#x5316;&#x95EE;&#x9898;&#x7684;&#x6210;&#x672C;&#xFF0C;&#x8FD9;&#x4E0E;&#x57FA;&#x4E8E;&#x535A;&#x5F08;&#x7684;&#x6A21;&#x578B;&#x4E2D;&#x7684;&#x5956;&#x52B1;&#x51FD;&#x6570;&#x76F8;&#x540C;&#x3002; &#x1D44F;&#x2264;&#x1D435;&#x1D45A;&#x1D44E;&#x1D465; &#x8868;&#x793A;&#x8003;&#x8651;&#x8FB9;&#x754C;&#x6761;&#x4EF6;&#x7684;&#x4E00;&#x7EC4;&#x7EA6;&#x675F;&#x3002;</p>
+<p>In addition, the work of [28] also aims at improving the convergence accuracy of the algorithm, thus developing an improved reinforcement learning algorithm. The reinforcement learning algorithm introduces the transfer learning theory. After finding a similar UAV task allocation model in the policy library, the algorithm transfers the training parameter results of the previous source task to the new model through transfer learning. The simulation results show that the algorithm not only effectively improves the performance of UAV task allocation schemes, but also has a strong generalization capability. The authors of [29] developed a multi-agent reinforcement learning method aimed at generating task allocation schemes for heterogeneous UAV fleets. This algorithm can run in locally known environments and has strong robustness.</p>
+<p>&#x6B64;&#x5916;&#xFF0C;[ 28 ]&#x7684;&#x5DE5;&#x4F5C;&#x8FD8;&#x65E8;&#x5728;&#x63D0;&#x9AD8;&#x7B97;&#x6CD5;&#x7684;&#x6536;&#x655B;&#x7CBE;&#x5EA6;&#xFF0C;&#x4ECE;&#x800C;&#x5F00;&#x53D1;&#x51FA;&#x6539;&#x8FDB;&#x7684;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x7B97;&#x6CD5;&#x3002;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x7B97;&#x6CD5;&#x5F15;&#x5165;&#x4E86;&#x8FC1;&#x79FB;&#x5B66;&#x4E60;&#x7406;&#x8BBA;&#x3002;&#x5728;&#x7B56;&#x7565;&#x5E93;&#x4E2D;&#x627E;&#x5230;&#x7C7B;&#x4F3C;&#x7684;&#x65E0;&#x4EBA;&#x673A;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x6A21;&#x578B;&#x540E;&#xFF0C;&#x7B97;&#x6CD5;&#x901A;&#x8FC7;&#x8FC1;&#x79FB;&#x5B66;&#x4E60;&#x5C06;&#x5148;&#x524D;&#x6E90;&#x4EFB;&#x52A1;&#x7684;&#x8BAD;&#x7EC3;&#x53C2;&#x6570;&#x7ED3;&#x679C;&#x8FC1;&#x79FB;&#x5230;&#x65B0;&#x6A21;&#x578B;&#x4E2D;&#x3002;&#x4EFF;&#x771F;&#x7ED3;&#x679C;&#x8868;&#x660E;&#xFF0C;&#x8BE5;&#x7B97;&#x6CD5;&#x4E0D;&#x4EC5;&#x6709;&#x6548;&#x63D0;&#x9AD8;&#x4E86;&#x65E0;&#x4EBA;&#x673A;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x65B9;&#x6848;&#x7684;&#x6027;&#x80FD;&#xFF0C;&#x800C;&#x4E14;&#x5177;&#x6709;&#x8F83;&#x5F3A;&#x7684;&#x6CDB;&#x5316;&#x80FD;&#x529B;&#x3002; [ 29 ]&#x7684;&#x4F5C;&#x8005;&#x5F00;&#x53D1;&#x4E86;&#x4E00;&#x79CD;&#x591A;&#x667A;&#x80FD;&#x4F53;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x65B9;&#x6CD5;&#xFF0C;&#x65E8;&#x5728;&#x4E3A;&#x5F02;&#x6784;&#x65E0;&#x4EBA;&#x673A;&#x673A;&#x961F;&#x751F;&#x6210;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x65B9;&#x6848;&#x3002;&#x8BE5;&#x7B97;&#x6CD5;&#x53EF;&#x4EE5;&#x5728;&#x672C;&#x5730;&#x5DF2;&#x77E5;&#x7684;&#x73AF;&#x5883;&#x4E2D;&#x8FD0;&#x884C;&#xFF0C;&#x5177;&#x6709;&#x5F88;&#x5F3A;&#x7684;&#x9C81;&#x68D2;&#x6027;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>Ref.</th>
+<th>Algorithm</th>
+<th>Characteristics</th>
+<th>Main Constraints</th>
+<th>Limitations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[<a href="https://www.mdpi.com/2504-2289/8/12/177#B27-BDCC-08-00177" target="_blank">27</a>]</td>
+<td>Deep Q-learning approach</td>
+<td>UAVs learn the network state and adapt their locations</td>
+<td>Considered all constraints of UAV-based networking tasks.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>[<a href="https://www.mdpi.com/2504-2289/8/12/177#B28-BDCC-08-00177" target="_blank">28</a>]</td>
+<td>Deep migration reinforcement learning algorithm based on QMIX</td>
+<td>Compared with heuristic algorithms, this method can improve solving efficiency without increasing solving time.</td>
+<td>UAV range constraint</td>
+<td>Does not consider time constraints for practical scenarios</td>
+</tr>
+<tr>
+<td>[<a href="https://www.mdpi.com/2504-2289/8/12/177#B29-BDCC-08-00177" target="_blank">29</a>]</td>
+<td>Multi-agent reinforcement learning</td>
+<td>It can be used in dynamic task scenarios and can achieve real-time task allocation.</td>
+<td>Considers the uncertainty of dynamic tasks</td>
+<td>-</td>
+</tr>
+<tr>
+<td>[<a href="https://www.mdpi.com/2504-2289/8/12/177#B30-BDCC-08-00177" target="_blank">30</a>]</td>
+<td>Gradient descent method based on deep reinforcement learning</td>
+<td>UAVs can automatically and dynamically adjust task allocation strategies in real time.</td>
+<td>Time delay of UAV data transmission</td>
+<td>Verified only for a specific application scenario</td>
+</tr>
+</tbody>
+</table>
+<h2 id="market-based-algorithms-&#x57FA;&#x4E8E;&#x5E02;&#x573A;&#x7684;&#x7B97;&#x6CD5;">Market-Based Algorithms &#x57FA;&#x4E8E;&#x5E02;&#x573A;&#x7684;&#x7B97;&#x6CD5;</h2>
+<p>Auction-based algorithms are widely used for task allocation in drone applications. These algorithms are based on economic principles, as they are alternatively called market-based algorithms, with agents using a negotiation protocol to bid in an auction for task allocation, informed by their local perception of the environment. The agents aim to complete the task assigned with the highest utility or lowest cost by bidding based on the cost or utility they calculate. According to the agents&#x2019; utility functions, a global objective function is optimized. According to [<a href="https://www.mdpi.com/2504-2289/8/12/177#B31-BDCC-08-00177" target="_blank">31</a>], auction-based algorithms present several advantages, including a high solution efficiency and moderate computational costs, in addition to having a dynamic protocol, as they can include or remove new tasks from the allocation procedure.</p>
+<p>&#x57FA;&#x4E8E;&#x62CD;&#x5356;&#x7684;&#x7B97;&#x6CD5;&#x5E7F;&#x6CDB;&#x7528;&#x4E8E;&#x65E0;&#x4EBA;&#x673A;&#x5E94;&#x7528;&#x4E2D;&#x7684;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x3002;&#x8FD9;&#x4E9B;&#x7B97;&#x6CD5;&#x57FA;&#x4E8E;&#x7ECF;&#x6D4E;&#x539F;&#x7406;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x4E5F;&#x79F0;&#x4E3A;&#x57FA;&#x4E8E;&#x5E02;&#x573A;&#x7684;&#x7B97;&#x6CD5;&#xFF0C;&#x4EE3;&#x7406;&#x4F7F;&#x7528;&#x534F;&#x5546;&#x534F;&#x8BAE;&#x5728;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x62CD;&#x5356;&#x4E2D;&#x7ADE;&#x6807;&#xFF0C;&#x5E76;&#x6839;&#x636E;&#x5176;&#x5BF9;&#x73AF;&#x5883;&#x7684;&#x672C;&#x5730;&#x611F;&#x77E5;&#x8FDB;&#x884C;&#x4E86;&#x89E3;&#x3002;&#x4EE3;&#x7406;&#x7684;&#x76EE;&#x6807;&#x662F;&#x6839;&#x636E;&#x4ED6;&#x4EEC;&#x8BA1;&#x7B97;&#x7684;&#x6210;&#x672C;&#x6216;&#x6548;&#x7528;&#x8FDB;&#x884C;&#x6295;&#x6807;&#xFF0C;&#x4EE5;&#x6700;&#x9AD8;&#x6548;&#x7528;&#x6216;&#x6700;&#x4F4E;&#x6210;&#x672C;&#x5B8C;&#x6210;&#x5206;&#x914D;&#x7684;&#x4EFB;&#x52A1;&#x3002;&#x6839;&#x636E;&#x667A;&#x80FD;&#x4F53;&#x7684;&#x6548;&#x7528;&#x51FD;&#x6570;&#xFF0C;&#x4F18;&#x5316;&#x5168;&#x5C40;&#x76EE;&#x6807;&#x51FD;&#x6570;&#x3002;&#x6839;&#x636E;[ <a href="https://www.mdpi.com/2504-2289/8/12/177#B31-BDCC-08-00177" target="_blank">31</a> ]&#xFF0C;&#x57FA;&#x4E8E;&#x62CD;&#x5356;&#x7684;&#x7B97;&#x6CD5;&#x9664;&#x4E86;&#x5177;&#x6709;&#x52A8;&#x6001;&#x534F;&#x8BAE;&#x4E4B;&#x5916;&#xFF0C;&#x8FD8;&#x5177;&#x6709;&#x591A;&#x79CD;&#x4F18;&#x52BF;&#xFF0C;&#x5305;&#x62EC;&#x9AD8;&#x89E3;&#x51B3;&#x6548;&#x7387;&#x548C;&#x9002;&#x4E2D;&#x7684;&#x8BA1;&#x7B97;&#x6210;&#x672C;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x5206;&#x914D;&#x8FC7;&#x7A0B;&#x4E2D;&#x5305;&#x542B;&#x6216;&#x5220;&#x9664;&#x65B0;&#x4EFB;&#x52A1;&#x3002;</p>
+<p>The literature presents several works related to auction methodology. A time-sensitive sequential auction (TSSA) algorithm considering time window constraints is proposed in [<a href="https://www.mdpi.com/2504-2289/8/12/177#B32-BDCC-08-00177" target="_blank">32</a>] for task allocation in a multi-agent system. An auction-based algorithm for multi-agent task allocation is also proposed in [<a href="https://www.mdpi.com/2504-2289/8/12/177#B33-BDCC-08-00177" target="_blank">33</a>]. In this way, auction-based task allocation has received increasing attention since there are different factors that may be considered, including UAVs&#x2019; capability, battery consumption, execution time, and path routes, among others. The work of [<a href="https://www.mdpi.com/2504-2289/8/12/177#B34-BDCC-08-00177" target="_blank">34</a>] proposes an auction-based algorithm for multiple UAVs. A multi-layer cost computation strategy is developed to handle multiple constraints and determine the bid&#x2019;s value.</p>
+<p>&#x6587;&#x732E;&#x4E2D;&#x4ECB;&#x7ECD;&#x4E86;&#x4E00;&#x4E9B;&#x4E0E;&#x62CD;&#x5356;&#x65B9;&#x6CD5;&#x76F8;&#x5173;&#x7684;&#x8457;&#x4F5C;&#x3002; [ <a href="https://www.mdpi.com/2504-2289/8/12/177#B32-BDCC-08-00177" target="_blank">32</a> ]&#x63D0;&#x51FA;&#x4E86;&#x4E00;&#x79CD;&#x8003;&#x8651;&#x65F6;&#x95F4;&#x7A97;&#x53E3;&#x7EA6;&#x675F;&#x7684;&#x65F6;&#x95F4;&#x654F;&#x611F;&#x987A;&#x5E8F;&#x62CD;&#x5356;&#xFF08;TSSA&#xFF09;&#x7B97;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x591A;&#x667A;&#x80FD;&#x4F53;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x3002; [ <a href="https://www.mdpi.com/2504-2289/8/12/177#B33-BDCC-08-00177" target="_blank">33</a> ]&#x4E2D;&#x8FD8;&#x63D0;&#x51FA;&#x4E86;&#x4E00;&#x79CD;&#x57FA;&#x4E8E;&#x62CD;&#x5356;&#x7684;&#x591A;&#x667A;&#x80FD;&#x4F53;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x7B97;&#x6CD5;&#x3002;&#x8FD9;&#x6837;&#xFF0C;&#x57FA;&#x4E8E;&#x62CD;&#x5356;&#x7684;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x53D7;&#x5230;&#x4E86;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x7684;&#x5173;&#x6CE8;&#xFF0C;&#x56E0;&#x4E3A;&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x4E0D;&#x540C;&#x7684;&#x56E0;&#x7D20;&#xFF0C;&#x5305;&#x62EC;&#x65E0;&#x4EBA;&#x673A;&#x7684;&#x80FD;&#x529B;&#x3001;&#x7535;&#x6C60;&#x6D88;&#x8017;&#x3001;&#x6267;&#x884C;&#x65F6;&#x95F4;&#x548C;&#x8DEF;&#x5F84;&#x8DEF;&#x7EBF;&#x7B49;&#x3002; [ <a href="https://www.mdpi.com/2504-2289/8/12/177#B34-BDCC-08-00177" target="_blank">34</a> ]&#x7684;&#x5DE5;&#x4F5C;&#x63D0;&#x51FA;&#x4E86;&#x4E00;&#x79CD;&#x9488;&#x5BF9;&#x591A;&#x4E2A;&#x65E0;&#x4EBA;&#x673A;&#x7684;&#x57FA;&#x4E8E;&#x62CD;&#x5356;&#x7684;&#x7B97;&#x6CD5;&#x3002;&#x5F00;&#x53D1;&#x4E86;&#x591A;&#x5C42;&#x6210;&#x672C;&#x8BA1;&#x7B97;&#x7B56;&#x7565;&#x6765;&#x5904;&#x7406;&#x591A;&#x4E2A;&#x7EA6;&#x675F;&#x5E76;&#x786E;&#x5B9A;&#x51FA;&#x4EF7;&#x7684;&#x4EF7;&#x503C;&#x3002;</p>
+<p>Most of the proposed auction algorithms yield a poor performance for multi-dynamic tasks for multiples drones. To address this issue, a hybrid auction algorithm, based on a decision mechanism and an enhanced objective function, is proposed in [<a href="https://www.mdpi.com/2504-2289/8/12/177#B35-BDCC-08-00177" target="_blank">35</a>]. The work of [<a href="https://www.mdpi.com/2504-2289/8/12/177#B36-BDCC-08-00177" target="_blank">36</a>] exploits a dynamic decentralized auction-based algorithm for multi-agent systems, such as UAVs. A dynamic task allocation protocol is used, since the agent utilities may change throughout their path towards their targets. This strategy aims to assign a maximum of one task to each member of the fleet, while the same task can be allocated to multiple agents. Thus, the task utilities are calculated according to the agent&#x2019;s states; i.e., they depend on both the rewards from the accomplishment of the assigned tasks and the costs associated with their execution. Differently from game-based algorithms that may not always achieve high levels of global utility, the auction-based algorithm is able to greedily achieve global utility, due to its simplicity and fast convergence.</p>
+<p>&#x5927;&#x591A;&#x6570;&#x63D0;&#x51FA;&#x7684;&#x62CD;&#x5356;&#x7B97;&#x6CD5;&#x5BF9;&#x4E8E;&#x591A;&#x67B6;&#x65E0;&#x4EBA;&#x673A;&#x7684;&#x591A;&#x52A8;&#x6001;&#x4EFB;&#x52A1;&#x6027;&#x80FD;&#x8F83;&#x5DEE;&#x3002;&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;[ <a href="https://www.mdpi.com/2504-2289/8/12/177#B35-BDCC-08-00177" target="_blank">35</a> ]&#x63D0;&#x51FA;&#x4E86;&#x4E00;&#x79CD;&#x57FA;&#x4E8E;&#x51B3;&#x7B56;&#x673A;&#x5236;&#x548C;&#x589E;&#x5F3A;&#x76EE;&#x6807;&#x51FD;&#x6570;&#x7684;&#x6DF7;&#x5408;&#x62CD;&#x5356;&#x7B97;&#x6CD5;&#x3002; [ <a href="https://www.mdpi.com/2504-2289/8/12/177#B36-BDCC-08-00177" target="_blank">36</a> ]&#x7684;&#x5DE5;&#x4F5C;&#x4E3A;&#x591A;&#x4EE3;&#x7406;&#x7CFB;&#x7EDF;&#xFF08;&#x4F8B;&#x5982;&#x65E0;&#x4EBA;&#x673A;&#xFF09;&#x5F00;&#x53D1;&#x4E86;&#x4E00;&#x79CD;&#x57FA;&#x4E8E;&#x52A8;&#x6001;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x62CD;&#x5356;&#x7684;&#x7B97;&#x6CD5;&#x3002;&#x4F7F;&#x7528;&#x52A8;&#x6001;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x534F;&#x8BAE;&#xFF0C;&#x56E0;&#x4E3A;&#x4EE3;&#x7406;&#x5B9E;&#x7528;&#x7A0B;&#x5E8F;&#x53EF;&#x80FD;&#x4F1A;&#x5728;&#x5176;&#x901A;&#x5F80;&#x76EE;&#x6807;&#x7684;&#x6574;&#x4E2A;&#x8DEF;&#x5F84;&#x4E2D;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x3002;&#x8BE5;&#x7B56;&#x7565;&#x65E8;&#x5728;&#x4E3A;&#x8230;&#x961F;&#x7684;&#x6BCF;&#x4E2A;&#x6210;&#x5458;&#x6700;&#x591A;&#x5206;&#x914D;&#x4E00;&#x9879;&#x4EFB;&#x52A1;&#xFF0C;&#x800C;&#x540C;&#x4E00;&#x4EFB;&#x52A1;&#x53EF;&#x4EE5;&#x5206;&#x914D;&#x7ED9;&#x591A;&#x4E2A;&#x4EE3;&#x7406;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x4EFB;&#x52A1;&#x6548;&#x7528;&#x662F;&#x6839;&#x636E;&#x667A;&#x80FD;&#x4F53;&#x7684;&#x72B6;&#x6001;&#x8BA1;&#x7B97;&#x7684;&#xFF1B;&#x5373;&#xFF0C;&#x5B83;&#x4EEC;&#x65E2;&#x53D6;&#x51B3;&#x4E8E;&#x5B8C;&#x6210;&#x6307;&#x5B9A;&#x4EFB;&#x52A1;&#x7684;&#x56DE;&#x62A5;&#xFF0C;&#x4E5F;&#x53D6;&#x51B3;&#x4E8E;&#x4E0E;&#x6267;&#x884C;&#x4EFB;&#x52A1;&#x76F8;&#x5173;&#x7684;&#x6210;&#x672C;&#x3002;&#x4E0E;&#x57FA;&#x4E8E;&#x6E38;&#x620F;&#x7684;&#x7B97;&#x6CD5;&#x53EF;&#x80FD;&#x5E76;&#x4E0D;&#x603B;&#x80FD;&#x5B9E;&#x73B0;&#x9AD8;&#x6C34;&#x5E73;&#x7684;&#x5168;&#x5C40;&#x6548;&#x7528;&#x4E0D;&#x540C;&#xFF0C;&#x57FA;&#x4E8E;&#x62CD;&#x5356;&#x7684;&#x7B97;&#x6CD5;&#x7531;&#x4E8E;&#x5176;&#x7B80;&#x5355;&#x6027;&#x548C;&#x5FEB;&#x901F;&#x6536;&#x655B;&#x800C;&#x80FD;&#x591F;&#x8D2A;&#x5A6A;&#x5730;&#x5B9E;&#x73B0;&#x5168;&#x5C40;&#x6548;&#x7528;&#x3002;</p>
+<p>The use of different auction-based algorithms to solve a heterogenous task allocation problem for multiple UAVs in a drone delivery context is investigated in [<a href="https://www.mdpi.com/2504-2289/8/12/177#B37-BDCC-08-00177" target="_blank">37</a>]. The strategy is used to minimize the battery consumption of a UAS-based parcel transportation service by allocating delivery tasks with due date constraints to multiple drones that demand a lower consumption of energy. The allocation of charge tasks is also addressed. These auction-based algorithms were implemented by means of both single-item and multiple-item strategies. Scalar constrained optimization problems are solved by each agent to calculate the UAV&#x2019;s bid for each task. For delivery tasks, the protocol&#x2019;s bid is related to the consumption of energy, while the flight time is chosen for charge task bids. Path planning is also included in the framework to compute the risk-aware path for each task-UAV bid by means of a 2D risk map of the operational area.</p>
+<p>[ <a href="https://www.mdpi.com/2504-2289/8/12/177#B37-BDCC-08-00177" target="_blank">37</a> ] &#x7814;&#x7A76;&#x4E86;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x57FA;&#x4E8E;&#x62CD;&#x5356;&#x7684;&#x7B97;&#x6CD5;&#x6765;&#x89E3;&#x51B3;&#x65E0;&#x4EBA;&#x673A;&#x4EA4;&#x4ED8;&#x73AF;&#x5883;&#x4E2D;&#x591A;&#x4E2A;&#x65E0;&#x4EBA;&#x673A;&#x7684;&#x5F02;&#x6784;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x95EE;&#x9898;&#x3002;&#x8BE5;&#x7B56;&#x7565;&#x7528;&#x4E8E;&#x901A;&#x8FC7;&#x5C06;&#x5177;&#x6709;&#x5230;&#x671F;&#x65E5;&#x671F;&#x9650;&#x5236;&#x7684;&#x4EA4;&#x4ED8;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x7ED9;&#x9700;&#x8981;&#x8F83;&#x4F4E;&#x80FD;&#x6E90;&#x6D88;&#x8017;&#x7684;&#x591A;&#x67B6;&#x65E0;&#x4EBA;&#x673A;&#x6765;&#x6700;&#x5927;&#x9650;&#x5EA6;&#x5730;&#x51CF;&#x5C11;&#x57FA;&#x4E8E;&#x65E0;&#x4EBA;&#x673A;&#x7684;&#x5305;&#x88F9;&#x8FD0;&#x8F93;&#x670D;&#x52A1;&#x7684;&#x7535;&#x6C60;&#x6D88;&#x8017;&#x3002;&#x8FD8;&#x89E3;&#x51B3;&#x4E86;&#x5145;&#x7535;&#x4EFB;&#x52A1;&#x7684;&#x5206;&#x914D;&#x95EE;&#x9898;&#x3002;&#x8FD9;&#x4E9B;&#x57FA;&#x4E8E;&#x62CD;&#x5356;&#x7684;&#x7B97;&#x6CD5;&#x662F;&#x901A;&#x8FC7;&#x5355;&#x9879;&#x548C;&#x591A;&#x9879;&#x7B56;&#x7565;&#x6765;&#x5B9E;&#x73B0;&#x7684;&#x3002;&#x6BCF;&#x4E2A;&#x4EE3;&#x7406;&#x89E3;&#x51B3;&#x6807;&#x91CF;&#x7EA6;&#x675F;&#x4F18;&#x5316;&#x95EE;&#x9898;&#xFF0C;&#x4EE5;&#x8BA1;&#x7B97;&#x65E0;&#x4EBA;&#x673A;&#x5BF9;&#x6BCF;&#x4E2A;&#x4EFB;&#x52A1;&#x7684;&#x51FA;&#x4EF7;&#x3002;&#x5BF9;&#x4E8E;&#x6295;&#x9012;&#x4EFB;&#x52A1;&#xFF0C;&#x534F;&#x8BAE;&#x7684;&#x51FA;&#x4EF7;&#x4E0E;&#x80FD;&#x91CF;&#x6D88;&#x8017;&#x76F8;&#x5173;&#xFF0C;&#x800C;&#x5BF9;&#x4E8E;&#x5145;&#x7535;&#x4EFB;&#x52A1;&#x7684;&#x51FA;&#x4EF7;&#x5219;&#x9009;&#x62E9;&#x98DE;&#x884C;&#x65F6;&#x95F4;&#x3002;&#x6846;&#x67B6;&#x4E2D;&#x8FD8;&#x5305;&#x542B;&#x8DEF;&#x5F84;&#x89C4;&#x5212;&#xFF0C;&#x901A;&#x8FC7;&#x64CD;&#x4F5C;&#x533A;&#x57DF;&#x7684;&#x4E8C;&#x7EF4;&#x98CE;&#x9669;&#x56FE;&#x6765;&#x8BA1;&#x7B97;&#x6BCF;&#x4E2A;&#x4EFB;&#x52A1;&#x65E0;&#x4EBA;&#x673A;&#x6295;&#x6807;&#x7684;&#x98CE;&#x9669;&#x611F;&#x77E5;&#x8DEF;&#x5F84;&#x3002;</p>
+<p>The work of [<a href="https://www.mdpi.com/2504-2289/8/12/177#B38-BDCC-08-00177" target="_blank">38</a>] investigates the use of a second price auction algorithm for drone intelligent transportation. A deep learning methodology is also included to enhance the auction algorithm&#x2019;s robustness by revenue optimality. In addition, an improved implementation of an auction algorithm for drone delivery is addressed in [<a href="https://www.mdpi.com/2504-2289/8/12/177#B39-BDCC-08-00177" target="_blank">39</a>]. Lightweight distributed task allocation is proposed for this application, simplifying the management of delivery and charge tasks with minimal energy consumption. Each agent runs a decentralized protocol, running path planning and optimization algorithms. In contrast to conventional auction-based methods for task scheduling, each agent is designed to function as both the network&#x2019;s auctioneer and bidder, depending on the task type. Recent works combine the auction-based algorithm with other methodologies, as seen in [<a href="https://www.mdpi.com/2504-2289/8/12/177#B40-BDCC-08-00177" target="_blank">40</a>,<a href="https://www.mdpi.com/2504-2289/8/12/177#B41-BDCC-08-00177" target="_blank">41</a>,<a href="https://www.mdpi.com/2504-2289/8/12/177#B42-BDCC-08-00177" target="_blank">42</a>].</p>
+<p>[ <a href="https://www.mdpi.com/2504-2289/8/12/177#B38-BDCC-08-00177" target="_blank">38</a> ]&#x7684;&#x5DE5;&#x4F5C;&#x7814;&#x7A76;&#x4E86;&#x65E0;&#x4EBA;&#x673A;&#x667A;&#x80FD;&#x4EA4;&#x901A;&#x7684;&#x7B2C;&#x4E8C;&#x4EF7;&#x683C;&#x62CD;&#x5356;&#x7B97;&#x6CD5;&#x7684;&#x4F7F;&#x7528;&#x3002;&#x8FD8;&#x5305;&#x62EC;&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x65B9;&#x6CD5;&#xFF0C;&#x4EE5;&#x901A;&#x8FC7;&#x6536;&#x5165;&#x6700;&#x4F18;&#x6027;&#x589E;&#x5F3A;&#x62CD;&#x5356;&#x7B97;&#x6CD5;&#x7684;&#x7A33;&#x5065;&#x6027;&#x3002;&#x6B64;&#x5916;&#xFF0C;[ <a href="https://www.mdpi.com/2504-2289/8/12/177#B39-BDCC-08-00177" target="_blank">39</a> ]&#x4E2D;&#x8FD8;&#x8BA8;&#x8BBA;&#x4E86;&#x65E0;&#x4EBA;&#x673A;&#x4EA4;&#x4ED8;&#x62CD;&#x5356;&#x7B97;&#x6CD5;&#x7684;&#x6539;&#x8FDB;&#x5B9E;&#x73B0;&#x3002;&#x9488;&#x5BF9;&#x8BE5;&#x5E94;&#x7528;&#x63D0;&#x51FA;&#x4E86;&#x8F7B;&#x91CF;&#x7EA7;&#x5206;&#x5E03;&#x5F0F;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#xFF0C;&#x4EE5;&#x6700;&#x5C0F;&#x7684;&#x80FD;&#x8017;&#x7B80;&#x5316;&#x914D;&#x9001;&#x548C;&#x6536;&#x8D39;&#x4EFB;&#x52A1;&#x7684;&#x7BA1;&#x7406;&#x3002;&#x6BCF;&#x4E2A;&#x4EE3;&#x7406;&#x8FD0;&#x884C;&#x4E00;&#x4E2A;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x534F;&#x8BAE;&#xFF0C;&#x8FD0;&#x884C;&#x8DEF;&#x5F84;&#x89C4;&#x5212;&#x548C;&#x4F18;&#x5316;&#x7B97;&#x6CD5;&#x3002;&#x4E0E;&#x4F20;&#x7EDF;&#x7684;&#x57FA;&#x4E8E;&#x62CD;&#x5356;&#x7684;&#x4EFB;&#x52A1;&#x8C03;&#x5EA6;&#x65B9;&#x6CD5;&#x76F8;&#x6BD4;&#xFF0C;&#x6BCF;&#x4E2A;&#x4EE3;&#x7406;&#x90FD;&#x88AB;&#x8BBE;&#x8BA1;&#x4E3A;&#x6839;&#x636E;&#x4EFB;&#x52A1;&#x7C7B;&#x578B;&#x540C;&#x65F6;&#x5145;&#x5F53;&#x7F51;&#x7EDC;&#x7684;&#x62CD;&#x5356;&#x4EBA;&#x548C;&#x6295;&#x6807;&#x4EBA;&#x3002;&#x6700;&#x8FD1;&#x7684;&#x5DE5;&#x4F5C;&#x5C06;&#x57FA;&#x4E8E;&#x62CD;&#x5356;&#x7684;&#x7B97;&#x6CD5;&#x4E0E;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&#x76F8;&#x7ED3;&#x5408;&#xFF0C;&#x5982; [<a href="https://www.mdpi.com/2504-2289/8/12/177#B41-BDCC-08-00177" target="_blank">40</a> <a href="https://www.mdpi.com/2504-2289/8/12/177#B42-BDCC-08-00177" target="_blank">41</a> <a href="https://www.mdpi.com/2504-2289/8/12/177#B40-BDCC-08-00177" target="_blank">42</a>] &#x4E2D;&#x6240;&#x793A;&#x3002;</p>
+<p><a href="https://www.mdpi.com/2504-2289/8/12/177#table_body_display_BDCC-08-00177-t004" target="_blank">Table 4</a> provides an overview of the reviewed approaches, including the main characteristics, constraints, and limitations.</p>
+<p><a href="https://www.mdpi.com/2504-2289/8/12/177#table_body_display_BDCC-08-00177-t004" target="_blank">&#x8868; 4</a>&#x6982;&#x8FF0;&#x4E86;&#x6240;&#x5BA1;&#x67E5;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5305;&#x62EC;&#x4E3B;&#x8981;&#x7279;&#x5F81;&#x3001;&#x7EA6;&#x675F;&#x548C;&#x9650;&#x5236;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>Ref.</th>
+<th>Algorithm</th>
+<th>Characteristics</th>
+<th>Main Constraints</th>
+<th>Limitations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[<a href="https://www.mdpi.com/2504-2289/8/12/177#B32-BDCC-08-00177" target="_blank">32</a>]</td>
+<td>Time-Sensitive Sequential Auction</td>
+<td>Improved allocation of tasks that have time constraints</td>
+<td>Time window deadlines</td>
+<td>-</td>
+</tr>
+<tr>
+<td>[<a href="https://www.mdpi.com/2504-2289/8/12/177#B33-BDCC-08-00177" target="_blank">33</a>]</td>
+<td>Auction</td>
+<td>Increases robustness and non-exclusive task assignment</td>
+<td>Battery consumption, execution time, and path</td>
+<td>Poor performance when tasks could saddle agents with leaden tasks</td>
+</tr>
+<tr>
+<td>[<a href="https://www.mdpi.com/2504-2289/8/12/177#B34-BDCC-08-00177" target="_blank">34</a>]</td>
+<td>Auction-based Multiple Constraints</td>
+<td>Solves multiple constraints and provides a way of calculating the price of a bid</td>
+<td>Sensor, time window, and fuel cost</td>
+<td>Most of the parameters are variable, but the area is fixed. The effectiveness is not investigated.</td>
+</tr>
+<tr>
+<td>[<a href="https://www.mdpi.com/2504-2289/8/12/177#B35-BDCC-08-00177" target="_blank">35</a>]</td>
+<td>Hybrid Auction Algorithm</td>
+<td>Promotes its performance and robustness in dynamic task assignment and avoids obstacles</td>
+<td>Mission cost, coverage factor</td>
+<td>Each UAV can only perform limited tasks and must return to the base to replenish resources</td>
+</tr>
+<tr>
+<td>[<a href="https://www.mdpi.com/2504-2289/8/12/177#B36-BDCC-08-00177" target="_blank">36</a>]</td>
+<td>Greedy Coalition Auction</td>
+<td>Allows for dynamic task allocation for spatially distributed multi-agent systems with a positive time efficiency</td>
+<td>Path and targets</td>
+<td>In the presence of large fleet of autonomous systems, scalability issues may arise due to the high computation cost</td>
+</tr>
+<tr>
+<td>[<a href="https://www.mdpi.com/2504-2289/8/12/177#B37-BDCC-08-00177" target="_blank">37</a>]</td>
+<td>Greedy Auction</td>
+<td>Able to effectively handle the complexity and heterogeneity of the problem</td>
+<td>Energy efficiency, task due dates, safe path planning</td>
+<td>Distributed implementation is not addressed</td>
+</tr>
+<tr>
+<td>[<a href="https://www.mdpi.com/2504-2289/8/12/177#B38-BDCC-08-00177" target="_blank">38</a>]</td>
+<td>Learning-Based Second Price Auction</td>
+<td>Enables the algorithm to be truthful, distributed, and scalable</td>
+<td>Energy consumption</td>
+<td>The data performance is limited to investigate the proposed conditions</td>
+</tr>
+<tr>
+<td>[<a href="https://www.mdpi.com/2504-2289/8/12/177#B39-BDCC-08-00177" target="_blank">39</a>]</td>
+<td>Multi- Auctioneer Market-Based</td>
+<td>Enables one to tackle tasks with temporal constraints, minimizing the heterogeneous fleet of UAVs&#x2019; energy consumption</td>
+<td>Comprehensive optimization of energy consumption, hard task due dates</td>
+<td>Robustness to lossy communication network is not addressed</td>
+</tr>
+<tr>
+<td>[<a href="https://www.mdpi.com/2504-2289/8/12/177#B40-BDCC-08-00177" target="_blank">40</a>]</td>
+<td>Neural Myerson Auction</td>
+<td>Designed for UAV charging scheduling. It can provide collision avoidance to build secure and privacy-preserving systems</td>
+<td>Energy consumption and cluster selection</td>
+<td>The external forces, such as wind and other physical factors, are not considered</td>
+</tr>
+<tr>
+<td>[<a href="https://www.mdpi.com/2504-2289/8/12/177#B41-BDCC-08-00177" target="_blank">41</a>]</td>
+<td>Improved Multi-Objective Auction</td>
+<td>Improves the setting of the quotation threshold parameters by the distance factor and designs an adaptive operator strategy</td>
+<td>Distance and target</td>
+<td>-</td>
+</tr>
+<tr>
+<td>[<a href="https://www.mdpi.com/2504-2289/8/12/177#B42-BDCC-08-00177" target="_blank">42</a>]</td>
+<td>Combinatorial Double Auction</td>
+<td>Yields a set of feasible solutions for undertaking complex winner determination problem models</td>
+<td>Costs and market satisfaction</td>
+<td>Unavoidable limitation regarding the data simulation procedures</td>
+</tr>
+</tbody>
+</table>
+<h2 id="optimization-based-algorithms-&#x57FA;&#x4E8E;&#x4F18;&#x5316;&#x7684;&#x7B97;&#x6CD5;">Optimization-Based Algorithms &#x57FA;&#x4E8E;&#x4F18;&#x5316;&#x7684;&#x7B97;&#x6CD5;</h2>
+<p>The optimization methodology is widely used in applied mathematics to find the optimal solution to a specific problem. The goal of the optimization is to reduce costs or maximize profit through an objective function, aiming to find the best solution from a set of possible solutions. Various constraints can be applied to optimize the cost function and achieve an improved solution. A variety of optimization techniques are evaluated, including three main groups: deterministic, metaheuristic (or stochastic), and heuristic. Methods based on deterministic optimization do not consider randomness; i.e., the output is equal when the same initial condition is adopted. Graphical methods, sequential and linear programming, and mixed integer linear programming (MILP) are some examples of deterministic techniques. Stochastic methods, on the other hand, include randomness in the algorithm, leading to different outcomes even in the presence of the same initial conditions. Evolutionary algorithms, swarm intelligence, Monte Carlo methods, and simulated annealing are some of the current examples for this group of algorithms. Furthermore, heuristic algorithms are an interesting alternative to deterministic methods (that yield a high computational cost), providing fast solutions in good computational time. Heuristic algorithms use practical approaches and shortcuts to obtain solutions that are not necessarily optimal, but sufficient for finding good local solutions.</p>
+<p>&#x4F18;&#x5316;&#x65B9;&#x6CD5;&#x5E7F;&#x6CDB;&#x5E94;&#x7528;&#x4E8E;&#x5E94;&#x7528;&#x6570;&#x5B66;&#x4E2D;&#xFF0C;&#x4EE5;&#x5BFB;&#x627E;&#x7279;&#x5B9A;&#x95EE;&#x9898;&#x7684;&#x6700;&#x4F18;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;&#x4F18;&#x5316;&#x7684;&#x76EE;&#x6807;&#x662F;&#x901A;&#x8FC7;&#x76EE;&#x6807;&#x51FD;&#x6570;&#x964D;&#x4F4E;&#x6210;&#x672C;&#x6216;&#x6700;&#x5927;&#x5316;&#x5229;&#x6DA6;&#xFF0C;&#x65E8;&#x5728;&#x4ECE;&#x4E00;&#x7EC4;&#x53EF;&#x80FD;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x4E2D;&#x627E;&#x5230;&#x6700;&#x4F73;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;&#x53EF;&#x4EE5;&#x5E94;&#x7528;&#x5404;&#x79CD;&#x7EA6;&#x675F;&#x6765;&#x4F18;&#x5316;&#x6210;&#x672C;&#x51FD;&#x6570;&#x5E76;&#x5B9E;&#x73B0;&#x6539;&#x8FDB;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;&#x8BC4;&#x4F30;&#x4E86;&#x5404;&#x79CD;&#x4F18;&#x5316;&#x6280;&#x672F;&#xFF0C;&#x5305;&#x62EC;&#x4E09;&#x4E2A;&#x4E3B;&#x8981;&#x7EC4;&#xFF1A;&#x786E;&#x5B9A;&#x6027;&#x3001;&#x5143;&#x542F;&#x53D1;&#x5F0F;&#xFF08;&#x6216;&#x968F;&#x673A;&#xFF09;&#x548C;&#x542F;&#x53D1;&#x5F0F;&#x3002;&#x57FA;&#x4E8E;&#x786E;&#x5B9A;&#x6027;&#x4F18;&#x5316;&#x7684;&#x65B9;&#x6CD5;&#x4E0D;&#x8003;&#x8651;&#x968F;&#x673A;&#x6027;&#xFF1B;&#x5373;&#x91C7;&#x7528;&#x76F8;&#x540C;&#x521D;&#x59CB;&#x6761;&#x4EF6;&#x65F6;&#xFF0C;&#x8F93;&#x51FA;&#x76F8;&#x7B49;&#x3002;&#x56FE;&#x5F62;&#x65B9;&#x6CD5;&#x3001;&#x987A;&#x5E8F;&#x548C;&#x7EBF;&#x6027;&#x89C4;&#x5212;&#x4EE5;&#x53CA;&#x6DF7;&#x5408;&#x6574;&#x6570;&#x7EBF;&#x6027;&#x89C4;&#x5212; (MILP) &#x662F;&#x786E;&#x5B9A;&#x6027;&#x6280;&#x672F;&#x7684;&#x4E00;&#x4E9B;&#x793A;&#x4F8B;&#x3002;&#x53E6;&#x4E00;&#x65B9;&#x9762;&#xFF0C;&#x968F;&#x673A;&#x65B9;&#x6CD5;&#x5728;&#x7B97;&#x6CD5;&#x4E2D;&#x5305;&#x542B;&#x968F;&#x673A;&#x6027;&#xFF0C;&#x5373;&#x4F7F;&#x5B58;&#x5728;&#x76F8;&#x540C;&#x7684;&#x521D;&#x59CB;&#x6761;&#x4EF6;&#x4E5F;&#x4F1A;&#x5BFC;&#x81F4;&#x4E0D;&#x540C;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x8FDB;&#x5316;&#x7B97;&#x6CD5;&#x3001;&#x7FA4;&#x4F53;&#x667A;&#x80FD;&#x3001;&#x8499;&#x7279;&#x5361;&#x7F57;&#x65B9;&#x6CD5;&#x548C;&#x6A21;&#x62DF;&#x9000;&#x706B;&#x662F;&#x8FD9;&#x7EC4;&#x7B97;&#x6CD5;&#x7684;&#x4E00;&#x4E9B;&#x5F53;&#x524D;&#x793A;&#x4F8B;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x542F;&#x53D1;&#x5F0F;&#x7B97;&#x6CD5;&#x662F;&#x786E;&#x5B9A;&#x6027;&#x65B9;&#x6CD5;&#xFF08;&#x8BA1;&#x7B97;&#x6210;&#x672C;&#x8F83;&#x9AD8;&#xFF09;&#x7684;&#x6709;&#x8DA3;&#x66FF;&#x4EE3;&#x65B9;&#x6848;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x826F;&#x597D;&#x7684;&#x8BA1;&#x7B97;&#x65F6;&#x95F4;&#x5185;&#x63D0;&#x4F9B;&#x5FEB;&#x901F;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;&#x542F;&#x53D1;&#x5F0F;&#x7B97;&#x6CD5;&#x4F7F;&#x7528;&#x5B9E;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x548C;&#x6377;&#x5F84;&#x6765;&#x83B7;&#x5F97;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x6700;&#x4F18;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x4F46;&#x8DB3;&#x4EE5;&#x627E;&#x5230;&#x826F;&#x597D;&#x7684;&#x5C40;&#x90E8;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;</p>
+<h4 id="51-deterministic-51&#x786E;&#x5B9A;&#x6027;">5.1. Deterministic 5.1.&#x786E;&#x5B9A;&#x6027;</h4>
+<h2 id="hybrid-allocation-algorithms-&#x6DF7;&#x5408;&#x5206;&#x914D;&#x7B97;&#x6CD5;">Hybrid Allocation Algorithms &#x6DF7;&#x5408;&#x5206;&#x914D;&#x7B97;&#x6CD5;</h2>
+<p>Hybrid allocation strategies are also designed to improve the transportation efficiency for UAV-based ITSs by merging different types of allocation algorithms.<br>&#x6DF7;&#x5408;&#x5206;&#x914D;&#x7B56;&#x7565;&#x8FD8;&#x65E8;&#x5728;&#x901A;&#x8FC7;&#x5408;&#x5E76;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x5206;&#x914D;&#x7B97;&#x6CD5;&#x6765;&#x63D0;&#x9AD8;&#x57FA;&#x4E8E;&#x65E0;&#x4EBA;&#x673A;&#x7684;&#x667A;&#x80FD;&#x4EA4;&#x901A;&#x7CFB;&#x7EDF;&#x7684;&#x8FD0;&#x8F93;&#x6548;&#x7387;&#x3002;</p>
+<p>The work of [<a href="https://www.mdpi.com/2504-2289/8/12/177#B74-BDCC-08-00177" target="_blank">74</a>] combines mixed-integer linear programming (MILP) and a simulated annealing (SA)-based heuristic algorithm to find optimal routes for a drone delivery application. Both battery consumption and payload weight are considered to calculate the drone&#x2019;s energy consumption. MILP is employed to minimize costs and the delivery time up to a budget constraint, while the SA is used to find suboptimal solutions of practical scenarios, i.e., the relation between the delivery time and budget. As a drawback, the SA algorithm fails to utilize geographical information to attenuate the choice of impractical routes. Hybrid algorithms can also be used to investigate the optimization of the service itself, as in [<a href="https://www.mdpi.com/2504-2289/8/12/177#B75-BDCC-08-00177" target="_blank">75</a>]. Particle swarm optimization (PSO) and the grey wolf optimizer (GWO) are combined to minimize the number of deployed drones, cost, and flight time. The proposed algorithm incorporates different strategies, such as interval transformation, dynamic weighting rules, and a nonlinear convergence factor, to enhance the performance accuracy and to lower the cost.
+[ <a href="https://www.mdpi.com/2504-2289/8/12/177#B74-BDCC-08-00177" target="_blank">74</a> ]&#x7684;&#x5DE5;&#x4F5C;&#x7ED3;&#x5408;&#x4E86;&#x6DF7;&#x5408;&#x6574;&#x6570;&#x7EBF;&#x6027;&#x89C4;&#x5212;&#xFF08;MILP&#xFF09;&#x548C;&#x57FA;&#x4E8E;&#x6A21;&#x62DF;&#x9000;&#x706B;&#xFF08;SA&#xFF09;&#x7684;&#x542F;&#x53D1;&#x5F0F;&#x7B97;&#x6CD5;&#x6765;&#x5BFB;&#x627E;&#x65E0;&#x4EBA;&#x673A;&#x9001;&#x8D27;&#x5E94;&#x7528;&#x7684;&#x6700;&#x4F73;&#x8DEF;&#x7EBF;&#x3002;&#x8BA1;&#x7B97;&#x65E0;&#x4EBA;&#x673A;&#x7684;&#x80FD;&#x8017;&#x65F6;&#x4F1A;&#x8003;&#x8651;&#x7535;&#x6C60;&#x6D88;&#x8017;&#x548C;&#x6709;&#x6548;&#x8D1F;&#x8F7D;&#x91CD;&#x91CF;&#x3002; MILP &#x7528;&#x4E8E;&#x5728;&#x9884;&#x7B97;&#x7EA6;&#x675F;&#x4E0B;&#x6700;&#x5C0F;&#x5316;&#x6210;&#x672C;&#x548C;&#x4EA4;&#x4ED8;&#x65F6;&#x95F4;&#xFF0C;&#x800C; SA &#x7528;&#x4E8E;&#x5BFB;&#x627E;&#x5B9E;&#x9645;&#x573A;&#x666F;&#x7684;&#x6B21;&#x4F18;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x5373;&#x4EA4;&#x4ED8;&#x65F6;&#x95F4;&#x4E0E;&#x9884;&#x7B97;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x3002; SA &#x7B97;&#x6CD5;&#x7684;&#x7F3A;&#x70B9;&#x662F;&#x65E0;&#x6CD5;&#x5229;&#x7528;&#x5730;&#x7406;&#x4FE1;&#x606F;&#x6765;&#x51CF;&#x5C11;&#x4E0D;&#x5207;&#x5B9E;&#x9645;&#x7684;&#x8DEF;&#x7EBF;&#x7684;&#x9009;&#x62E9;&#x3002;&#x6DF7;&#x5408;&#x7B97;&#x6CD5;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x7814;&#x7A76;&#x670D;&#x52A1;&#x672C;&#x8EAB;&#x7684;&#x4F18;&#x5316;&#xFF0C;&#x5982;[ <a href="https://www.mdpi.com/2504-2289/8/12/177#B75-BDCC-08-00177" target="_blank">75</a> ]&#x4E2D;&#x6240;&#x793A;&#x3002;&#x7C92;&#x5B50;&#x7FA4;&#x4F18;&#x5316;&#xFF08;PSO&#xFF09;&#x548C;&#x7070;&#x72FC;&#x4F18;&#x5316;&#x5668;&#xFF08;GWO&#xFF09;&#x76F8;&#x7ED3;&#x5408;&#xFF0C;&#x53EF;&#x4EE5;&#x6700;&#x5927;&#x7A0B;&#x5EA6;&#x5730;&#x51CF;&#x5C11;&#x90E8;&#x7F72;&#x7684;&#x65E0;&#x4EBA;&#x673A;&#x6570;&#x91CF;&#x3001;&#x6210;&#x672C;&#x548C;&#x98DE;&#x884C;&#x65F6;&#x95F4;&#x3002;&#x8BE5;&#x7B97;&#x6CD5;&#x7ED3;&#x5408;&#x4E86;&#x533A;&#x95F4;&#x53D8;&#x6362;&#x3001;&#x52A8;&#x6001;&#x52A0;&#x6743;&#x89C4;&#x5219;&#x548C;&#x975E;&#x7EBF;&#x6027;&#x6536;&#x655B;&#x56E0;&#x5B50;&#x7B49;&#x4E0D;&#x540C;&#x7B56;&#x7565;&#xFF0C;&#x4EE5;&#x63D0;&#x9AD8;&#x6027;&#x80FD;&#x7CBE;&#x5EA6;&#x5E76;&#x964D;&#x4F4E;&#x6210;&#x672C;&#x3002;</p>
+<p>The work of [<a href="https://www.mdpi.com/2504-2289/8/12/177#B76-BDCC-08-00177" target="_blank">76</a>] combines the Hungarian algorithm (HA) and machine learning (ML) to optimize the task assignment problem in a drone delivery application. Different mathematical models, such as linear and polynomial regressions, are used to generate distinct cost functions, based on distance and time metrics. Once the cost function is estimated, the Hungarian algorithm is employed for solving the drone intelligent delivery problem. The Hungarian algorithm is defined by a matrix of costs, which represents the cost of each agent or task.</p>
+<p>[ <a href="https://www.mdpi.com/2504-2289/8/12/177#B76-BDCC-08-00177" target="_blank">76</a> ]&#x7684;&#x5DE5;&#x4F5C;&#x7ED3;&#x5408;&#x4E86;&#x5308;&#x7259;&#x5229;&#x7B97;&#x6CD5;&#xFF08;HA&#xFF09;&#x548C;&#x673A;&#x5668;&#x5B66;&#x4E60;&#xFF08;ML&#xFF09;&#x6765;&#x4F18;&#x5316;&#x65E0;&#x4EBA;&#x673A;&#x4EA4;&#x4ED8;&#x5E94;&#x7528;&#x4E2D;&#x7684;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x95EE;&#x9898;&#x3002;&#x4E0D;&#x540C;&#x7684;&#x6570;&#x5B66;&#x6A21;&#x578B;&#xFF08;&#x4F8B;&#x5982;&#x7EBF;&#x6027;&#x548C;&#x591A;&#x9879;&#x5F0F;&#x56DE;&#x5F52;&#xFF09;&#x7528;&#x4E8E;&#x6839;&#x636E;&#x8DDD;&#x79BB;&#x548C;&#x65F6;&#x95F4;&#x5EA6;&#x91CF;&#x751F;&#x6210;&#x4E0D;&#x540C;&#x7684;&#x6210;&#x672C;&#x51FD;&#x6570;&#x3002;&#x4E00;&#x65E6;&#x6210;&#x672C;&#x51FD;&#x6570;&#x88AB;&#x4F30;&#x8BA1;&#x51FA;&#x6765;&#xFF0C;&#x5308;&#x7259;&#x5229;&#x7B97;&#x6CD5;&#x5C31;&#x88AB;&#x7528;&#x6765;&#x89E3;&#x51B3;&#x65E0;&#x4EBA;&#x673A;&#x667A;&#x80FD;&#x4EA4;&#x4ED8;&#x95EE;&#x9898;&#x3002;&#x5308;&#x7259;&#x5229;&#x7B97;&#x6CD5;&#x7531;&#x6210;&#x672C;&#x77E9;&#x9635;&#x5B9A;&#x4E49;&#xFF0C;&#x8BE5;&#x77E9;&#x9635;&#x8868;&#x793A;&#x6BCF;&#x4E2A;&#x4EE3;&#x7406;&#x6216;&#x4EFB;&#x52A1;&#x7684;&#x6210;&#x672C;&#x3002;</p>
+<p>Similarly, the combination of a multi-agent RL algorithm and a conflict-free method is investigated in [<a href="https://www.mdpi.com/2504-2289/8/12/177#B77-BDCC-08-00177" target="_blank">77</a>] to optimize task allocation and path planning for multiple drones. The strategy guarantees that the shortest path is chosen for the drones, while multi-agent proximal policy optimization (MAPPO) enables collision avoidance between the drones. The work of [<a href="https://www.mdpi.com/2504-2289/8/12/177#B78-BDCC-08-00177" target="_blank">78</a>] investigates the design of a rapid allocation algorithm, based on the combination of a greedy auction algorithm and a reassignment strategy. The combination of both strategies enables swift and effective responses, which result in a rapid and efficient completion of tasks while preventing the occurrence of deadlocks. In addition, neural networks are widely employed for task allocation [<a href="https://www.mdpi.com/2504-2289/8/12/177#B79-BDCC-08-00177" target="_blank">79</a>]. An assisted learning invasive encroachment neutralization (ALIEN) technique is designed for a secure drone transportation system. The objective function of the ALIEN algorithm aims to maximize the security of the drone transportation system, and it is represented by $I<em>{max}=t_iD_i+t_iD^d</em>{r&#x3BB;<em>i} +t_iD</em>{N_i}$, where the decision variables represent drone detection, object recognition, and neutralization, respectively.</p>
+<p>&#x7C7B;&#x4F3C;&#x5730;&#xFF0C;[ <a href="https://www.mdpi.com/2504-2289/8/12/177#B77-BDCC-08-00177" target="_blank">77</a> ]&#x7814;&#x7A76;&#x4E86;&#x591A;&#x667A;&#x80FD;&#x4F53;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x7B97;&#x6CD5;&#x548C;&#x65E0;&#x51B2;&#x7A81;&#x65B9;&#x6CD5;&#x7684;&#x7ED3;&#x5408;&#xFF0C;&#x4EE5;&#x4F18;&#x5316;&#x591A;&#x67B6;&#x65E0;&#x4EBA;&#x673A;&#x7684;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x548C;&#x8DEF;&#x5F84;&#x89C4;&#x5212;&#x3002;&#x8BE5;&#x7B56;&#x7565;&#x4FDD;&#x8BC1;&#x4E3A;&#x65E0;&#x4EBA;&#x673A;&#x9009;&#x62E9;&#x6700;&#x77ED;&#x8DEF;&#x5F84;&#xFF0C;&#x800C;&#x591A;&#x667A;&#x80FD;&#x4F53;&#x8FD1;&#x7AEF;&#x7B56;&#x7565;&#x4F18;&#x5316;&#xFF08;MAPPO&#xFF09;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x65E0;&#x4EBA;&#x673A;&#x4E4B;&#x95F4;&#x7684;&#x78B0;&#x649E;&#x3002; [ <a href="https://www.mdpi.com/2504-2289/8/12/177#B78-BDCC-08-00177" target="_blank">78</a> ]&#x7684;&#x5DE5;&#x4F5C;&#x7814;&#x7A76;&#x4E86;&#x57FA;&#x4E8E;&#x8D2A;&#x5A6A;&#x62CD;&#x5356;&#x7B97;&#x6CD5;&#x548C;&#x91CD;&#x65B0;&#x5206;&#x914D;&#x7B56;&#x7565;&#x7684;&#x7EC4;&#x5408;&#x7684;&#x5FEB;&#x901F;&#x5206;&#x914D;&#x7B97;&#x6CD5;&#x7684;&#x8BBE;&#x8BA1;&#x3002;&#x4E24;&#x79CD;&#x7B56;&#x7565;&#x7684;&#x7ED3;&#x5408;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x5FEB;&#x901F;&#x6709;&#x6548;&#x7684;&#x54CD;&#x5E94;&#xFF0C;&#x4ECE;&#x800C;&#x5FEB;&#x901F;&#x9AD8;&#x6548;&#x5730;&#x5B8C;&#x6210;&#x4EFB;&#x52A1;&#xFF0C;&#x540C;&#x65F6;&#x9632;&#x6B62;&#x6B7B;&#x9501;&#x7684;&#x53D1;&#x751F;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x5E7F;&#x6CDB;&#x7528;&#x4E8E;&#x4EFB;&#x52A1;&#x5206;&#x914D;[ <a href="https://www.mdpi.com/2504-2289/8/12/177#B79-BDCC-08-00177" target="_blank">79</a> ]&#x3002;&#x8F85;&#x52A9;&#x5B66;&#x4E60;&#x4FB5;&#x5165;&#x6027;&#x4FB5;&#x5360;&#x4E2D;&#x548C;&#xFF08;ALIEN&#xFF09;&#x6280;&#x672F;&#x662F;&#x4E3A;&#x5B89;&#x5168;&#x7684;&#x65E0;&#x4EBA;&#x673A;&#x8FD0;&#x8F93;&#x7CFB;&#x7EDF;&#x800C;&#x8BBE;&#x8BA1;&#x7684;&#x3002; ALIEN &#x7B97;&#x6CD5;&#x7684;&#x76EE;&#x6807;&#x51FD;&#x6570;&#x65E8;&#x5728;&#x6700;&#x5927;&#x5316;&#x65E0;&#x4EBA;&#x673A;&#x8FD0;&#x8F93;&#x7CFB;&#x7EDF;&#x7684;&#x5B89;&#x5168;&#x6027;&#xFF0C;&#x5176;&#x8868;&#x793A;&#x4E3A; $I<em>{max}=t_iD_i+t_iD^d</em>{r&#x3BB;<em>i} +t_iD</em>{N_i}$ &#xFF0C;&#x5176;&#x4E2D;&#x51B3;&#x7B56;&#x53D8;&#x91CF;&#x5206;&#x522B;&#x4EE3;&#x8868;&#x65E0;&#x4EBA;&#x673A;&#x68C0;&#x6D4B;&#x3001;&#x7269;&#x4F53;&#x8BC6;&#x522B;&#x548C;&#x4E2D;&#x548C;&#x3002;</p>
+<p>Moreover, the maximum task allocation algorithm is proposed in [<a href="https://www.mdpi.com/2504-2289/8/12/177#B80-BDCC-08-00177" target="_blank">80</a>]. The maximum task allocation algorithm for multiple UAVs under time constraints has been significant in meeting requirements for quality of service. The TRMaxAlloc algorithm is designed based on two phases: assignment and reassignment. The PI algorithm is used, in the first stage, to allocate the tasks to the drones, while, in the next stage, the proposed TRMaxAlloc algorithm enables the creation of feasible time slots for the unassigned tasks. As a result, the assignment enables each task to be completed before its corresponding deadline with a lower time cost. Each UAV is assigned to several tasks, as described by the task list ${s1,s2,&#x2026;,sN}$. Then, the cost function, expressed as $J=max |si|$, aims to optimize the task allocation problem.</p>
+<p>&#x6B64;&#x5916;&#xFF0C;[ <a href="https://www.mdpi.com/2504-2289/8/12/177#B80-BDCC-08-00177" target="_blank">80</a> ]&#x4E2D;&#x63D0;&#x51FA;&#x4E86;&#x6700;&#x5927;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x7B97;&#x6CD5;&#x3002;&#x65F6;&#x95F4;&#x7EA6;&#x675F;&#x4E0B;&#x591A;&#x65E0;&#x4EBA;&#x673A;&#x6700;&#x5927;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x7B97;&#x6CD5;&#x5BF9;&#x4E8E;&#x6EE1;&#x8DB3;&#x670D;&#x52A1;&#x8D28;&#x91CF;&#x8981;&#x6C42;&#x5177;&#x6709;&#x91CD;&#x8981;&#x610F;&#x4E49;&#x3002; TRMaxAlloc &#x7B97;&#x6CD5;&#x7684;&#x8BBE;&#x8BA1;&#x57FA;&#x4E8E;&#x4E24;&#x4E2A;&#x9636;&#x6BB5;&#xFF1A;&#x5206;&#x914D;&#x548C;&#x91CD;&#x65B0;&#x5206;&#x914D;&#x3002;&#x5728;&#x7B2C;&#x4E00;&#x9636;&#x6BB5;&#xFF0C;&#x4F7F;&#x7528; PI &#x7B97;&#x6CD5;&#x5C06;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x7ED9;&#x65E0;&#x4EBA;&#x673A;&#xFF0C;&#x800C;&#x5728;&#x4E0B;&#x4E00;&#x9636;&#x6BB5;&#xFF0C;&#x6240;&#x63D0;&#x51FA;&#x7684; TRMaxAlloc &#x7B97;&#x6CD5;&#x53EF;&#x4EE5;&#x4E3A;&#x672A;&#x5206;&#x914D;&#x7684;&#x4EFB;&#x52A1;&#x521B;&#x5EFA;&#x53EF;&#x884C;&#x7684;&#x65F6;&#x9699;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5206;&#x914D;&#x4F7F;&#x6BCF;&#x4E2A;&#x4EFB;&#x52A1;&#x80FD;&#x591F;&#x5728;&#x76F8;&#x5E94;&#x7684;&#x622A;&#x6B62;&#x65E5;&#x671F;&#x4E4B;&#x524D;&#x4EE5;&#x8F83;&#x4F4E;&#x7684;&#x65F6;&#x95F4;&#x6210;&#x672C;&#x5B8C;&#x6210;&#x3002;&#x6BCF;&#x67B6;&#x65E0;&#x4EBA;&#x673A;&#x88AB;&#x5206;&#x914D;&#x591A;&#x4E2A;&#x4EFB;&#x52A1;&#xFF0C;&#x5982;&#x4EFB;&#x52A1;&#x5217;&#x8868;&#x6240;&#x8FF0; ${s1,s2,&#x2026;,sN}$ &#x3002;&#x90A3;&#x4E48;&#xFF0C;&#x6210;&#x672C;&#x51FD;&#x6570;&#xFF0C;&#x8868;&#x793A;&#x4E3A; $J=max |si|$ &#xFF0C;&#x65E8;&#x5728;&#x4F18;&#x5316;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x95EE;&#x9898;&#x3002;</p>
+<p>A real-time market-based task allocation mechanism is proposed in [<a href="https://www.mdpi.com/2504-2289/8/12/177#B81-BDCC-08-00177" target="_blank">81</a>] for a dynamic coalition formation (DCF) problem. Autonomous agents can collaborate independently, creating an optimal global coalition structure to efficiently execute the emerging tasks. The auction algorithm is used for real-time assignment, and a mutual-selection method is employed for obtaining an improved performance in terms of the agent utilization rate and task completion rate. In addition, the work of [<a href="https://www.mdpi.com/2504-2289/8/12/177#B82-BDCC-08-00177" target="_blank">82</a>] investigated the combination of a distributed evolutionary algorithm and a greedy algorithm to simultaneously optimize multiple objective functions. This combined methodology aims to improve the model&#x2019;s local optimizing ability with different constraints, such as spatial constraints, time costs, and energy consumption. The proposed strategy aims to efficiently solve large-scale task allocation problems with enhanced and more diverse non-dominated solutions.</p>
+<p>[ <a href="https://www.mdpi.com/2504-2289/8/12/177#B81-BDCC-08-00177" target="_blank">81</a> ]&#x9488;&#x5BF9;&#x52A8;&#x6001;&#x8054;&#x76DF;&#x5F62;&#x6210;&#xFF08;DCF&#xFF09;&#x95EE;&#x9898;&#x63D0;&#x51FA;&#x4E86;&#x4E00;&#x79CD;&#x57FA;&#x4E8E;&#x5E02;&#x573A;&#x7684;&#x5B9E;&#x65F6;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x673A;&#x5236;&#x3002;&#x81EA;&#x6CBB;&#x4EE3;&#x7406;&#x53EF;&#x4EE5;&#x72EC;&#x7ACB;&#x534F;&#x4F5C;&#xFF0C;&#x521B;&#x5EFA;&#x6700;&#x4F73;&#x7684;&#x5168;&#x7403;&#x8054;&#x76DF;&#x7ED3;&#x6784;&#xFF0C;&#x4EE5;&#x6709;&#x6548;&#x5730;&#x6267;&#x884C;&#x65B0;&#x5174;&#x4EFB;&#x52A1;&#x3002;&#x91C7;&#x7528;&#x62CD;&#x5356;&#x7B97;&#x6CD5;&#x8FDB;&#x884C;&#x5B9E;&#x65F6;&#x5206;&#x914D;&#xFF0C;&#x5E76;&#x91C7;&#x7528;&#x76F8;&#x4E92;&#x9009;&#x62E9;&#x7684;&#x65B9;&#x6CD5;&#x5728;&#x4EE3;&#x7406;&#x5229;&#x7528;&#x7387;&#x548C;&#x4EFB;&#x52A1;&#x5B8C;&#x6210;&#x7387;&#x65B9;&#x9762;&#x83B7;&#x5F97;&#x6539;&#x8FDB;&#x7684;&#x6027;&#x80FD;&#x3002;&#x6B64;&#x5916;&#xFF0C;[ <a href="https://www.mdpi.com/2504-2289/8/12/177#B82-BDCC-08-00177" target="_blank">82</a> ]&#x7684;&#x5DE5;&#x4F5C;&#x7814;&#x7A76;&#x4E86;&#x5206;&#x5E03;&#x5F0F;&#x8FDB;&#x5316;&#x7B97;&#x6CD5;&#x548C;&#x8D2A;&#x5A6A;&#x7B97;&#x6CD5;&#x7684;&#x7EC4;&#x5408;&#x6765;&#x540C;&#x65F6;&#x4F18;&#x5316;&#x591A;&#x4E2A;&#x76EE;&#x6807;&#x51FD;&#x6570;&#x3002;&#x8FD9;&#x79CD;&#x7EC4;&#x5408;&#x65B9;&#x6CD5;&#x65E8;&#x5728;&#x63D0;&#x9AD8;&#x6A21;&#x578B;&#x5728;&#x4E0D;&#x540C;&#x7EA6;&#x675F;&#x4E0B;&#x7684;&#x5C40;&#x90E8;&#x4F18;&#x5316;&#x80FD;&#x529B;&#xFF0C;&#x4F8B;&#x5982;&#x7A7A;&#x95F4;&#x7EA6;&#x675F;&#x3001;&#x65F6;&#x95F4;&#x6210;&#x672C;&#x548C;&#x80FD;&#x91CF;&#x6D88;&#x8017;&#x3002;&#x6240;&#x63D0;&#x51FA;&#x7684;&#x7B56;&#x7565;&#x65E8;&#x5728;&#x901A;&#x8FC7;&#x589E;&#x5F3A;&#x4E14;&#x66F4;&#x591A;&#x6837;&#x5316;&#x7684;&#x975E;&#x652F;&#x914D;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x6765;&#x6709;&#x6548;&#x89E3;&#x51B3;&#x5927;&#x89C4;&#x6A21;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x95EE;&#x9898;&#x3002;</p>
+<h2 id="discussion">Discussion</h2>
+<p>The primary objective of this paper is to serve as a state-of-the-art reference for researchers and engineers about the science of task allocation applied to various UAV-based ITSs. Such technology is foreseen to become popular in the next decades in different contexts: smart cities, urban air mobility, smart logistics, connected vehicles, etc.<br>&#x672C;&#x6587;&#x7684;&#x4E3B;&#x8981;&#x76EE;&#x7684;&#x662F;&#x4E3A;&#x7814;&#x7A76;&#x4EBA;&#x5458;&#x548C;&#x5DE5;&#x7A0B;&#x5E08;&#x63D0;&#x4F9B;&#x6709;&#x5173;&#x5E94;&#x7528;&#x4E8E;&#x5404;&#x79CD;&#x57FA;&#x4E8E;&#x65E0;&#x4EBA;&#x673A;&#x7684; ITS &#x7684;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x79D1;&#x5B66;&#x7684;&#x6700;&#x65B0;&#x53C2;&#x8003;&#x3002;&#x9884;&#x8BA1;&#x6B64;&#x7C7B;&#x6280;&#x672F;&#x5C06;&#x5728;&#x672A;&#x6765;&#x51E0;&#x5341;&#x5E74;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x73AF;&#x5883;&#x4E2D;&#x6D41;&#x884C;&#xFF1A;&#x667A;&#x6167;&#x57CE;&#x5E02;&#x3001;&#x57CE;&#x5E02;&#x7A7A;&#x4E2D;&#x4EA4;&#x901A;&#x3001;&#x667A;&#x80FD;&#x7269;&#x6D41;&#x3001;&#x4E92;&#x8054;&#x8F66;&#x8F86;&#x7B49;&#x3002;</p>
+<p>The main conclusions drawn from this survey are summarized as follows:<br>&#x672C;&#x6B21;&#x8C03;&#x67E5;&#x5F97;&#x51FA;&#x7684;&#x4E3B;&#x8981;&#x7ED3;&#x8BBA;&#x603B;&#x7ED3;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li><p>Market-based allocation algorithms are, in general, less computationally demanding than other methods, but the bidding procedure has to be designed carefully to avoid unfair allocations. Market-based allocation architectures should be developed for applications with a high level of autonomy and inherent dynamicity (e.g., parcel delivery, traffic monitoring, search and rescue, and passenger transportation), with the drones being able to adjust their bids based on their current status as well as both the service demand and the environmental conditions;</p>
+<p>&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x57FA;&#x4E8E;&#x5E02;&#x573A;&#x7684;&#x5206;&#x914D;&#x7B97;&#x6CD5;&#x6BD4;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&#x7684;&#x8BA1;&#x7B97;&#x8981;&#x6C42;&#x8F83;&#x4F4E;&#xFF0C;&#x4F46;&#x5FC5;&#x987B;&#x4ED4;&#x7EC6;&#x8BBE;&#x8BA1;&#x6295;&#x6807;&#x7A0B;&#x5E8F;&#x4EE5;&#x907F;&#x514D;&#x4E0D;&#x516C;&#x5E73;&#x7684;&#x5206;&#x914D;&#x3002;&#x5E94;&#x4E3A;&#x5177;&#x6709;&#x9AD8;&#x5EA6;&#x81EA;&#x4E3B;&#x6027;&#x548C;&#x56FA;&#x6709;&#x52A8;&#x6001;&#x6027;&#x7684;&#x5E94;&#x7528;&#xFF08;&#x4F8B;&#x5982;&#x5305;&#x88F9;&#x9012;&#x9001;&#x3001;&#x4EA4;&#x901A;&#x76D1;&#x63A7;&#x3001;&#x641C;&#x7D22;&#x548C;&#x6551;&#x63F4;&#x4EE5;&#x53CA;&#x5BA2;&#x8FD0;&#xFF09;&#x5F00;&#x53D1;&#x57FA;&#x4E8E;&#x5E02;&#x573A;&#x7684;&#x5206;&#x914D;&#x67B6;&#x6784;&#xFF0C;&#x65E0;&#x4EBA;&#x673A;&#x80FD;&#x591F;&#x6839;&#x636E;&#x5F53;&#x524D;&#x60C5;&#x51B5;&#x8C03;&#x6574;&#x5176;&#x51FA;&#x4EF7;&#x72B6;&#x51B5;&#x4EE5;&#x53CA;&#x670D;&#x52A1;&#x9700;&#x6C42;&#x548C;&#x73AF;&#x5883;&#x6761;&#x4EF6;&#xFF1B;</p>
+</li>
+<li><p>Optimization-based approaches produce more efficient allocation but should be used to allocate tasks to UAVs in static scenarios with well-defined constraints (e.g., inspection and data collection). The main drawback is the scalability of these approaches with larger fleets due to their computational complexity. Also, complex application scenarios may be difficult to model, and discrepancies between a real application and a simulation model may severely affect the quality of the obtained solution;</p>
+<p>&#x57FA;&#x4E8E;&#x4F18;&#x5316;&#x7684;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x4EA7;&#x751F;&#x66F4;&#x6709;&#x6548;&#x7684;&#x5206;&#x914D;&#xFF0C;&#x4F46;&#x5E94;&#x8BE5;&#x7528;&#x4E8E;&#x5728;&#x5177;&#x6709;&#x660E;&#x786E;&#x5B9A;&#x4E49;&#x7684;&#x7EA6;&#x675F;&#xFF08;&#x4F8B;&#x5982;&#x68C0;&#x67E5;&#x548C;&#x6570;&#x636E;&#x6536;&#x96C6;&#xFF09;&#x7684;&#x9759;&#x6001;&#x573A;&#x666F;&#x4E2D;&#x5C06;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x7ED9;&#x65E0;&#x4EBA;&#x673A;&#x3002;&#x4E3B;&#x8981;&#x7F3A;&#x70B9;&#x662F;&#x7531;&#x4E8E;&#x8BA1;&#x7B97;&#x590D;&#x6742;&#x6027;&#xFF0C;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x5728;&#x8F83;&#x5927;&#x8F66;&#x961F;&#x4E2D;&#x7684;&#x53EF;&#x6269;&#x5C55;&#x6027;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x590D;&#x6742;&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;&#x53EF;&#x80FD;&#x96BE;&#x4EE5;&#x5EFA;&#x6A21;&#xFF0C;&#x5B9E;&#x9645;&#x5E94;&#x7528;&#x4E0E;&#x4EFF;&#x771F;&#x6A21;&#x578B;&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x5F02;&#x53EF;&#x80FD;&#x4F1A;&#x4E25;&#x91CD;&#x5F71;&#x54CD;&#x6240;&#x83B7;&#x5F97;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x7684;&#x8D28;&#x91CF;&#xFF1B;</p>
+</li>
+<li><p>Learning-based task allocation algorithms are suitable for highly dynamic scenarios in which the UAVs can exploit large datasets of past experiences to adapt to variable environmental conditions. A preferable application can be identified as the UAV traffic monitoring service. On the other hand, a learning-based task allocation architecture is not suitable for every type of scenario involving environmental variability; for instance, considering a critical emergency scenario such as disaster response, the trustworthiness of UAV task allocations plays a crucial role, thereby limiting the deployment of such an allocation architecture. Also, the questionable level of generalizability to unseen conditions may be a limiting factor;</p>
+<p>&#x57FA;&#x4E8E;&#x5B66;&#x4E60;&#x7684;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x7B97;&#x6CD5;&#x9002;&#x7528;&#x4E8E;&#x9AD8;&#x5EA6;&#x52A8;&#x6001;&#x7684;&#x573A;&#x666F;&#xFF0C;&#x5176;&#x4E2D;&#x65E0;&#x4EBA;&#x673A;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x8FC7;&#x53BB;&#x7ECF;&#x9A8C;&#x7684;&#x5927;&#x578B;&#x6570;&#x636E;&#x96C6;&#x6765;&#x9002;&#x5E94;&#x53EF;&#x53D8;&#x7684;&#x73AF;&#x5883;&#x6761;&#x4EF6;&#x3002;&#x4E00;&#x4E2A;&#x4F18;&#x9009;&#x7684;&#x5E94;&#x7528;&#x662F;&#x65E0;&#x4EBA;&#x673A;&#x4EA4;&#x901A;&#x76D1;&#x63A7;&#x670D;&#x52A1;&#x3002;&#x53E6;&#x4E00;&#x65B9;&#x9762;&#xFF0C;&#x57FA;&#x4E8E;&#x5B66;&#x4E60;&#x7684;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x67B6;&#x6784;&#x5E76;&#x4E0D;&#x9002;&#x5408;&#x6240;&#x6709;&#x6D89;&#x53CA;&#x73AF;&#x5883;&#x53D8;&#x5316;&#x7684;&#x573A;&#x666F;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x8003;&#x8651;&#x5230;&#x707E;&#x96BE;&#x54CD;&#x5E94;&#x7B49;&#x5173;&#x952E;&#x7D27;&#x6025;&#x60C5;&#x51B5;&#xFF0C;&#x65E0;&#x4EBA;&#x673A;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x7684;&#x53EF;&#x4FE1;&#x5EA6;&#x8D77;&#x7740;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x7684;&#x4F5C;&#x7528;&#xFF0C;&#x4ECE;&#x800C;&#x9650;&#x5236;&#x4E86;&#x8FD9;&#x79CD;&#x5206;&#x914D;&#x67B6;&#x6784;&#x7684;&#x90E8;&#x7F72;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x5BF9;&#x672A;&#x89C1;&#x6761;&#x4EF6;&#x7684;&#x666E;&#x904D;&#x9002;&#x7528;&#x6027;&#x503C;&#x5F97;&#x6000;&#x7591;&#xFF0C;&#x8FD9;&#x53EF;&#x80FD;&#x662F;&#x4E00;&#x4E2A;&#x9650;&#x5236;&#x56E0;&#x7D20;&#xFF1B;</p>
+</li>
+<li><p>Game-theory-based approaches are well suited for applications in which the UAVs can compete against one another or cooperate in the completion of a task with well-defined utilities. Coverage and traffic monitoring tasks represent a valid example since the UAVs of the ITS can compete for the best coverage/monitoring location. The limitations of a game-theory-based task allocation strategy in UAV-based ITS contexts are both the computational burden with large fleets and the capability of the utility function to adequately represent the real-world reward related to the allocation;</p>
+<p>&#x57FA;&#x4E8E;&#x535A;&#x5F08;&#x8BBA;&#x7684;&#x65B9;&#x6CD5;&#x975E;&#x5E38;&#x9002;&#x5408;&#x65E0;&#x4EBA;&#x673A;&#x53EF;&#x4EE5;&#x76F8;&#x4E92;&#x7ADE;&#x4E89;&#x6216;&#x4E0E;&#x660E;&#x786E;&#x5B9A;&#x4E49;&#x7684;&#x5B9E;&#x7528;&#x7A0B;&#x5E8F;&#x5408;&#x4F5C;&#x5B8C;&#x6210;&#x4EFB;&#x52A1;&#x7684;&#x5E94;&#x7528;&#x3002;&#x8986;&#x76D6;&#x548C;&#x4EA4;&#x901A;&#x76D1;&#x63A7;&#x4EFB;&#x52A1;&#x662F;&#x4E00;&#x4E2A;&#x6709;&#x6548;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x56E0;&#x4E3A; ITS &#x7684;&#x65E0;&#x4EBA;&#x673A;&#x53EF;&#x4EE5;&#x7ADE;&#x4E89;&#x6700;&#x4F73;&#x7684;&#x8986;&#x76D6;/&#x76D1;&#x63A7;&#x4F4D;&#x7F6E;&#x3002;&#x5728;&#x57FA;&#x4E8E;&#x65E0;&#x4EBA;&#x673A;&#x7684; ITS &#x73AF;&#x5883;&#x4E2D;&#xFF0C;&#x57FA;&#x4E8E;&#x535A;&#x5F08;&#x8BBA;&#x7684;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x7B56;&#x7565;&#x7684;&#x5C40;&#x9650;&#x6027;&#x65E2;&#x5728;&#x4E8E;&#x5927;&#x578B;&#x673A;&#x961F;&#x7684;&#x8BA1;&#x7B97;&#x8D1F;&#x62C5;&#xFF0C;&#x53C8;&#x5728;&#x4E8E;&#x6548;&#x7528;&#x51FD;&#x6570;&#x5145;&#x5206;&#x4EE3;&#x8868;&#x4E0E;&#x5206;&#x914D;&#x76F8;&#x5173;&#x7684;&#x73B0;&#x5B9E;&#x4E16;&#x754C;&#x5956;&#x52B1;&#x7684;&#x80FD;&#x529B;&#xFF1B;</p>
+</li>
+<li><p>The design of a hybrid allocation architecture incorporating multiple approaches is the most promising strategy for leveraging the characteristics of each method, thus enhancing the capability of the allocation algorithm to meet the requirements of (i) the environment, (ii) the service, and (iii) the UAV-based ITS. Also, hybrid allocation algorithms feature a higher generalization capability with respect to both the service and the robot type.</p>
+<p>&#x7ED3;&#x5408;&#x591A;&#x79CD;&#x65B9;&#x6CD5;&#x7684;&#x6DF7;&#x5408;&#x5206;&#x914D;&#x67B6;&#x6784;&#x7684;&#x8BBE;&#x8BA1;&#x662F;&#x5229;&#x7528;&#x6BCF;&#x79CD;&#x65B9;&#x6CD5;&#x7684;&#x7279;&#x6027;&#x7684;&#x6700;&#x6709;&#x524D;&#x9014;&#x7684;&#x7B56;&#x7565;&#xFF0C;&#x4ECE;&#x800C;&#x589E;&#x5F3A;&#x5206;&#x914D;&#x7B97;&#x6CD5;&#x7684;&#x80FD;&#x529B;&#x4EE5;&#x6EE1;&#x8DB3;&#xFF08;i&#xFF09;&#x73AF;&#x5883;&#x3001;&#xFF08;ii&#xFF09;&#x670D;&#x52A1;&#x548C;&#xFF08; iii) &#x57FA;&#x4E8E;&#x65E0;&#x4EBA;&#x673A;&#x7684;&#x667A;&#x80FD;&#x4EA4;&#x901A;&#x7CFB;&#x7EDF;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x6DF7;&#x5408;&#x5206;&#x914D;&#x7B97;&#x6CD5;&#x5BF9;&#x4E8E;&#x670D;&#x52A1;&#x548C;&#x673A;&#x5668;&#x4EBA;&#x7C7B;&#x578B;&#x90FD;&#x5177;&#x6709;&#x66F4;&#x9AD8;&#x7684;&#x6CDB;&#x5316;&#x80FD;&#x529B;&#x3002;</p>
+</li>
+</ul>
+<p>Finally, <a href="https://www.mdpi.com/2504-2289/8/12/177#table_body_display_BDCC-08-00177-t008" target="_blank">Table 8</a> summarizes the characteristics of the allocation methods in terms of computational cost, efficiency in finding optimal solutions, scalability to large fleets, capability of handling dynamic tasks, robots, and environments, and the most suitable application domains in the context of UAV-based ITSs.</p>
+<p>&#x6700;&#x540E;&#xFF0C;<a href="https://www.mdpi.com/2504-2289/8/12/177#table_body_display_BDCC-08-00177-t008" target="_blank">&#x8868; 8</a>&#x603B;&#x7ED3;&#x4E86;&#x5206;&#x914D;&#x65B9;&#x6CD5;&#x7684;&#x7279;&#x5F81;&#xFF0C;&#x5305;&#x62EC;&#x8BA1;&#x7B97;&#x6210;&#x672C;&#x3001;&#x5BFB;&#x627E;&#x6700;&#x4F73;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x7684;&#x6548;&#x7387;&#x3001;&#x5927;&#x578B;&#x673A;&#x961F;&#x7684;&#x53EF;&#x6269;&#x5C55;&#x6027;&#x3001;&#x5904;&#x7406;&#x52A8;&#x6001;&#x4EFB;&#x52A1;&#x3001;&#x673A;&#x5668;&#x4EBA;&#x548C;&#x73AF;&#x5883;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x4EE5;&#x53CA;&#x65E0;&#x4EBA;&#x673A;&#x80CC;&#x666F;&#x4E0B;&#x6700;&#x5408;&#x9002;&#x7684;&#x5E94;&#x7528;&#x9886;&#x57DF;&#x57FA;&#x4E8E; ITS&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>Algorithm</th>
+<th>Cost</th>
+<th>Efficiency</th>
+<th>Scalability</th>
+<th>Dynamic Tasks and Robots</th>
+<th>Dynamic Environment</th>
+<th>Application</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auction</td>
+<td>+</td>
+<td>+ +</td>
+<td>+ + + +</td>
+<td>+ + + +</td>
+<td>+ + + +</td>
+<td>D, TM, SR</td>
+</tr>
+<tr>
+<td>Learning</td>
+<td>+ + +</td>
+<td>+ + + +</td>
+<td>+ + +</td>
+<td>+ + + + +</td>
+<td>+ + + + +</td>
+<td>TM, DR, A</td>
+</tr>
+<tr>
+<td>Game Theory</td>
+<td>+ + +</td>
+<td>+ + + +</td>
+<td>+ + +</td>
+<td>+ + +</td>
+<td>+ + +</td>
+<td>C, TM, DC</td>
+</tr>
+<tr>
+<td>Deterministic</td>
+<td>+ + + + +</td>
+<td>+ + + + +</td>
+<td>+</td>
+<td>+</td>
+<td>+</td>
+<td>I, DC</td>
+</tr>
+<tr>
+<td>Heuristic</td>
+<td>+ +</td>
+<td>+ + +</td>
+<td>+ + + +</td>
+<td>+ + +</td>
+<td>+ +</td>
+<td>D, C</td>
+</tr>
+<tr>
+<td>Metaheuristic</td>
+<td>+ + +</td>
+<td>+ + + +</td>
+<td>+ + +</td>
+<td>+ + +</td>
+<td>+ + +</td>
+<td>D, C</td>
+</tr>
+</tbody>
+</table>
+<h2 id="8-conclusions-&#x516B;&#x3001;&#x7ED3;&#x8BBA;">8. Conclusions &#x516B;&#x3001;&#x7ED3;&#x8BBA;</h2>
+<p>For the sake of completeness, before delving into a discussion of the reviewed methodologies along with the applicability of the task allocation methods to the most established applications of UAVs in the context of ITS technology, the main applications of UAVs in the context of ITS technology are listed as follows:</p>
+<ul>
+<li>Search and rescue (SR) [<a href="https://www.mdpi.com/2504-2289/8/12/177#B83-BDCC-08-00177" target="_blank">83</a>,<a href="https://www.mdpi.com/2504-2289/8/12/177#B84-BDCC-08-00177" target="_blank">84</a>,<a href="https://www.mdpi.com/2504-2289/8/12/177#B85-BDCC-08-00177" target="_blank">85</a>,<a href="https://www.mdpi.com/2504-2289/8/12/177#B86-BDCC-08-00177" target="_blank">86</a>];</li>
+<li>Delivery (D) [<a href="https://www.mdpi.com/2504-2289/8/12/177#B87-BDCC-08-00177" target="_blank">87</a>,<a href="https://www.mdpi.com/2504-2289/8/12/177#B88-BDCC-08-00177" target="_blank">88</a>,<a href="https://www.mdpi.com/2504-2289/8/12/177#B89-BDCC-08-00177" target="_blank">89</a>];</li>
+<li>Traffic monitoring (TM) [<a href="https://www.mdpi.com/2504-2289/8/12/177#B90-BDCC-08-00177" target="_blank">90</a>];</li>
+<li>Inspection (I) [<a href="https://www.mdpi.com/2504-2289/8/12/177#B91-BDCC-08-00177" target="_blank">91</a>,<a href="https://www.mdpi.com/2504-2289/8/12/177#B92-BDCC-08-00177" target="_blank">92</a>,<a href="https://www.mdpi.com/2504-2289/8/12/177#B93-BDCC-08-00177" target="_blank">93</a>];</li>
+<li>Disaster response (DR) [<a href="https://www.mdpi.com/2504-2289/8/12/177#B94-BDCC-08-00177" target="_blank">94</a>,<a href="https://www.mdpi.com/2504-2289/8/12/177#B95-BDCC-08-00177" target="_blank">95</a>,<a href="https://www.mdpi.com/2504-2289/8/12/177#B96-BDCC-08-00177" target="_blank">96</a>];</li>
+<li>Surveillance (S) [<a href="https://www.mdpi.com/2504-2289/8/12/177#B97-BDCC-08-00177" target="_blank">97</a>,<a href="https://www.mdpi.com/2504-2289/8/12/177#B98-BDCC-08-00177" target="_blank">98</a>];</li>
+<li>Coverage (C) [<a href="https://www.mdpi.com/2504-2289/8/12/177#B99-BDCC-08-00177" target="_blank">99</a>,<a href="https://www.mdpi.com/2504-2289/8/12/177#B100-BDCC-08-00177" target="_blank">100</a>];</li>
+<li>Data collection (DC) [<a href="https://www.mdpi.com/2504-2289/8/12/177#B101-BDCC-08-00177" target="_blank">101</a>];</li>
+<li>Smart mobility (SM) [<a href="https://www.mdpi.com/2504-2289/8/12/177#B102-BDCC-08-00177" target="_blank">102</a>];</li>
+<li>Agriculture (A) [<a href="https://www.mdpi.com/2504-2289/8/12/177#B103-BDCC-08-00177" target="_blank">103</a>,<a href="https://www.mdpi.com/2504-2289/8/12/177#B104-BDCC-08-00177" target="_blank">104</a>,<a href="https://www.mdpi.com/2504-2289/8/12/177#B105-BDCC-08-00177" target="_blank">105</a>].</li>
+</ul>
+<p>The use of unmanned aerial vehicles has gained significant attention in the context of intelligent transportation. The use of different sensors and high-resolution cameras enables the drones to support road transportation vehicles and to be used for a variety of parcel delivery tasks, among other applications. However, a scalable and efficient task allocation architecture must be designed for optimizing the coordination of the fleet of drones of an intelligent transportation system. Generally, task allocation is used to minimize the execution time of the tasks with a reliable and well-defined procedure. A categorization can be defined depending on the number and type of vehicles and tasks employed, including single-task UAVs or multi-task UAVs, single-UAV tasks or multi-UAV tasks, online or offline task allocation, and independent or dependent tasks. In addition, a combination of multiple UAVs and trucks as well as the inclusion of several constraints can significantly improve the overall efficiency. Therefore, the constant development of task allocation enables us to create more efficient methodologies that cover a large variety of scenarios.</p>
+<p>&#x5728;&#x667A;&#x80FD;&#x4EA4;&#x901A;&#x9886;&#x57DF;&#xFF0C;&#x65E0;&#x4EBA;&#x673A;&#x7684;&#x4F7F;&#x7528;&#x53D7;&#x5230;&#x4E86;&#x5E7F;&#x6CDB;&#x5173;&#x6CE8;&#x3002;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x4F20;&#x611F;&#x5668;&#x548C;&#x9AD8;&#x5206;&#x8FA8;&#x7387;&#x6444;&#x50CF;&#x5934;&#xFF0C;&#x65E0;&#x4EBA;&#x673A;&#x53EF;&#x4EE5;&#x652F;&#x6301;&#x9053;&#x8DEF;&#x8FD0;&#x8F93;&#x8F66;&#x8F86;&#xFF0C;&#x5E76;&#x53EF;&#x7528;&#x4E8E;&#x5404;&#x79CD;&#x5305;&#x88F9;&#x9012;&#x9001;&#x4EFB;&#x52A1;&#x4EE5;&#x53CA;&#x5176;&#x4ED6;&#x5E94;&#x7528;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x5FC5;&#x987B;&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x53EF;&#x6269;&#x5C55;&#x4E14;&#x9AD8;&#x6548;&#x7684;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x67B6;&#x6784;&#xFF0C;&#x4EE5;&#x4F18;&#x5316;&#x667A;&#x80FD;&#x4EA4;&#x901A;&#x7CFB;&#x7EDF;&#x65E0;&#x4EBA;&#x673A;&#x673A;&#x961F;&#x7684;&#x534F;&#x8C03;&#x3002;&#x901A;&#x5E38;&#xFF0C;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x7528;&#x4E8E;&#x901A;&#x8FC7;&#x53EF;&#x9760;&#x4E14;&#x5B9A;&#x4E49;&#x660E;&#x786E;&#x7684;&#x8FC7;&#x7A0B;&#x6765;&#x6700;&#x5C0F;&#x5316;&#x4EFB;&#x52A1;&#x7684;&#x6267;&#x884C;&#x65F6;&#x95F4;&#x3002;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x8F66;&#x8F86;&#x548C;&#x4EFB;&#x52A1;&#x7684;&#x6570;&#x91CF;&#x548C;&#x7C7B;&#x578B;&#x6765;&#x5B9A;&#x4E49;&#x5206;&#x7C7B;&#xFF0C;&#x5305;&#x62EC;&#x5355;&#x4EFB;&#x52A1;&#x65E0;&#x4EBA;&#x673A;&#x6216;&#x591A;&#x4EFB;&#x52A1;&#x65E0;&#x4EBA;&#x673A;&#x3001;&#x5355;&#x65E0;&#x4EBA;&#x673A;&#x4EFB;&#x52A1;&#x6216;&#x591A;&#x65E0;&#x4EBA;&#x673A;&#x4EFB;&#x52A1;&#x3001;&#x5728;&#x7EBF;&#x6216;&#x79BB;&#x7EBF;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x4EE5;&#x53CA;&#x72EC;&#x7ACB;&#x6216;&#x76F8;&#x5173;&#x4EFB;&#x52A1;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x591A;&#x4E2A;&#x65E0;&#x4EBA;&#x673A;&#x548C;&#x5361;&#x8F66;&#x7684;&#x7EC4;&#x5408;&#x4EE5;&#x53CA;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x7EA6;&#x675F;&#x53EF;&#x4EE5;&#x663E;&#x7740;&#x63D0;&#x9AD8;&#x6574;&#x4F53;&#x6548;&#x7387;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x7684;&#x4E0D;&#x65AD;&#x53D1;&#x5C55;&#x4F7F;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x521B;&#x5EFA;&#x66F4;&#x6709;&#x6548;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x8986;&#x76D6;&#x5404;&#x79CD;&#x573A;&#x666F;&#x3002;</p>
+<p>In this sense, this paper provides a comprehensive literature review of how such approaches are being utilized to optimize the allocation of tasks in UAV-based ITSs. Market-based algorithms, game-theory-based algorithms, optimization-based algorithms, machine learning techniques, and other hybrid methodologies are reviewed and discussed. Furthermore, the main applications of unmanned aerial vehicles in ITSs are presented as well as the suitability of the task allocation algorithms presented throughout the paper with respect to the different applications. The main characteristics of, limitations of, and differences between the algorithms are highlighted, showing their main uses over the last few years. Understanding the main characteristics and the applicability of each type of allocation enables engineers and researchers to properly choose the most appropriate type of task scheduling logic. Moreover, the emerging trends and gaps in the literature are also discussed.</p>
+<p>&#x4ECE;&#x8FD9;&#x4E2A;&#x610F;&#x4E49;&#x4E0A;&#x8BF4;&#xFF0C;&#x672C;&#x6587;&#x5BF9;&#x5982;&#x4F55;&#x5229;&#x7528;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x6765;&#x4F18;&#x5316;&#x57FA;&#x4E8E;&#x65E0;&#x4EBA;&#x673A;&#x7684;&#x667A;&#x80FD;&#x4EA4;&#x901A;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x8FDB;&#x884C;&#x4E86;&#x5168;&#x9762;&#x7684;&#x6587;&#x732E;&#x7EFC;&#x8FF0;&#x3002;&#x56DE;&#x987E;&#x548C;&#x8BA8;&#x8BBA;&#x4E86;&#x57FA;&#x4E8E;&#x5E02;&#x573A;&#x7684;&#x7B97;&#x6CD5;&#x3001;&#x57FA;&#x4E8E;&#x535A;&#x5F08;&#x8BBA;&#x7684;&#x7B97;&#x6CD5;&#x3001;&#x57FA;&#x4E8E;&#x4F18;&#x5316;&#x7684;&#x7B97;&#x6CD5;&#x3001;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x6280;&#x672F;&#x548C;&#x5176;&#x4ED6;&#x6DF7;&#x5408;&#x65B9;&#x6CD5;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x8FD8;&#x4ECB;&#x7ECD;&#x4E86;&#x65E0;&#x4EBA;&#x673A;&#x5728;&#x667A;&#x80FD;&#x4EA4;&#x901A;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x4E3B;&#x8981;&#x5E94;&#x7528;&#xFF0C;&#x4EE5;&#x53CA;&#x672C;&#x6587;&#x63D0;&#x51FA;&#x7684;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x7B97;&#x6CD5;&#x5BF9;&#x4E8E;&#x4E0D;&#x540C;&#x5E94;&#x7528;&#x7684;&#x9002;&#x7528;&#x6027;&#x3002;&#x7A81;&#x51FA;&#x663E;&#x793A;&#x4E86;&#x7B97;&#x6CD5;&#x7684;&#x4E3B;&#x8981;&#x7279;&#x5F81;&#x3001;&#x5C40;&#x9650;&#x6027;&#x548C;&#x5DEE;&#x5F02;&#xFF0C;&#x663E;&#x793A;&#x4E86;&#x5B83;&#x4EEC;&#x5728;&#x8FC7;&#x53BB;&#x51E0;&#x5E74;&#x4E2D;&#x7684;&#x4E3B;&#x8981;&#x7528;&#x9014;&#x3002;&#x4E86;&#x89E3;&#x6BCF;&#x79CD;&#x5206;&#x914D;&#x7C7B;&#x578B;&#x7684;&#x4E3B;&#x8981;&#x7279;&#x5F81;&#x548C;&#x9002;&#x7528;&#x6027;&#x4F7F;&#x5DE5;&#x7A0B;&#x5E08;&#x548C;&#x7814;&#x7A76;&#x4EBA;&#x5458;&#x80FD;&#x591F;&#x6B63;&#x786E;&#x9009;&#x62E9;&#x6700;&#x5408;&#x9002;&#x7684;&#x4EFB;&#x52A1;&#x8C03;&#x5EA6;&#x903B;&#x8F91;&#x7C7B;&#x578B;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x8FD8;&#x8BA8;&#x8BBA;&#x4E86;&#x6587;&#x732E;&#x4E2D;&#x7684;&#x65B0;&#x5174;&#x8D8B;&#x52BF;&#x548C;&#x5DEE;&#x8DDD;&#x3002;</p>
+<p>In conclusion, we stress the importance of considering the requirements of the service as well as the environmental conditions and the operational capability of the UAV-based intelligent transportation system when designing a task allocation strategy.</p>
+<p>&#x603B;&#x4E4B;&#xFF0C;&#x6211;&#x4EEC;&#x5F3A;&#x8C03;&#x5728;&#x8BBE;&#x8BA1;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x7B56;&#x7565;&#x65F6;&#x8003;&#x8651;&#x670D;&#x52A1;&#x8981;&#x6C42;&#x4EE5;&#x53CA;&#x57FA;&#x4E8E;&#x65E0;&#x4EBA;&#x673A;&#x7684;&#x667A;&#x80FD;&#x4EA4;&#x901A;&#x7CFB;&#x7EDF;&#x7684;&#x73AF;&#x5883;&#x6761;&#x4EF6;&#x548C;&#x8FD0;&#x884C;&#x80FD;&#x529B;&#x7684;&#x91CD;&#x8981;&#x6027;&#x3002;</p>
+<p>As a further consideration, it is worth noticing that the design of communication channels and their security are fundamental for both implementing (if the allocation architecture is fully decentralized) and validating (if the allocation architecture is centralized or distributed) the allocation of tasks in a fleet of UAVs. Also, the security of the communication channels is a significant challenge for achieving a safe, regulatory-compliant, and resilient real-world deployment of a UAV-based ITS. The efficiency of the task allocation process can be heavily influenced by aspects such as the security of the communication channels as well as their fallibility.</p>
+<p>&#x4F5C;&#x4E3A;&#x8FDB;&#x4E00;&#x6B65;&#x7684;&#x8003;&#x8651;&#xFF0C;&#x503C;&#x5F97;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x901A;&#x4FE1;&#x901A;&#x9053;&#x7684;&#x8BBE;&#x8BA1;&#x53CA;&#x5176;&#x5B89;&#x5168;&#x6027;&#x5BF9;&#x4E8E;&#x5B9E;&#x73B0;&#xFF08;&#x5982;&#x679C;&#x5206;&#x914D;&#x67B6;&#x6784;&#x662F;&#x5B8C;&#x5168;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x7684;&#xFF09;&#x548C;&#x9A8C;&#x8BC1;&#xFF08;&#x5982;&#x679C;&#x5206;&#x914D;&#x67B6;&#x6784;&#x662F;&#x96C6;&#x4E2D;&#x5F0F;&#x7684;&#x8FD8;&#x662F;&#x5206;&#x5E03;&#x5F0F;&#x7684;&#xFF09;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x3002;&#x65E0;&#x4EBA;&#x673A;&#x673A;&#x961F;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x901A;&#x4FE1;&#x901A;&#x9053;&#x7684;&#x5B89;&#x5168;&#x6027;&#x662F;&#x5B9E;&#x73B0;&#x57FA;&#x4E8E;&#x65E0;&#x4EBA;&#x673A;&#x7684; ITS &#x7684;&#x5B89;&#x5168;&#x3001;&#x5408;&#x89C4;&#x548C;&#x5F39;&#x6027;&#x73B0;&#x5B9E;&#x90E8;&#x7F72;&#x7684;&#x91CD;&#x5927;&#x6311;&#x6218;&#x3002;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x8FC7;&#x7A0B;&#x7684;&#x6548;&#x7387;&#x53EF;&#x80FD;&#x4F1A;&#x53D7;&#x5230;&#x901A;&#x4FE1;&#x901A;&#x9053;&#x7684;&#x5B89;&#x5168;&#x6027;&#x53CA;&#x5176;&#x53EF;&#x9760;&#x6027;&#x7B49;&#x65B9;&#x9762;&#x7684;&#x4E25;&#x91CD;&#x5F71;&#x54CD;&#x3002;</p>
+<p>Future survey-based research will focus on investigating how the UAV communication protocol can influence the efficiency of the task allocation architecture in terms of both security and robustness to fallible communication networks. Also, conceptual modelling frameworks used to implement task allocation algorithms in UAV-based ITSs may also be discussed.</p>
+<p>&#x672A;&#x6765;&#x57FA;&#x4E8E;&#x8C03;&#x67E5;&#x7684;&#x7814;&#x7A76;&#x5C06;&#x91CD;&#x70B9;&#x8C03;&#x67E5;&#x65E0;&#x4EBA;&#x673A;&#x901A;&#x4FE1;&#x534F;&#x8BAE;&#x5982;&#x4F55;&#x5F71;&#x54CD;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x67B6;&#x6784;&#x7684;&#x6548;&#x7387;&#xFF0C;&#x5305;&#x62EC;&#x5B89;&#x5168;&#x6027;&#x548C;&#x5BF9;&#x6613;&#x51FA;&#x9519;&#x901A;&#x4FE1;&#x7F51;&#x7EDC;&#x7684;&#x9C81;&#x68D2;&#x6027;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x8BA8;&#x8BBA;&#x7528;&#x4E8E;&#x5728;&#x57FA;&#x4E8E;&#x65E0;&#x4EBA;&#x673A;&#x7684; ITS &#x4E2D;&#x5B9E;&#x73B0;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x7B97;&#x6CD5;&#x7684;&#x6982;&#x5FF5;&#x5EFA;&#x6A21;&#x6846;&#x67B6;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2024-Distributed_task_allocation_algorithm_for_heterogeneous_unmanned_aerial_vehic_swarm_based_on_coalition_formation_game.html" class="navigation navigation-prev " aria-label="Previous page: 2024-Distributed_task_allocation_algorithm_for_heterogeneous_unmanned_aerial_vehic_swarm_based_on_coalition_formation_game">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="./" class="navigation navigation-next " aria-label="Next page: index">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2024.12-Application_of_Task_Allocation_Algorithms_in_Multi-UAV_Intelligent_Transportation_Systems_A_Critical_Review","level":"1.5.7.6.3","depth":4,"next":{"title":"index","level":"1.5.7.6.4","depth":4,"path":"Learn/LearnDrones/TaskAssignment/index.md","ref":"Learn/LearnDrones/TaskAssignment/index.md","articles":[]},"previous":{"title":"2024-Distributed_task_allocation_algorithm_for_heterogeneous_unmanned_aerial_vehic_swarm_based_on_coalition_formation_game","level":"1.5.7.6.2","depth":4,"path":"Learn/LearnDrones/TaskAssignment/2024-Distributed_task_allocation_algorithm_for_heterogeneous_unmanned_aerial_vehic_swarm_based_on_coalition_formation_game.md","ref":"Learn/LearnDrones/TaskAssignment/2024-Distributed_task_allocation_algorithm_for_heterogeneous_unmanned_aerial_vehic_swarm_based_on_coalition_formation_game.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include-codeblock","-lunr","-search","search-pro","expandable-chapters","code","chapter-fold","splitter","github","theme-comscore","katex-pp","edit-link","back-to-top-button","intopic-toc"],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/houhuawei23/Notes"},"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this article","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"back-to-top-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"katex-pp":{},"edit-link":{"label":"Edit This Page","base":"https://github.com/houhuawei23/Notes/edit/main"},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"Introduction.md","glossary":"GLOSSARY.md","summary":"SUMMARY-GitBook-auto-summary.md"},"variables":{},"language":"cn","gitbook":"*","description":"This is such a great book!"},"file":{"path":"Learn/LearnDrones/TaskAssignment/2024.12-Application_of_Task_Allocation_Algorithms_in_Multi-UAV_Intelligent_Transportation_Systems_A_Critical_Review.md","mtime":"2024-12-30T12:21:13.776Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-12-30T12:22:01.814Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

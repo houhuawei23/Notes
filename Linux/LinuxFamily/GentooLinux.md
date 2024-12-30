@@ -1,1 +1,0 @@
-[text](https://www.gentoo.org/get-started/about/)
