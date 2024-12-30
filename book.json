@@ -1,5 +1,7 @@
 {
-  "description": "This is such a great book!",
+  "title": "Notes of hhw",
+  "author": "houhuawei23",
+  "description": "Notes of hhw",
   "language": "cn",
   "structure": {
     "readme": "Introduction.md",
@@ -19,7 +21,8 @@
     "katex-pp",
     "edit-link",
     "back-to-top-button",
-    "intopic-toc"
+    "intopic-toc",
+    "download-pdf-link"
   ],
   "pluginsConfig": {
     "github": {
@@ -28,6 +31,24 @@
     "edit-link": {
       "base": "https://github.com/houhuawei23/Notes/edit/main",
       "label": "Edit This Page"
+    },
+    "download-pdf-link": {
+      "base": "https://github.com/houhuawei23/Notes/tree/gh-pages/Notes.pdf",
+      "label": {
+        "en": "Download PDF"
+      }
+    }
+  },
+  "pdf": {
+    "pageNumbers": true,
+    "fontSize": 10,
+    "fontFamily": "Times New Roman",
+    "paperSize": "a4",
+    "margin": {
+      "top": 10,
+      "bottom": 10,
+      "left": 10,
+      "right": 10
     }
   }
 }

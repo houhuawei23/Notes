@@ -5,9 +5,16 @@ Product documentation (your users will love)
 Forget building your own custom docs platform. With GitBook you get beautiful documentation for your users, and a branch-based Git workflow for your team.
 
 - [gitbook.com](https://www.gitbook.com/)
+- [gitbook-ng.github.io](https://gitbook-ng.github.io/)
 - [gitbook-documentation zh](https://chrisniael.gitbooks.io/gitbook-documentation/content/index.html)
 - [gitbook-cli](https://github.com/GitbookIO/gitbook-cli)
-- [back-to-top-button](https://github.com/stuebersystems/gitbook-plugin-back-to-top-button)
+- [github: GitbookIO/gitbook](https://github.com/GitbookIO/gitbook)
+- [GitbookIO/integrations](https://github.com/GitbookIO/integrations)
+- [Gitbook 打造的 Gitbook 说明文档](https://www.mapull.com/gitbook/comscore/)
+
+GitBook 是基于 Node.js 的开源命令行工具，用于输出漂亮的电子书。
+
+遗憾的是，GitBook开源项目已经停止维护，专注打造的 gitbook.com 网站在国内访问受限。
 
 ## Extensions
 
@@ -19,6 +26,9 @@ Forget building your own custom docs platform. With GitBook you get beautiful do
 - [intopic-toc](https://github.com/fzankl/gitbook-plugin-intopic-toc)
 - [disqus](https://github.com/GitbookIO/plugin-disqus)
 - [github](https://github.com/GitbookIO/plugin-github)
+- [back-to-top-button](https://github.com/stuebersystems/gitbook-plugin-back-to-top-button)
+- [download-pdf-link](https://github.com/show0k/gitbook-plugin-download-pdf-link)
+- [mermaid-newface](https://github.com/TakuroFukamizu/gitbook-plugin-mermaid-newface)
 
 ## Install
 
@@ -56,3 +66,9 @@ GitBook 约定了下面这些文件的作用：
 - GLOSSARY：术语描述的清单
 
 至少需要一个 README 和 SUMMARY 文件来构建一本书。
+
+## Gitbook pdf
+
+```bash
+gitbook pdf <gitbook-folder-location> <pdf-location>.pdf
+```

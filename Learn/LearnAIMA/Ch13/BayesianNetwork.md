@@ -217,7 +217,10 @@ $$
   如线性高斯分布：
 
   $$
-  P(y \mid x)=\mathcal{N}\left(y ; a \cdot x +b, \sigma^{2}\right)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2}\left(\frac{y-\left(a\cdot h+b\right)}{\sigma}\right)^{2}}
+  P(y \mid x)=
+  \mathcal{N}\left(y ; a \cdot x +b, \sigma^{2}\right)=
+  \frac{1}{\sigma (2 \pi)^{1/2}} 
+  e^{-\frac{1}{2}\left(\frac{y-\left(a\cdot h+b\right)}{\sigma}\right)^{2}}
   $$
 
   y 的条件分布的均值$\mu=a \cdot x +b$随父节点的值$x$线性变化，标准差$\sigma^{2}$固定。
