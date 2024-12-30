@@ -3007,15 +3007,38 @@
 <li><a href="https://github.com/show0k/gitbook-plugin-download-pdf-link" target="_blank">download-pdf-link</a></li>
 <li><a href="https://github.com/TakuroFukamizu/gitbook-plugin-mermaid-newface" target="_blank">mermaid-newface</a></li>
 </ul>
-<h2 id="install">Install</h2>
-<pre><code class="lang-bash"><span class="hljs-comment"># install nvm</span>
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+<pre><code class="lang-yaml"><span class="hljs-comment"># open base/Notes.pdf</span>
+<span class="hljs-attr">&quot;get-pdf&quot;:</span> {
+<span class="hljs-attr">  &quot;base&quot;:</span> <span class="hljs-string">&quot;https://github.com/houhuawei23/Notes/tree/gh-pages&quot;</span>,
+<span class="hljs-attr">  &quot;prefix&quot;:</span> <span class="hljs-string">&quot;Notes&quot;</span>,
+<span class="hljs-attr">  &quot;label&quot;:</span> <span class="hljs-string">&quot;Download PDF&quot;</span>
+},
+<span class="hljs-comment"># open url</span>
+<span class="hljs-attr">&quot;my-toolbar&quot;:</span> {
+<span class="hljs-attr">  &quot;buttons&quot;:</span> [
+    {
+<span class="hljs-attr">      &quot;label&quot;:</span> <span class="hljs-string">&quot;&#x4E0B;&#x8F7D;PDF&quot;</span>,
+<span class="hljs-attr">      &quot;icon&quot;:</span> <span class="hljs-string">&quot;fa fa-file-pdf-o&quot;</span>,
+<span class="hljs-attr">      &quot;url&quot;:</span> <span class="hljs-string">&quot;https://github.com/houhuawei23/Notes/tree/gh-pages/Notes.pdf&quot;</span>,
+<span class="hljs-attr">      &quot;position&quot;:</span> <span class="hljs-string">&quot;left&quot;</span>,
+<span class="hljs-attr">      &quot;text&quot;:</span> <span class="hljs-string">&quot;&#x4E0B;&#x8F7D;PDF&quot;</span>,
+<span class="hljs-attr">      &quot;target&quot;:</span> <span class="hljs-string">&quot;_blank&quot;</span>
+    }
+  ]
+}
+``
+
+<span class="hljs-comment">## Install</span>
+
+```bash
+<span class="hljs-comment"># install nvm</span>
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0<span class="hljs-number">.40</span><span class="hljs-number">.1</span>/install.sh | bash
 
 <span class="hljs-comment"># install node version 10.24.1</span>
-nvm install 10.24.1
+nvm install <span class="hljs-number">10.24</span><span class="hljs-number">.1</span>
 
 <span class="hljs-comment"># install gitbook-cli (with change npm source)</span>
-npm config <span class="hljs-built_in">set</span> registry https://registry.npmmirror.com
+npm config set registry https://registry.npmmirror.com
 npm install gitbook-cli -g
 
 <span class="hljs-comment"># install gitbook</span>
@@ -3041,6 +3064,12 @@ gitbook serve
 <h2 id="gitbook-pdf">Gitbook pdf</h2>
 <pre><code class="lang-bash">gitbook pdf &lt;gitbook-folder-location&gt; &lt;pdf-location&gt;.pdf
 </code></pre>
+<pre><code class="lang-yaml"><span class="hljs-comment"># gitbook-action.yml</span>
+<span class="hljs-attr">- name:</span> Install Calibre (for ebook-convert)
+<span class="hljs-attr">  run:</span> <span class="hljs-string">|
+    sudo apt-get update
+    sudo apt-get install -y calibre
+</span></code></pre>
 
                                 
                                 </section>
@@ -3084,7 +3113,7 @@ gitbook serve
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"GitBook","level":"1.7.13","depth":2,"next":{"title":"Hyper-V","level":"1.7.14","depth":2,"path":"Misc/Hyper-V.md","ref":"Misc/Hyper-V.md","articles":[]},"previous":{"title":"GRUB","level":"1.7.12","depth":2,"path":"Misc/GRUB.md","ref":"Misc/GRUB.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include-codeblock","-lunr","-search","search-pro","expandable-chapters","code","chapter-fold","splitter","github","theme-comscore","katex-pp","edit-link","back-to-top-button","intopic-toc","download-pdf-link"],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/houhuawei23/Notes"},"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this article","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"back-to-top-button":{},"download-pdf-link":{"label":{"en":"Download PDF"},"base":"https://github.com/houhuawei23/Notes/tree/gh-pages/Notes.pdf"},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"katex-pp":{},"edit-link":{"label":"Edit This Page","base":"https://github.com/houhuawei23/Notes/edit/main"},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"houhuawei23","pdf":{"pageNumbers":true,"fontSize":10,"fontFamily":"Times New Roman","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":10,"left":10,"top":10,"bottom":10}},"structure":{"langs":"LANGS.md","readme":"Introduction.md","glossary":"GLOSSARY.md","summary":"SUMMARY-GitBook-auto-summary.md"},"variables":{},"title":"Notes of hhw","language":"cn","gitbook":"*","description":"Notes of hhw"},"file":{"path":"Misc/GitBook.md","mtime":"2024-12-30T15:23:02.942Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-12-30T15:24:56.098Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"GitBook","level":"1.7.13","depth":2,"next":{"title":"Hyper-V","level":"1.7.14","depth":2,"path":"Misc/Hyper-V.md","ref":"Misc/Hyper-V.md","articles":[]},"previous":{"title":"GRUB","level":"1.7.12","depth":2,"path":"Misc/GRUB.md","ref":"Misc/GRUB.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include-codeblock","-lunr","-search","search-pro","expandable-chapters","code","chapter-fold","splitter","github","theme-comscore","katex-pp","edit-link","back-to-top-button","intopic-toc","my-toolbar"],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/houhuawei23/Notes"},"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this article","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"back-to-top-button":{},"my-toolbar":{"buttons":[{"label":"Download PDF","icon":"fa fa-file-pdf-o","url":"https://github.com/houhuawei23/Notes/tree/gh-pages/Notes.pdf","position":"left","text":"Download PDF","target":"_blank"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"katex-pp":{},"edit-link":{"label":"Edit","base":"https://github.com/houhuawei23/Notes/edit/main"},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"houhuawei23","pdf":{"pageNumbers":true,"fontSize":10,"fontFamily":"Times New Roman","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":10,"left":10,"top":10,"bottom":10}},"structure":{"langs":"LANGS.md","readme":"Introduction.md","glossary":"GLOSSARY.md","summary":"SUMMARY-GitBook-auto-summary.md"},"variables":{},"title":"Notes of hhw","language":"cn","gitbook":"*","description":"Notes of hhw"},"file":{"path":"Misc/GitBook.md","mtime":"2024-12-30T15:45:32.723Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-12-30T15:47:31.019Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -3142,7 +3171,7 @@ gitbook serve
         
     
         
-        <script src="../gitbook/gitbook-plugin-download-pdf-link/plugin.js"></script>
+        <script src="../gitbook/gitbook-plugin-my-toolbar/buttons.js"></script>
         
     
         
