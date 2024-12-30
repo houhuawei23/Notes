@@ -21,6 +21,11 @@ jobs:
               with:
                 node-version: ${{ matrix.node-version }}
 
+            - name: Install Calibre (for ebook-convert)
+              run: |
+                sudo apt-get update
+                sudo apt-get install -y calibre
+
             - name: Install GitBook CLI
               run: npm install -g gitbook-cli
 
@@ -31,9 +36,7 @@ jobs:
               run: gitbook build . ./_book
 
             - name: Generate GitBook pdf
-              run: |
-                apt install calibre
-                gitbook pdf . ./_book/Notes.pdf
+              run: gitbook pdf . ./_book/Notes.pdf
 
             - name: Deploy to GitHub Pages
               uses: peaceiris/actions-gh-pages@v3
