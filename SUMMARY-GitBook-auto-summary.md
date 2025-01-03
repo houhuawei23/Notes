@@ -10,8 +10,7 @@
 - Guides
   - [Self-Cultivation-of-Programmers](Guides/Self-Cultivation-of-Programmers.md)
 - [Learn](./Learn/Learn.md)
-  - [LearnDrones](Learn/LearnDrones/Note.md)
-    - [Note](Learn/LearnDrones/Note.md)
+  - [LearnDrones](./Learn/LearnDrones/Note.md)
     - [FastDrone-250](Learn/LearnDrones/FastDrone-250.md)
     - Planner
       - [Distributed-Swarm-Trajectory-Opt-for-Formation-Flight-in-Dense-Envs-2022](Learn/LearnDrones/Planner/Distributed-Swarm-Trajectory-Opt-for-Formation-Flight-in-Dense-Envs-2022.md)
@@ -34,7 +33,6 @@
     - [Ch13](./Learn/LearnAIMA/Ch13/Ch13.md)
       - [BayesianNetwork](Learn/LearnAIMA/Ch13/BayesianNetwork.md)
     - [Ch18](./Learn/LearnAIMA/Ch18/Ch18.md)
-    - [index](Learn/LearnAIMA/index.md)
   - LearnCUDA
     - [APT-CUDA](Learn/LearnCUDA/APT-CUDA.md)
     - [CUDA](Learn/LearnCUDA/CUDA.md)
