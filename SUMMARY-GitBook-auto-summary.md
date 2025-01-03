@@ -10,8 +10,26 @@
 - Guides
   - [Self-Cultivation-of-Programmers](Guides/Self-Cultivation-of-Programmers.md)
 - [Learn](./Learn/Learn.md)
+  - [LearnDrones](Learn/LearnDrones/Note.md)
+    - [Note](Learn/LearnDrones/Note.md)
+    - [FastDrone-250](Learn/LearnDrones/FastDrone-250.md)
+    - Planner
+      - [Distributed-Swarm-Trajectory-Opt-for-Formation-Flight-in-Dense-Envs-2022](Learn/LearnDrones/Planner/Distributed-Swarm-Trajectory-Opt-for-Formation-Flight-in-Dense-Envs-2022.md)
+      - [EGO-Swarm-2021](Learn/LearnDrones/Planner/EGO-Swarm-2021.md)
+      - [FastPlanner-2019](Learn/LearnDrones/Planner/FastPlanner-2019.md)
+      - [EGO-Planner-2020](Learn/LearnDrones/Planner/EGO-Planner-2020.md)
+      - [Gradient-Based-Motion-Planning](Learn/LearnDrones/Planner/Gradient-Based-Motion-Planning.md)
+      - [MicroFlyingRobots-2021](Learn/LearnDrones/Planner/MicroFlyingRobots-2021.md)
+      - [Robust-Efficient-Trajectory-Planning-for-Formation-Flight-in-Dense-Environments-2023](Learn/LearnDrones/Planner/Robust-Efficient-Trajectory-Planning-for-Formation-Flight-in-Dense-Environments-2023.md)
+    - TaskAssignment
+      - [2022.06-Task_assignment_algorithms_for_unmanned_aerial_vehicle_networks_A_comprehensive_survey](Learn/LearnDrones/TaskAssignment/2022.06-Task_assignment_algorithms_for_unmanned_aerial_vehicle_networks_A_comprehensive_survey.md)
+      - [2024-Distributed_task_allocation_algorithm_for_heterogeneous_unmanned_aerial_vehic_swarm_based_on_coalition_formation_game](Learn/LearnDrones/TaskAssignment/2024-Distributed_task_allocation_algorithm_for_heterogeneous_unmanned_aerial_vehic_swarm_based_on_coalition_formation_game.md)
+      - [2024.12-Application_of_Task_Allocation_Algorithms_in_Multi-UAV_Intelligent_Transportation_Systems_A_Critical_Review](Learn/LearnDrones/TaskAssignment/2024.12-Application_of_Task_Allocation_Algorithms_in_Multi-UAV_Intelligent_Transportation_Systems_A_Critical_Review.md)
+      - [index](Learn/LearnDrones/TaskAssignment/index.md)
+    - [Ceres-Solver](Learn/LearnDrones/Ceres-Solver.md)
+    - [Eigen](Learn/LearnDrones/Eigen.md)
   - [GPU2CPU](Learn/GPU2CPU.md)
-  - LearnAIMA
+  - [LearnAIMA](Learn/LearnAIMA/index.md)
     - [Ch12](Learn/LearnAIMA/Ch12.md)
     - [Ch13](./Learn/LearnAIMA/Ch13/Ch13.md)
       - [BayesianNetwork](Learn/LearnAIMA/Ch13/BayesianNetwork.md)
@@ -31,23 +49,6 @@
     - [Conda](Learn/LearnConda/Conda.md)
   - LearnDocker
     - [docker](Learn/LearnDocker/docker.md)
-  - LearnDrones
-    - [Ceres-Solver](Learn/LearnDrones/Ceres-Solver.md)
-    - [Eigen](Learn/LearnDrones/Eigen.md)
-    - [FastDrone-250](Learn/LearnDrones/FastDrone-250.md)
-    - [Note](Learn/LearnDrones/Note.md)
-    - Planner
-      - [Distributed-Swarm-Trajectory-Opt-for-Formation-Flight-in-Dense-Envs-2022](Learn/LearnDrones/Planner/Distributed-Swarm-Trajectory-Opt-for-Formation-Flight-in-Dense-Envs-2022.md)
-      - [EGO-Swarm-2021](Learn/LearnDrones/Planner/EGO-Swarm-2021.md)
-      - [FastPlanner-2019](Learn/LearnDrones/Planner/FastPlanner-2019.md)
-      - [Gradient-Based-Motion-Planning](Learn/LearnDrones/Planner/Gradient-Based-Motion-Planning.md)
-      - [MicroFlyingRobots-2021](Learn/LearnDrones/Planner/MicroFlyingRobots-2021.md)
-      - [Robust-Efficient-Trajectory-Planning-for-Formation-Flight-in-Dense-Environments-2023](Learn/LearnDrones/Planner/Robust-Efficient-Trajectory-Planning-for-Formation-Flight-in-Dense-Environments-2023.md)
-    - TaskAssignment
-      - [2022.06-Task_assignment_algorithms_for_unmanned_aerial_vehicle_networks_A_comprehensive_survey](Learn/LearnDrones/TaskAssignment/2022.06-Task_assignment_algorithms_for_unmanned_aerial_vehicle_networks_A_comprehensive_survey.md)
-      - [2024-Distributed_task_allocation_algorithm_for_heterogeneous_unmanned_aerial_vehic_swarm_based_on_coalition_formation_game](Learn/LearnDrones/TaskAssignment/2024-Distributed_task_allocation_algorithm_for_heterogeneous_unmanned_aerial_vehic_swarm_based_on_coalition_formation_game.md)
-      - [2024.12-Application_of_Task_Allocation_Algorithms_in_Multi-UAV_Intelligent_Transportation_Systems_A_Critical_Review](Learn/LearnDrones/TaskAssignment/2024.12-Application_of_Task_Allocation_Algorithms_in_Multi-UAV_Intelligent_Transportation_Systems_A_Critical_Review.md)
-      - [index](Learn/LearnDrones/TaskAssignment/index.md)
   - LearnGPU2CPU-by-GPT
     - [Note](Learn/LearnGPU2CPU-by-GPT/Note.md)
   - LearnGameDev

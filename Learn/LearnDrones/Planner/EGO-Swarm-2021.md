@@ -62,26 +62,25 @@ $$
 \min _{\mathbf{Q}} J_{\mathrm{EGO}}=\sum \lambda_{r} J_{r},
 $$
 
-其中$r=\{s,c,d,t\}$，下标为$\lambda$表示相应的权重。 $J$的项可以分为两类：最小误差和软障碍约束。 最小误差项$J_s$和$J_t$，通过最小化决策变量线性变换$L(\mathbf{Q})$与期望值$\mathcal{D}$之间的总误差，被表示为
+其中 $r=\{s,c,d,t\}$，下标为$\lambda$表示相应的权重。 $J$ 的项可以分为两类：最小误差和软障碍约束。 最小误差项 $J_s$ 和$J_t$，通过最小化决策变量线性变换$L(\mathbf{Q})$与期望值 $\mathcal{D}$之间的总误差，被表示为
 
 $$
 J_{r}=\sum_{\mathbf{Q} \in \boldsymbol{\Phi}}\|L(\mathbf{Q})-\mathcal{D}\|_{n}^{n}
 $$
 
-软边界约束项 $J_c$ 和 $J_d$ 是惩罚决策变量超过特定阈值 $\mathcal{T}$ 的常见表达式。
+软边界约束项 $J_c$ 和 $J_d$ 是惩罚决策变量超过特定阈值  $\mathcal{T}$ 的常见表达式。
 
 $$
 J_{r}=\sum_{\mathbf{Q} \in \boldsymbol{\Phi}}\left\{\begin{array}{cl}\left\|\frac{L(\mathbf{Q})-(\mathcal{T}-\epsilon)}{S}\right\|_{n}^{n} & L(\mathbf{Q})>(\mathcal{T}-\epsilon) \\ 0 & L(\mathbf{Q}) \leq(\mathcal{T}-\epsilon)\end{array}\right.
 $$
 
-其中，参数$S$，$n$和$\epsilon$影响着单边约束近似的准确度，如\cite{rosmann2012trajectory}所述。 变换$L(\cdot)$和参数根据惩罚类型选择。 由于篇幅有限，在此处省略了$L(\cdot)$的具体形式，可在\cite{zhou2020ego}中找到。
+其中，参数$S$，$n$和 $\epsilon$影响着单边约束近似的准确度，如\cite{rosmann2012trajectory}所述。 变换$L(\cdot)$和参数根据惩罚类型选择。 由于篇幅有限，在此处省略了$L(\cdot)$的具体形式，可在\cite{zhou2020ego}中找到。
 
-在 EGO-Planner 中，我们提出了一种新颖的障碍物距离估计方法，该方法根据每个$\mathbf{Q}$独立拥有的环境信息进行参数化。 由若干$\{\mathbf{p},\mathbf{v}\}$对参数化的信息高度抽象自周围障碍物，其中$\mathbf{p}$表示障碍物表面上的锚点，$\mathbf{v}$表示从内部指向外部的安全方向，如图\ref{pic:a*p_v_pair}所示。 然后，第$i$个控制点$\mathbf{Q}_i$到第$j$个障碍物的障碍物距离$d*{ij}$被定义为
+在 EGO-Planner 中，我们提出了一种新颖的障碍物距离估计方法，该方法根据每个 $\mathbf{Q}$独立拥有的环境信息进行参数化。 由若干 $\{\mathbf{p},\mathbf{v}\}$对参数化的信息高度抽象自周围障碍物，其中 $\mathbf{p}$表示障碍物表面上的锚点， $\mathbf{v}$表示从内部指向外部的安全方向，如图 \ref{pic:a*p_v_pair} 所示。 然后，第 $i$ 个控制点 $\mathbf{Q}_i$到第$j$个障碍物的障碍物距离$d*{ij}$被定义为
 
-$$
-$$
+TODO
 
-$\{\mathbf{p},\mathbf{v}\}$对的生成和轨迹优化过程如图\ref{pic:a*p_v_pair}和\ref{pic:final_traj}所示。 首先，给出一个简单的初始轨迹$\mathbf{\Phi}$，不考虑碰撞。 然后，搜索连接碰撞段两端的安全路径$\mathbf{\Gamma}$。 然后，从$\mathbf{\Phi}$到$\mathbf{\Gamma}$生成向量$\mathbf{v}$，并在障碍物表面定义$\mathbf{p}$。 通过生成的$\{\mathbf{p},\mathbf{v}\}$对，规划器最大化$d*{ij}$并返回优化的轨迹。 由于文章长度有限，我们只提供了 EGO-Planner 基本思想的简化描述。 详细解释可参见\cite{zhou2020ego}。
+$\{\mathbf{p},\mathbf{v}\}$ 对的生成和轨迹优化过程如图 \ref{pic:a\*p_v_pair} 和  \ref{pic:final_traj}所示。 首先，给出一个简单的初始轨迹 $\mathbf{\Phi}$ ，不考虑碰撞。 然后，搜索连接碰撞段两端的安全路径 $\mathbf{\Gamma}$。 然后，从$\mathbf{\Phi}$到 $\mathbf{\Gamma}$ 生成向量 $\mathbf{v}$ ，并在障碍物表面定义 $\mathbf{p}$ 。 通过生成的 $\{\mathbf{p},\mathbf{v}\}$ 对，规划器最大化 $d*{ij}$ 并返回优化的轨迹。 由于文章长度有限，我们只提供了 EGO-Planner 基本思想的简化描述。 详细解释可参见\cite{zhou2020ego}。
 
 ![](image/EGO-Swarm-2021/image_r0f2slS2ev.png)
 
@@ -91,11 +90,11 @@ $\{\mathbf{p},\mathbf{v}\}$对的生成和轨迹优化过程如图\ref{pic:a*p_v
 
 定义 1：
 
-两条轨迹 $\tau_1(s)$、$\tau_2(s)$，其参数为 $s\in \left[0,1\right]$，且满足 $\tau_1(0) = \tau_2(0)$、$\tau_1(1) = \tau_2(1)$ 的条件，如果对于所有的 $s$，线段 $\tau_1(s) \tau_2(s)$ 没有碰撞，则属于相同的 UVD 类别。
+两条轨迹  $\tau_1(s)$、 $\tau_2(s)$，其参数为 $s\in \left[0,1\right]$，且满足  $\tau_1(0) = \tau_2(0)$、 $\tau_1(1) = \tau_2(1)$ 的条件，如果对于所有的 $s$，线段  $\tau_1(s) \tau_2(s)$ 没有碰撞，则属于相同的 UVD 类别。
 
 ![属于同一个三维同伦的四条轨迹停留在不同的局部极小值点，我们的目标是寻找这些极小值点。 属于同一个三维同伦的四条轨迹停留在不同的局部极小值点，我们的目标是寻找这些极小值点。 ](image/EGO-Swarm-2021/image_kdRfTGYkvA.png "属于同一个三维同伦的四条轨迹停留在不同的局部极小值点，我们的目标是寻找这些极小值点。 属于同一个三维同伦的四条轨迹停留在不同的局部极小值点，我们的目标是寻找这些极小值点。 ")
 
-传统的拓扑规划方法 \cite{jaillet2008path, rosmann2012trajectory, rosmann2017integrated, zhou2020robust} 主要由拓扑不同的路径搜索和后端优化组成，主要关注在拓扑上不同的同伦中寻找多个初始路径。 与这些方法不同，所提出的方法通过将 $\mathbf{v}$ 反转为 $\mathbf{v}_{new} := -\mathbf{v}$，在不同方向上构建距离场。 然后，一个搜索过程在障碍物表面上沿着 $\mathbf{v}_{new}$ 确定一个新的锚点 $\mathbf{p}_{new}$，如图\ref{pic:multi*p_v} 所示。 它们构成了新的一对 $\{\mathbf{p}*{new}, \mathbf{v}_{new}\}$，导致了一个不同的局部极小值。 需要注意的是，没有采用明确的路径搜索，但是任何经过 $\mathbf{p}$ 和 $\mathbf{p}_{new}$ 的路径对应着 Def.\ref{def:UVD} 在这两个点上的违反。 随后，不同的轨迹在不同的线程中并行进行优化，如图 4.d 所示。 执行成本最低的轨迹。
+传统的拓扑规划方法 \cite{jaillet2008path, rosmann2012trajectory, rosmann2017integrated, zhou2020robust} 主要由拓扑不同的路径搜索和后端优化组成，主要关注在拓扑上不同的同伦中寻找多个初始路径。 与这些方法不同，所提出的方法通过将  $\mathbf{v}$ 反转为  $\mathbf{v}_{new} := -\mathbf{v}$，在不同方向上构建距离场。 然后，一个搜索过程在障碍物表面上沿着 $\mathbf{v}_{new}$ 确定一个新的锚点 $\mathbf{p}_{new}$，如图\ref{pic:multi\*p_v} 所示。 它们构成了新的一对 $\{\mathbf{p}*{new}, \mathbf{v}_{new}\}$，导致了一个不同的局部极小值。 需要注意的是，没有采用明确的路径搜索，但是任何经过 $\mathbf{p}$ 和 $\mathbf{p}_{new}$ 的路径对应着 Def.\ref{def:UVD} 在这两个点上的违反。 随后，不同的轨迹在不同的线程中并行进行优化，如图 4.d 所示。 执行成本最低的轨迹。
 
 ### 4 无人机集群导航
 
@@ -111,7 +110,7 @@ $$
 \begin{array}{l}d_{k, i}(t)=\left\|\mathbf{E}^{1 / 2}\left[\boldsymbol{\Phi}_{k}(t)-\boldsymbol{\Phi}_{i}(t)\right]\right\|-(\mathcal{C}+\epsilon) \\\end{array}
 $$
 
-其中，$i \in \mathbb{Z} \backslash k, i \leq K$，$t_s$和$t_e$是轨迹$\mathbf{\Phi}_k(t)$时间跨度内的全局起始时间和结束时间。 $\mathcal{C}$是用户定义的代理间隙。 $\mathbf{E}:=\rm{diag}(1,1,1/c), c>1$将欧式距离转换为具有较短主轴的椭圆距离，以减轻下冲风险。 将加权项$J_{w,k}$添加到方程(1)中，得到每个代理的总优化问题。
+其中，$i \in \mathbb{Z} \backslash k, i \leq K$ ，$t_s$ 和 $t_e$ 是轨迹 $\mathbf{\Phi}_k(t)$ 时间跨度内的全局起始时间和结束时间。 $\mathcal{C}$ 是用户定义的代理间隙。 $\mathbf{E}:=\rm{diag}(1,1,1/c), c>1$ 将欧式距离转换为具有较短主轴的椭圆距离，以减轻下冲风险。 将加权项 $J_{w,k}$ 添加到方程(1)中，得到每个代理的总优化问题。
 
 $$
 \min _{\mathbf{Q}} J=J_{\mathrm{EGO}}+\lambda_{w} J_{w}.
