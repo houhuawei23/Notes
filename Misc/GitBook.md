@@ -103,3 +103,21 @@ gitbook pdf <gitbook-folder-location> <pdf-location>.pdf
     sudo apt-get install -y calibre
 
 ```
+
+## + Github Action
+
+```yaml
+# use prebuild image?
+coenvl/gitbook-calibre
+
+image: coenvl/gitbook-calibre
+
+pdf:
+  script:
+  - gitbook pdf ./ ./$CI_PROJECT_NAME.pdf
+  artifacts:
+    paths:
+    - $CI_PROJECT_NAME.pdf
+# or install from scratch
+...
+```

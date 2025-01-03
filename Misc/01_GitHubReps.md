@@ -10,7 +10,7 @@ https://ds4sd.github.io/docling/
 
 [bananas: cross-platform screen sharing](https://github.com/mistweaverco/bananas)
 
-bananas官网：[https://getbananas.net](https://getbananas.net/)
+bananas 官网：[https://getbananas.net](https://getbananas.net/)
 
 云朵备份发布地址：[https://github.com/likeflyme/cloudbak](https://github.com/likeflyme/cloudbak)
 
@@ -29,3 +29,6 @@ Traymond 增强版：[https://github.com/tabris17/traymond](https://github.com/t
 壹印：[https://github.com/ggchivalrous/yiyin](https://github.com/ggchivalrous/yiyin)
 
 仿生阅读：[https://github.com/yitong2333/Bionic-Reading/blob/main/README-CN.md](https://github.com/yitong2333/Bionic-Reading/blob/main/README-CN.md)
+
+- [ebook2audiobook](https://github.com/DrewThomasson/ebook2audiobook)
+  - error when building: [No such file or directory: 'mecab-config' issue](https://github.com/SamuraiT/mecab-python3/issues/95)

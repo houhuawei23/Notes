@@ -68,12 +68,12 @@ GPT4o: Gradient-Based Trajectory Planning: Overview 基于梯度的轨迹规划�
 
 #### Key Thoughts of the Method 该方法的核心思想
 
-1. Optimization via Gradients: 通过梯度优化：
+1. Optimization via Gradients: 通过梯度进行优化：
    - The trajectory is treated as a variable in an optimization problem.
      - 轨迹被视为优化问题中的变量。
    - Gradients of a cost function (e.g., distance to obstacles, time taken, energy expenditure) with respect to the trajectory are computed and used to iteratively improve the trajectory.
      - 计算成本函数相对于轨迹的梯度（例如，到障碍物的距离、所花费的时间、能量消耗）并用于迭代地改进轨迹。
-2. Cost Function Design: 成本函数设计：
+2. Cost Function Design: 代价函数设计：
    - A carefully designed cost function combines all relevant objectives, such as collision avoidance, smoothness, and time efficiency.
      - 精心设计的成本函数结合了所有相关目标，例如避免碰撞、平滑度和时间效率。
    - Commonly, the cost function includes terms for proximity to obstacles, adherence to desired dynamics, and overall trajectory smoothness.
@@ -121,10 +121,17 @@ GPT4o: Gradient-Based Trajectory Planning: Overview 基于梯度的轨迹规划�
 
 #### Origin and Key Papers 起源和关键论文
 
-- The principles of gradient-based optimization trace back to classical optimization theory.基于梯度的优化原理可以追溯到经典优化理论。
-- In trajectory planning, this concept has been extensively developed in robotics and control literature.在轨迹规划中，这个概念已在机器人技术和控制文献中得到广泛发展。
-- A key early reference is **"CHOMP: Covariant Hamiltonian Optimization for Motion Planning"** by Marc Toussaint and Sachin Chitta, which formalized gradient-based optimization in the context of trajectory planning.一个重要的早期参考文献是 Marc Toussaint 和 Sachin Chitta 撰写的**“CHOMP：运动规划的协变哈密顿优化”** ，它在轨迹规划的背景下形式化了基于梯度的优化。
-- Other significant contributions include works on **STOMP (Stochastic Trajectory Optimization for Motion Planning)** and **TrajOpt (Trajectory Optimization)**.其他重要贡献包括**STOMP（运动规划随机轨迹优化）**和**TrajOpt（轨迹优化）**方面的工作。
+- The principles of gradient-based optimization trace back to classical optimization theory.
+- In trajectory planning, this concept has been extensively developed in robotics and control literature.
+- A key early reference is **"CHOMP: Covariant Hamiltonian Optimization for Motion Planning"** by Marc Toussaint and Sachin Chitta, which formalized gradient-based optimization in the context of trajectory planning.
+- Other significant contributions include works on **STOMP (Stochastic Trajectory Optimization for Motion Planning)** and **TrajOpt (Trajectory Optimization)**.
+
+<br>
+
+- 基于梯度的优化原理可以追溯到经典优化理论。
+- 在轨迹规划中，这个概念已在机器人技术和控制文献中得到广泛发展。
+- 一个重要的早期参考文献是 Marc Toussaint 和 Sachin Chitta 撰写的“CHOMP：运动规划的协变哈密顿优化” ，它在轨迹规划的背景下形式化了基于梯度的优化。
+- 其他重要贡献包括**STOMP（运动规划随机轨迹优化）**和**TrajOpt（轨迹优化）**方面的工作。
 
 ---
 
@@ -136,7 +143,7 @@ GPT4o: Gradient-Based Trajectory Planning: Overview 基于梯度的轨迹规划�
 4. **Space Exploration**: Path optimization for spacecraft and planetary rovers.
 5. **Medical Robotics**: Trajectory planning for surgical robots to ensure precision.
 
-<br></br>
+<br>
 
 1. **医疗机器人**：手术机器人的轨迹规划以确保精度。
 2. **自动驾驶车辆**：在复杂环境中规划无碰撞且高效的路线。

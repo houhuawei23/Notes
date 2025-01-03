@@ -32,3 +32,28 @@ Here are some of the main advantages of static site generators over dynamic site
 Of course, dynamic sites have their advantages as well. The addition of an admin panel makes for ease of updating, especially for those who are not tech-savvy. Generally, a static site generator would not be the best idea for making a CMS for a client. Static site generators also don't have the possibility of updating with real time content. It's important to understand how both work to know what would work best for your particular project.
 
 当然，动态网站也有其优点。添加管理面板可以轻松更新，特别是对于那些不精通技术的人来说。一般来说，静态站点生成器并不是为客户制作 CMS 的最佳主意。静态站点生成器也无法更新实时内容。了解两者的工作原理非常重要，这样才能知道哪种方法最适合您的特定项目。
+
+## Self Host Docs Wibesite
+
+- gitbook: origin project no more maintain, turn into Gitbook.
+  - old still have bugs
+- [mdBook - rust](https://github.com/rust-lang/mdBook)
+  - math delimiters support sick
+  - [text](https://hellowac.github.io/mdbook-doc-zh/index.html)
+- [retype](https://retype.com/)
+  - free plan only support 100 pages
+- [mkdocs](https://www.mkdocs.org/)
+- [mkdocs-material](https://squidfunk.github.io/mkdocs-material/)
+  - math delimiters support great, 'dollars' and 'brackets'
+  - 'dollars': `$xxx$` and `$$xxx$$`
+  - 'brackets': `\(...\)` and `\[...\]`
+- [docusaurus](https://docusaurus.io/)
+  - init project stack, dont know why
+- [bookstackapp](https://www.bookstackapp.com/)
+  - A platform to create documentation/wiki content built with PHP & Laravel
+- [Archbee](https://www.archbee.com/)
+  - like notion...
+- [hyperbook](https://hyperbook.openpatch.org/)
+  - Hyperbook is a quick and easy way to build interactive workbooks, that support modern standards and runs superfast.
+  - looks like great!
+  - cant release port?? may have bugs, too small depelop group.

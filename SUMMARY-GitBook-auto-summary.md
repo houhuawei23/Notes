@@ -13,12 +13,12 @@
   - [LearnDrones](./Learn/LearnDrones/Note.md)
     - [FastDrone-250](Learn/LearnDrones/FastDrone-250.md)
     - Planner
-      - [Distributed-Swarm-Trajectory-Opt-for-Formation-Flight-in-Dense-Envs-2022](Learn/LearnDrones/Planner/Distributed-Swarm-Trajectory-Opt-for-Formation-Flight-in-Dense-Envs-2022.md)
-      - [EGO-Swarm-2021](Learn/LearnDrones/Planner/EGO-Swarm-2021.md)
       - [FastPlanner-2019](Learn/LearnDrones/Planner/FastPlanner-2019.md)
+      - [EGO-Swarm-2021](Learn/LearnDrones/Planner/EGO-Swarm-2021.md)
       - [EGO-Planner-2020](Learn/LearnDrones/Planner/EGO-Planner-2020.md)
       - [Gradient-Based-Motion-Planning](Learn/LearnDrones/Planner/Gradient-Based-Motion-Planning.md)
       - [MicroFlyingRobots-2021](Learn/LearnDrones/Planner/MicroFlyingRobots-2021.md)
+      - [Distributed-Swarm-Trajectory-Opt-for-Formation-Flight-in-Dense-Envs-2022](Learn/LearnDrones/Planner/Distributed-Swarm-Trajectory-Opt-for-Formation-Flight-in-Dense-Envs-2022.md)
       - [Robust-Efficient-Trajectory-Planning-for-Formation-Flight-in-Dense-Environments-2023](Learn/LearnDrones/Planner/Robust-Efficient-Trajectory-Planning-for-Formation-Flight-in-Dense-Environments-2023.md)
     - TaskAssignment
       - [2022.06-Task_assignment_algorithms_for_unmanned_aerial_vehicle_networks_A_comprehensive_survey](Learn/LearnDrones/TaskAssignment/2022.06-Task_assignment_algorithms_for_unmanned_aerial_vehicle_networks_A_comprehensive_survey.md)

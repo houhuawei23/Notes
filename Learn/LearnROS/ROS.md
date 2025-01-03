@@ -1,11 +1,11 @@
 # ROS: Robot Operating System
 
-- [index.ros.org/](https://index.ros.org/)
+- [index.ros.org](https://index.ros.org/)
 - [wiki.ros: Tutorials](https://wiki.ros.org/ROS/Tutorials)
 - [wiki.ros: cn Introduction](https://wiki.ros.org/cn/ROS/Introduction)
 - [github: ros-infrastructure](https://github.com/ros-infrastructure)
 - [github: ROS core stacks](https://github.com/ros)
-- [github: ros-dpg](https://github.com/ros-gbp)
+- [github: ros-gbp](https://github.com/ros-gbp)
 - [rep: learn-ros](https://github.com/iConor/learn-ros/)
 - [blog: ros-tutorials](https://songapore.gitbook.io/ros-tutorials)
 
@@ -16,7 +16,8 @@ ROS（机器人操作系统）提供库和工具来帮助软件开发人员创�
 - [ros: Distributions](https://wiki.ros.org/Distributions)
 - [ros2: Releases](https://docs.ros.org/en/humble/Releases.html)
 - [ros - os version match](https://blog.csdn.net/maizousidemao/article/details/119846292)
-  ROS:
+
+ROS:
 
 - ROS Box Turtle 2010.03.02
 - ROS C Turtle 2010.08.02
@@ -56,9 +57,7 @@ ROS Noetic Ninjemys is the thirteenth ROS distribution release. It was released 
 ## [Concepts](https://wiki.ros.org/ROS/Concepts)
 
 - REP: ROS Enhancement Proposals
-
   - REPs are documents that define standards, conventions, and best practices for the ROS ecosystem. They are similar to RFCs (Request for Comments) in the internet protocol community or PEPs (Python Enhancement Proposals) in the Python community.
-
 - Filesystem Level
   - Packages
   - Metapackages
@@ -85,9 +84,7 @@ ROS Noetic Ninjemys is the thirteenth ROS distribution release. It was released 
   - ROS Wiki
   - ...
 - names: Package Resource Names and Graph Resource Names
-
   - Graph Resource Names:
-
     - provides a hierarchical naming structure that is used for all resources in ROS Computation Graph
       - Graph Resource Names are an important mechanism in ROS for providing `encapsulation`.
       - Each resource is defined within a namespace, which it may share with many other resources.
@@ -105,7 +102,6 @@ ROS Noetic Ninjemys is the thirteenth ROS distribution release. It was released 
       - `relative/name`
       - `/global/name`
       - `~private/name`
-
   - Package Resource Names
     - "std_msgs/String" refers to the "String" message type in the "std_msgs" Package.
 
