@@ -1,2 +1,0 @@
-# LearnPyQt5
-
