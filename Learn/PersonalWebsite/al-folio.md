@@ -2,6 +2,12 @@
 
 - [running-local-al-folio - 2022](https://george-gca.github.io/blog/2022/running-local-al-folio/)
 
+running locally:
+
+```bash
+bundle exec jekyll serve --lsi
+```
+
 ## Customize
 
 ```

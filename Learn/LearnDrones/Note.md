@@ -7,6 +7,67 @@
 - [ego-planner](https://github.com/ZJU-FAST-Lab/ego-planner)
 - [multi_uav_simulator](https://github.com/malintha/multi_uav_simulator)
 
+## Journal 期刊
+
+- Vehicular Communications (Engineering: Automotive Engineering)
+  - IF 5.8, JCR Q1, CAS Q2
+  - [sciencedirect](https://www.sciencedirect.com/journal/vehicular-communications)
+- Drones
+  - IF 4.4, JCR Q1 (Remote Sensing), CAS Q2
+  - [mdpi](https://www.mdpi.com/journal/drones)
+  - UAV, UAS, RPAS
+- IEEE Transactions on Robotics
+  - IF 9.4, JCR Q1, CAS Q1
+  - Computer Science Applications, Control and Systems Engineering, Electrical and Electronic Engineering
+  - [ieee](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8860)
+- Aerospace Science and Technology
+  - IF 5 JCR Q1, CAS Q1
+  - [sciencedirect](https://www.sciencedirect.com/journal/aerospace-science-and-technology)
+- International Journal of Robotics Research
+  - 7.5 Q1 Q2
+  - [sagepub](https://journals.sagepub.com/home/ijr)
+
+## Conference 会议
+
+### Vehicular Communications (Engineering: Automotive Engineering)
+
+types of communications involving vehicles, including **vehicle–to–vehicle** and **vehicle–to–infrastructure**. The scope includes (but not limited to) the following topics related to **vehicular communications**:
+
+该期刊的目标是发表**车辆通信**领域的高质量同行评审论文。范围涵盖涉及车辆的所有类型的通信，包括**车辆对车辆**和**车辆对基础设施**。范围包括（但不限于）以下与**车辆通信**相关的主题：
+
+- **Vehicle to vehicle** and **vehicle to infrastructure communications** **车辆到车辆**和**车辆到基础设施通信**
+- Channel modelling, modulating and coding 信道建模、调制和编码
+- **Congestion Control** and scalability issues **拥塞控制**和可扩展性问题
+- Protocol design, testing and verification 协议设计、测试和验证
+- Routing in **vehicular networks** **车载网络**中的路由
+- Security issues and countermeasures 安全问题及对策
+- Deployment and field testing 部署和现场测试
+- Reducing energy consumption and enhancing safety of vehicles 降低能源消耗并提高车辆安全性
+- Wireless **in–car networks** 无线**车载网络**
+- Data collection and dissemination methods 数据收集和传播方法
+- Mobility and handover issues 移动性和移交问题
+- Safety and **driver assistance applications** 安全和**驾驶员辅助应用**
+- UAV 无人机
+- Underwater communications 水下通讯
+- Autonomous cooperative driving 自动协同驾驶
+- Social networks 社交网络
+- Internet of vehicles 车联网
+- Standardization of protocols 协议标准化
+
+### Drones
+
+- [scimagojr](https://www.scimagojr.com/journalsearch.php?q=21101017244&tip=sid&clean=0#google_vignette)
+
+Drones (ISSN 2504-446X) is an international, peer-reviewed, open access journal published monthly online. The journal focuses on design and applications of drones, including unmanned aerial vehicle (UAV), Unmanned Aircraft Systems (UAS), and Remotely Piloted Aircraft Systems (RPAS), etc. Likewise, contributions based on unmanned water/underwater drones and unmanned ground vehicles are also welcomed.
+
+《无人机》（ISSN 2504-446X）是一份国际同行评审、开放获取期刊，每月在线出版。该杂志重点关注无人机的设计和应用，包括无人机（UAV）、无人机系统（UAS）和遥控驾驶飞机系统（RPAS）等。同样，基于无人水上/水下无人机和无人地面车辆的贡献也受到欢迎。
+
+### IEEE Transactions on Robotics
+
+The IEEE Transactions on Robotics (T-RO) publishes fundamental papers on all aspects of Robotics, featuring interdisciplinary approaches from computer science, control systems, electrical engineering, mathematics, mechanical engineering, and other fields. Robots and intelligent machines and systems are critical in areas such as industrial applications; service and personal assistants; surgical operations; space, underwater, and remote exploration; entertainment; safety, search, and rescue; military applications; agriculture applications; and intelligent vehicles. Special emphasis in the T-RO is placed on intelligent machines and systems for unstructured environments, where a significant portion of the environment is unknown and cannot be directly sensed or controlled.
+
+IEEE 机器人学汇刊 (T-RO) 发表机器人学各个方面的基础论文，涵盖计算机科学、控制系统、电气工程、数学、机械工程和其他领域的跨学科方法。机器人、智能机器和系统在工业应用等领域至关重要；服务和私人助理；外科手术；太空、水下和远程探索；娱乐;安全、搜索和救援；军事应用；农业应用；和智能汽车。 T-RO 特别强调非结构化环境中的智能机器和系统，其中环境的很大一部分是未知的，无法直接感知或控制。
+
 ## Tools
 
 - RealSense Driver
