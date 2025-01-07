@@ -8,7 +8,7 @@ import os
 import re
 
 # add by hhw
-dir_file_names_to_ignore = [
+dir_or_file_names_to_ignore = [
     ".git",
     ".gitbook",
     "_book",
@@ -16,7 +16,6 @@ dir_file_names_to_ignore = [
     ".vscode",
     "EGO-Planner-2020.md",
     "README.md",
-
 ]
 
 suffixes_to_ignore = ["-Xi.md"]
@@ -32,7 +31,7 @@ def output_markdown(dire, base_dir, output_file, append, iter_depth=0):
     o: write .md information (with identation) to output_file.
     """
     for filename in sort_dir_file(os.listdir(dire), base_dir):
-        if filename in dir_file_names_to_ignore:
+        if filename in dir_or_file_names_to_ignore:
             continue
         if any([filename.startswith(prefix) for prefix in prefix_to_ignore]) or any(
             [filename.endswith(suffix) for suffix in suffixes_to_ignore]
