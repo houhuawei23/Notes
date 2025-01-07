@@ -9,27 +9,44 @@
 
 ## Journal 期刊
 
-- Vehicular Communications (Engineering: Automotive Engineering)
-  - IF 5.8, JCR Q1, CAS Q2
-  - [sciencedirect](https://www.sciencedirect.com/journal/vehicular-communications)
-- Drones
-  - IF 4.4, JCR Q1 (Remote Sensing), CAS Q2
-  - [mdpi](https://www.mdpi.com/journal/drones)
-  - UAV, UAS, RPAS
-- IEEE Transactions on Robotics
+- [zhihu: 机器人领域主要期刊及国际会议汇总 2021](https://zhuanlan.zhihu.com/p/457055314)
+- [机器人领域主要国际会议与期刊列表](https://blog.csdn.net/weixin_41598607/article/details/121084397)
+
+<br>
+
+- _Science Robotics_
+  - 26.1 Q1 1Q
+  - [science](https://www.science.org/journal/scirobotics)
+- _International Journal of Robotics Research (IJRR)_
+  - 7.5 Q1 Q2
+  - [sagepub](https://journals.sagepub.com/home/ijr)
+- _IEEE Transactions on Robotics (TRO)_
   - IF 9.4, JCR Q1, CAS Q1
   - Computer Science Applications, Control and Systems Engineering, Electrical and Electronic Engineering
   - [ieee](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8860)
-- Aerospace Science and Technology
+- _Drones_
+  - IF 4.4, JCR Q1 (Remote Sensing), CAS Q2
+  - [mdpi](https://www.mdpi.com/journal/drones)
+  - UAV, UAS, RPAS
+- _Aerospace Science and Technology_
   - IF 5 JCR Q1, CAS Q1
   - [sciencedirect](https://www.sciencedirect.com/journal/aerospace-science-and-technology)
-- International Journal of Robotics Research
-  - 7.5 Q1 Q2
-  - [sagepub](https://journals.sagepub.com/home/ijr)
+- _Soft Robotics_
+  - Q1
+- _Robotics and Computer-Integrated Manufacturing_
+  - 9.1 Q1 1 区
+  - 注重计算机科学和机械制造系统的结合
+- _Vehicular Communications_ (Engineering: Automotive Engineering)
+  - IF 5.8, JCR Q1, CAS Q2
+  - [sciencedirect](https://www.sciencedirect.com/journal/vehicular-communications)
 
-## Conference 会议
+### _Robotics and Computer-Integrated Manufacturing_
 
-### Vehicular Communications (Engineering: Automotive Engineering)
+The emphasis of the journal Robotics and Computer-Integrated Manufacturing is on disseminating the application of research to the development of new or improved industrially-relevant robotics, manufacturing technologies, and innovative manufacturing strategies. Preference is given to papers describing original research that includes both theory and experimental validation. Comprehensive review papers on topical issues related to robotics and manufacturing will also be considered. Papers on conventional machining processes, modelling and simulation, supply chain management, and resource optimisation, will generally be considered out of scope, as there are other more appropriate journals in these areas. Overly theoretical or mathematical papers will be directed to other more appropriate journals as well. Original papers are welcomed in the areas of industrial robotics, human-robot collaborative manufacturing, cloud-based manufacturing, cyber-physical production systems, big data analytics in manufacturing, smart mechatronics, machine learning, adaptive and sustainable manufacturing, and other fields involving unique manufacturing technologies.
+
+《机器人与计算机集成制造》杂志的重点是传播研究在新型或改进的工业相关机器人、制造技术和创新制造策略的开发中的应用。优先考虑描述原创研究的论文，包括理论和实验验证。还将考虑与机器人和制造相关的热门问题的综合评论论文。关于传统加工工艺、建模和仿真、供应链管理和资源优化的论文通常被认为超出范围，因为这些领域还有其他更合适的期刊。过于理论或数学的论文也将被定向到其他更合适的期刊。工业机器人、人机协同制造、云制造、网络物理生产系统、制造大数据分析、智能机电一体化、机器学习、自适应和可持续制造以及其他涉及独特领域的原创论文受到欢迎制造技术。
+
+### _Vehicular Communications_ (Engineering: Automotive Engineering)
 
 types of communications involving vehicles, including **vehicle–to–vehicle** and **vehicle–to–infrastructure**. The scope includes (but not limited to) the following topics related to **vehicular communications**:
 
@@ -54,7 +71,7 @@ types of communications involving vehicles, including **vehicle–to–vehicle**
 - Internet of vehicles 车联网
 - Standardization of protocols 协议标准化
 
-### Drones
+### _Drones_
 
 - [scimagojr](https://www.scimagojr.com/journalsearch.php?q=21101017244&tip=sid&clean=0#google_vignette)
 
@@ -62,11 +79,38 @@ Drones (ISSN 2504-446X) is an international, peer-reviewed, open access journal 
 
 《无人机》（ISSN 2504-446X）是一份国际同行评审、开放获取期刊，每月在线出版。该杂志重点关注无人机的设计和应用，包括无人机（UAV）、无人机系统（UAS）和遥控驾驶飞机系统（RPAS）等。同样，基于无人水上/水下无人机和无人地面车辆的贡献也受到欢迎。
 
-### IEEE Transactions on Robotics
+### _IEEE Transactions on Robotics_
 
 The IEEE Transactions on Robotics (T-RO) publishes fundamental papers on all aspects of Robotics, featuring interdisciplinary approaches from computer science, control systems, electrical engineering, mathematics, mechanical engineering, and other fields. Robots and intelligent machines and systems are critical in areas such as industrial applications; service and personal assistants; surgical operations; space, underwater, and remote exploration; entertainment; safety, search, and rescue; military applications; agriculture applications; and intelligent vehicles. Special emphasis in the T-RO is placed on intelligent machines and systems for unstructured environments, where a significant portion of the environment is unknown and cannot be directly sensed or controlled.
 
 IEEE 机器人学汇刊 (T-RO) 发表机器人学各个方面的基础论文，涵盖计算机科学、控制系统、电气工程、数学、机械工程和其他领域的跨学科方法。机器人、智能机器和系统在工业应用等领域至关重要；服务和私人助理；外科手术；太空、水下和远程探索；娱乐;安全、搜索和救援；军事应用；农业应用；和智能汽车。 T-RO 特别强调非结构化环境中的智能机器和系统，其中环境的很大一部分是未知的，无法直接感知或控制。
+
+## Conference 会议
+
+- IEEE International Conference on Robotics and Automation (ICRA)
+- IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+- Robotic: Science and Systems (RSS)
+- Conference on Robot Learning (CoRL)
+
+## CAA 中国自动化学会推荐学术会议、科技期刊目录
+
+- [2022-12-06 中国自动化学会推荐学术会议、科技期刊目录发布](https://www.caa.org.cn/article/290/3225.html)
+
+《会议目录》分为 A 类、B 类、C 类三档。A 类代表国际上极少数的顶级会议；B 类代表国际上著名和非常重要的会议；C 类代表国际学术界所认可的重要会议。《会议目录》包含自动化学科领域 12 个细分领域的 230 个学术会议，12 个细分领域为：
+（1）控制理论与控制工程；
+（2）模式识别与智能系统；
+（3）检测技术与自动化装置；
+（4）导航、制导与控制；
+（5）系统工程；
+（6）生物信息学；
+（7）企业信息化；
+（8）智能感知与自主控制；
+（9）机器人与无人系统；
+（10）仿真科学与工程；
+（11）综合交叉；
+（12）前沿高端。
+
+《期刊目录》延续 2018 年版，分为 A 类、B 类两档，共 315 个刊物，A 类代表国内外顶级学术刊物，B 类代表国内外著名学术刊物。其中，A 类中前 20%的顶尖期刊划分为 A+类，以期国内学术期刊对标突破。
 
 ## Tools
 
