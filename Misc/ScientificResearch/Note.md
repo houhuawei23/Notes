@@ -46,6 +46,22 @@ CCF ABC
 - [Springer](https://link.springer.com/)
 - [ACM DL](https://www.acm.org/publications/digital-library)
 
+引文关系可视化
+
+- [connected papers](https://www.connectedpapers.com/)
+
+引用文献管理工具 Reference Management (on linux)
+
+- [mendeley](https://www.mendeley.com/)
+- [jabref](https://www.jabref.org/)
+  - open-source
+- [zotero](https://www.zotero.org/)
+  - open-source
+- [wikindx](https://wikindx.sourceforge.io/web/trunk/index.html)
+  - open-source
+- [docear](https://docear.org/)
+  - open-source, 2015
+ 
 ### [MDPI](https://en.wikipedia.org/wiki/MDPI)
 
 MDPI (Multidisciplinary Digital Publishing Institute) is a publisher of open-access scientific journals. It publishes over 390 peer-reviewed, open access journals. MDPI is among the largest publishers in the world in terms of journal article output, and is the largest publisher of open access articles.

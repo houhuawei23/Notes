@@ -33,3 +33,4 @@
 ## projects and codes
 
 - [github: mission_planning](https://github.com/JohannesAutenrieb/mission_planning)
+- [RACER, a RApid Collaborative ExploRation approach using a fleet of decentralized UAVs.](https://github.com/SYSU-STAR/RACER)

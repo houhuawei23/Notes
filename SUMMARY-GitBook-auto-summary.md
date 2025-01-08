@@ -27,7 +27,7 @@
       - [2020 Energy Efficient Task Cooperation for Multi-UAV Networks: A Coalition Formation Game Approach](Learn/LearnDrones/TaskAssignment/2020.08-Energy_Efficient_Task_Cooperation_for_Multi-UAV_Networks:_A_Coalition_Formation_Game_Approach.md)
       - [2022.06 Task_assignment_algorithms_for_unmanned_aerial_vehicle_networks_A_comprehensive_survey](Learn/LearnDrones/TaskAssignment/2022.06-Task_assignment_algorithms_for_unmanned_aerial_vehicle_networks_A_comprehensive_survey.md)
       - [2022.10 A Survey of UAV Swarm Task Allocation Based on the Perspective of Coalition Formation](Learn/LearnDrones/TaskAssignment/2022.10-A_Survey_of_UAV_Swarm_Task_Allocation_Based_on_the_Perspective_of_Coalition_Formation.md)
-      - [2024 istributed_task_allocation_algorithm_for_heterogeneous_unmanned_aerial_vehic_swarm_based_on_coalition_formation_game](Learn/LearnDrones/TaskAssignment/2024-Distributed_task_allocation_algorithm_for_heterogeneous_unmanned_aerial_vehic_swarm_based_on_coalition_formation_game.md)
+      - [2024 Distributed_task_allocation_algorithm_for_heterogeneous_unmanned_aerial_vehic_swarm_based_on_coalition_formation_game](Learn/LearnDrones/TaskAssignment/2024-Distributed_task_allocation_algorithm_for_heterogeneous_unmanned_aerial_vehic_swarm_based_on_coalition_formation_game.md)
       - [2024.12 Application_of_Task_Allocation_Algorithms_in_Multi-UAV_Intelligent_Transportation_Systems_A_Critical_Review](Learn/LearnDrones/TaskAssignment/2024.12-Application_of_Task_Allocation_Algorithms_in_Multi-UAV_Intelligent_Transportation_Systems_A_Critical_Review.md)
     - [Ceres-Solver](Learn/LearnDrones/Ceres-Solver.md)
     - [Eigen](Learn/LearnDrones/Eigen.md)
