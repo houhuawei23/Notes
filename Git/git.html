@@ -89,10 +89,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="githttps.html" />
     
-    
-    <link rel="prev" href="git-branch.html" />
+    <link rel="prev" href="Github.html" />
     
 
     </head>
@@ -174,38 +172,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="git-branch.html">
-            
-                <a href="git-branch.html">
-            
-                    
-                    git-branch
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="1.3.3" data-path="git.html">
+        <li class="chapter active" data-level="1.3.2" data-path="git.html">
             
                 <a href="git.html">
             
                     
                     git
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.4" data-path="githttps.html">
-            
-                <a href="githttps.html">
-            
-                    
-                    githttps
             
                 </a>
             
@@ -3019,15 +2991,160 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="git">Git</h1>
-<pre><code class="lang-bash">git remote <span class="hljs-built_in">set</span>-url --add origin &lt;git_url&gt;
+<ul>
+<li><a href="#commands">Commands</a></li>
+<li><a href="#q--a">Q &amp; A</a></li>
+</ul>
+<h2 id="commands">Commands</h2>
+<ul>
+<li><a href="#git-branch"><code>git branch</code></a></li>
+<li><a href="#git-remote"><code>git remote</code></a></li>
+<li><a href="#git-push"><code>git push</code></a></li>
+<li><a href="#git-config"><code>git config</code></a></li>
+<li><a href="#git-rebase"><code>git rebase</code></a></li>
+</ul>
+<h3 id="git-branch"><code>git branch</code></h3>
+<pre><code class="lang-bash"><span class="hljs-comment"># List all branches (local and remote; the current branch is highlighted by *):</span>
+git branch --all
+<span class="hljs-comment"># Create new branch based on the current commit:</span>
+git branch branch_name
+<span class="hljs-comment"># Create new branch based on a specific commit:</span>
+git branch branch_name commit_<span class="hljs-built_in">hash</span>
+<span class="hljs-comment"># Rename a branch (must not have it checked out to do this):</span>
+git branch -m|--move old_branch_name new_branch_name
+<span class="hljs-comment"># Delete a local branch (must not have it checked out to do this):</span>
+git branch <span class="hljs-_">-d</span>|--delete branch_name
+<span class="hljs-comment"># Delete a remote branch:</span>
+git push remote_name --delete remote_branch_name
+</code></pre>
+<h3 id="git-remote"><code>git remote</code></h3>
+<pre><code class="lang-bash"><span class="hljs-comment"># chekout remotes</span>
+git remote -v
+<span class="hljs-comment"># Show information about a remote:</span>
+git remote show remote_name
+<span class="hljs-comment"># Add a remote:</span>
+git remote add remote_name remote_url
+<span class="hljs-comment"># Change the URL of a remote (use --add to keep the existing URL):</span>
+git remote <span class="hljs-built_in">set</span>-url remote_name new_url
+<span class="hljs-comment"># Remove a remote:</span>
+git remote remove remote_name
+<span class="hljs-comment"># Rename a remote:</span>
+git remote rename old_name new_name
 
-<span class="hljs-comment"># You have divergent branches and need to specify how to reconcile them.</span>
+<span class="hljs-comment"># add additional url to the remote branch named `origin`</span>
+<span class="hljs-comment"># after that, the `origin` branch will has multi url</span>
+<span class="hljs-comment"># if run `git push origin main`, git will push to both of them</span>
+git remote <span class="hljs-built_in">set</span>-url --add origin &lt;git_url&gt;
+</code></pre>
+<h3 id="get-push"><code>get push</code></h3>
+<p>Push commits to a remote repository.</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># Send local changes in the current branch to its default remote counterpart:</span>
+git push
+<span class="hljs-comment"># Send changes from a specific local branch to its remote counterpart:</span>
+git push remote_name <span class="hljs-built_in">local</span>_branch
+<span class="hljs-comment"># Send changes from a specific local branch to its remote counterpart,</span>
+<span class="hljs-comment"># and set the remote one as the default push/pull target of the local one:</span>
+git push -u remote_name <span class="hljs-built_in">local</span>_branch <span class="hljs-comment"># --set-upstream</span>
+</code></pre>
+<h3 id="git-config"><code>git config</code></h3>
+<pre><code class="lang-bash"><span class="hljs-comment"># You have divergent branches and need to specify how to reconcile them.</span>
 <span class="hljs-comment"># You can do so by running one of the following commands sometime before</span>
 <span class="hljs-comment"># your next pull:</span>
 
 git config pull.rebase <span class="hljs-literal">false</span>  <span class="hljs-comment"># merge</span>
 git config pull.rebase <span class="hljs-literal">true</span>   <span class="hljs-comment"># rebase</span>
 git config pull.ff only       <span class="hljs-comment"># fast-forward only</span>
+</code></pre>
+<h3 id="git-rebase"><a href="https://git-scm.com/docs/git-rebase" target="_blank"><code>git rebase</code></a></h3>
+<p>Reapply commits from one branch on top of another branch.</p>
+<p>Commonly used to &quot;move&quot; an entire branch to another base, creating copies of the commits in the new location.</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># Rebase the current branch on top of another specified branch:</span>
+git rebase new_base_branch
+
+<span class="hljs-comment"># Start an interactive rebase, which allows the commits to be reordered, omitted, combined or modified:</span>
+git rebase -i|--interactive target_base_branch_or_commit_<span class="hljs-built_in">hash</span>
+</code></pre>
+<h2 id="q--a">Q &amp; A</h2>
+<h3 id="how-to-set-default-upstream-branch-for-git-push-or-git-pull">How to set default upstream branch for <code>git push</code> or <code>git pull</code>?</h3>
+<p>1 checkout which branch your local branch is tracking:</p>
+<pre><code class="lang-bash">git branch -vv
+</code></pre>
+<p>2 set upstream branch for local branch</p>
+<pre><code class="lang-bash">git branch --set-upstream-to=origin/remote-branch-name <span class="hljs-built_in">local</span>-branch-name
+</code></pre>
+<p>3 unset the upstream branch</p>
+<pre><code class="lang-bash">git branch --unset-upstream <span class="hljs-built_in">local</span>-branch-name
+</code></pre>
+<h3 id="squash-multiple-commits-into-one-to-create-a-cleaner-pull-request">squash multiple commits into one to create a cleaner pull request</h3>
+<ul>
+<li>upstream rep/branch &apos;abc/main&apos;,</li>
+<li>my rep/branch &apos;forked-abc/main&apos; and &apos;forked-abc/dev&apos;</li>
+</ul>
+<p>how to do:</p>
+<ul>
+<li>we can develop on &apos;forked-abc/dev&apos; with multiple commits</li>
+<li>then checkout &apos;forked-abc/main&apos; and merge &apos;forked-abc/dev&apos; to it</li>
+<li>then rebase &apos;forked-abc/main&apos; on top of &apos;abc/main&apos;<ul>
+<li>squash all the commits on &apos;forked-abc/main&apos; into one commit</li>
+</ul>
+</li>
+<li>finally i can create a pull request to &apos;abc/main&apos; with only one conbined commit</li>
+</ul>
+<p>how:</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># Add the original repository as a remote</span>
+git remote add upstream https://github.com/abc/main.git
+
+<span class="hljs-comment"># Fetch latest changes</span>
+git fetch upstream
+
+<span class="hljs-comment"># Rebase your branch onto the latest upstream branch</span>
+git checkout your-branch <span class="hljs-comment"># main</span>
+<span class="hljs-comment"># git merge dev</span>
+git rebase upstream/main
+
+<span class="hljs-comment"># Squash commits</span>
+git rebase -i upstream/main
+<span class="hljs-comment"># Mark commits as `pick` or `squash`, then save</span>
+
+<span class="hljs-comment"># Force-push the squashed commit</span>
+git push --force-with-lease origin your-branch
+
+<span class="hljs-comment"># Create a pull request</span>
+<span class="hljs-comment"># Go to your forked repository and create a pull request to the original repository</span>
+</code></pre>
+<h3 id="how-to-avoid-enter-password-every-time-when-pushing-to-a-remote-repository-https">How to avoid enter password every time when pushing to a remote repository (https)?</h3>
+<p>A: Use Git&apos;s credential helper to cache your credentials.</p>
+<blockquote>
+<p>Security Note!!! \
+Storing credentials in plain text (using the store helper) can be insecure, as anyone with access to your file system can read them. Use the cache helper or <code>libsecret</code> for better security.</p>
+</blockquote>
+<h4 id="1-use-the-credential-cache-helper">1. Use the Credential Cache Helper</h4>
+<p>The credential cache helper keeps your credentials in memory for a short period (default is 15 minutes).</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># enable credential cache helper</span>
+git config --global credential.helper cache
+<span class="hljs-comment"># change cache timeout (in seconds)</span>
+git config --global credential.helper <span class="hljs-string">&apos;cache --timeout=3600&apos;</span>
+</code></pre>
+<h4 id="2-use-the-credential-store-helper">2. Use the Credential Store Helper</h4>
+<p>The credential store helper saves your credentials in a plain text file on disk, which is more persistent but less secure than the cache method.</p>
+<pre><code class="lang-sh"><span class="hljs-comment"># enable the credential store helper</span>
+git config --global credential.helper store
+</code></pre>
+<p>When you use <code>git pull</code> or <code>git push</code> for the first time after configuring this, Git will prompt you for your username and password, and then store them in a file at <code>~/.git-credentials</code>.</p>
+<h4 id="3-use-the-libsecret-credential-helper">3. Use the <code>libsecret</code> Credential Helper</h4>
+<p>The <code>libsecret</code> credential helper integrates with GNOME Keyring to securely store your credentials.</p>
+<pre><code class="lang-sh"><span class="hljs-comment"># First, install the required package:</span>
+sudo apt-get install libsecret-1-0 libsecret-1-dev
+<span class="hljs-comment"># Then, you need to compile the `libsecret` credential helper. </span>
+<span class="hljs-comment"># This is a one-time setup:</span>
+<span class="hljs-built_in">cd</span> /usr/share/doc/git/contrib/credential/libsecret
+sudo make
+<span class="hljs-comment"># Finally, configure Git to use the `libsecret` helper:</span>
+git config --global credential.helper /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
+</code></pre>
+<h4 id="4-store-credentials-for-a-single-repository">4. Store Credentials for a Single Repository</h4>
+<p>If you want to store credentials for just one repository and not globally, navigate to your repository and run:</p>
+<pre><code class="lang-sh">git config credential.helper store
 </code></pre>
 
                                 
@@ -3056,14 +3173,10 @@ git config pull.ff only       <span class="hljs-comment"># fast-forward only</sp
 
             
                 
-                <a href="git-branch.html" class="navigation navigation-prev " aria-label="Previous page: git-branch">
+                <a href="Github.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Github">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="githttps.html" class="navigation navigation-next " aria-label="Next page: githttps">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -3072,7 +3185,7 @@ git config pull.ff only       <span class="hljs-comment"># fast-forward only</sp
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"git","level":"1.3.3","depth":2,"next":{"title":"githttps","level":"1.3.4","depth":2,"path":"Git/githttps.md","ref":"Git/githttps.md","articles":[]},"previous":{"title":"git-branch","level":"1.3.2","depth":2,"path":"Git/git-branch.md","ref":"Git/git-branch.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include-codeblock","-lunr","-search","search-pro","expandable-chapters","code","chapter-fold","splitter","github","theme-comscore","katex-pp","edit-link","back-to-top-button","intopic-toc","my-toolbar"],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/houhuawei23/Notes"},"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this article","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"back-to-top-button":{},"my-toolbar":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"katex-pp":{},"edit-link":{"label":"Edit","base":"https://github.com/houhuawei23/Notes/edit/main"},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"houhuawei23","pdf":{"pageNumbers":true,"fontSize":10,"fontFamily":"Times New Roman","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":10,"left":10,"top":10,"bottom":10}},"structure":{"langs":"LANGS.md","readme":"Introduction.md","glossary":"GLOSSARY.md","summary":"SUMMARY-GitBook-auto-summary.md"},"variables":{},"title":"Notes of hhw","language":"cn","gitbook":"*","description":"Notes of hhw"},"file":{"path":"Git/git.md","mtime":"2025-01-08T14:23:56.555Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-01-08T14:24:43.857Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"git","level":"1.3.2","depth":2,"next":{"title":"Guides","level":"1.4","depth":1,"ref":"","articles":[{"title":"Self-Cultivation-of-Programmers","level":"1.4.1","depth":2,"path":"Guides/Self-Cultivation-of-Programmers.md","ref":"Guides/Self-Cultivation-of-Programmers.md","articles":[]}]},"previous":{"title":"Github","level":"1.3.1","depth":2,"path":"Git/Github.md","ref":"Git/Github.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include-codeblock","-lunr","-search","search-pro","expandable-chapters","code","chapter-fold","splitter","github","theme-comscore","katex-pp","edit-link","back-to-top-button","intopic-toc","my-toolbar"],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/houhuawei23/Notes"},"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this article","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"back-to-top-button":{},"my-toolbar":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"katex-pp":{},"edit-link":{"label":"Edit","base":"https://github.com/houhuawei23/Notes/edit/main"},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"houhuawei23","pdf":{"pageNumbers":true,"fontSize":10,"fontFamily":"Times New Roman","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":10,"left":10,"top":10,"bottom":10}},"structure":{"langs":"LANGS.md","readme":"Introduction.md","glossary":"GLOSSARY.md","summary":"SUMMARY-GitBook-auto-summary.md"},"variables":{},"title":"Notes of hhw","language":"cn","gitbook":"*","description":"Notes of hhw"},"file":{"path":"Git/git.md","mtime":"2025-01-09T15:22:38.587Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-01-09T15:23:28.523Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
