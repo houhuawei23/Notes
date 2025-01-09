@@ -4,9 +4,7 @@
 - [ConfigExamples](./ConfigExamples/ConfigExamples.md)
 - Git
   - [Github](Git/Github.md)
-  - [git-branch](Git/git-branch.md)
   - [git](Git/git.md)
-  - [githttps](Git/githttps.md)
 - Guides
   - [Self-Cultivation-of-Programmers](Guides/Self-Cultivation-of-Programmers.md)
 - [Learn](./Learn/Learn.md)
