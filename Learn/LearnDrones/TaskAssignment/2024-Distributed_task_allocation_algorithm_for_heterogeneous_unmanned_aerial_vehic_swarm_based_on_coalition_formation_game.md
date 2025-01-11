@@ -72,7 +72,7 @@ Distributed task allocation algorithm for heterogeneous unmanned aerial vehicle 
 
 Overall_flowchart_of_the_coalition_formation_game_model
 
-![alt text](images/Overall_flowchart_of_the_task_allocation_algorithm_based_on_coalition_formation_game.png)
+<p align="center"> <img src="images/Overall_flowchart_of_the_task_allocation_algorithm_based_on_coalition_formation_game.png" width=50%/> </p>
 
 Overall_flowchart_of_the_task_allocation_algorithm_based_on_coalition_formation_game
 

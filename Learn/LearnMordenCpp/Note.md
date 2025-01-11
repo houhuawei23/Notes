@@ -9,6 +9,12 @@
 - [RVO and NRVO](https://pvs-studio.com/en/blog/terms/6516/)
 - [github: Mq-b/ModernCpp-ConcurrentProgramming-Tutorial](https://github.com/Mq-b/ModernCpp-ConcurrentProgramming-Tutorial)
 
+awesome repositories:
+
+- [github: awesome-cpp](https://github.com/fffaraz/awesome-cpp)
+- cli arg parse:
+  - [github.com: p-ranav/argparse](https://github.com/p-ranav/argparse)
+
 ## Misc
 
 ### Smart Pointers
