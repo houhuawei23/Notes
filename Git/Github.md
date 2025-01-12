@@ -16,3 +16,7 @@ Github Stars:
 Github Profile:
 - [wakatime: Dashboards for developers](https://wakatime.com/), [dashboard](https://wakatime.com/dashboard)
 - [github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
+- [waka-readme-stats](https://github.com/anmol098/waka-readme-stats)
+  - This GitHub action helps to add cool dev metrics to your github profile Readme
+- [waka-readme](https://github.com/athul/waka-readme)
+  - Wakatime Weekly Metrics on your Profile Readme.

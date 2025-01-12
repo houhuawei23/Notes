@@ -1,5 +1,8 @@
 # My Notes for nearly Everything, by [hhw](https://github.com/houhuawei23)
 
+> 博观而约取，厚积而薄发。[1]
+
+
 - [`Learn`](Learn/Learn.md): Record learning resources, environment configuration, common questions and precautions when learning something or a certain skill
 - [`Linux`](Linux/Linux.md): Linux related notes, including Linux distribution, display, user management, input method, etc.
 - [`PythonLibs`](PythonLibs)
@@ -13,3 +16,10 @@
 - [`Misc`](Misc/Misc.md): Miscellaneous notes, uncategorized notes.
 
 ⭐ If you think this repository is helpful to you, please give me a [star](https://github.com/houhuawei23/Notes)! 😚
+
+
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
+
+
+[1]:https://www.gushiwen.cn/mingju/juv.aspx?id=cfe14591b440
