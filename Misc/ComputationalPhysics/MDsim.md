@@ -2,7 +2,7 @@
 
 > What I cannot create, I do not understand. ^[1]
 
-[1]:https://freshspectrum.com/richard-feynman-what-i-cannot-create-i-do-not-understand/
+[1]: https://freshspectrum.com/richard-feynman-what-i-cannot-create-i-do-not-understand/
 
 - [Molecular-Dynamics-Simulation: 樊哲勇](https://github.com/brucefan1983/Molecular-Dynamics-Simulation)
 - [恒温分子模拟与热浴(NVT Ensemble and Thermostat)](https://bohrium.dp.tech/notebooks/3323483662)
@@ -295,6 +295,26 @@ $$
 
 给定一个多粒子体系的初始状态（坐标和速度），根据各个粒子之间的相互作用力就可预测该体系的运动状态，即任意时刻各个粒子的坐标和速度。该预测过程本质上就是对运动方程的数值积分。
 
+可以看出， $t+\Delta t$ 时刻的坐标仅依赖于 $t$ 时刻的坐标、速度和力，但 $t+\Delta t$ 时刻的速度依赖于 $t$ 时刻的速度、力及 $t+\Delta t$ 时刻的力。所以，从算法的角度来说，速度-Verlet 积分算法可对应如下计算流程：
+
+- 部分地更新速度并完全地更新坐标：
+  $$
+  \mathbf{v}_i(t) \rightarrow \mathbf{v}_i(t+\Delta t/2)=\mathbf{v}_i(t)+\frac{1}{2}\frac{\mathbf{F}_i(t)}{m_i}\Delta t;
+  $$
+  $$
+  \mathbf{r}_i(t)\rightarrow \mathbf{r}_i(t+\Delta t)
+  =\mathbf{r}_i(t)
+  +\mathbf{v}_i(t+\Delta t/2)\Delta t.
+  $$
+- 用更新后的坐标计算新的力
+  $$
+  \mathbf{F}_i(t)\rightarrow \mathbf{F}_i(t+\Delta t).
+  $$
+- 用更新后的力完成速度的更新：
+  $$
+  \mathbf{v}_i(t+\Delta t/2) \rightarrow \mathbf{v}_i(t+\Delta t)=\mathbf{v}_i(t+\Delta t/2)+\frac{1}{2}\frac{\mathbf{F}_i(t+\Delta t)}{m_i}\Delta t.
+  $$
+
 ### 三斜盒子
 
 一个正交盒子（左）与一个三斜盒子（右）。
@@ -428,6 +448,8 @@ TODO:
   - [ ] cpp vs python
 - [x] 计算并输出温度/压强/动能/势能
   - 可视化 X-Time 图，分析 X 量随时间的变化规律 ok
+- [x] 输出 lammps 原子坐标文件
+  - ovito 可视化
 - [x] 输出轨迹: 即每一时刻各粒子的坐标和速度
   - 使用 ovito 可视化 ok
   - 输出速度，验证速度是否以及何时满足麦克斯韦分布 ok 满足
@@ -440,8 +462,8 @@ TODO:
   - 确定粒子速度如何随时间相关
   - 了解扩散和弛豫时间等传输特性
 - [ ] 探索使用 GPUMD 加速模拟
-- [ ] 在某个样例上，分别使用 Lammps 和 我们的 MDsim 进行模拟，比较结果
-  - ??
+- [x] 在某个样例上，分别使用 Lammps 和 我们的 MDsim 进行模拟，比较结果
+  - Ar 晶格
 
 #### 计算并输出温度/动能/势能
 

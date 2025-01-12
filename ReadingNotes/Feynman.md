@@ -1,5 +1,11 @@
 # Feynman
 
+- [wikiquote: Richard_Feynman](https://en.wikiquote.org/wiki/Richard_Feynman)
+
+> "What I cannot create, I do not understand" ^[1]
+
+[1]: https://www.quora.com/What-did-Richard-Feynman-mean-when-he-said-What-I-cannot-create-I-do-not-understand
+
 ![1734421756094](image/Feynman/1734421756094.png)
 
 When Feynman said "create", he did not literally mean that in order to understand particle physics, he had to go Tony Stark on us and build his own accelerator. Instead, he meant that, starting with a blank piece of paper and the knowledge already in his mind, he could take any theoretical result and re-derive it. ("Any" is probably an exaggeration, but he could likely derive whatever he was interested in.)
