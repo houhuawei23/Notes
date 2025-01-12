@@ -1,5 +1,9 @@
 # Molecular dynamics simulations
 
+> What I cannot create, I do not understand. ^[1]
+
+[1]:https://freshspectrum.com/richard-feynman-what-i-cannot-create-i-do-not-understand/
+
 - [Molecular-Dynamics-Simulation: 樊哲勇](https://github.com/brucefan1983/Molecular-Dynamics-Simulation)
 - [恒温分子模拟与热浴(NVT Ensemble and Thermostat)](https://bohrium.dp.tech/notebooks/3323483662)
 
@@ -419,22 +423,24 @@ $$
 
 TODO:
 
-- 计算并输出温度/压强/动能/势能
+- [x] 实现近邻列表技术，加速计算 ok
+  - [ ] 比较验证实现近邻列表前后加速效果
+  - [ ] cpp vs python
+- [x] 计算并输出温度/压强/动能/势能
   - 可视化 X-Time 图，分析 X 量随时间的变化规律 ok
-- 输出轨迹: 即每一时刻各粒子的坐标和速度
+- [x] 输出轨迹: 即每一时刻各粒子的坐标和速度
   - 使用 ovito 可视化 ok
-  - 输出速度，验证速度是否以及何时满足麦克斯韦分布
-- 验证体系动量守恒，角动量不守恒
-- 径向基函数 (RDF)
+  - 输出速度，验证速度是否以及何时满足麦克斯韦分布 ok 满足
+- [x] 验证体系动量守恒，角动量不守恒 ok
+- [x] 径向基函数 (RDF) ok
   - 表征粒子的空间分布并提供对系统结构的深入了解
-- Mean Squared Displacement (MSD) 均方位移
+- [x] Mean Squared Displacement (MSD) 均方位移
   - 测量粒子随时间移动的距离并帮助确定系统的扩散特性
-- Velocity Autocorrelation Function (VACF) 速度自相关函数
+- [x] Velocity Autocorrelation Function (VACF) 速度自相关函数
   - 确定粒子速度如何随时间相关
   - 了解扩散和弛豫时间等传输特性
-- 实现近邻列表技术，加速计算 ok
-- 探索使用 GPUMD 加速模拟
-- 在某个样例上，分别使用 Lammps 和 我们的 MDsim 进行模拟，比较结果
+- [ ] 探索使用 GPUMD 加速模拟
+- [ ] 在某个样例上，分别使用 Lammps 和 我们的 MDsim 进行模拟，比较结果
   - ??
 
 #### 计算并输出温度/动能/势能
@@ -482,5 +488,4 @@ $$
 
 #### 检验体系动量和角动量是否守恒
 
-#### 
-
+####
