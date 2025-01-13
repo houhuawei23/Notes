@@ -1,5 +1,9 @@
 # Useful Links Collection
 
+> 万钟则不辩礼义而受之，万钟于我何加焉！^[1]
+
+[1]:https://www.gushiwen.cn/mingju/juv_ed7aff127669.aspx
+
 - 导航 s
   - [CS 自学指南](https://csdiy.wiki/)
   - [网站导航](https://123.topstip.com/)
@@ -52,4 +56,15 @@
   - [academic.chatwithpaper](https://academic.chatwithpaper.org/)
   - [github: SUSYUSTC/MathTranslate](https://github.com/SUSYUSTC/MathTranslate)
   - [github: PDFMathTranslate](https://github.com/Byaidu/PDFMathTranslate)
-  - 
+- logo maker
+  - actual free logo maker: [ucraft](https://www.ucraft.com/ai-logo-generator/app)
+  - [logoly](https://www.logoly.pro/)
+  - [text](https://logom8.com/)
+- white board
+  - [figma](https://www.figma.com/design/)  
+    - Figma is a powerful, collaborative design tool for teams. Explore ideas and gather feedback, build realistic prototypes, and streamline product development with design systems.
+- make timeline:
+  - [markwhen](https://markwhen.com/), [github](https://github.com/mark-when/markwhen)
+  - [harvestapp](https://abc302.harvestapp.com/time)
+- note app
+  - [heynote](https://heynote.com/)
