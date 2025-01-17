@@ -3,13 +3,19 @@
 - [Commands](#commands)
 - [Q & A](#q--a)
 
+<br>
+
+- [git-scm](https://git-scm.com/)
+
 ## Commands
 
 - [`git branch`](#git-branch)
 - [`git remote`](#git-remote)
 - [`git push`](#git-push)
+- [`git merge`](#git-merge)
 - [`git config`](#git-config)
 - [`git rebase`](#git-rebase)
+- [`git reset`](#git-reset)
 
 ### `git branch`
 
@@ -64,6 +70,51 @@ git push remote_name local_branch
 git push -u remote_name local_branch # --set-upstream
 ```
 
+### [`git merge`](https://git-scm.com/docs/git-merge)
+
+Merge branches
+
+```bash
+# Merge a branch into your current branch:
+git merge branch_name
+
+# Edit the merge message:
+git merge --edit branch_name
+
+# Merge a branch and create a merge commit:
+git merge --no-ff branch_name
+
+# Abort a merge in case of conflicts:
+git merge --abort
+
+# Merge using a specific strategy:
+git merge --strategy strategy --strategy-option strategy_option branch_name
+
+# !! merge to only create a commit on top of current commit
+git merge --squash branch_name
+```
+
+#### `--ff, --no-ff, --ff-only`
+
+Specifies how a merge is handled when the merged-in history is already a descendant of the current history. --ff is the
+default unless merging an annotated (and possibly signed) tag that is not stored in its natural place in the refs/tags/
+hierarchy, in which case --no-ff is assumed.
+
+- With --ff, when possible resolve the merge as a fast-forward (only update the branch pointer to match the merged branch; do
+not create a merge commit). When not possible (when the merged-in history is not a descendant of the current history), create
+a merge commit.
+
+- With --no-ff, create a merge commit in all cases, even when the merge could instead be resolved as a fast-forward.
+
+- With --ff-only, resolve the merge as a fast-forward when possible. When not possible, refuse to merge and exit with a
+non-zero status.
+
+#### `--squash, --no-squash`
+
+Produce the working tree and index state as if a real merge happened (except for the merge information), but do not actually make a commit, move the HEAD, or record $GIT_DIR/MERGE_HEAD (to cause the next git commit command to create a merge commit).
+
+This allows you to create a single commit on top of the current branch whose effect is the same as merging another branch (or more in case of an octopus).
+
 ### `git config`
 
 ```bash
@@ -88,6 +139,34 @@ git rebase new_base_branch
 
 # Start an interactive rebase, which allows the commits to be reordered, omitted, combined or modified:
 git rebase -i|--interactive target_base_branch_or_commit_hash
+```
+
+### [`git reset`](https://git-scm.com/docs/git-reset)
+
+- Undo commits or unstage changes, by resetting the current Git HEAD to the specified state.
+- If a path is passed, it works as "unstage"; if a commit hash or branch is passed, it works as "uncommit".
+
+```bash
+# Unstage everything:
+git reset
+
+# Unstage specific file(s):
+git reset path/to/file1 path/to/file2 ...
+
+# Interactively unstage portions of a file:
+git reset --patch path/to/file
+
+# Undo the last commit, keeping its changes (and any further uncommitted changes) in the filesystem:
+git reset HEAD~
+
+# Undo the last two commits, adding their changes to the index, i.e. staged for commit:
+git reset --soft HEAD~2
+
+# Discard any uncommitted changes, staged or not (for only unstaged changes, use git checkout):
+git reset --hard
+
+# !! Reset the repository to a given commit, discarding committed, staged and uncommitted changes since then:
+git reset --hard commit
 ```
 
 ## Q & A
@@ -183,11 +262,10 @@ When you use `git pull` or `git push` for the first time after configuring this,
 
 The `libsecret` credential helper integrates with GNOME Keyring to securely store your credentials.
 
-
 ```sh
 # First, install the required package:
 sudo apt-get install libsecret-1-0 libsecret-1-dev
-# Then, you need to compile the `libsecret` credential helper. 
+# Then, you need to compile the `libsecret` credential helper.
 # This is a one-time setup:
 cd /usr/share/doc/git/contrib/credential/libsecret
 sudo make
