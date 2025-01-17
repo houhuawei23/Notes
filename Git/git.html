@@ -2995,13 +2995,19 @@
 <li><a href="#commands">Commands</a></li>
 <li><a href="#q--a">Q &amp; A</a></li>
 </ul>
+<p><br></p>
+<ul>
+<li><a href="https://git-scm.com/" target="_blank">git-scm</a></li>
+</ul>
 <h2 id="commands">Commands</h2>
 <ul>
 <li><a href="#git-branch"><code>git branch</code></a></li>
 <li><a href="#git-remote"><code>git remote</code></a></li>
 <li><a href="#git-push"><code>git push</code></a></li>
+<li><a href="#git-merge"><code>git merge</code></a></li>
 <li><a href="#git-config"><code>git config</code></a></li>
 <li><a href="#git-rebase"><code>git rebase</code></a></li>
+<li><a href="#git-reset"><code>git reset</code></a></li>
 </ul>
 <h3 id="git-branch"><code>git branch</code></h3>
 <pre><code class="lang-bash"><span class="hljs-comment"># List all branches (local and remote; the current branch is highlighted by *):</span>
@@ -3046,6 +3052,44 @@ git push remote_name <span class="hljs-built_in">local</span>_branch
 <span class="hljs-comment"># and set the remote one as the default push/pull target of the local one:</span>
 git push -u remote_name <span class="hljs-built_in">local</span>_branch <span class="hljs-comment"># --set-upstream</span>
 </code></pre>
+<h3 id="git-merge"><a href="https://git-scm.com/docs/git-merge" target="_blank"><code>git merge</code></a></h3>
+<p>Merge branches</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># Merge a branch into your current branch:</span>
+git merge branch_name
+
+<span class="hljs-comment"># Edit the merge message:</span>
+git merge --edit branch_name
+
+<span class="hljs-comment"># Merge a branch and create a merge commit:</span>
+git merge --no-ff branch_name
+
+<span class="hljs-comment"># Abort a merge in case of conflicts:</span>
+git merge --abort
+
+<span class="hljs-comment"># Merge using a specific strategy:</span>
+git merge --strategy strategy --strategy-option strategy_option branch_name
+
+<span class="hljs-comment"># !! merge to only create a commit on top of current commit</span>
+git merge --squash branch_name
+</code></pre>
+<h4 id="-ff---no-ff---ff-only"><code>--ff, --no-ff, --ff-only</code></h4>
+<p>Specifies how a merge is handled when the merged-in history is already a descendant of the current history. --ff is the
+default unless merging an annotated (and possibly signed) tag that is not stored in its natural place in the refs/tags/
+hierarchy, in which case --no-ff is assumed.</p>
+<ul>
+<li><p>With --ff, when possible resolve the merge as a fast-forward (only update the branch pointer to match the merged branch; do
+not create a merge commit). When not possible (when the merged-in history is not a descendant of the current history), create
+a merge commit.</p>
+</li>
+<li><p>With --no-ff, create a merge commit in all cases, even when the merge could instead be resolved as a fast-forward.</p>
+</li>
+<li><p>With --ff-only, resolve the merge as a fast-forward when possible. When not possible, refuse to merge and exit with a
+non-zero status.</p>
+</li>
+</ul>
+<h4 id="-squash---no-squash"><code>--squash, --no-squash</code></h4>
+<p>Produce the working tree and index state as if a real merge happened (except for the merge information), but do not actually make a commit, move the HEAD, or record $GIT_DIR/MERGE_HEAD (to cause the next git commit command to create a merge commit).</p>
+<p>This allows you to create a single commit on top of the current branch whose effect is the same as merging another branch (or more in case of an octopus).</p>
 <h3 id="git-config"><code>git config</code></h3>
 <pre><code class="lang-bash"><span class="hljs-comment"># You have divergent branches and need to specify how to reconcile them.</span>
 <span class="hljs-comment"># You can do so by running one of the following commands sometime before</span>
@@ -3063,6 +3107,32 @@ git rebase new_base_branch
 
 <span class="hljs-comment"># Start an interactive rebase, which allows the commits to be reordered, omitted, combined or modified:</span>
 git rebase -i|--interactive target_base_branch_or_commit_<span class="hljs-built_in">hash</span>
+</code></pre>
+<h3 id="git-reset"><a href="https://git-scm.com/docs/git-reset" target="_blank"><code>git reset</code></a></h3>
+<ul>
+<li>Undo commits or unstage changes, by resetting the current Git HEAD to the specified state.</li>
+<li>If a path is passed, it works as &quot;unstage&quot;; if a commit hash or branch is passed, it works as &quot;uncommit&quot;.</li>
+</ul>
+<pre><code class="lang-bash"><span class="hljs-comment"># Unstage everything:</span>
+git reset
+
+<span class="hljs-comment"># Unstage specific file(s):</span>
+git reset path/to/file1 path/to/file2 ...
+
+<span class="hljs-comment"># Interactively unstage portions of a file:</span>
+git reset --patch path/to/file
+
+<span class="hljs-comment"># Undo the last commit, keeping its changes (and any further uncommitted changes) in the filesystem:</span>
+git reset HEAD~
+
+<span class="hljs-comment"># Undo the last two commits, adding their changes to the index, i.e. staged for commit:</span>
+git reset --soft HEAD~2
+
+<span class="hljs-comment"># Discard any uncommitted changes, staged or not (for only unstaged changes, use git checkout):</span>
+git reset --hard
+
+<span class="hljs-comment"># !! Reset the repository to a given commit, discarding committed, staged and uncommitted changes since then:</span>
+git reset --hard commit
 </code></pre>
 <h2 id="q--a">Q &amp; A</h2>
 <h3 id="how-to-set-default-upstream-branch-for-git-push-or-git-pull">How to set default upstream branch for <code>git push</code> or <code>git pull</code>?</h3>
@@ -3135,7 +3205,7 @@ git config --global credential.helper store
 <p>The <code>libsecret</code> credential helper integrates with GNOME Keyring to securely store your credentials.</p>
 <pre><code class="lang-sh"><span class="hljs-comment"># First, install the required package:</span>
 sudo apt-get install libsecret-1-0 libsecret-1-dev
-<span class="hljs-comment"># Then, you need to compile the `libsecret` credential helper. </span>
+<span class="hljs-comment"># Then, you need to compile the `libsecret` credential helper.</span>
 <span class="hljs-comment"># This is a one-time setup:</span>
 <span class="hljs-built_in">cd</span> /usr/share/doc/git/contrib/credential/libsecret
 sudo make
@@ -3185,7 +3255,7 @@ git config --global credential.helper /usr/share/doc/git/contrib/credential/libs
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"git","level":"1.3.2","depth":2,"next":{"title":"Guides","level":"1.4","depth":1,"ref":"","articles":[{"title":"Self-Cultivation-of-Programmers","level":"1.4.1","depth":2,"path":"Guides/Self-Cultivation-of-Programmers.md","ref":"Guides/Self-Cultivation-of-Programmers.md","articles":[]}]},"previous":{"title":"Github","level":"1.3.1","depth":2,"path":"Git/Github.md","ref":"Git/Github.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include-codeblock","-lunr","-search","search-pro","expandable-chapters","code","chapter-fold","splitter","github","theme-comscore","katex-pp","edit-link","back-to-top-button","intopic-toc","my-toolbar"],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/houhuawei23/Notes"},"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this article","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"back-to-top-button":{},"my-toolbar":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"katex-pp":{},"edit-link":{"label":"Edit","base":"https://github.com/houhuawei23/Notes/edit/main"},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"houhuawei23","pdf":{"pageNumbers":true,"fontSize":10,"fontFamily":"Times New Roman","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":10,"left":10,"top":10,"bottom":10}},"structure":{"langs":"LANGS.md","readme":"Introduction.md","glossary":"GLOSSARY.md","summary":"SUMMARY-GitBook-auto-summary.md"},"variables":{},"title":"Notes of hhw","language":"cn","gitbook":"*","description":"Notes of hhw"},"file":{"path":"Git/git.md","mtime":"2025-01-15T07:31:52.147Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-01-15T07:32:41.588Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"git","level":"1.3.2","depth":2,"next":{"title":"Guides","level":"1.4","depth":1,"ref":"","articles":[{"title":"Self-Cultivation-of-Programmers","level":"1.4.1","depth":2,"path":"Guides/Self-Cultivation-of-Programmers.md","ref":"Guides/Self-Cultivation-of-Programmers.md","articles":[]}]},"previous":{"title":"Github","level":"1.3.1","depth":2,"path":"Git/Github.md","ref":"Git/Github.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include-codeblock","-lunr","-search","search-pro","expandable-chapters","code","chapter-fold","splitter","github","theme-comscore","katex-pp","edit-link","back-to-top-button","intopic-toc","my-toolbar"],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/houhuawei23/Notes"},"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this article","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"back-to-top-button":{},"my-toolbar":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"katex-pp":{},"edit-link":{"label":"Edit","base":"https://github.com/houhuawei23/Notes/edit/main"},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"houhuawei23","pdf":{"pageNumbers":true,"fontSize":10,"fontFamily":"Times New Roman","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":10,"left":10,"top":10,"bottom":10}},"structure":{"langs":"LANGS.md","readme":"Introduction.md","glossary":"GLOSSARY.md","summary":"SUMMARY-GitBook-auto-summary.md"},"variables":{},"title":"Notes of hhw","language":"cn","gitbook":"*","description":"Notes of hhw"},"file":{"path":"Git/git.md","mtime":"2025-01-17T14:10:48.452Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-01-17T14:11:35.364Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
