@@ -2,7 +2,7 @@
 
 > What I cannot create, I do not understand. ^[1]
 
-[1]:https://freshspectrum.com/richard-feynman-what-i-cannot-create-i-do-not-understand/
+[1]: https://freshspectrum.com/richard-feynman-what-i-cannot-create-i-do-not-understand/
 
 - [Molecular-Dynamics-Simulation: 樊哲勇](https://github.com/brucefan1983/Molecular-Dynamics-Simulation)
 - [恒温分子模拟与热浴(NVT Ensemble and Thermostat)](https://bohrium.dp.tech/notebooks/3323483662)
@@ -295,6 +295,26 @@ $$
 
 给定一个多粒子体系的初始状态（坐标和速度），根据各个粒子之间的相互作用力就可预测该体系的运动状态，即任意时刻各个粒子的坐标和速度。该预测过程本质上就是对运动方程的数值积分。
 
+可以看出， $t+\Delta t$ 时刻的坐标仅依赖于 $t$ 时刻的坐标、速度和力，但 $t+\Delta t$ 时刻的速度依赖于 $t$ 时刻的速度、力及 $t+\Delta t$ 时刻的力。所以，从算法的角度来说，速度-Verlet 积分算法可对应如下计算流程：
+
+- 部分地更新速度并完全地更新坐标：
+  $$
+  \mathbf{v}_i(t) \rightarrow \mathbf{v}_i(t+\Delta t/2)=\mathbf{v}_i(t)+\frac{1}{2}\frac{\mathbf{F}_i(t)}{m_i}\Delta t;
+  $$
+  $$
+  \mathbf{r}_i(t)\rightarrow \mathbf{r}_i(t+\Delta t)
+  =\mathbf{r}_i(t)
+  +\mathbf{v}_i(t+\Delta t/2)\Delta t.
+  $$
+- 用更新后的坐标计算新的力
+  $$
+  \mathbf{F}_i(t)\rightarrow \mathbf{F}_i(t+\Delta t).
+  $$
+- 用更新后的力完成速度的更新：
+  $$
+  \mathbf{v}_i(t+\Delta t/2) \rightarrow \mathbf{v}_i(t+\Delta t)=\mathbf{v}_i(t+\Delta t/2)+\frac{1}{2}\frac{\mathbf{F}_i(t+\Delta t)}{m_i}\Delta t.
+  $$
+
 ### 三斜盒子
 
 一个正交盒子（左）与一个三斜盒子（右）。
@@ -404,44 +424,6 @@ $$
  N _{\rm cell} = N_a N_b N_c.
 $$
 
-## Program
-
-### main 主控函数
-
-1. 从文件中读取模拟参数（步数、时间步长、温度）
-2. 从单独的 XYZ 文件中读取原子数据（位置、质量）
-3. 根据温度初始化原子速度
-4. 启动计时器测量模拟时间
-5. 打开一个输出文件，用于写入模拟数据 (thermo.out)
-6. 按指定步数运行主模拟循环：
-   - 对所有原子应用周期性边界条件 (PBC)
-   - 使用 Verlet 算法对位置和速度进行积分
-   - 计算作用在每个原子上的力
-   - 再次积分更新位置和速度
-   - 每 Ns 步输出数据（温度、动能、势能）
-7. 停止计时器并打印模拟耗时。
-
-TODO:
-
-- [x] 实现近邻列表技术，加速计算 ok
-  - [ ] 比较验证实现近邻列表前后加速效果
-  - [ ] cpp vs python
-- [x] 计算并输出温度/压强/动能/势能
-  - 可视化 X-Time 图，分析 X 量随时间的变化规律 ok
-- [x] 输出轨迹: 即每一时刻各粒子的坐标和速度
-  - 使用 ovito 可视化 ok
-  - 输出速度，验证速度是否以及何时满足麦克斯韦分布 ok 满足
-- [x] 验证体系动量守恒，角动量不守恒 ok
-- [x] 径向基函数 (RDF) ok
-  - 表征粒子的空间分布并提供对系统结构的深入了解
-- [x] Mean Squared Displacement (MSD) 均方位移
-  - 测量粒子随时间移动的距离并帮助确定系统的扩散特性
-- [x] Velocity Autocorrelation Function (VACF) 速度自相关函数
-  - 确定粒子速度如何随时间相关
-  - 了解扩散和弛豫时间等传输特性
-- [ ] 探索使用 GPUMD 加速模拟
-- [ ] 在某个样例上，分别使用 Lammps 和 我们的 MDsim 进行模拟，比较结果
-  - ??
 
 #### 计算并输出温度/动能/势能
 

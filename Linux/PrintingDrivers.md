@@ -1,5 +1,7 @@
 # Printing Drivers
 
+- [how to install hplip on ubuntu linux](https://linuxcapable.com/how-to-install-hplip-on-ubuntu-linux/)
+  - `sudo apt install hplip hplip-data hplip-gui hplip-doc`
 ## Debian12
 
 ```bash
@@ -9,9 +11,6 @@ sudo apt install hplip-gui
 # deps on:
 hplip: HP Linux Printing and Imaging
 cups: Common Unix Printing System - PPD/driver support, web interface.
-
-
-
 ```
 
 HPLIP is composed of:
