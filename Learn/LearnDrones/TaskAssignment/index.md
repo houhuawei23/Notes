@@ -34,3 +34,39 @@
 
 - [github: mission_planning](https://github.com/JohannesAutenrieb/mission_planning)
 - [RACER, a RApid Collaborative ExploRation approach using a fleet of decentralized UAVs.](https://github.com/SYSU-STAR/RACER)
+
+## Policies
+
+- [无人机集群任务分配技术研究综述 系统工程与电子技术, 2024, 46(3): 922-934 ](https://www.sys-ele.com/article/2024/1001-506X/20240318.shtml)
+  - doi: 10.12305/j.issn.1001-506X.2024.03.18
+
+## US
+
+Small unmanned aircraft systems (SUAS) flight plan
+
+- OTTO R P. Small unmanned aircraft systems (SUAS) flight plan: 2016-2036[R]. Washington, DC: United States Air Force, 2016.
+- 2016 年 5 月, 美国空军发布的小型无人机系统发展路线图《2016-2036 年小型无人机系统飞行规划》
+- 为确保战争的制胜能力与强军事对抗环境下的非对称优势, 应重点研究更具成本效益和作战威力的集群式无人机作战样式。
+- 详细阐述了“无人机蜂群”的概念, 并计划在 2036 年建成横跨航空、太空、网空三大作战领域的无人机集群作战系统。
+
+Unmanned systems integrated roadmap 2017-2042
+
+- FACHEY K M, MILLER M J. Unmanned systems integrated roadmap 2017-2042[R]. Arlington Country: Office of the Secretary of Defense, 2018.
+- 2018 年 8 月, 美国国防部发布的《无人系统综合路线图 2017-2042》
+- 指出了 19 项近、远期需要重点发展的面向军事作战需求、能大幅提升无人机集群作战效能的关键技术, 包括开放式体系架构、机器学习、人工智能等。
+
+美国海军研究生院
+
+- GIAMMARCO K, HUNT S, WHITCOMB C. An instructional design reference mission for search and rescue operations[R]. Monterey, California: Naval Postgraduate School, 2015.
+- GILES C K. A framework for integrating the development of swarm unmanned aerial system doctrine and design[R]. Monterey, California: Department of Systems Engineering Naval Postgraduate School, 2017.
+- 提出了一种面向无人集群作战体系设计的一体化框架, 该框架针对未来无人机集群作战的去中心化、自组网、扁平化结构等特点, 构建了无人机集群“使命-战术-行动-算法-数据”五层任务框架, 并以无人机集群执行情报、监视、侦察和空战任务为例分析了无人机集群在每层中的具体任务, 给出了具体的军事概念模型。
+
+## CN
+
+2017-07《新一代人工智能发展规划》
+
+- 多次提及“群体感知、协同与演化”“群体集成智能”“自主无人系统”等概念, 同时明确指出应将人工智能与无人机集群紧密融合, 借助人工智能重点突破无人系统相关核心技术, 实现无人机集群相关技术的跨越式发展。
+
+PLA
+
+解放军报 2019 年 10 月发表《加速推进军事智能化》文章, 将智能集群作战协同技术列为智能化战争的基石;

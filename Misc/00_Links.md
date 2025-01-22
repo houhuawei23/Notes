@@ -9,6 +9,7 @@
   - [网站导航](https://123.topstip.com/)
   - [linux.do 网站导航](https://linux.do/)
 - Blogs
+  - [honeybadger-blog](https://www.honeybadger.io/blog/)
   - [linux.cn](https://linux.cn/)
   - [liaoxuefeng](https://liaoxuefeng.com/)
   - [Andrej Karpathy blog - 2014](https://karpathy.github.io/)
@@ -68,3 +69,9 @@
   - [harvestapp](https://abc302.harvestapp.com/time)
 - note app
   - [heynote](https://heynote.com/)
+- Debug
+  - [The Debugging Book](https://www.debuggingbook.org/)
+    - very useful for debugging in python!!!
+- DataScience:
+  - [Python for Data Science](https://byuidatascience.github.io/python4ds/)
+  - [Python for Data Science](https://aeturrell.github.io/python4DS/welcome.html)
