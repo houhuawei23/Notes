@@ -762,9 +762,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.6.1" data-path="../Learn/LearnConda/ChangeBaseEnv.html">
+        <li class="chapter " data-level="1.5.6.1" data-path="../Learn/LearnConda/ChangeBaseEnv.md">
             
-                <a href="../Learn/LearnConda/ChangeBaseEnv.html">
+                <span>
             
                     
                     ChangeBaseEnv
@@ -775,9 +775,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.6.2" data-path="../Learn/LearnConda/Conda.html">
+        <li class="chapter " data-level="1.5.6.2" data-path="../Learn/LearnConda/Conda.md">
             
-                <a href="../Learn/LearnConda/Conda.html">
+                <span>
             
                     
                     Conda
@@ -2994,6 +2994,119 @@
                                 
                                 <h1 id="python-libs">Python Libs</h1>
 <h2 id="misc">Misc</h2>
+<ul>
+<li>pypi tuna source: <code>https://pypi.tuna.tsinghua.edu.cn/simple</code><ul>
+<li><a href="https://mirrors.tuna.tsinghua.edu.cn/help/pypi/" target="_blank">tuna help</a></li>
+</ul>
+</li>
+<li>anaconda:<ul>
+<li><a href="https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/" target="_blank">tuna help</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="misc">Misc</h2>
+<h3 id="pip">Pip</h3>
+<pre><code class="lang-bash"><span class="hljs-comment"># all install pkgs</span>
+pip freeze &gt; requirements.txt
+<span class="hljs-comment"># only pkgs used in project</span>
+pip install pipreqs
+pipreqs path/to/your/project
+
+pip install -r requirements.txt
+</code></pre>
+<h3 id="conda"><a href="https://anaconda.org/anaconda/conda" target="_blank">Conda</a></h3>
+<ul>
+<li>OS-agnostic, system-level binary package and environment manager.</li>
+<li><p>&#x4E0E;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x65E0;&#x5173;&#x7684;&#x7CFB;&#x7EDF;&#x7EA7;&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x548C;&#x73AF;&#x5883;&#x7BA1;&#x7406;&#x5668;&#x3002;</p>
+</li>
+<li><p><a href="https://github.com/conda/conda" target="_blank">github: conda</a></p>
+</li>
+<li><a href="https://docs.conda.io/en/latest/" target="_blank">docs</a></li>
+</ul>
+<p>Conda is an open source package management system and environment management system for installing multiple versions of software packages and their dependencies and switching easily between them. It works on Linux, OS X and Windows, and was created for Python programs but can package and distribute any software.</p>
+<p>Conda &#x662F;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x5305;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x548C;&#x73AF;&#x5883;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#xFF0C;&#x7528;&#x4E8E;&#x5B89;&#x88C5;&#x591A;&#x4E2A;&#x7248;&#x672C;&#x7684;&#x8F6F;&#x4EF6;&#x5305;&#x53CA;&#x5176;&#x4F9D;&#x8D56;&#x9879;&#xFF0C;&#x5E76;&#x5728;&#x5B83;&#x4EEC;&#x4E4B;&#x95F4;&#x8F7B;&#x677E;&#x5207;&#x6362;&#x3002;&#x5B83;&#x9002;&#x7528;&#x4E8E; Linux&#x3001;OS X &#x548C; Windows&#xFF0C;&#x662F;&#x4E3A; Python &#x7A0B;&#x5E8F;&#x521B;&#x5EFA;&#x7684;&#xFF0C;&#x4F46;&#x53EF;&#x4EE5;&#x6253;&#x5305;&#x548C;&#x5206;&#x53D1;&#x4EFB;&#x4F55;&#x8F6F;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># list/update/install/remove/search</span>
+
+conda list
+conda list numpy
+
+conda update --all
+
+conda install numpy
+
+<span class="hljs-comment"># create env</span>
+conda create -n env_name list_of_packages
+
+<span class="hljs-comment"># list envs</span>
+conda env list
+
+<span class="hljs-comment"># activate/deactivate</span>
+conda activate/deactivate env_name
+
+<span class="hljs-comment"># check config info</span>
+conda config --show
+
+<span class="hljs-comment"># change source</span>
+conda config --set custom_channels.auto https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/
+<span class="hljs-comment"># export</span>
+conda env <span class="hljs-built_in">export</span> &gt; environment.yml
+
+<span class="hljs-comment"># close auto activate</span>
+conda config --set auto_activate_base <span class="hljs-literal">false</span>
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># add to tuna source</span>
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --set show_channel_urls yes
+
+<span class="hljs-comment"># recover default source</span>
+conda config --remove-key channels
+</code></pre>
+<p>conda &#x8BBE;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF; <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#saving-environment-variables" target="_blank">doc</a></p>
+<pre><code class="lang-bash"><span class="hljs-built_in">cd</span> <span class="hljs-variable">$CONDA_PREFIX</span>
+mkdir -p ./etc/conda/activate.d
+mkdir -p ./etc/conda/deactivate.d
+touch ./etc/conda/activate.d/env_vars.sh
+touch ./etc/conda/deactivate.d/env_vars.sh
+</code></pre>
+<h4 id="miniconda"><a href="https://docs.anaconda.com/miniconda/" target="_blank">Miniconda</a></h4>
+<p>Miniconda &#x662F; Anaconda Distribution &#x7684;&#x514D;&#x8D39;&#x5FAE;&#x578B;&#x5B89;&#x88C5;&#xFF0C;&#x5176;&#x4E2D;&#x4EC5;&#x5305;&#x62EC; conda&#x3001;Python&#x3001;&#x5B83;&#x4EEC;&#x90FD;&#x4F9D;&#x8D56;&#x7684;&#x5305;&#x4EE5;&#x53CA;&#x5C11;&#x91CF;&#x5176;&#x4ED6;&#x6709;&#x7528;&#x7684;&#x5305;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x60A8;&#x9700;&#x8981;&#x66F4;&#x591A;&#x8F6F;&#x4EF6;&#x5305;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;&#x547D;&#x4EE4; <code>conda install</code> &#x4ECE; Anaconda &#x7684;&#x516C;&#x5171;&#x5B58;&#x50A8;&#x5E93;&#x4E2D;&#x9ED8;&#x8BA4;&#x53EF;&#x7528;&#x7684;&#x6570;&#x5343;&#x4E2A;&#x8F6F;&#x4EF6;&#x5305;&#x4E2D;&#x5B89;&#x88C5;&#xFF0C;&#x6216;&#x8005;&#x4ECE; <code>conda-forge</code> &#x6216; <code>bioconda</code> &#x7B49;&#x5176;&#x4ED6; channels &#x8FDB;&#x884C;&#x5B89;&#x88C5;&#x3002;</p>
+<h3 id="ipython">ipython</h3>
+<pre><code class="lang-bash"><span class="hljs-comment"># in vscode, ipython extension need ipykernel (manual install):</span>
+conda install -n {your_env_name} ipykernel --update-deps --force-reinstall
+</code></pre>
+<h3 id="module-dependency-check">Module Dependency Check</h3>
+<ul>
+<li><code>pipdeptree</code></li>
+<li><a href="https://github.com/thebjorn/pydeps" target="_blank"><code>pydeps</code></a>: Python Module Dependency graphs<ul>
+<li><code>pydeps xxx.py</code></li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-bash"><span class="hljs-comment"># show all packages installed</span>
+pip list
+conda list
+
+<span class="hljs-comment"># show package details</span>
+pip show numpy
+conda list numpy
+
+<span class="hljs-comment"># upgrade package</span>
+pip install --upgrade pyarrow
+<span class="hljs-comment"># rebuild dependencies</span>
+pip uninstall pyarrow
+pip install pyarrow --no-binary pyarrow  <span class="hljs-comment"># Force recompile</span>
+
+<span class="hljs-comment"># use pipdeptree to visualize the dep tree</span>
+pip install pipdeptree
+pipdeptree <span class="hljs-comment"># show all dependencies</span>
+pipdeptree --packages pyarrow <span class="hljs-comment"># only show pyarrow</span>
+pipdeptree --reverse --packages pyarrow <span class="hljs-comment"># show who dep on pyarrow</span>
+</code></pre>
 <h3 id="pylint-static-code-analyser"><a href="https://pylint.pycqa.org/en/latest/index.html" target="_blank">Pylint</a>: Static Code Analyser</h3>
 <p>Additional tools in pylint</p>
 <ul>
@@ -3052,7 +3165,7 @@ pyreverse marko
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"PythonLibs","level":"1.11","depth":1,"next":{"title":"ArgParse","level":"1.11.1","depth":2,"path":"PythonLibs/ArgParse.md","ref":"PythonLibs/ArgParse.md","articles":[]},"previous":{"title":"CRTP","level":"1.10.1","depth":2,"path":"Programming/CRTP.md","ref":"Programming/CRTP.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include-codeblock","-lunr","-search","search-pro","expandable-chapters","code","chapter-fold","splitter","github","theme-comscore","katex-pp","edit-link","back-to-top-button","intopic-toc","my-toolbar"],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/houhuawei23/Notes"},"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this article","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"back-to-top-button":{},"my-toolbar":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"katex-pp":{},"edit-link":{"label":"Edit","base":"https://github.com/houhuawei23/Notes/edit/main"},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"houhuawei23","pdf":{"pageNumbers":true,"fontSize":10,"fontFamily":"Times New Roman","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":10,"left":10,"top":10,"bottom":10}},"structure":{"langs":"LANGS.md","readme":"Introduction.md","glossary":"GLOSSARY.md","summary":"SUMMARY-GitBook-auto-summary.md"},"variables":{},"title":"Notes of hhw","language":"cn","gitbook":"*","description":"Notes of hhw"},"file":{"path":"PythonLibs/PythonLibs.md","mtime":"2025-01-22T14:03:21.187Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-01-22T14:04:08.338Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"PythonLibs","level":"1.11","depth":1,"next":{"title":"ArgParse","level":"1.11.1","depth":2,"path":"PythonLibs/ArgParse.md","ref":"PythonLibs/ArgParse.md","articles":[]},"previous":{"title":"CRTP","level":"1.10.1","depth":2,"path":"Programming/CRTP.md","ref":"Programming/CRTP.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include-codeblock","-lunr","-search","search-pro","expandable-chapters","code","chapter-fold","splitter","github","theme-comscore","katex-pp","edit-link","back-to-top-button","intopic-toc","my-toolbar"],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/houhuawei23/Notes"},"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this article","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"back-to-top-button":{},"my-toolbar":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"katex-pp":{},"edit-link":{"label":"Edit","base":"https://github.com/houhuawei23/Notes/edit/main"},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"houhuawei23","pdf":{"pageNumbers":true,"fontSize":10,"fontFamily":"Times New Roman","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":10,"left":10,"top":10,"bottom":10}},"structure":{"langs":"LANGS.md","readme":"Introduction.md","glossary":"GLOSSARY.md","summary":"SUMMARY-GitBook-auto-summary.md"},"variables":{},"title":"Notes of hhw","language":"cn","gitbook":"*","description":"Notes of hhw"},"file":{"path":"PythonLibs/PythonLibs.md","mtime":"2025-01-23T09:45:07.286Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-01-23T09:45:54.219Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
