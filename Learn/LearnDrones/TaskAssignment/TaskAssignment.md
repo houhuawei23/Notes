@@ -73,6 +73,119 @@ $$
 \begin{array}{l}\operatorname{TIN}_{t_{j}}=\left\langle\text { Res }_{t_{j}}, \text { position }_{\mathrm{t}_{\mathrm{j}}}, \mathrm{TW}_{\mathrm{t}_{\mathrm{j}}}, \mathrm{a}_{\mathrm{t}_{\mathrm{j}}}\right\rangle \\=\left\langle\left\{\operatorname{Re}_{t_{j}}^{1}, \ldots, \text { Re }_{t_{j}}^{l}\right\},\left(x_{t_{j}}, y_{t_{j}}, z_{t_{j}}\right),\left[t_{t_{j}}^{\text {minstart }}, t_{t_{j}}^{\text {maxstart }}\right], a_{t_{j}}\right\rangle .\end{array}
 $$
 
+#### 联盟形成博弈数学模型
+
+- 通过将无人机集群任务分配问题建模为联盟形成博弈，证明了该博弈模型可以构造为势博弈。
+- 势博弈的性质保证了纳什均衡解的存在性，并且可以通过最小化或最大化势函数 $S R$ 来求解。
+- 基于此理论，可以设计合理的联盟形成博弈算法，实现最终的任务分配。
+
+##### 1. 联盟形成博弈模型
+
+将无人机集群任务分配问题建模为联盟形成博弈模型，定义如下：
+
+- 博弈模型：$\boldsymbol{G}=(\boldsymbol{U}, \boldsymbol{E}, \varepsilon, \boldsymbol{R})$
+  - $\boldsymbol{U}$：无人机集合。
+  - $\boldsymbol{E}=\left[e_{u_{1}}, e_{u_{2}}, \ldots, e_{u_{n}}\right]$：无人机选择的任务集合，等价于任务集合 $\boldsymbol{T}$，即 $\boldsymbol{E}_{U}=\boldsymbol{T}$。
+  - $\varepsilon$：评估无人机收益的效用函数。
+  - $\boldsymbol{R}$：评估各个联盟效用的函数。
+
+##### 2. 联盟划分问题
+
+原问题转化为联盟划分问题，无人机选择策略后形成 $(m+1)$ 个任务联盟。博弈目标是无人机集合选择合适策略，得到稳定的联盟结构 $\boldsymbol{C S}$：
+
+- 联盟结构：$\boldsymbol{C S}=\left\{\boldsymbol{c}_{t_{0}}, \boldsymbol{c}_{t_{1}}, \boldsymbol{c}_{t_{2}}, \ldots, \boldsymbol{c}_{t_{m}}\right\}$
+  - $\boldsymbol{c}_{t_{0}}$：未分配任务的无人机联盟集合。
+  - $\boldsymbol{c}_{t_{j}}$：执行任务 $t_{j}$ 的无人机联盟集合。
+
+##### 3. 无人机收益
+
+无人机 $u_{i}$ 加入联盟 $c_{t_{j}}$ 时，收益 $r_{u_{i}}\left(t_{j}\right)$ 包含三部分：
+
+- 资源贡献：$\operatorname{val}\left(u_{i}, t_{j}\right)$
+- 路径成本：$\operatorname{cost}\left(u_{i}, t_{j}\right)$
+- 威胁代价：$\operatorname{risk}\left(u_{i}, t_{j}\right)$
+
+###### 3.1 资源贡献
+
+资源贡献 $\operatorname{val}\left(u_{i}, t_{j}\right)$ 定义为：
+
+$$
+\operatorname{val}\left(u_{i}, t_{j}\right)=\left\{\begin{array}{ll}
+\boldsymbol{K}(j,:) \boldsymbol{I}-P O, & \text { if } \boldsymbol{K}(j,:) \boldsymbol{I}-P O>0 \\
+0, & \text { otherwise }
+\end{array}\right.
+$$
+
+- $\boldsymbol{K}$：权重矩阵，权衡资源在价值收益中的比重。
+- $\boldsymbol{K}(j,:)=\left\{k_{j 1}, k_{j 2}, \ldots, k_{j l}\right\}$：任务 $t_{j}$ 各异构资源的重要程度。
+- $\boldsymbol{I}=\left\{i_{1}, i_{2}, \ldots, i_{l}\right\}$：无人机可利用的每类资源的数目。
+- $O$：无人机未利用的总资源数目。
+
+###### 3.2 路径成本
+
+路径成本 $\operatorname{cost}\left(u_{i}, t_{j}\right)$ 定义为：
+
+$$
+\operatorname{cost}\left(u_{i}, t_{j}\right)=\left\{\begin{array}{ll}
+1-\boldsymbol{d}\left(u_{i}, t_{j}\right) / \sqrt{x^{2}+y^{2}}, & \operatorname{val}\left(u_{i}, t_{j}\right)>0 \\
+\mu, & \text { otherwise }
+\end{array}\right.
+$$
+
+- $\boldsymbol{d}$：无人机与任务之间的欧氏距离。
+- $x$ 和 $y$：任务环境区域大小。
+- $\mu$：小于 0 的常数。
+  - 当 $\operatorname{val}\left(u_{i}, t_{j}\right)$ 为 0 时，设计 $r_{u_{i}}\left(t_{j}\right)$ 小于 0 。含义是当无人机 $u_{i}$ 加入任务 $t_{j}$ 联盟无法贡献资源时，加入该联盟的收益小于在 $c_{t_{0}}$ 中的收益。
+
+###### 3.3 威胁代价
+
+威胁代价 $\operatorname{risk}\left(u_{i}, t_{j}\right)$ 定义为：
+
+$$
+\operatorname{risk}\left(u_{i}, t_{j}\right)=\text { value }_{\mathrm{u}_{\mathrm{i}}} \mathrm{a}_{\mathrm{t}_{\mathrm{j}}}
+$$
+
+- 表示任务的探测雷达和攻击能力等因素对无人机造成的威胁代价评估。
+
+##### 4. 任务收益
+
+任务收益 $r_{u_{i}}\left(t_{j}\right)$ 定义为：
+
+$$
+r_{u_{i}}\left(t_{j}\right)=\alpha \mathbf{v a l}\left(u_{i}, t_{j}\right)+\beta \operatorname{cost}\left(u_{i}, t_{j}\right)-\gamma \operatorname{risk}\left(u_{i}, t_{j}\right)
+$$
+
+- $\alpha, ~ \beta, ~ \gamma$：常数权重值，分别决定资源重叠度、路径成本和威胁代价在收益中的比重。
+
+##### 5. 联盟效用
+
+任务 $t_{j}$ 的联盟效用 $\boldsymbol{R}\left(c_{t_{j}}\right)$ 定义为：
+
+$$
+\boldsymbol{R}\left(c_{t_{j}}\right)=\sum_{u_{i} \in c_{t_{j}}} r_{u_{i}}\left(t_{j}\right)
+$$
+
+任务分配问题的总收益 $S R$ 定义为：
+
+$$
+S R=\sum_{c_{t_{j}} \in C S} \boldsymbol{R}\left(c_{t_{j}}\right)
+$$
+
+##### 6. 无人机效用函数
+
+无人机效用函数 $\varepsilon_{u_{i}}\left(e_{u_{i}}, \boldsymbol{E}_{-u_{i}}\right)$ 定义为：
+
+$$
+\varepsilon_{u_{i}}\left(e_{u_{i}}, \boldsymbol{E}_{-u_{i}}\right)=\boldsymbol{R}\left(c_{u_{i}}\right)-\boldsymbol{R}\left(c_{u_{i}} \mid u_{i}\right)
+$$
+
+- $c_{u_{i}}$：无人机 $u_{i}$ 选择策略 $e_{u_{i}}$ 时加入的任务联盟。
+- $\boldsymbol{R}\left(c_{u_{i}} \mid u_{i}\right)$：将 $u_{i}$ 从原所属联盟中删除后的剩余联盟效用。
+
+---
+
+### 异构无人机集群任务分配问题在不同数学模型中的基本数学形式
+
 以下是异构无人机集群任务分配问题在不同数学模型中的基本数学形式：
 
 ---
@@ -297,17 +410,17 @@ $$
 
 ## 数学问题的模型与常见求解算法
 
-1. **TSP模型**：基本形式是寻找最短回路，访问所有城市一次。变量通常是二元变量表示边是否被选中。约束包括每个节点进出一次，子回路消除等。解法可能包括精确算法（分支定界）、启发式（最近邻）和元启发式（遗传算法）。
+1. **TSP 模型**：基本形式是寻找最短回路，访问所有城市一次。变量通常是二元变量表示边是否被选中。约束包括每个节点进出一次，子回路消除等。解法可能包括精确算法（分支定界）、启发式（最近邻）和元启发式（遗传算法）。
 
 2. **网络流优化（NFO）**：核心是流量守恒、容量限制，目标是最小化或最大化流量相关成本。常见模型如最小费用流，求解方法包括单纯形法、消圈算法等。
 
-3. **VRP模型**：类似于TSP但多车辆，有容量约束。变量包括分配和路径变量。解法包括启发式（节约算法）、元启发式（模拟退火）和精确方法。
+3. **VRP 模型**：类似于 TSP 但多车辆，有容量约束。变量包括分配和路径变量。解法包括启发式（节约算法）、元启发式（模拟退火）和精确方法。
 
-4. **CMTAP模型**：需要多智能体协同，资源匹配，可能涉及组合优化。目标函数可能最大化任务完成数，约束包括资源和时间。解法有拍卖算法、分布式优化等。
+4. **CMTAP 模型**：需要多智能体协同，资源匹配，可能涉及组合优化。目标函数可能最大化任务完成数，约束包括资源和时间。解法有拍卖算法、分布式优化等。
 
-5. **MILP模型**：包含连续和整数变量，线性目标函数和约束。求解方法包括分支定界、割平面，以及启发式。
+5. **MILP 模型**：包含连续和整数变量，线性目标函数和约束。求解方法包括分支定界、割平面，以及启发式。
 
-6. **MDP模型**：基于状态、动作、转移概率和奖励，策略优化。解法包括值迭代、策略迭代、Q学习等强化学习方法。
+6. **MDP 模型**：基于状态、动作、转移概率和奖励，策略优化。解法包括值迭代、策略迭代、Q 学习等强化学习方法。
 
 以下是六种数学模型的一般数学形式及其常见求解方法的系统总结：
 
