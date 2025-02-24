@@ -2,7 +2,7 @@
 
 > 万钟则不辩礼义而受之，万钟于我何加焉！^[1]
 
-[1]:https://www.gushiwen.cn/mingju/juv_ed7aff127669.aspx
+[1]: https://www.gushiwen.cn/mingju/juv_ed7aff127669.aspx
 
 - 导航 s
   - [CS 自学指南](https://csdiy.wiki/)
@@ -62,7 +62,7 @@
   - [logoly](https://www.logoly.pro/)
   - [text](https://logom8.com/)
 - white board
-  - [figma](https://www.figma.com/design/)  
+  - [figma](https://www.figma.com/design/)
     - Figma is a powerful, collaborative design tool for teams. Explore ideas and gather feedback, build realistic prototypes, and streamline product development with design systems.
 - make timeline:
   - [markwhen](https://markwhen.com/), [github](https://github.com/mark-when/markwhen)
@@ -75,3 +75,14 @@
 - DataScience:
   - [Python for Data Science](https://byuidatascience.github.io/python4ds/)
   - [Python for Data Science](https://aeturrell.github.io/python4DS/welcome.html)
+- Online OCR:
+  - [simpletex: Foemula and Document](https://simpletex.net/)
+- AI LLM Tools:
+  - [deepseek](https://chat.deepseek.com/)
+  - [moonshot-kimi](https://kimi.moonshot.cn/)
+  - [openai-chatgpt](https://chatgpt.com/)
+  - [google gemini](https://gemini.google.com/app)
+  - [google aistudio](https://aistudio.google.com/)
+  - [纳米 NaMi AI](https://www.n.cn/)
+  - [秘塔 AI 搜索](https://metaso.cn/)
+  - [腾讯元宝-混元大模型](https://yuanbao.tencent.com/)

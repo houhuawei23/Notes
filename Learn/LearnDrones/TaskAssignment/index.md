@@ -2,6 +2,8 @@
 
 ## survey
 
+- 2004.09： A Formal Analysis and Taxonomy of Task Allocation in Multi-Robot Systems
+  - 多机器人系统中任务分配的形式分析和分类
 - 2018.10: [Should We Compete or Should We Cooperate? Applying Game Theory to Task Allocation in Drone Swarms](./2018.10-Should_We_Compete_or_Should_We_Cooperate_Applying_Game_Theory_to_Task_Allocation_in_Drone_Swarms.md)
   - 机器人应该合作以完成尽可能多的任务
   - IROS
@@ -24,9 +26,18 @@
   - 任务分配算法在多无人机智能交通系统中的应用: 批判性回顾
   - 都灵理工学院机械与航空航天工程系
   - BDCC IF(3.7)
+- 2025.01.19: Multi-UAV Task Assignment in Dynamic Environments: Current Trends and Future Directions
+  - 沙特国王大学
+  - [doi](https://doi.org/10.3390/drones9010075)
 
 ## papers
 
+- 2024.05: Task Allocation in Heterogeneous Multi-Robot Systems Based on **Preference-Driven Hedonic Game**
+  - 基于**偏好驱动享乐博弈**的异构多机器人系统任务分配
+  - ICRA; Li Wang
+- 2024: **Coalition Formation Game** Approach for Task Allocation in Heterogeneous Multi-Robot Systems under **Resource Constraints**
+  - 资源约束下异构多机器人系统任务分配的联盟形成博弈方法
+  - IROS; Li Wang
 - 2024: [Distributed task allocation algorithm for heterogeneous unmanned aerial vehicle swarm based on coalition formation game](./2024-Distributed_task_allocation_algorithm_for_heterogeneous_unmanned_aerial_vehic_swarm_based_on_coalition_formation_game.md)
   - 基于联盟形成博弈的异构无人机集群分布式任务分配算法
 
