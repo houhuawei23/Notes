@@ -9,6 +9,14 @@ Distributed task allocation algorithm for heterogeneous unmanned aerial vehicle 
 3. 飞行器自主控制技术教育部工程研究中心, 南京 210016
 4. \* 通信作者. E-mail: yajiema@nuaa.edu.cn
 
+---
+
+TLDR
+
+[TODO]
+
+---
+
 - 关键词： 任务分配; 异构无人机集群; 异构资源; 聚类算法; 联盟形成博弈;
 - Keywords: task allocation, heterogeneous UAV swarms, heterogeneous resources, clustering algorithm, coalition formation game
 - 摘要：
@@ -483,7 +491,6 @@ end for
 
 对相似的数据进行分割归簇, 实现聚类. 为了降低原问题的规模大小, 本文在进行全局任务分配前, 作基于距离和资源对任务和无人机集群聚类的预处理, 从而缩短任务分配的计算时间, 提高任务分配效率 [18].
 
-
 #### 3.1.1 无人机集群聚类
 
 ##### 1. 聚类目标
@@ -646,7 +653,6 @@ $$
    - 否则，无人机保持当前联盟关系不变。
 4. 更新收益矩阵：
    - 根据检查结果更新未分配无人机集合 $c_{t_{0}}$ 和任务剩余需求，计算新的收益矩阵 $V$。
-
 
 ##### 3.3 迭代直至稳定
 

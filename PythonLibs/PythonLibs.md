@@ -145,6 +145,6 @@ pyreverse [options] <packages>
 # eg.
 # generate classes.dot and packages.dot of marko lib
 pyreverse marko 
-01_Misc dot -Tsvg classes.dot > classes.svg
-01_Misc dot -Tsvg packages.dot > packages.svg
+01_Misc$ dot -Tsvg classes.dot > classes.svg
+01_Misc$ dot -Tsvg packages.dot > packages.svg
 ```

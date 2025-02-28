@@ -1,5 +1,11 @@
 # Learn Drones
 
+## Softwares
+
+- [Gazebo](https://gazebosim.org/docs/all/getstarted/)
+  - robot simulation
+- 
+
 ## Labs
 
 - [机器人研究团队](https://zhuanlan.zhihu.com/p/647982110)
@@ -73,13 +79,15 @@
 - _Science Robotics_
   - 26.1 Q1 1Q
   - [science](https://www.science.org/journal/scirobotics)
-- _IEEE Transactions on Robotics (TRO)_
+- _IEEE Transactions on Robotics (**TRO**)_
   - IF 9.4, JCR Q1, CAS Q1
   - Computer Science Applications, Control and Systems Engineering, Electrical and Electronic Engineering
   - [ieee](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8860)
-- _International Journal of Robotics Research (IJRR)_
+  - 机器人领域的老牌顶刊
+- _International Journal of Robotics Research (**IJRR**)_
   - 7.5 Q1 Q2
   - [sagepub](https://journals.sagepub.com/home/ijr)
+  - 机器人领域的老牌顶刊
 - _Drones_
   - IF 4.4, JCR Q1 (Remote Sensing), CAS Q2
   - [mdpi](https://www.mdpi.com/journal/drones)
@@ -95,6 +103,12 @@
 - _Vehicular Communications_ (Engineering: Automotive Engineering)
   - IF 5.8, JCR Q1, CAS Q2
   - [sciencedirect](https://www.sciencedirect.com/journal/vehicular-communications)
+
+<br>
+
+- IEEE Transactions on Parallel and Distributed Systems (**TPDS**)
+  - ccf a, IF 5.6
+  - [ieee](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=71)
 
 ### _Robotics and Computer-Integrated Manufacturing_
 
@@ -143,10 +157,29 @@ IEEE 机器人学汇刊 (T-RO) 发表机器人学各个方面的基础论文，�
 
 ## Conference 会议
 
-- IEEE International Conference on Robotics and Automation (ICRA)
-- IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
-- Robotic: Science and Systems (RSS)
-- Conference on Robot Learning (CoRL)
+- IEEE International Conference on Robotics and Automation (**ICRA**)
+  - [icra](https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra)
+  - [all-proceedings](https://ieeexplore.ieee.org/xpl/conhome/1000639/all-proceedings)
+  - H-Index 222
+  - CCF: b CORE: b QUALIS: a1
+  - Paper Submission Opens 15 July 2024
+  - Paper Submission Deadline 15 September 2024
+  - Notification of paper acceptance/rejection 31 January 2025
+  - 7.15 sub open ~ 9.15 sub ddl ~ 1.31 acc/rej ~ 5.19 conf
+  - [ICRA2024PaperList](https://github.com/ryanbgriffiths/ICRA2024PaperList)
+- IEEE/RSJ International Conference on Intelligent Robots and Systems (**IROS**)
+  - [iros](https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros)
+  - H-Index 65
+  - CCF: c CORE: a QUALIS: a1
+  - 2025.03.01 sub ddl ~ 06.30 acc/rej ~ 2025.10.19 conf
+- Robotic: Science and Systems (**RSS**)
+  - [rss](https://roboticsconference.org/)
+  - CORE: a\*
+  - H-Index 72
+  - 1.31 sub ddl ~ 4.10 acc/rej ~ 3.21 conf
+- Conference on Robot Learning (**CoRL**)
+  - [corl](https://www.corl.org/)
+  - 4.30 sub ddl ~ 8.1 acc/rej ~ 9.27 conf
 
 ## CAA 中国自动化学会推荐学术会议、科技期刊目录
 
@@ -326,3 +359,12 @@ Gradient-based trajectory planning is part of a broader class of **optimization-
   - **基于优化的规划（例如 CHOMP、STOMP）** ：强调使用优化进行迭代细化。
 - **Machine Learning Approaches**: Use learned models to assist or replace traditional optimization techniques.
   - **机器学习方法**：使用学习模型来辅助或取代传统的优化技术。
+
+## Misc
+
+高老师认为：
+
+1. Science Robotics：认可度高，如果有比较好的科研工作，肯定是要冲一下投稿这个期刊的
+2. TRO (IEEE Transactions on Robotics） 和 IJRR (The International Journal of Robotics Research）这两个属于比较硬核的期刊，也非常好
+3. JFR (Journal of Field Robotics) 比较侧重于野外实验，但后面重组了，变化比较大
+4. RAL (IEEE Robotics & Automation Letters) 通常来说如果一个工作比较完整，也超过了一般的 conference 的会议的，稍有点程度的话，也可以投 RAL，这个也是一个很专业很好的期刊
