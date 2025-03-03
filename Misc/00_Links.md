@@ -78,12 +78,15 @@
 - Online OCR:
   - [simpletex: Foemula and Document](https://simpletex.net/)
 - AI LLM Tools:
-  - [deepseek](https://chat.deepseek.com/)
-  - [moonshot-kimi](https://kimi.moonshot.cn/)
-  - [openai-chatgpt](https://chatgpt.com/)
-  - [google gemini](https://gemini.google.com/app)
-  - [google aistudio: very good for coding](https://aistudio.google.com/)
-  - [纳米 NaMi AI](https://www.n.cn/)
-  - [秘塔 AI 搜索](https://metaso.cn/)
-  - [腾讯元宝-混元大模型](https://yuanbao.tencent.com/)
-  - [scispace: for research!!](https://scispace.com/)
+  - domestic
+    - [deepseek](https://chat.deepseek.com/)
+    - [moonshot-kimi](https://kimi.moonshot.cn/)
+    - [阿里-通义千问](https://tongyi.aliyun.com/)
+    - [纳米 NaMi AI](https://www.n.cn/)
+    - [秘塔 AI 搜索](https://metaso.cn/)
+    - [腾讯元宝-混元大模型](https://yuanbao.tencent.com/)
+  - others
+    - [openai-chatgpt](https://chatgpt.com/)
+    - [google gemini](https://gemini.google.com/app)
+    - [google aistudio: very good for coding](https://aistudio.google.com/)
+    - [scispace: for research!!](https://scispace.com/)

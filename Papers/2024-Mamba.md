@@ -1,0 +1,12 @@
+Mamba: Linear-Time Sequence Modeling with Selective State Spaces
+Mamba：基于选择性状态空间的线性时间序列建模
+Albert Gu
+Alphabetical by first name.
+Tri Dao†
+
+[text](https://arxiv.org/abs/2312.00752)
+
+Abstract摘要
+Foundation models, now powering most of the exciting applications in deep learning, are almost universally based on the Transformer architecture and its core attention module. Many subquadratic-time architectures such as linear attention, gated convolution and recurrent models, and structured state space models (SSMs) have been developed to address Transformers’ computational inefficiency on long sequences, but they have not performed as well as attention on important modalities such as language. We identify that a key weakness of such models is their inability to perform content-based reasoning, and make several improvements. First, simply letting the SSM parameters be functions of the input addresses their weakness with discrete modalities, allowing the model to selectively propagate or forget information along the sequence length dimension depending on the current token. Second, even though this change prevents the use of efficient convolutions, we design a hardware-aware parallel algorithm in recurrent mode. We integrate these selective SSMs into a simplified end-to-end neural network architecture without attention or even MLP blocks (Mamba). Mamba enjoys fast inference (5×higher throughput than Transformers) and linear scaling in sequence length, and its performance improves on real data up to million-length sequences. As a general sequence model backbone, Mamba achieves state-of-the-art performance across several modalities such as language, audio, and genomics. On language modeling, our Mamba-3B model outperforms Transformers of the same size and matches Transformers twice its size, both in pretraining and downstream evaluation.
+
+基础模型，现在正推动深度学习中最激动人心的应用，几乎无一例外地基于 Transformer 架构及其核心注意力模块。为了解决 Transformer 在长序列上的计算效率低下问题，已经开发了许多亚二次时间架构，如线性注意力、门控卷积和循环模型，以及结构化状态空间模型（SSMs）。但是，它们在语言等重要模态上的表现并不如注意力机制。我们识别出这类模型的一个关键弱点是它们无法执行基于内容推理，并进行了几项改进。首先，简单地将 SSM 参数设为输入函数的函数，通过离散模态解决了它们的弱点，使模型能够根据当前标记选择性地在序列长度维度上传播或遗忘信息。其次，尽管这种改变阻止了使用高效的卷积，但我们设计了一种硬件感知的循环模式并行算法。我们将这些选择性 SSMs 集成到一个简化的端到端神经网络架构中，该架构没有注意力机制，甚至没有 MLP 块（Mamba）。 Mamba 在快速推理（比 Transformer 高 5 ×吞吐量）和序列长度线性扩展方面表现出色，其性能在真实数据上可扩展至百万长度序列。作为通用序列模型骨干，Mamba 在语言、音频和基因组学等多个模态上实现了最先进的性能。在语言建模方面，我们的 Mamba-3B 模型在相同规模上优于 Transformer，并在预训练和下游评估中与两倍规模的 Transformer 相当。
