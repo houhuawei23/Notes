@@ -37,7 +37,7 @@
 - Radio to Txt
   - [blog: 几款免费的语音转文字工具推荐](https://www.bilibili.com/opus/748040117536423974)
   - [飞书妙记](https://www.feishu.cn/product/minutes)
-  - [buzz: Transcribe and translate audio offline on your personal computer. Powered by OpenAI&#39;s Whisper.](https://github.com/chidiwilliams/buzz)
+  - [buzz: Transcribe and translate audio offline on your personal computer. Powered by OpenAI's Whisper.](https://github.com/chidiwilliams/buzz)
 - Online Convert
   - [onlineconvertfree](https://onlineconvertfree.com/)
   - caj2pdf
