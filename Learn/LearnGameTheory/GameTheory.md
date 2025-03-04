@@ -238,7 +238,7 @@ $$
 X_{-3} = X_1 \times X_2 \times X_4
 $$
 
-## 这种展开形式在博弈论中常用于描述其他玩家的策略组合对当前玩家策略的影响。
+这种展开形式在博弈论中常用于描述其他玩家的策略组合对当前玩家策略的影响。
 
 **3. 偏好关系**
 
@@ -629,7 +629,7 @@ strategic $game.$
 1. If $( x^* , y^*)$ is a Nash equilibrium of G then $x^*$ is a maxminimizer
    for player 1 and $y*$ is a maxminimizer for player 2.
 1. If $(x^*,y^*)$ is a Nash equilibrium of G then $max_x\min_yu_1(x,y)=\min_y\max_xu_1(x,y)=u_1(x^*,y^*)$ and thus all Nash equilibria of G. yield the same payoff.
-1. If $\max_x\min_yu_1(x,y)=\min_y\max_xu_1(x,y)$ and thus, in particular, if $G$ has $a$ Nash equilibrium(see part b), $x^*$ is a maxminimizer for player 1, and $y^{* }$ is a maxminimizer for player 2, then $( x^{* }, y^{* })$ is a $Nash\textit{ equilibrium of G. }$
+1. If $\max_x\min_yu_1(x,y)=\min_y\max_xu_1(x,y)$ and thus, in particular, if $G$ has $a$ Nash equilibrium(see part b), $x^*$ is a maxminimizer for player 1, and $y^{* }$ is a maxminimizer for player 2, then $( x^{* }, y^{* })$ is a Nash equilibrium of $G$.
 
 [Proof]. We frst prove parts (a) and (b). Let $(x^{*},y^{*})$ be a Nash equilibrium of $G.$ Then $u_2(x^*,y^*)\geq u_2(x^*,y)$ for all $y\in A_2$ or, since $u_2= - u_1$, $u_1( x^* , y^* )$ $\leq$ $u_1( x^* , y)$ for all $y\in A_2.$ Hence $u_1( x^* , y^* )$ = $\min _yu_1( x^* , y)$ $\leq \max _x\min _yu_1( x, y) .$ Similarly, $u_1( x^* , y^* )$ $\geq u_1( x, y^* )$
 
@@ -637,9 +637,7 @@ strategic $game.$
 
 We frequently wish to model situations in which some of the parties are not certain of the characteristics of some of the other parties. The model of a Bayesian game, which is closely related to that of a strategic game, is designed for this purpose.
 
-As for a strategic game, two primitives of a Bayesian game are a set $N$ of players and a profile $(A_i)$ of sets of actions. We model the players' uncertainty about each other by introducing a set $\Omega$ of possible “states of nature”, each of which is a description of all the players relevant characteristics. For convenience we assume that $\Omega$ is finite Each player $i$ has a $prior\textit{belief about the state of nature given by a}$ probability measure $p_i$ on $\Omega.$ In any given play of the game some state of nature $\omega\in\Omega$ is realized. We model the players' information about the state of nature by introducing a profile $(\tau_i)$ of $signal\textit{functions, }\tau _i( \omega )$ being the signal that player $i$ observes, before choosing his action, when the state of nature is $\omega.$ Let $T_i$ be the set of all possible values of $\tau_i;$we refer to $T_i$ as the set of types of player $i.$ We assume that $p_i(\tau_i^{-1}(t_i))>0$ for all $t_i\in T_i$ (player $i$ assigns positive prior probability to every member of$T_i).$ If player $i$ receives the signal $t_i\in T_i$ then he deduces that the state is in the set $\tau_i^{-1}(t_i);$ his $posterior\textit{belief about the state that has been}$
-
-realized assigns to each state $\omega\in\Omega$ the probability $p_i(\omega)/p_i(\tau_i^{-1}(t_i))$ if $\omega\in\tau_i^{-1}(t_i)$ and the probability zero otherwise (i.e. the probability of $\omega$ conditional on $\tau_i^{-1}(t_i)).$ As an example, if $\tau_i(\omega)=\omega$ for all $\omega\in\Omega$ then player $i$ has full information about the state of nature. Alternatively, if $\Omega=\times_{i\in N}T_{i}$ and for each player $i$ the probability measure $p_i$ is a product measure on $\Omega$ and $\tau_i(\omega)=\omega_i$ then the players' signals are independent and player $i$ does not learn from his signal anything about the other players’ information.
+As for a strategic game, two primitives of a Bayesian game are a set $N$ of players and a profile $(A_i)$ of sets of actions. We model the players' uncertainty about each other by introducing a set $\Omega$ of possible “states of nature”, each of which is a description of all the players relevant characteristics. For convenience we assume that $\Omega$ is finite Each player $i$ has a prior belief about the state of nature given by a probability measure $p_i$ on $\Omega.$ In any given play of the game some state of nature $\omega\in\Omega$ is realized. We model the players' information about the state of nature by introducing a profile $(\tau_i)$ of signal functions, $\tau _i( \omega )$ being the signal that player $i$ observes, before choosing his action, when the state of nature is $\omega.$ Let $T_i$ be the set of all possible values of $\tau_i;$we refer to $T_i$ as the set of types of player $i.$ We assume that $p_i(\tau_i^{-1}(t_i))>0$ for all $t_i\in T_i$ (player $i$ assigns positive prior probability to every member of$T_i).$ If player $i$ receives the signal $t_i\in T_i$ then he deduces that the state is in the set $\tau_i^{-1}(t_i);$ his posterior belief about the state that has been realized assigns to each state $\omega\in\Omega$ the probability $p_i(\omega)/p_i(\tau_i^{-1}(t_i))$ if $\omega\in\tau_i^{-1}(t_i)$ and the probability zero otherwise (i.e. the probability of $\omega$ conditional on $\tau_i^{-1}(t_i)).$ As an example, if $\tau_i(\omega)=\omega$ for all $\omega\in\Omega$ then player $i$ has full information about the state of nature. Alternatively, if $\Omega=\times_{i\in N}T_{i}$ and for each player $i$ the probability measure $p_i$ is a product measure on $\Omega$ and $\tau_i(\omega)=\omega_i$ then the players' signals are independent and player $i$ does not learn from his signal anything about the other players’ information.
 
 As in a strategic game, each player cares about the action profile; in addition he may care about the state of nature. Now, even if he knows the action taken by every other player in every state of nature, a player may be uncertain about the pair $(a,\omega)$ that will be realized given any action that he takes, since he has imperfect information about the state of nature. Therefore we include in the model a profile $(\succsim_i)$ of preference relations over lotteries on $A\times\Omega$ (where, as before, $A=\times_j\in NA_j$). To summarize, we make the following definition.
 
@@ -728,7 +726,6 @@ In brief, in a Nash equilibrium of a Bayesian game each player chooses the best 
 - 在贝叶斯博弈的纳什均衡中，每个参与人根据其接收到的信号和由此推断的状态及其他参与人行动，选择最优行动。
 - 确定均衡时，只需知道参与人如何比较在相同状态分布下的彩票。
 
-
 贝叶斯博弈用于建模信息不对称的情况，其核心要素包括参与人集合、状态空间、信号函数和先验信念。贝叶斯博弈的纳什均衡是战略博弈的纳什均衡，其中每个参与人根据其类型（信号）选择最优行动。均衡的定义依赖于参与人的后验信念和行动组合生成的彩票。这一模型为分析不完全信息下的策略互动提供了重要工具。
 
 简而言之，在贝叶斯博弈的纳什均衡中，每个参与人会根据其接收到的信号以及从该信号中推断出的状态和其他参与人的行动，选择对自己最有利的行动。需要注意的是，判断一个行动组合是否是贝叶斯博弈的纳什均衡，我们只需知道每个参与人如何比较在 $\Omega$ 上分布相同的 $A \times \Omega$ 上的彩票：参与人无需比较在 $\Omega$ 上分布不同的彩票。因此，从纳什均衡的角度来看，贝叶斯博弈中对参与人偏好的描述包含了一些不必要的信息。（这种冗余性）在战略博弈中也有类似的情况：定义战略博弈的纳什均衡时，我们只需知道任何参与人 $i$ 如何比较结果 $(a_{-i}, a_i)$ 与结果 $(a_{-i}, b_i)$。
@@ -768,7 +765,6 @@ Can every situation in which the players are uncertain about each other's knowle
 - **共同先验信念**：Harsanyi 的假设简化了模型，但对玩家后验信念的关系有强约束。
 - **知识不确定性**：贝叶斯博弈可以进一步扩展，用于建模玩家对其他玩家信念的不确定性，但这需要复杂的数学构造。
 
-
 ### 3 Mixed, Correlated, and Evolutionary Equilibrium 31
 
 - 3.1 Mixed Strategy Nash Equilibrium 31
@@ -792,3 +788,301 @@ Can every situation in which the players are uncertain about each other's knowle
 - 5.4 Knowledge and Solution Concepts 76
 - 5.5 The Electronic Mail Game 81
 - Notes 84
+
+### IV Coalitional Games 9
+
+The primitives of the models we study in Parts I, II, and III (often referred to as“noncooperative” games) are the players' sets of possible actions and their preferences over the possible outcomes, where an outcome is a profile of actions; each action is taken by a single playen autonomously. In this part we study the model of a coalitional game. One primitive of this model is the collection of sets of joint actions that each group of players (coalition) can take independently of the remaining players. An outcome of a coalitional game is a specification of the coalition that forms and the joint action it takes. (More general models, in which many coalitions may form simultaneously, are discussed in the literature.) The other primitive of the model of a coalitional game is the profile of the players' preferences over the set of all possible outcomes. Thus although actions are taken by coalitions, the theory is based (as are the theories in the other parts of the book) on the individuals preferences.
+
+A solution concept for coalitional games assigns to each game a set of outcomes. As before, each solution concept we study captures the consequences of a natural line of reasoning for the participants in a game; it defines a set of arrangements that are stable in some sense. In general the stability requirement is that the outcome be immune to deviations of a certain sort by groups of players; by contrast, most (though not all) solutions for noncooperative games require immunity to deviations by individual players. Many variants of the solution concepts we study are analyzed in the literature; we consider a sample designed to illustrate the main ideas.
+
+A coalitional model is distinguished from a noncooperative model primarily by its focus on what groups of players can achieve rather than on what individual players can do and by the fact that it does not consider the details of how groups of players function internally. If we wish to model the possibility of coalition formation in a noncooperative game then we must specify how coalitions form and how their members choose joint actions. These details are absent from a coalitional game, so that the outcome of such a game does not depend on them.
+
+To illustrate the differences between the two modeling approaches, consider the following situation. Each of a group of individuals owns a bundle of inputs and has access to a technology for producing a valuable single output. Each individual's inputs are unproductive in his own technology but productive in some other individual's technology. A noncooperative model of this situation specifies precisely the set of actions that is available to each individual: perhaps each individual can announce a price vector at which he is willing to trade inputs, or perhaps he can propose a distribution of inputs for the whole of the society. A coalitional model, by contrast, starts from the sets of payoff vectors that each group of individuals can jointly achieve. A coalition may use contracts, threats, or promises to achieve a high level of production; these institutions are not modeled explicitly in a coalitional game.
+
+We do not view either of the two approaches as superior or more basic. Each of them reflects different kinds of strategic considerations and contributes to our understanding of strategic reasoning. The study of the interconnections between noncooperative and cooperative models can also be illuminating.
+
+在第一、二、三部分中，我们研究的模型（通常称为“非合作”博弈）的基本要素是玩家的可能行动集及其对可能结果的偏好，其中结果是行动的剖面；每个行动由单个玩家自主采取。在这一部分，我们将研究联盟博弈的模型。该模型的一个基本要素是每个玩家群体（联盟）可以独立于其他玩家采取的共同行动集。联盟博弈的结果是形成的联盟及其采取的共同行动的说明。（更一般的模型，其中多个联盟可能同时形成，在文献中有讨论。）联盟博弈模型的另一个基本要素是玩家对所有可能结果集的偏好剖面。因此，尽管行动是由联盟采取的，但该理论（如书中其他部分的理论一样）基于个人的偏好。
+
+联盟博弈的解概念为每个博弈分配一组结果。与之前一样，我们研究的每个解概念都捕捉了博弈参与者自然推理的后果；它定义了一组在某种意义上是稳定的安排。一般来说，稳定性要求是结果对某种类型的玩家群体偏离具有免疫力；相比之下，大多数（尽管不是全部）非合作博弈的解要求对单个玩家的偏离具有免疫力。文献中分析了我们研究的解概念的许多变体；我们考虑了一些旨在说明主要思想的样本。
+
+联盟模型与非合作模型的主要区别在于，它关注的是玩家群体可以实现的目标，而不是单个玩家可以做什么，并且它不考虑玩家群体内部如何运作的细节。如果我们希望在非合作博弈中建模联盟形成的可能性，那么我们必须指定联盟如何形成以及其成员如何选择共同行动。这些细节在联盟博弈中是不存在的，因此这种博弈的结果不依赖于它们。
+
+为了说明这两种建模方法的区别，考虑以下情况。一组个体各自拥有一组投入，并且可以使用一种技术来生产一种有价值的产品。每个个体的投入在自己的技术中是无生产力的，但在其他个体的技术中是有生产力的。这种情况的非合作模型精确指定了每个个体可用的行动集：也许每个个体可以宣布他愿意交易投入的价格向量，或者他可以提出整个社会的投入分配。相比之下，联盟模型从每个个体群体可以共同实现的支付向量集开始。联盟可以使用合同、威胁或承诺来实现高水平的生产；这些制度在联盟博弈中没有明确建模。
+
+我们并不认为这两种方法中的任何一种更优越或更基本。它们各自反映了不同类型的战略考虑，并有助于我们对战略推理的理解。非合作模型和合作模型之间相互关系的研究也可能具有启发性。
+
+### 13 The Core 257
+
+- 13.1 Coalitional Games with Transferable Payoff 257
+- 13.2 The Core 258
+- 13.3 Nonemptiness of the Core 262
+- 13.4 Markets with Transferable Payoff 263
+- 13.5 Coalitional Games without Transferable Payoff 268
+- 13.6 Exchange Economies 269
+- Notes 274
+
+- 可转移支付联盟博弈
+- 核
+- 可转移支付市场
+- 无可转移联盟博弈
+- 交换经济
+
+The core is a solution concept for coalitional games that requires that no set of players be able to break away and take a joint action that makes all of them better off. After defning the concept and giving conditions for its nonemptiness, we explore its connection with the concept of a competitive equilibrium in a model of a market.
+
+#### 13.1 Coalitional Games with Transferable Payoff
+
+We begin with a simple version of a coalitional game in which each group of players is associated with a single number, interpreted as the payoff that is available to the group; there are no restrictions on how this payoff may be divided among the members of the group.
+
+DEFINITION 257.1
+
+A coalitional game with transferable payoff cnsists of
+
+- a finite set $N$ (the set of players)
+- a function $v$ that associates with every nonempty subset $S$ of $N$ (acoalition) a real number $v(S)$ (the worth of $S$).
+
+For each coalition $S$ the number $v(S)$ is the total payoff that is available for division among the members of $S.$ That is, the set of joint actions that the coalition $S$ can take consists of all possible divisions of $v(S)$ among the members of $S.$ (Later, in Section 13.5, we define a more general notion of a coalitional game in which each coalition is associated with a set of payoff vectors that is not necessarily the set of all possible divisions of some fixed amount.)
+
+In many situations the payoff that a coalition can achieve depends on the actions taken by the other players. However, the interpretation of a
+
+coalitional game that best fts our discussion is that it models a situation in which the actions of the players who are not part of $S$ do not influence $v(S).$ In the literature other interpretations are given to a coalitional game; for example, $v(S)$ is sometimes interpreted to be the most payoff that the coalition $S$ can guarantee independently of the behavior of the coalition $N\setminus S.$ These other interpretations alter the interpretation of the solutions concepts defined; we do not discuss them here.
+Throughout this chapter and the next we assume that the coalitional games with transferable payoff that we study have the property that the worth of the coalition $N$ of all players is at least as large as the sum of the worths of the members of any partition of $N.$ This assumption ensures that it is optimal that the coalition $N$ of all players form, as is required by our interpretations of the solution concepts we study (though the formal analysis is meaningful without the assumption).
+
+DEFINITION 258.1
+
+A coalitional game $\langle N,v\rangle$ with transferable payoff is cohesive if
+
+$$v(N)\geq\sum_{k=1}^Kv(S_k)\quad\text{for every partition }\{S_1,\ldots,S_K\}\text{of }N.$$
+
+(This is a special case of the condition of $superadditivity$, which requires that $v(S\cup T)\geq v(S)+v(T)$ for all coalitions $S$ and $T$ with $S\cap T=\varnothing$.)
+
+#### 13.2 The Core
+
+The idea behind the core is analogous to that behind a Nash equilibrium of a noncooperative game: an outcome is stable if no deviation is profitable. In the case of the core, an outcome is stable if no coalition can deviate and obtain an outcome better for all its members. For a coalitional game with transferable payoff the stability condition is that no coalition can obtain a payoff that exceeds the sum of its members'current payoffs. Given our assumption that the game is cohesive we confine ourselves to outcomes in which the coalition $N$ of all players forms.
+
+Let $\langle N,v\rangle$ be a coalitional game with transferable payoff. For any profile $(x_i)_{i\in N}$ of real numbers and any coalition $S$ we let $x(S)=\sum_i\in Sx_i.$ A vector $(x_i)_{i\in S}$ of real numbers is an $S$- feasible payoff vector if $x( S)$ = $v(S)$. We refer to an $N$-feasible payoff vector as a feasible payoff profile.
+
+DEFINITION 258.2
+
+The core of the coalitional game with transferable payoff $\langle N,v\rangle$ is the set of feasible payoff profiles $(x_i)_i\in N$ for which there is no coalition $S$ and $S$-feasible payoff vector $(y_{i})_{i\in S}$ for
+which $y_{i}>x_{i}$ for all $i\in S.$
+
+A definition that is obviously equivalent is that the core is the set of feasible payoff profiles $(x_i)_{i\in N}$ for which $v(S)\leq x(S)$ for every coalition $S.$ Thus the core is the set of payoff profiles satisfying a system of weak linear inequalities and hence is closed and convex.
+
+The following examples indicate the wide range of situations that may be modeled as coalitional games and illustrate the notion of the core.
+
+EXAMPLE 259. 1
+
+(A three-player majority game) Suppose that three players can obtain one unit of payoff, any two of them can obtain $\alpha\in[0,1]$ independently of the actions of the third, and each player alone can obtain nothing, independently of the actions of the remaining two players. We can model this situation as the coalitional game $\langle N,v\rangle$ in which $N=\{1,2,3\},v(N)=1,v(S)=\alpha$ whenever $|S|=2$, and $v(\{i\})=0$ for all $i\in N.$ The core of this game is the set of all nonnegative payoff profles $(x_1,x_2,x_3)$ for which $x(N)=1$ and $x(S)\geq\alpha$ for every two-player coalition $S.$ Hence the core is nonempty if and only if $\alpha\leq2/3.$
+
+EXAMPLE 259.2
+
+An expedition of $n$ people has discovered treasure in the mountains; each pair of them can carry out one piece. A coalitional game that models this situation is $\langle N,v\rangle$, where
+
+$$
+\left.v(S)=\left\{\begin{array}{ll}|S|/2&\text{if }|S|\text{ is even}\\(|S|-1)/2&\text{if }|S|\text{ is odd.}\end{array}\right.\right.
+$$
+
+If $| N| \geq 4$ is even then the core consists of the single payoff profile $( \frac 12, \ldots , \frac 12) .$ If $| N| \geq 3$ is odd then the core is empty.
+
+### 13 核心 257
+
+核心是联盟博弈的一个解概念，要求没有任何玩家群体能够脱离并采取一个使他们都更好的共同行动。在定义了这一概念并给出了其非空性的条件后，我们探讨了其与市场模型中竞争均衡概念的联系。
+
+#### 13.1 具有可转移支付的联盟博弈 Coalitional Games with Transferable Payof
+
+我们从一个简单的联盟博弈版本开始，其中每个玩家群体与一个单一数字相关联，解释为该群体可用的支付；对于如何在群体成员之间分配这一支付没有任何限制。
+
+**定义 257.1**
+
+具有可转移支付的联盟博弈包括：
+
+- 一个有限集 $N$（玩家集）
+- 一个函数 $v$，它将每个非空子集 $S$（联盟）与一个实数 $v(S)$（$S$ 的价值）相关联。
+
+对于每个联盟 $S$，数字 $v(S)$ 是可用于在 $S$ 成员之间分配的总支付。也就是说，联盟 $S$ 可以采取的共同行动集包括 $v(S)$ 在 $S$ 成员之间的所有可能分配。（稍后，在第 13.5 节中，我们定义了一个更一般的联盟博弈概念，其中每个联盟与一组支付向量相关联，这组支付向量不一定是某个固定金额的所有可能分配。）
+
+在许多情况下，联盟可以实现的支付取决于其他玩家采取的行动。然而，最适合我们讨论的联盟博弈解释是，它模拟了那些不属于 $S$ 的玩家的行动不影响 $v(S)$ 的情况。在文献中，联盟博弈还有其他解释；例如，$v(S)$ 有时被解释为联盟 $S$ 可以独立于联盟 $N\setminus S$ 的行为保证的最大支付。这些其他解释改变了解概念的定义解释；我们在此不讨论它们。
+
+在本章和下一章中，我们假设我们研究的具有可转移支付的联盟博弈具有以下性质：所有玩家的联盟 $N$ 的价值至少与 $N$ 的任何分区的成员价值之和一样大。这一假设确保了所有玩家的联盟 $N$ 形成是最优的，正如我们对所研究解概念的解释所要求的那样（尽管在没有这一假设的情况下，正式分析也是有意义的）。
+
+**定义 258.1**
+
+具有可转移支付的联盟博弈 $\langle N,v\rangle$ 是**凝聚的 (cohesive)**，如果
+
+$$v(N)\geq\sum_{k=1}^Kv(S_k)\quad\text{对于 }N\text{ 的每个分区 }\{S_1,\ldots,S_K\}.$$
+
+（这是 **超加性 (superadditivity)** 条件的一个特例，超加性要求对于所有不相交的联盟 $S$ 和 $T$，$v(S\cup T)\geq v(S)+v(T)$。）
+
+#### 13.2 核心
+
+核心背后的思想与非合作博弈中的纳什均衡类似：如果没有偏离是有利可图的，那么结果是稳定的。在核心的情况下，如果没有联盟可以偏离并获得对其所有成员更好的结果，那么结果是稳定的。对于具有可转移支付的联盟博弈，稳定性条件是没有任何联盟可以获得超过其成员当前支付总和的支付。鉴于我们假设博弈是凝聚的，我们将自己限制在所有玩家的联盟 $N$ 形成的结果中。
+
+设 $\langle N,v\rangle$ 是一个具有可转移支付的联盟博弈。对于任何 **实数剖面 (profile of real numbers)** $(x_i)_{i\in N}$ 和任何联盟 $S$，我们令 $x(S)=\sum_{i\in S}x_i$。一个实数向量 $(x_i)_{i\in S}$ 是一个 $S$-**可行支付向量** (S-feasible payoff vector)，如果 $x(S) = v(S)$。我们将 $N$-可行支付向量称为**可行支付剖面 (feasible payoff profile)**。
+
+**定义 258.2**
+
+具有可转移支付的联盟博弈 $\langle N,v\rangle$ 的 **核心(Core)** 是可行支付剖面 $(x_i)_{i\in N}$ 的集合，对于这些剖面，不存在联盟 $S$ 和 $S$-可行支付向量 $(y_{i})_{i\in S}$，使得对于所有 $i\in S$，$y_{i}>x_{i}$。
+
+一个显然等价的定义是，核心是可行支付剖面 $(x_i)_{i\in N}$ 的集合，对于这些剖面，$v(S)\leq x(S)$ 对于每个联盟 $S$。因此，核心是满足一组弱线性不等式的支付剖面的集合，因此是封闭且凸的。
+
+以下示例说明了可以建模为联盟博弈的各种情况，并说明了核心的概念。
+
+**示例 259.1**
+
+（一个三人多数博弈）假设三个玩家可以获得一个单位的支付，任何两个玩家可以独立于第三个玩家的行动获得 $\alpha\in[0,1]$，而每个玩家单独无法获得任何支付，独立于其他两个玩家的行动。我们可以将这种情况建模为联盟博弈 $\langle N,v\rangle$，其中 $N=\{1,2,3\},v(N)=1,v(S)=\alpha$ 当 $|S|=2$ 时，$v(\{i\})=0$ 对于所有 $i\in N$。这个博弈的核心是所有非负支付剖面 $(x_1,x_2,x_3)$ 的集合，对于这些剖面，$x(N)=1$ 且 $x(S)\geq\alpha$ 对于每个两人联盟 $S$。因此，核心非空当且仅当 $\alpha\leq2/3$。
+
+**示例 259.2**
+
+一支由 $n$ 人组成的探险队在山区发现了宝藏；每两个人可以携带一件宝物。一个联盟博弈 $\langle N,v\rangle$ 可以模拟这种情况，其中
+
+$$
+\left.v(S)=\left\{\begin{array}{ll}|S|/2&\text{如果 }|S|\text{ 是偶数}\\(|S|-1)/2&\text{如果 }|S|\text{ 是奇数。}\end{array}\right.\right.
+$$
+
+如果 $| N| \geq 4$ 是偶数，则核心由单一支付剖面 $( \frac 12, \ldots , \frac 12)$ 组成。如果 $| N| \geq 3$ 是奇数，则核心为空。
+
+- **可转移支付的联盟博弈**：描述玩家如何通过合作分配总收益的模型。
+- **核心**：一种稳定的收益分配方案，没有任何玩家群体有动力去破坏现有的合作。
+- **实数剖面**：表示每个玩家在分配方案中获得的收益的一组实数。
+
+#### 13.3 Nonemptiness of the Core
+
+We now derive a condition under which the core of a coalitional game is nonempty. Since the core is defined by a system of linear inequalities such a condition could be derived from the conditions for the existence of a solution to a general system of inequalities. However, since the system of inequalities that defines the core has a special structure we are able to derive a more specific condition.
+Denote by $\mathcal{C}$ the set of all coalitions, for any coalition $S$ denote by $\mathbb{R}^S$ the $|S|$-dimensional Euclidian space in which the dimensions are indexed by the members of $S$, and denote by $1_S\in\mathbb{R}^N$ the characteristic vector of $S$ given by
+
+$$(1_S)_i=\left\{\begin{matrix}1&\text{if }i\in S\\0&\text{otherwise.}\end{matrix}\right.$$
+
+A collection $(\lambda_S)_{S\in\mathcal{C}}$ of numbers in [0,1] is a balanced collection of weights if for every player $i$ the sum of $\lambda_S$ over all the coalitions that contain $i$ is $1:\sum_{S\in\mathcal{C}}\lambda_S1_S=1_N.$ As an example, let $|N|=3.$ Then the collection $(\lambda_S)$ in which $\lambda_S=\frac12$ if $|S|=2$ and $\lambda_S=0$ otherwise is a balanced collection of weights; so too is the collection $(\lambda_S)$ in which $\lambda_{S}=1$ if $|S|=1$ and $\lambda_S=0$ otherwise. A game $\langle N,v\rangle$ is balanced if $\sum_{S\in\mathcal{C}}\lambda_Sv(S)\leq v(N)$ for every balanced collection of weights.
+One interpretation of the notion of a balanced game is the following. Each player has one unit of time, which he must distribute among all the coalitions of which he is a member. In order for a coalition $S$ to be active for the fraction of time $\lambda_S$, all its members must be active in $S$ for this fraction of time, in which case the coalition yields the payoff $\lambda_Sv(S).$ In this interpretation the condition that the collection of weights be balanced is a feasibility condition on the players' allocation of time, and a game is balanced if there is no feasible allocation of time that yields the players more than $v(N).$
+The following result is referred to as the Bondareva-Shapley theorem.
+
+PROPOSITION $262. 1
+
+A coalitional game with transferable payoff has a nonempty core if and only if it is balanced.
+
+Proof. Let $\langle N,v\rangle$ be a coalitional game with transferable payoff. First let $x$ be a payoff profile in the core of $\langle N,v\rangle$ and let $(\lambda_S)_S\in\mathcal{C}$ be a balanced collection of weights. Then
+
+$$\sum_{S\in\mathcal{C}}\lambda_Sv(S)\leq\sum_{S\in\mathcal{C}}\lambda_Sx(S)=\sum_{i\in N}x_i\sum_{S\ni i}\lambda_S=\sum_{i\in N}x_i=v(N),$$
+
+so that $\langle N,v\rangle$ is balanced.
+
+Now assume that $\langle N,v\rangle$ is balanced. Then there is no balanced collection $(\lambda_S)_{S\in\mathcal{C}}$ of weights for which$\sum_S\in\mathcal{C}\lambda_Sv(S)>v(N).$ Therefore the convex set $\{(1_N,v(N)+\epsilon)\in\mathbb{R}^{|N|+1}{:}\epsilon>0\}$ is disjoint from the convex cone
+
+$$\{y\in\mathbb{R}^{|N|+1}\colon y=\sum_{S\in\mathcal{C}}\lambda_S(1_S,v(S))\text{ where }\lambda_S\geq0\text{ for all }S\in\mathcal{C}\},$$
+
+since if not then $1_N=\underline{\sum}_{S\in\mathcal{C}}\lambda_S1_S$, so that $(\lambda_S)_{S\in\mathcal{C}}$ is a balanced collection of weights and $\sum_{S\in\mathcal{C}}\lambda_Sv(S)>v(N).$ Thus by the separating hyperplane theorem (see, for example, Rockafeller (1970,Theorem 11.3)) there is a nonzero vector $(\alpha_N,\alpha)\in\mathbb{R}^|N|\times\mathbb{R}$ such that
+
+$$(\alpha_N,\alpha)\cdot y\geq0>(\alpha_N,\alpha)\cdot(1_N,v(N)+\epsilon)$$
+
+for all $y$ in the cone and all $\epsilon>0.$ Since $(1_N,v(N))$ is in the cone, we have $\alpha<0.$
+
+Now let $x=\alpha_N/(-\alpha).$ Since $(1_S,v(S))$ is in the cone for all $S\in\mathcal{C}$, we have $x(S)=x\cdot1_S\geq v(S)$ for all $S\in\mathcal{C}$ by the left-hand inequality in (263.1), and $v(N)\geq1_Nx=x(N)$ from the right-hand inequality. Thus $v(N)=x(N)$, so that the payoff profile $x$ is in the core of $\langle N, v\rangle$.
+
+#### 13.3 核心的非空性
+
+我们现在推导出一个条件，使得联盟博弈的核心非空。由于核心是由一组线性不等式定义的，因此可以从一般不等式系统存在解的条件中推导出这一条件。然而，由于定义核心的不等式系统具有特殊结构，我们能够推导出一个更具体的条件。
+
+用 $\mathcal{C}$ 表示所有联盟的集合，对于任何联盟 $S$，用 $\mathbb{R}^S$ 表示 $|S|$ 维欧几里得空间，其中维度由 $S$ 的成员索引，并用 $1_S\in\mathbb{R}^N$ 表示 $S$ 的特征向量，定义为：
+
+$$(1_S)_i=\left\{\begin{matrix}1&\text{如果 }i\in S\\0&\text{否则。}\end{matrix}\right.$$
+
+如果对于每个玩家 $i$，包含 $i$ 的所有联盟的 $\lambda_S$ 之和为 $1$，即 $\sum_{S\in\mathcal{C}}\lambda_S1_S=1_N$，则 $(\lambda_S)_{S\in\mathcal{C}}$ 是一个平衡权重集合。例如，设 $|N|=3$，则当 $|S|=2$ 时 $\lambda_S=\frac12$，否则 $\lambda_S=0$ 的集合 $(\lambda_S)$ 是一个平衡权重集合；同样，当 $|S|=1$ 时 $\lambda_{S}=1$，否则 $\lambda_S=0$ 的集合 $(\lambda_S)$ 也是一个平衡权重集合。如果对于每个平衡权重集合，$\sum_{S\in\mathcal{C}}\lambda_Sv(S)\leq v(N)$，则博弈 $\langle N,v\rangle$ 是**平衡的**。
+
+平衡博弈的概念可以解释为：每个玩家有一单位的时间，他必须将其分配给他所属的所有联盟。为了使联盟 $S$ 在时间比例 $\lambda_S$ 内活跃，其所有成员必须在这段时间内活跃于 $S$，此时联盟产生支付 $\lambda_Sv(S)$。在这种解释中，权重集合的平衡条件是玩家时间分配的可行性条件，而博弈是平衡的，如果没有可行的时间分配能够使玩家获得超过 $v(N)$ 的支付。
+
+以下结果被称为**邦达列娃-沙普利定理**。
+
+**命题 262.1**
+
+一个具有可转移支付的联盟博弈具有非空核心，当且仅当它是平衡的。
+
+**证明：**  
+设 $\langle N,v\rangle$ 是一个具有可转移支付的联盟博弈。首先，设 $x$ 是 $\langle N,v\rangle$ 核心中的一个支付剖面，$(\lambda_S)_S\in\mathcal{C}$ 是一个平衡权重集合。那么
+
+$$\sum_{S\in\mathcal{C}}\lambda_Sv(S)\leq\sum_{S\in\mathcal{C}}\lambda_Sx(S)=\sum_{i\in N}x_i\sum_{S\ni i}\lambda_S=\sum_{i\in N}x_i=v(N),$$
+
+因此 $\langle N,v\rangle$ 是平衡的。
+
+现在假设 $\langle N,v\rangle$ 是平衡的。那么不存在任何平衡权重集合 $(\lambda_S)_{S\in\mathcal{C}}$ 使得 $\sum_S\in\mathcal{C}\lambda_Sv(S)>v(N)$。因此，凸集 $\{(1_N,v(N)+\epsilon)\in\mathbb{R}^{|N|+1}{:}\epsilon>0\}$ 与凸锥
+
+$$\{y\in\mathbb{R}^{|N|+1}\colon y=\sum_{S\in\mathcal{C}}\lambda_S(1_S,v(S))\text{ 其中 }\lambda_S\geq0\text{ 对所有 }S\in\mathcal{C}\}$$
+
+不相交，因为如果不相交，则 $1_N=\underline{\sum}_{S\in\mathcal{C}}\lambda_S1_S$，因此 $(\lambda_S)_{S\in\mathcal{C}}$ 是一个平衡权重集合，且 $\sum_{S\in\mathcal{C}}\lambda_Sv(S)>v(N)$。因此，根据分离超平面定理（例如，参见 Rockafeller (1970, Theorem 11.3)），存在一个非零向量 $(\alpha_N,\alpha)\in\mathbb{R}^|N|\times\mathbb{R}$，使得
+
+$$(\alpha_N,\alpha)\cdot y\geq0>(\alpha_N,\alpha)\cdot(1_N,v(N)+\epsilon)$$
+
+对于锥中的所有 $y$ 和所有 $\epsilon>0$。由于 $(1_N,v(N))$ 在锥中，我们有 $\alpha<0$。
+
+现在设 $x=\alpha_N/(-\alpha)$。由于 $(1_S,v(S))$ 对所有 $S\in\mathcal{C}$ 都在锥中，根据 (263.1) 左侧不等式，我们有 $x(S)=x\cdot1_S\geq v(S)$ 对所有 $S\in\mathcal{C}$，并且根据右侧不等式，$v(N)\geq1_Nx=x(N)$。因此 $v(N)=x(N)$，所以支付剖面 $x$ 在 $\langle N, v\rangle$ 的核心中。
+
+#### 13.5 Coalitional Games without Transferable Payoff
+
+In a coalitional game with transferable payoff each coalition $S$ is characterized by a single number $v(S)$, with the interpretation that $v(S)$ is a payoff that may be distributed in any way among the members of $S.$ We now study a more general concept, in which each coalition cannot necessarily achieve all distributions of some fıxed payoff; rather, each coalition $S$ is characterized by an arbitrary set $V(S)$ of consequences. DEFINITION 268.2 A coalitional game (without transferable payoff) consists of
+
+- a finite set $N$ (the set of players)
+
+- a set $X$ (the set of consequences)
+- a function $V$ that assigns to every nonempty subset $S$ of $N$ a coalition a set $V( S) \subseteq X$.
+- for each player $i\in N$ a preference relation $\succsim_i$ on $X.$
+
+Any coalitional game with transferable payoff $\langle N,v\rangle$ (Definition 257.1) can be associated with a general coalitional game $\langle N,X,V,(\succsim_i)_{i\in N}\rangle$ as follows: $X=\mathbb{R}^N,V(S)=\{x\in\mathbb{R}^N:\sum_{i\in S}x_i=v(S)$ and $x_j=0$ if $j\in$ $N\setminus S\}$ for each coalition $S$, and $x\succsim_iy$ if and only if $x_i\geq y_i.$ Under this association the set of coalitional games with transferable payoff is a subset of the set of all coalitional games.
+
+The definition of the core of a general coalitional game is a natural extension of our definition for the core of a game with transferable payoff (Definition 258.2).
+
+DEFINITION 268.3
+
+The core of the coalitional game $\langle N,V,X$, $(\succsim_{i})_{i\in N}\rangle$ is the set of all $x\in V(N)$ for which there is no coalition $S$ and $y\in V(S)$ for which $y\succ_ix$ for all $i\in S.$
+
+Under conditions like that of balancedness for a coalitional game with transferable payoff (see Section 13.3) the core of a general coalitional game is nonempty (see Scarf (1967), Billera (1970), and Shapley (1973)).
+
+We do not discuss these conditions here.
+
+#### 13.5 无转移支付的联盟博弈
+
+在具有可转移支付的联盟博弈中，每个联盟 $S$ 由一个单一数字 $v(S)$ 来表征，其含义是 $v(S)$ 是一种可以在 $S$ 成员之间以任意方式分配的支付。我们现在研究一个更一般的概念，其中每个联盟不一定能够实现某种固定支付的所有分配；相反，每个联盟 $S$ 由一个任意的结果集 $V(S)$ 来表征。
+
+**定义 268.2**  
+
+一个（无转移支付的）联盟博弈包括：
+
+- 一个有限集 $N$（玩家集）
+- 一个集合 $X$（结果集）
+- 一个函数 $V$，它为 $N$ 的每个非空子集 $S$（联盟）分配一个集合 $V(S) \subseteq X$。
+- 对于每个玩家 $i\in N$，$X$ 上的一个偏好关系 $\succsim_i$。
+
+任何具有可转移支付的联盟博弈 $\langle N,v\rangle$（定义 257.1）都可以与一个一般联盟博弈 $\langle N,X,V,(\succsim_i)_{i\in N}\rangle$ 关联如下：$X=\mathbb{R}^N$，$V(S)=\{x\in\mathbb{R}^N:\sum_{i\in S}x_i=v(S)$ 且如果 $j\in N\setminus S$ 则 $x_j=0\}$ 对于每个联盟 $S$，并且 $x\succsim_iy$ 当且仅当 $x_i\geq y_i$。在这种关联下，具有可转移支付的联盟博弈集是所有联盟博弈集的一个子集。
+
+一般联盟博弈的核心定义是对具有可转移支付的博弈核心定义（定义 258.2）的自然扩展。
+
+**定义 268.3**  
+
+联盟博弈 $\langle N,V,X,(\succsim_{i})_{i\in N}\rangle$ 的**核心**是所有 $x\in V(N)$ 的集合，其中不存在任何联盟 $S$ 和 $y\in V(S)$，使得对于所有 $i\in S$，$y\succ_ix$。
+
+在类似于具有可转移支付的联盟博弈的平衡性条件下（参见第 13.3 节），一般联盟博弈的核心是非空的（参见 Scarf (1967)、Billera (1970) 和 Shapley (1973)）。
+
+我们在此不讨论这些条件。
+
+### 14 Stable Sets, the Bargaining Set, and the Shapley Value 277
+
+- 14.1 Two Approaches 277
+- 14.2 The Stable Sets of von Neumann and Morgenstern 278
+- 14.3 The Bargaining Set, Kernel, and Nucleolus 281
+- 14.4 The Shapley Value 289
+- Notes 297
+
+#### 14.1 Two Approaches 277
+
+#### 14.2 The Stable Sets of von Neumann and Morgenstern 278
+
+#### 14.3 The Bargaining Set, Kernel, and Nucleolus 281
+
+#### 14.4 The Shapley Value 289
+
+### 15 The Nash Solution 299
+
+- 15.1 Bargaining Problems 299
+- 15.3 The Nash Solution: Definition and Characterization 301
+- 15.3 An Axiomatic Definition 305
+- 15.4 The Nash Solution and the Bargaining Game of Alternating Offers 310
+- 15.5 An Exact Implementation of the Nash Solution 311
+- Notes 312
