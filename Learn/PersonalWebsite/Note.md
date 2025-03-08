@@ -39,7 +39,7 @@ Of course, dynamic sites have their advantages as well. The addition of an admin
   - old still have bugs
 - [mdBook - rust](https://github.com/rust-lang/mdBook)
   - math delimiters support sick
-  - [text](https://hellowac.github.io/mdbook-doc-zh/index.html)
+  - [mdbook-doc-zh](https://hellowac.github.io/mdbook-doc-zh/index.html)
 - [retype](https://retype.com/)
   - free plan only support 100 pages
 - [mkdocs](https://www.mkdocs.org/)

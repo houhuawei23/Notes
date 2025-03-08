@@ -1,9 +1,7 @@
 name: 'Gitbook Action Build'
 
 on:
-    push:
-        branches:
-            - main # trigger branch
+  workflow_dispatch
 
 jobs:
     build:
