@@ -8,33 +8,13 @@
 - Guides
   - [Self-Cultivation-of-Programmers](Guides/Self-Cultivation-of-Programmers.md)
 - [Learn](./Learn/Learn.md)
-  - [LearnDrones](./Learn/LearnDrones/Note.md)
-    - [FastDrone-250](Learn/LearnDrones/FastDrone-250.md)
-    - Planner
-      - [FastPlanner-2019](Learn/LearnDrones/Planner/FastPlanner-2019.md)
-      - [EGO-Swarm-2021](Learn/LearnDrones/Planner/EGO-Swarm-2021.md)
-      - [EGO-Planner-2020](Learn/LearnDrones/Planner/EGO-Planner-2020.md)
-      - [Gradient-Based-Motion-Planning](Learn/LearnDrones/Planner/Gradient-Based-Motion-Planning.md)
-      - [MicroFlyingRobots-2021](Learn/LearnDrones/Planner/MicroFlyingRobots-2021.md)
-      - [Distributed-Swarm-Trajectory-Opt-for-Formation-Flight-in-Dense-Envs-2022](Learn/LearnDrones/Planner/Distributed-Swarm-Trajectory-Opt-for-Formation-Flight-in-Dense-Envs-2022.md)
-      - [Robust-Efficient-Trajectory-Planning-for-Formation-Flight-in-Dense-Environments-2023](Learn/LearnDrones/Planner/Robust-Efficient-Trajectory-Planning-for-Formation-Flight-in-Dense-Environments-2023.md)
-    - TaskAssignment
-      - [index](Learn/LearnDrones/TaskAssignment/index.md)
-      - [2018.10 Should_We_Compete_or_Should_We_Cooperate_Applying_Game_Theory_to_Task_Allocation_in_Drone_Swarms](Learn/LearnDrones/TaskAssignment/2018.10-Should_We_Compete_or_Should_We_Cooperate_Applying_Game_Theory_to_Task_Allocation_in_Drone_Swarms.md)
-      - [2019 A Mission Planning and Task Allocation Framework For Multi-UAV Swarm Coordination](Learn/LearnDrones/TaskAssignment/2019.11-A_Mission_Planning_and_Task_Allocation_Framework_For_Multi-UAV_Swarm_Coordination.md)
-      - [2020 Energy Efficient Task Cooperation for Multi-UAV Networks: A Coalition Formation Game Approach](Learn/LearnDrones/TaskAssignment/2020.08-Energy_Efficient_Task_Cooperation_for_Multi-UAV_Networks:_A_Coalition_Formation_Game_Approach.md)
-      - [2022.06 Task_assignment_algorithms_for_unmanned_aerial_vehicle_networks_A_comprehensive_survey](Learn/LearnDrones/TaskAssignment/2022.06-Task_assignment_algorithms_for_unmanned_aerial_vehicle_networks_A_comprehensive_survey.md)
-      - [2022.10 A Survey of UAV Swarm Task Allocation Based on the Perspective of Coalition Formation](Learn/LearnDrones/TaskAssignment/2022.10-A_Survey_of_UAV_Swarm_Task_Allocation_Based_on_the_Perspective_of_Coalition_Formation.md)
-      - [2024 Distributed_task_allocation_algorithm_for_heterogeneous_unmanned_aerial_vehic_swarm_based_on_coalition_formation_game](Learn/LearnDrones/TaskAssignment/2024-Distributed_task_allocation_algorithm_for_heterogeneous_unmanned_aerial_vehic_swarm_based_on_coalition_formation_game.md)
-      - [2024.12 Application_of_Task_Allocation_Algorithms_in_Multi-UAV_Intelligent_Transportation_Systems_A_Critical_Review](Learn/LearnDrones/TaskAssignment/2024.12-Application_of_Task_Allocation_Algorithms_in_Multi-UAV_Intelligent_Transportation_Systems_A_Critical_Review.md)
-    - [Ceres-Solver](Learn/LearnDrones/Ceres-Solver.md)
-    - [Eigen](Learn/LearnDrones/Eigen.md)
   - [GPU2CPU](Learn/GPU2CPU.md)
-  - [LearnAIMA](Learn/LearnAIMA/index.md)
+  - LearnAIMA
     - [Ch12](Learn/LearnAIMA/Ch12.md)
     - [Ch13](./Learn/LearnAIMA/Ch13/Ch13.md)
       - [BayesianNetwork](Learn/LearnAIMA/Ch13/BayesianNetwork.md)
     - [Ch18](./Learn/LearnAIMA/Ch18/Ch18.md)
+    - [index](Learn/LearnAIMA/index.md)
   - LearnCUDA
     - [APT-CUDA](Learn/LearnCUDA/APT-CUDA.md)
     - [CUDA](Learn/LearnCUDA/CUDA.md)
@@ -44,20 +24,80 @@
   - LearnCV
     - [ComputerVisoin](Learn/LearnCV/ComputerVisoin.md)
     - [OpenCV](./Learn/LearnCV/OpenCV/OpenCV.md)
-  - LearnConda
-    - [ChangeBaseEnv](Learn/LearnConda/ChangeBaseEnv.md)
-    - [Conda](Learn/LearnConda/Conda.md)
+  - LearnCsharp
+    - [Note](Learn/LearnCsharp/Note.md)
   - LearnDocker
     - [docker](Learn/LearnDocker/docker.md)
+  - LearnDrones
+    - [2017.12-NIPS-Multi-Agent_Actor-Critic_for_Mixed_Cooperative-Competitive_Environments](Learn/LearnDrones/2017.12-NIPS-Multi-Agent_Actor-Critic_for_Mixed_Cooperative-Competitive_Environments.md)
+    - [2020.09-PettingZoo_Gym_for_Multi-Agent_Reinforcement_Learning](Learn/LearnDrones/2020.09-PettingZoo_Gym_for_Multi-Agent_Reinforcement_Learning.md)
+    - [2023.06-RACER](Learn/LearnDrones/2023.06-RACER.md)
+    - [Ceres-Solver](Learn/LearnDrones/Ceres-Solver.md)
+    - [Drones](Learn/LearnDrones/Drones.md)
+    - [Eigen](Learn/LearnDrones/Eigen.md)
+    - [FastDrone-250](Learn/LearnDrones/FastDrone-250.md)
+    - [ICRA2024](Learn/LearnDrones/ICRA2024.md)
+    - [Note](Learn/LearnDrones/Note.md)
+    - Planner
+      - [Distributed-Swarm-Trajectory-Opt-for-Formation-Flight-in-Dense-Envs-2022](Learn/LearnDrones/Planner/Distributed-Swarm-Trajectory-Opt-for-Formation-Flight-in-Dense-Envs-2022.md)
+      - [EGO-Swarm-2021](Learn/LearnDrones/Planner/EGO-Swarm-2021.md)
+      - [FastPlanner-2019](Learn/LearnDrones/Planner/FastPlanner-2019.md)
+      - [Gradient-Based-Motion-Planning](Learn/LearnDrones/Planner/Gradient-Based-Motion-Planning.md)
+      - [MicroFlyingRobots-2021](Learn/LearnDrones/Planner/MicroFlyingRobots-2021.md)
+      - [Robust-Efficient-Trajectory-Planning-for-Formation-Flight-in-Dense-Environments-2023](Learn/LearnDrones/Planner/Robust-Efficient-Trajectory-Planning-for-Formation-Flight-in-Dense-Environments-2023.md)
+    - [TaskAssignment](./Learn/LearnDrones/TaskAssignment/TaskAssignment.md)
+      - [2004.09-MRTA-Domain-Independent-Taxonomy](Learn/LearnDrones/TaskAssignment/2004.09-MRTA-Domain-Independent-Taxonomy.md)
+      - [2016.02-Survey-TaskAllocation-LoadBlancing-in-Distributed-System](Learn/LearnDrones/TaskAssignment/2016.02-Survey-TaskAllocation-LoadBlancing-in-Distributed-System.md)
+      - [2019.11-A_Mission_Planning_and_Task_Allocation_Framework_For_Multi-UAV_Swarm_Coordination](Learn/LearnDrones/TaskAssignment/2019.11-A_Mission_Planning_and_Task_Allocation_Framework_For_Multi-UAV_Swarm_Coordination.md)
+      - [2023.02-TSMC-Moving-Targets-Interception-DyTA](Learn/LearnDrones/TaskAssignment/2023.02-TSMC-Moving-Targets-Interception-DyTA.md)
+      - Auction-Based
+        - [2009.08-TRO-Consensus-Based-Robust-TA](Learn/LearnDrones/TaskAssignment/Auction-Based/2009.08-TRO-Consensus-Based-Robust-TA.md)
+      - Game-Based
+        - [2013.10-Taxonomy-for-MRTA](Learn/LearnDrones/TaskAssignment/Game-Based/2013.10-Taxonomy-for-MRTA.md)
+        - [2018.06-ACC-Coordinated-TA-in-Heterogeneous-UAVs-CFGame](Learn/LearnDrones/TaskAssignment/Game-Based/2018.06-ACC-Coordinated-TA-in-Heterogeneous-UAVs-CFGame.md)
+        - [2018.10-Compete-or-Cooperate-Game-Theory-for-Swarm-TA](Learn/LearnDrones/TaskAssignment/Game-Based/2018.10-Compete-or-Cooperate-Game-Theory-for-Swarm-TA.md)
+        - [2018.10-Energy-Efficiedn-MultiUAV-Coverage-Deployment-GameTheory-FrameWork](Learn/LearnDrones/TaskAssignment/Game-Based/2018.10-Energy-Efficiedn-MultiUAV-Coverage-Deployment-GameTheory-FrameWork.md)
+        - [2018.12-TRO-Anonymous-Hedonic-Game-TA](Learn/LearnDrones/TaskAssignment/Game-Based/2018.12-TRO-Anonymous-Hedonic-Game-TA.md)
+        - [2020-ISA_Transition-Potential_Game_for_Dynamic_TA_in_MAS](Learn/LearnDrones/TaskAssignment/Game-Based/2020-ISA_Transition-Potential_Game_for_Dynamic_TA_in_MAS.md)
+        - [2020.08-Energy-Efficient-Task-Cooperation-for-MUAV-Network_CFGame-Approach](Learn/LearnDrones/TaskAssignment/Game-Based/2020.08-Energy-Efficient-Task-Cooperation-for-MUAV-Network_CFGame-Approach.md)
+        - [2020.09-Joint-TA-and-SA-in-Heterogeneous-UAV-Network_CFGame-Approach](Learn/LearnDrones/TaskAssignment/Game-Based/2020.09-Joint-TA-and-SA-in-Heterogeneous-UAV-Network_CFGame-Approach.md)
+        - [2023.12-TA-in-UAV-enabled Front-Jammer-Swarm_CFGame-Approach](Learn/LearnDrones/TaskAssignment/Game-Based/2023.12-TA-in-UAV-enabled Front-Jammer-Swarm_CFGame-Approach.md)
+        - [2024-A_Heuristic_Task_Allocation_Method_Based_on_Overlapping_Coalition_Formation_Game_for_Heterogeneous_UAVs](Learn/LearnDrones/TaskAssignment/Game-Based/2024-A_Heuristic_Task_Allocation_Method_Based_on_Overlapping_Coalition_Formation_Game_for_Heterogeneous_UAVs.md)
+        - [2024-Distributed-TA-for-Heterogeneous-SwarmUAV-based-on-CFGame](Learn/LearnDrones/TaskAssignment/Game-Based/2024-Distributed-TA-for-Heterogeneous-SwarmUAV-based-on-CFGame.md)
+        - [2024.01-TNSE-Minimum-Req-for-MMRS-Game-Approch](Learn/LearnDrones/TaskAssignment/Game-Based/2024.01-TNSE-Minimum-Req-for-MMRS-Game-Approch.md)
+        - [2024.05-ICRA-LiwangZhang](Learn/LearnDrones/TaskAssignment/Game-Based/2024.05-ICRA-LiwangZhang.md)
+        - [2024.06-Distributed-Dynamic-TA-for-SwarmUAV_Networked-Evolutionary-Game-Approach](Learn/LearnDrones/TaskAssignment/Game-Based/2024.06-Distributed-Dynamic-TA-for-SwarmUAV_Networked-Evolutionary-Game-Approach.md)
+        - [2024.10-IROS-LiwangZhang](Learn/LearnDrones/TaskAssignment/Game-Based/2024.10-IROS-LiwangZhang.md)
+      - Optimization-Based
+        - [2023.11-ASOC-Particle-Swarm-Opt-and-Entropy-Weight-Method-for-MHUAV-TA](Learn/LearnDrones/TaskAssignment/Optimization-Based/2023.11-ASOC-Particle-Swarm-Opt-and-Entropy-Weight-Method-for-MHUAV-TA.md)
+      - RL-Based
+        - [2023.04-Drones-Swarm-UAV-TA-on-DRL](Learn/LearnDrones/TaskAssignment/RL-Based/2023.04-Drones-Swarm-UAV-TA-on-DRL.md)
+      - Survey
+        - [2021.09-CSMS-Review-Dynamic-UAV-Swarm-TA](Learn/LearnDrones/TaskAssignment/Survey/2021.09-CSMS-Review-Dynamic-UAV-Swarm-TA.md)
+        - [2022.06-VC-Survey-UAV-Network-TA-Alg](Learn/LearnDrones/TaskAssignment/Survey/2022.06-VC-Survey-UAV-Network-TA-Alg.md)
+        - [2022.10-IJSIR-Survey-UAV-swarm-TA-Coalition-Game](Learn/LearnDrones/TaskAssignment/Survey/2022.10-IJSIR-Survey-UAV-swarm-TA-Coalition-Game.md)
+        - [2023.11-JIRS-A-Review-of-Task-Allocation-Methods-for-UAVs](Learn/LearnDrones/TaskAssignment/Survey/2023.11-JIRS-A-Review-of-Task-Allocation-Methods-for-UAVs.md)
+        - [2024.12-BDCC-Review-TA-in-UAVs-Intellignet-Transportation](Learn/LearnDrones/TaskAssignment/Survey/2024.12-BDCC-Review-TA-in-UAVs-Intellignet-Transportation.md)
+        - [2025.01-Drones-MUTA-Dynamic-Envs-Survey](Learn/LearnDrones/TaskAssignment/Survey/2025.01-Drones-MUTA-Dynamic-Envs-Survey.md)
+      - [index](Learn/LearnDrones/TaskAssignment/index.md)
   - LearnGPU2CPU-by-GPT
     - [Note](Learn/LearnGPU2CPU-by-GPT/Note.md)
   - LearnGameDev
     - [Note](Learn/LearnGameDev/Note.md)
   - LearnGameTheory
+    - [A-Course-in-Game-Theory-zh](Learn/LearnGameTheory/A-Course-in-Game-Theory-zh.md)
+    - [A-Course-in-Game-Theory](Learn/LearnGameTheory/A-Course-in-Game-Theory.md)
+    - Coalition-Formation-Game
+      - [1996-Potential-Games-Monderer-zh](Learn/LearnGameTheory/Coalition-Formation-Game/1996-Potential-Games-Monderer-zh.md)
+      - [1996-Potential-Games-Monderer](Learn/LearnGameTheory/Coalition-Formation-Game/1996-Potential-Games-Monderer.md)
+      - [2022-phd-Axiomatic-and-Computational-Analysis-of-Altruism-Fairness-and-Stability-in-CFGames](Learn/LearnGameTheory/Coalition-Formation-Game/2022-phd-Axiomatic-and-Computational-Analysis-of-Altruism-Fairness-and-Stability-in-CFGames.md)
     - [CoalitionalGames](Learn/LearnGameTheory/CoalitionalGames.md)
     - [GameTheory](Learn/LearnGameTheory/GameTheory.md)
   - LearnJinJia2
     - [Jinjia2](Learn/LearnJinJia2/Jinjia2.md)
+  - LearnLLM
+    - [LLM](Learn/LearnLLM/LLM.md)
+    - [RoadMap](Learn/LearnLLM/RoadMap.md)
   - LearnLalrpop
     - [Lalrpop](Learn/LearnLalrpop/Lalrpop.md)
   - LearnMLIR
@@ -79,6 +119,7 @@
     - [pytorch.needed.libs.Note](Learn/LearnMocCUDA/pytorch.needed.libs.Note.md)
   - LearnMordenCpp
     - [Note](Learn/LearnMordenCpp/Note.md)
+    - [Profiling](Learn/LearnMordenCpp/Profiling.md)
   - LearnPest
     - [ParsingExpressionGrammar](Learn/LearnPest/ParsingExpressionGrammar.md)
     - [pest](Learn/LearnPest/pest.md)
@@ -127,12 +168,23 @@
   - [UserManagement](Linux/UserManagement.md)
   - [apt](Linux/apt.md)
   - [curl](Linux/curl.md)
+- Mathematics
+  - [Calculus](Mathematics/Calculus.md)
+  - [Combinatorics ](Mathematics/Combinatorics .md)
+  - [LinearAlgebra](Mathematics/LinearAlgebra.md)
+  - [Probability](Mathematics/Probability.md)
 - [Misc](./Misc/Misc.md)
   - [00_Links](Misc/00_Links.md)
+  - [00_Misc](Misc/00_Misc.md)
   - [01_GitHubReps](Misc/01_GitHubReps.md)
+  - [02_DebuggingBook](Misc/02_DebuggingBook.md)
   - [Bochs](Misc/Bochs.md)
   - [Compression](Misc/Compression.md)
   - [ComputationForcePlatforms](Misc/ComputationForcePlatforms.md)
+  - ComputationalPhysics
+    - [Lammps](Misc/ComputationalPhysics/Lammps.md)
+    - [MDsim](Misc/ComputationalPhysics/MDsim.md)
+    - [Terms](Misc/ComputationalPhysics/Terms.md)
   - [Copy](Misc/Copy.md)
   - [Drawing](Misc/Drawing.md)
   - [Flatpack](Misc/Flatpack.md)
@@ -152,6 +204,8 @@
   - [NPM](Misc/NPM.md)
   - [PowerShell](Misc/PowerShell.md)
   - [RegularExp](Misc/RegularExp.md)
+  - ScientificResearch
+    - [Note](Misc/ScientificResearch/Note.md)
   - [StorageTechs](Misc/StorageTechs.md)
   - [TWRP](Misc/TWRP.md)
   - TimeSeriesPrediction
@@ -165,12 +219,19 @@
   - [WSL](Misc/WSL.md)
 - [Network](./Network/Network.md)
   - [ChangeMac](Network/ChangeMac.md)
+  - [Clash](Network/Clash.md)
   - [DNS](Network/DNS.md)
   - [RandomMac](Network/RandomMac.md)
   - [Tailscale](Network/Tailscale.md)
   - [Wifi](Network/Wifi.md)
 - [Papers](./Papers/Papers.md)
+  - [2024-Mamba](Papers/2024-Mamba.md)
+  - [2024-Transformers-are-SSMs](Papers/2024-Transformers-are-SSMs.md)
+  - [2024.02-D2NWG-Transfer-Learning](Papers/2024.02-D2NWG-Transfer-Learning.md)
+  - [2024.09-VisionMambaRender](Papers/2024.09-VisionMambaRender.md)
   - [AttentionIsTuringComplete](Papers/AttentionIsTuringComplete.md)
+  - [DeepSeek-R1](Papers/DeepSeek-R1.md)
+  - [NSA](Papers/NSA.md)
   - [Spatially varying nanophotonic neural networks](Papers/Spatially varying nanophotonic neural networks.md)
 - [Programming](./Programming/Programming.md)
   - [CRTP](Programming/CRTP.md)
@@ -184,10 +245,12 @@
     - [PyQt5](PythonLibs/LearnPyQt5/PyQt5.md)
     - [QtStyleSheets](PythonLibs/LearnPyQt5/QtStyleSheets.md)
 - [ReadingNotes](./ReadingNotes/ReadingNotes.md)
+  - [2017-04-蔡元培任北京大学校长之就职演说](ReadingNotes/2017-04-蔡元培任北京大学校长之就职演说.md)
   - [A_Brief_History_of_Humankind](ReadingNotes/A_Brief_History_of_Humankind.md)
   - [Feynman](ReadingNotes/Feynman.md)
   - [math_philosiphy](ReadingNotes/math_philosiphy.md)
   - [philosiphy](ReadingNotes/philosiphy.md)
+  - [二十大报告学习](ReadingNotes/二十大报告学习.md)
   - [研究与学风-张申府-1948](ReadingNotes/研究与学风-张申府-1948.md)
   - 计算之魂-吴军
     - [cp0](ReadingNotes/计算之魂-吴军/cp0.md)

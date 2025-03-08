@@ -68,13 +68,18 @@ Hart 和 Mas-Colell (1989) 将势理论应用于合作博弈。除了我们都�
 
 ### 2. 势博弈
 
-设 $\Gamma(u^{1},u^{2},\ldots,u^{n})$ 是一个具有有限数量玩家的策略形式博弈。玩家集合为 $N=\{1,2,\ldots,n\}$，玩家 $i$ 的策略集为 $Y^{\mathrm{i}}$，玩家 $i$ 的支付函数为 $\iota\iota^{i}$ ：$Y\rightarrow R$，其中 $Y=Y^{1}\times Y^{2}\times$ $\cdots\times Y^{n}$ 是策略配置集，$R$ 表示实数集。当不会引起混淆时，我们将 $\Gamma(u^{1},u^{2},\ldots,u^{n})$ 简记为 $\Gamma$。对于 $S\subseteq N$，$-S$ 表示 $S$ 的补集，$Y^{5}$ 表示笛卡尔积 $X_{i\in S}Y^i$。对于单元素集 $\{i\}$，$Y^{-[i]}$ 记为 $Y^{-i}$。函数 $P$ ：$Y\rightarrow R$ 是 $\Gamma$ 的序数势函数，如果对于每个 $i\in N$ 和每个 $y^{-i}\in Y^{-\bar{I}}$：
+- 设 $\Gamma(u^{1},u^{2},\ldots,u^{n})$ 是一个具有有限数量玩家的策略形式博弈。
+- 玩家集合为 $N=\{1,2,\ldots,n\}$，玩家 $i$ 的策略集为 $Y^{\mathrm{i}}$，玩家 $i$ 的支付函数为 $u^{i}$ ：$Y\rightarrow R$，其中 $Y=Y^{1}\times Y^{2}\times$ $\cdots\times Y^{n}$ 是策略配置集，$R$ 表示实数集。
+- 当不会引起混淆时，我们将 $\Gamma(u^{1},u^{2},\ldots,u^{n})$ 简记为 $\Gamma$。
+- 对于 $S\subseteq N$，$-S$ 表示 $S$ 的补集，$Y^{5}$ 表示笛卡尔积 $X_{i\in S}Y^i$。
+- 对于单元素集 $\{i\}$，$Y^{-[i]}$ 记为 $Y^{-i}$。
+- 函数 $P$ ：$Y\rightarrow R$ 是 $\Gamma$ 的序数势函数，如果对于每个 $i\in N$ 和每个 $y^{-i}\in Y^{-\bar{I}}$：
 
 $$\begin{array}{rl}u^i(y^{-i},x)-u^i(y^{-i},z)>0&\mathrm{iff}\quad P(y^{-i},x)-P(y^{-i},z)>0\\&\mathrm{对于每个}\:x,z\in Y^i.\end{array}$$
 
 $\Gamma$ 被称为序数势博弈，如果它允许一个序数势函数。
 
-设 $w=(w^{i})_{i\in N}$ 是一个正数向量，称为权重。函数 $P$ ：$Y\rightarrow R$ 是 $\Gamma$ 的 $u$ -势函数，如果对于每个 $i\in N$ 和每个 $y^{-i}\in Y^{-i}$：
+设 $w=(w^{i})_{i\in N}$ 是一个正数向量，称为权重。函数 $P$ ：$Y\rightarrow R$ 是 $\Gamma$ 的 $w$ -势函数，如果对于每个 $i\in N$ 和每个 $y^{-i}\in Y^{-i}$：
 
 $$\begin{array}{rcl}u^i(y^{-i},x)-u^i(y^{-i},z)&=&w^i\left(P(y^{-i},x)-P(y^{-i},z)\right)\\&&\text{对于每个}\:x,z\in Y^i.\end{array}$$
 
@@ -82,7 +87,9 @@ $\Gamma$ 被称为 $w$ -势博弈，如果它允许一个 $w$ -势函数。
 
 当我们不关心特定权重 $u$ 时，我们简单地说 $P$ 是一个加权势函数，$\Gamma$ 是一个加权势博弈。
 
-函数 $P$ ：$Y\rightarrow R$ 是 $\Gamma$ 的精确势函数（简称势函数），如果它是 $\Gamma$ 的 $U$ -势函数，且对于每个 $i\in N$，$w^{i}=1$。$\Gamma$ 被称为精确势博弈（简称势博弈），如果它允许一个势函数。例如，矩阵 $P$ 是下面描述的囚徒困境博弈 $G$ 的势函数：
+函数 $P$ ：$Y\rightarrow R$ 是 $\Gamma$ 的精确势函数（简称势函数），如果它是 $\Gamma$ 的 $w$ -势函数，且对于每个 $i\in N$，$w^{i}=1$。
+
+$\Gamma$ 被称为精确势博弈（简称势博弈），如果它允许一个势函数。例如，矩阵 $P$ 是下面描述的囚徒困境博弈 $G$ 的势函数：
 
 $$G=\left(\begin{array}{cc}(1,1)&(9,0)\\(0,9)&(6,6)\end{array}\right),\quad P=\left(\begin{array}{cc}4&3\\3&0\end{array}\right).$$
 
@@ -92,7 +99,7 @@ $$G=\left(\begin{array}{cc}(1,1)&(9,0)\\(0,9)&(6,6)\end{array}\right),\quad P=\l
 
 $$P(y)\geq P(y^{-i},x)\quad \text{对于每个}\:x\in Y^{i}.$$
 
-因此，如果 $P$ 在 $Y$ 中允许一个最大值 10，则 $\Gamma$ 具有一个（纯策略）均衡。
+因此，如果 $P$ 在 $Y$ 中允许一个最大值，则 $\Gamma$ 具有一个（纯策略）均衡。
 
 推论 2.2. 每个有限序数势博弈都具有一个纯策略均衡。
 
